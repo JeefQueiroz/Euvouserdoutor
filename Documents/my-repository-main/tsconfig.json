@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // APRIMORAMENTO: Ajuste no mapeamento de caminhos para aceitar curingas (*)
+    // Isso permite importar como '@/components/...' em vez de caminhos relativos longos.
+    "paths": {
+      "@/*": ["./*"]
+    },
+    // Garante que o caso das letras nos nomes dos ficheiros seja respeitado (importante no Linux/Vercel)
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "next-env.d.ts", 
+    "**/*.ts", 
+    "**/*.tsx", 
+    ".next/types/**/*.ts",
+    "public/.well-known/farcaster.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "final-fixes",
+    "audit",
+    "missing-files",
+    "fixes",
+    "miniapps",
+    "FAGENT",
+    "Nnode"
+  ]
+}
