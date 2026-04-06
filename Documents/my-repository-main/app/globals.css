@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Estas variáveis alimentam o seu tailwind.config.ts */
+    --background: 0 0% 0%;       /* Preto para o fundo */
+    --foreground: 0 0% 100%;     /* Branco para os textos */
+    --xray-blue: #0062ff;        /* Azul que você definiu no config */
+  }
+
+  html, body {
+    /* Usa as variáveis que o Tailwind espera */
+    background-color: #000;
+    /* Guia Fantasma: steel-blue grid lines at 3-5% opacity */
+    background-image:
+      linear-gradient(to right, rgba(70, 130, 180, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(70, 130, 180, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    /* Melhoria para Farcaster Mobile: 
+       Permitimos o scroll vertical (auto) mas proibimos o horizontal (hidden) */
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Alinhando os nomes das animações com o seu tailwind.config.ts */
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+}
+
+/* Keyframe unificado conforme seu config */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Mantendo seus keyframes específicos para uso manual se precisar */
+@keyframes scroll-turbo {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

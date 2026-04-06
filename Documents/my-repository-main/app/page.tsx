@@ -362,41 +362,37 @@ style={{ backgroundColor: '#0A0A0F' }}>
       style={{ background: 'radial-gradient(circle at 50% 35%, rgba(60,242,255,0.16), transparent 64%)' }} />
     <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-[540px] h-[540px] rounded-full pointer-events-none animate-pulse"
       style={{ background: 'radial-gradient(circle, rgba(76,214,255,0.14), transparent 68%)', filter: 'blur(8px)' }} />
-    <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-10 backdrop-blur-md"
-        style={{ backgroundColor: `${T.cyan}0a`, border: `1px solid ${T.cyan}22` }}>
-        <Globe size={10} style={{ color: T.cyan }} />
-        <span className="font-extrabold tracking-tight uppercase" style={{ color: T.text2, fontSize: 8, letterSpacing: '0.32em' }}>
-          Protocol Identity Economy • Base Network
+    <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center gap-6">
+      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full backdrop-blur-md"
+        style={{ backgroundColor: `${T.text2}1a`, border: `1px solid ${T.text2}22` }}>
+        <Globe size={10} style={{ color: T.text2 }} />
+        <span className="font-extrabold uppercase tracking-[0.3em]" style={{ fontSize: 9, color: T.text2 }}>
+          NEW POSITIONING — XRAY
         </span>
       </div>
 
-      <div className="mb-8 space-y-1">
-        <h1 className="font-extrabold tracking-tight uppercase leading-none tracking-tight"
-          style={{ fontSize: 'clamp(38px,9vw,74px)', color: T.text1, fontFamily: FONT_DISPLAY }}>
-          Reveal Your
+      <div className="space-y-2 text-center">
+        <h1 className="font-black uppercase leading-tight" style={{ fontSize: 'clamp(40px,7vw,76px)', color: T.text1, fontFamily: FONT_DISPLAY }}>
+          What Happens When You Expose Your Wallet?
         </h1>
-        <h1 className="font-extrabold tracking-tight uppercase leading-none tracking-tight"
-          style={{ fontSize: 'clamp(38px,9vw,74px)', color: T.cyan, textShadow: `0 0 50px ${T.cyan}44`, fontFamily: FONT_DISPLAY }}>
-          Farcaster Skeleton.
-        </h1>
+        <p className="font-mono uppercase italic" style={{ color: T.muted, fontSize: 12, letterSpacing: '0.25em' }}>
+          XRAY analyzes your behavioral patterns and generates your onchain genome.
+        </p>
       </div>
 
-      <p className="italic mb-12 max-w-sm font-medium leading-relaxed"
-        style={{ color: '#96A6C6', fontSize: 12, fontFamily: FONT_UI }}>
-        Onchain radiographic identity analysis.
-      </p>
+      <div className="text-center max-w-sm">
+        <p className="italic" style={{ color: '#96A6C6', fontSize: 12 }}>
+          Exposure takes 5 seconds.
+        </p>
+        <button onClick={onEnterApp}
+          className="mt-5 group relative px-14 py-4 rounded-[1.8rem] font-extrabold uppercase tracking-tight transition-all active:scale-95 hover:scale-105 flex items-center justify-center gap-2"
+          style={{ backgroundColor: T.cyan, color: T.bg, boxShadow: `0 0 60px ${T.cyan}33`, fontFamily: FONT_DISPLAY }}>
+          <Fingerprint size={20} />
+          RUN X-RAY
+        </button>
+      </div>
 
-      <button onClick={onEnterApp}
-        className="group relative px-12 py-5 text-lg font-black uppercase italic rounded-2xl transition-all active:scale-95 hover:scale-105 flex items-center gap-3"
-        style={{ backgroundColor: T.cyan, color: T.bg, boxShadow: `0 0 60px ${T.cyan}33`, fontFamily: FONT_DISPLAY }}>
-        <Fingerprint size={22} />
-        <span>Run X-Ray</span>
-        <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
-      </button>
-
-      <div className="flex items-center gap-6 mt-8 font-mono uppercase font-black"
-        style={{ fontSize: 9, letterSpacing: '0.3em' }}>
+      <div className="flex items-center gap-6 mt-8 font-mono uppercase font-black" style={{ fontSize: 9, letterSpacing: '0.3em' }}>
         <span style={{ color: T.muted }}>
           {mintCount === null ? '···' : mintCount * FREE_MINT_DISPLAY_MULTIPLIER} / {FREE_MINT_REAL_LIMIT * FREE_MINT_DISPLAY_MULTIPLIER} Genesis Keys
         </span>
@@ -404,21 +400,45 @@ style={{ backgroundColor: '#0A0A0F' }}>
         <span className="animate-pulse" style={{ color: T.cyan }}>● Live Transmission</span>
       </div>
     </div>
+  </section>
 
-    {/* Stats row */}
-    <div className="relative z-10 mt-20 grid grid-cols-3 gap-6 w-full max-w-lg pt-10"
-      style={{ borderTop: `1px solid ${T.cyan}12` }}>
-      {[
-        { value: mintCount === null ? '···' : String(mintCount * FREE_MINT_DISPLAY_MULTIPLIER), label: 'Genesis Keys' },
-        { value: String(FREE_MINT_REAL_LIMIT * FREE_MINT_DISPLAY_MULTIPLIER), label: 'DNA Limit', accent: true },
-        { value: mintCount === null ? '···' : String(Math.max(0, FREE_MINT_REAL_LIMIT * FREE_MINT_DISPLAY_MULTIPLIER - mintCount * FREE_MINT_DISPLAY_MULTIPLIER)), label: 'Free Keys Left' },
-      ].map((s, i) => (
-        <div key={i} className="flex flex-col items-center gap-1">
-          <span className="text-xl font-extrabold tracking-tight tabular-nums" style={{ color: s.accent ? T.cyan : T.text1 }}>{s.value}</span>
-          <span className="font-mono uppercase font-bold" style={{ color: T.muted, fontSize: 7, letterSpacing: '0.3em' }}>{s.label}</span>
-        </div>
-      ))}
+  {/* STATUS + REWARD */}
+  <section className="py-12 px-6 mt-10 text-white">
+    <div className="max-w-5xl mx-auto grid lg:grid-cols-3 gap-5 text-left">
+      <div className="p-4 rounded-3xl border" style={{ backgroundColor: 'rgba(255,255,255,0.04)', borderColor: '#3CF2FF22' }}>
+        <p className="font-mono uppercase tracking-[0.3em]" style={{ fontSize: 10, color: '#8AF5FF' }}>🧬 GENOMES MINTED</p>
+        <p className="font-black text-2xl" style={{ color: T.cyan }}>3,842</p>
+      </div>
+      <div className="p-4 rounded-3xl border" style={{ backgroundColor: 'rgba(255,255,255,0.04)', borderColor: '#FFB54722' }}>
+        <p className="font-mono uppercase tracking-[0.3em]" style={{ fontSize: 10, color: '#FFC56B' }}>🛰 LIVE SCANS</p>
+        <p className="font-black text-2xl" style={{ color: T.warning }}>27</p>
+      </div>
+      <div className="p-4 rounded-3xl border" style={{ backgroundColor: 'rgba(255,255,255,0.04)', borderColor: '#B9F2FF22' }}>
+        <p className="font-mono uppercase tracking-[0.3em]" style={{ fontSize: 10, color: '#B9F2FF' }}>🔬 MUTATIONS DETECTED TODAY</p>
+        <p className="font-black text-2xl" style={{ color: T.text1 }}>113</p>
+      </div>
     </div>
+    <div className="mt-8 max-w-4xl mx-auto px-6 py-8 rounded-[2rem]" style={{ backgroundColor: '#0B0F16', borderColor: '#3CF2FF22', borderWidth: 1 }}>
+      <p className="font-mono uppercase tracking-[0.3em]" style={{ fontSize: 10, color: T.text2 }}>REWARD MACHINE</p>
+      <div className="mt-4 grid md:grid-cols-3 gap-4">
+        <div>
+          <p className="text-xs uppercase" style={{ color: T.muted }}>🧬 Genome Score</p>
+          <p className="text-3xl font-black" style={{ color: T.cyan }}>82.4</p>
+        </div>
+        <div>
+          <p className="text-xs uppercase" style={{ color: T.muted }}>🧪 Dominant Trait</p>
+          <p className="text-3xl font-black" style={{ color: T.warning }}>Speculative</p>
+        </div>
+        <div>
+          <p className="text-xs uppercase" style={{ color: T.muted }}>⚡ Mutation Probability</p>
+          <p className="text-3xl font-black" style={{ color: T.text1 }}>14%</p>
+        </div>
+      </div>
+      <p className="mt-5 lowercase tracking-[0.2em]" style={{ color: '#A9C5FF', fontSize: 11 }}>
+        Genome holders receive daily mutation signals — evolution benefits unlocked after exposure.
+      </p>
+    </div>
+  </section>
   </section>
 
   {/* LIVE FEED */}
