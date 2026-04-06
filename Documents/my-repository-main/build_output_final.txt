@@ -1,0 +1,21 @@
+
+> x-ray-miniapp-v2@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./app/page.tsx:375:9
+Type error: Property 'getFid' does not exist on type 'MiniAppSDK'.
+
+[0m [90m 373 |[39m[0m
+[0m [90m 374 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 375 |[39m     sdk[33m.[39mgetFid()[33m.[39mthen((fid) [33m=>[39m {[0m
+[0m [90m     |[39m         [31m[1m^[22m[39m[0m
+[0m [90m 376 |[39m       [36mif[39m (fid) setFid(fid)[33m;[39m[0m
+[0m [90m 377 |[39m     })[33m;[39m[0m
+[0m [90m 378 |[39m[0m

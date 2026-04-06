@@ -1,0 +1,23 @@
+{
+  "skill_name": "skill-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a new skill that triages GitHub PR review comments and proposes actionable fixes.",
+      "expected_output": "A valid skill folder with SKILL.md, clear triggers, and a basic eval set.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Improve an existing dashboard-writing skill because it under-triggers and produces inconsistent outputs.",
+      "expected_output": "Revised description and tightened output format guidance with evaluation plan.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Benchmark the old and new versions of a skill and summarize quality, latency, token usage, and variance.",
+      "expected_output": "Comparable benchmark summary with clear deltas and next iteration actions.",
+      "files": []
+    }
+  ]
+}

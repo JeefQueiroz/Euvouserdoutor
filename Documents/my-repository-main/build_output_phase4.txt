@@ -1,0 +1,43 @@
+
+> x-ray-miniapp-v2@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.4
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./app/page.tsx
+Error: 
+  [31mx[0m Unterminated string constant
+      ,-[[36;1;4m/home/ubuntu/x-rayv2/app/page.tsx[0m:1077:1]
+ [2m1077[0m | const cached = getCheckinCache(fid);
+ [2m1078[0m | if (cached?.lastDate === todayStr()) { // Agora ambos usam UTC
+ [2m1079[0m |   setCheckedToday(true);
+ [2m1080[0m |   showFeedback(\'✅ Already checked in today!\');
+      : [31;1m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m1081[0m |   return;
+ [2m1082[0m | }
+ [2m1083[0m | if (checkedToday || checkinLoading || !isMiniAppRuntime) return;
+      `----
+
+  [31mx[0m Expected unicode escape
+      ,-[[36;1;4m/home/ubuntu/x-rayv2/app/page.tsx[0m:1077:1]
+ [2m1077[0m | const cached = getCheckinCache(fid);
+ [2m1078[0m | if (cached?.lastDate === todayStr()) { // Agora ambos usam UTC
+ [2m1079[0m |   setCheckedToday(true);
+ [2m1080[0m |   showFeedback(\'✅ Already checked in today!\');
+      : [31;1m               ^[0m
+ [2m1081[0m |   return;
+ [2m1082[0m | }
+ [2m1083[0m | if (checkedToday || checkinLoading || !isMiniAppRuntime) return;
+      `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+
+
+> Build failed because of webpack errors

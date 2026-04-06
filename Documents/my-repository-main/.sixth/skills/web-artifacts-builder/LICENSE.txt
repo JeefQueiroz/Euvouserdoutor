@@ -1,0 +1,4 @@
+This skill content is provided for use within this repository/workspace.
+
+You may edit, adapt, and use these files for your own projects.
+No warranty is provided.

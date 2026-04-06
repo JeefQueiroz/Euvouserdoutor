@@ -1,0 +1,40 @@
+{
+  "functions": {
+    "app/api/cron/notify/route.ts": {
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/.well-known/farcaster.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
+      ]
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/notify",
+      "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/cron/notify",
+      "schedule": "0 21 * * *"
+    },
+    {
+      "path": "/api/cron/sync-leaderboard",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}

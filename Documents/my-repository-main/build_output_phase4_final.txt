@@ -1,0 +1,26 @@
+
+> x-ray-miniapp-v2@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./app/page.tsx
+2175:6  Warning: React Hook useEffect has an unnecessary dependency: 'allAddresses.length'. Either exclude it or remove the dependency array. Outer scope values like 'allAddresses.length' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+Failed to compile.
+
+./app/page.tsx:2175:80
+Type error: Cannot find name 'allAddresses'.
+
+[0m [90m 2173 |[39m       controller[33m.[39mabort()[33m;[39m[0m
+[0m [90m 2174 |[39m     }[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 2175 |[39m   }[33m,[39m [address[33m,[39m fid[33m,[39m farcasterWallets[33m,[39m farcasterWalletsLoading[33m,[39m contextWallets[33m,[39m allAddresses[33m.[39mlength])[33m;[39m[0m
+[0m [90m      |[39m                                                                                [31m[1m^[22m[39m[0m
+[0m [90m 2176 |[39m[0m
+[0m [90m 2177 |[39m   [36mconst[39m displayFollowers [33m=[39m localFollowers [33m?[39m[33m?[39m followers[33m;[39m[0m
+[0m [90m 2178 |[39m[0m

@@ -1,0 +1,64 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Skills: List Local Skills",
+      "type": "shell",
+      "command": "find .sixth/skills -maxdepth 2 -type f -name 'SKILL.md' | sort",
+      "problemMatcher": []
+    },
+    {
+      "label": "Skills: Validate Skill Scripts",
+      "type": "shell",
+      "command": "bash -n .sixth/skills/web-artifacts-builder/scripts/init-artifact.sh && bash -n .sixth/skills/web-artifacts-builder/scripts/bundle-artifact.sh && echo 'OK: scripts valid'",
+      "problemMatcher": []
+    },
+    {
+      "label": "Skills: Init Web Artifact Project",
+      "type": "shell",
+      "command": "bash .sixth/skills/web-artifacts-builder/scripts/init-artifact.sh ${input:artifactProjectName}",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Skills: Bundle Web Artifact (project root)",
+      "type": "shell",
+      "command": "bash .sixth/skills/web-artifacts-builder/scripts/bundle-artifact.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Skills: Bundle Web Artifact (choose folder)",
+      "type": "shell",
+      "command": "bash ${workspaceFolder}/.sixth/skills/web-artifacts-builder/scripts/bundle-artifact.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/${input:artifactProjectPath}"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Skills: Show Skill-Creator Eval Seeds",
+      "type": "shell",
+      "command": "cat .sixth/skills/skill-creator/evals/evals.json",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "artifactProjectName",
+      "type": "promptString",
+      "description": "Name of the new artifact project folder",
+      "default": "my-artifact-app"
+    },
+    {
+      "id": "artifactProjectPath",
+      "type": "promptString",
+      "description": "Artifact project folder (relative to workspace root)",
+      "default": "my-artifact-app"
+    }
+  ]
+}

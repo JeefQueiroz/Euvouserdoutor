@@ -1,0 +1,33 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjExMDg4NDAsInR5cGUiOiJhdXRoIiwia2V5IjoiMHhERDUzQzZFNUE0ODdGMTNBMmJmZjQ0N0JhMzdEMWExZGFBNjU4Mjg5In0",
+    "payload": "eyJkb21haW4iOiJ4LXJheXYyLnZlcmNlbC5hcHAifQ",
+    "signature": "ekWHcOJ+OTKXnGT1L5KMSgbA45aO1tCXSpzXgz9Hg+k3UCiuSrC9pOcYf2XGsVbJ21wffP5JfpK86OMdFN/Fshs="
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "XRAY",
+    "subtitle": "Onchain behavioral scanner",
+    "iconUrl": "https://x-rayv2.vercel.app/icon2.png",
+    "imageUrl": "https://x-rayv2.vercel.app/cover.png",
+    "buttonTitle": "Open X-RAY ☠️",
+    "homeUrl": "https://x-rayv2.vercel.app",
+    "splashImageUrl": "https://x-rayv2.vercel.app/s.png",
+    "splashBackgroundColor": "#010101",
+    "webhookUrl": "https://edlqkgzpdymouewjzthw.supabase.co/functions/v1/webhook",
+    "description": "XRAY analyzes behavioral patterns and generates your onchain genome through wallet exposure.",
+    "screenshotUrls": [
+      "https://x-rayv2.vercel.app/src1.png",
+      "https://x-rayv2.vercel.app/src2.png",
+      "https://x-rayv2.vercel.app/src3.png"
+    ],
+    "primaryCategory": "social",
+    "tags": ["identity", "behavior", "base", "onchain", "genome"],
+    "heroImageUrl": "https://x-rayv2.vercel.app/cover.png",
+    "tagline": "Expose wallet. Reveal genome.",
+    "ogTitle": "X-RAY Protocol",
+    "ogDescription": "What happens when you expose your wallet? XRAY generates your onchain genome.",
+    "ogImageUrl": "https://x-rayv2.vercel.app/cover.png",
+    "requiredChains": ["eip155:8453"]
+  }
+}

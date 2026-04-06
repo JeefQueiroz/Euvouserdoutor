@@ -1,0 +1,26 @@
+
+> x-ray-miniapp-v2@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./app/page.tsx
+2166:6  Warning: React Hook useEffect has an unnecessary dependency: 'allAddresses.length'. Either exclude it or remove the dependency array. Outer scope values like 'allAddresses.length' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+Failed to compile.
+
+./app/page.tsx:1038:24
+Type error: Cannot find name 'todayLocalStr'.
+
+[0m [90m 1036 |[39m [36mconst[39m shareData   [33m=[39m getShareData(fid)[33m;[39m[0m
+[0m [90m 1037 |[39m [36mconst[39m followXData [33m=[39m getFollowXData(fid)[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 1038 |[39m [36mif[39m (shareData[33m.[39mdate [33m!==[39m todayLocalStr()) savedTasks[[32m'share_xray'[39m] [33m=[39m [36mfalse[39m[33m;[39m[0m
+[0m [90m      |[39m                        [31m[1m^[22m[39m[0m
+[0m [90m 1039 |[39m [36melse[39m savedTasks[[32m'share_xray'[39m] [33m=[39m [36mtrue[39m[33m;[39m[0m
+[0m [90m 1040 |[39m     [36mif[39m (followXData[33m.[39mdate [33m!==[39m todayLocalStr()) safeStorage[33m.[39msetItem(fidKey(fid[33m,[39m [32m'follow-x'[39m)[33m,[39m [32m''[39m)[33m;[39m [90m// Cannot remove, just clear[39m[0m
+[0m [90m 1041 |[39m setTasks(prev [33m=>[39m prev[33m.[39mmap(t [33m=>[39m ({ [33m...[39mt[33m,[39m done[33m:[39m savedTasks[t[33m.[39mid] [33m===[39m [36mtrue[39m })))[33m;[39m[0m
