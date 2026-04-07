@@ -1,21 +1,48 @@
-import { SkillInput, SkillResult } from "../types";
+import type { MintInput, MintOutput, SkillResult } from "../types";
 
-export async function createMintSkill(input: SkillInput): Promise<SkillResult> {
+function buildTokenName(name?: string) {
+  return name?.trim() ? name.trim() : "XRAY NFT";
+}
+
+export async function createMintSkill(input: MintInput): Promise<SkillResult<MintOutput>> {
   try {
-    // Aponta direto para a sua wallet na Base Network
-    const targetWallet = input.walletAddress || "0x07b6a74ffc4b7ab17157f088a8cd82d8897d70c4";
-    if (!input.imageUrl) return { success: false, message: "Imagem ausente." };
+    if (!input.walletAddress) {
+      return {
+        success: false,
+        message: "walletAddress é obrigatório.",
+      };
+    }
+
+    if (!input.imageUrl) {
+      return {
+        success: false,
+        message: "imageUrl é obrigatório.",
+      };
+    }
+
+    const tokenName = buildTokenName(input.name);
+
+    const metadata: Record<string, unknown> = {
+      name: tokenName,
+      description: input.description || "XRAY NFT generated from Farcaster mini app.",
+      image: input.imageUrl,
+      ...(input.metadata || {}),
+    };
 
     return {
       success: true,
-      message: "Dados de mint na Base preparados.",
+      message: "Dados de mint preparados com sucesso.",
       data: {
-        targetChain: "Base",
-        wallet: targetWallet,
-        metadata: { name: `X-RAY NFT #${input.fid || "0"}`, image: input.imageUrl }
+        walletAddress: input.walletAddress,
+        imageUrl: input.imageUrl,
+        tokenName,
+        metadata,
       },
     };
   } catch (error) {
-    return { success: false, message: "Erro no preparo do Mint." };
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : "Erro inesperado ao preparar mint.",
+    };
   }
 }
