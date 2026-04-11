@@ -2,7 +2,7 @@ import React from 'react';
 import { CheckCircle, BarChart } from 'lucide-react';
 
 export const Sidebar = ({ setView, profileImg }) => (
-  <div className="sticky top-24 space-y-6">
+  <div className="sticky top-24 space-y-6 text-left">
     <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
       <div className="flex items-center gap-4 mb-6">
         <div className="relative">
@@ -18,14 +18,13 @@ export const Sidebar = ({ setView, profileImg }) => (
           <p className="text-[10px] text-gray-400 font-bold uppercase mt-1">Medicina | UFMG</p>
         </div>
       </div>
-      <p className="text-xs text-gray-600 italic leading-relaxed text-center">"Ajudando você a conquistar a sua vaga. Criador da Mentoria Aprovado."</p>
+      <p className="text-xs text-gray-600 italic leading-relaxed">"Ajudando você a conquistar a sua vaga. Criador da Mentoria Aprovado."</p>
     </div>
     <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
       <h3 className="font-black text-[10px] text-gray-400 mb-4 uppercase tracking-[0.2em] flex items-center gap-2"><BarChart size={12} /> Mais Lidas</h3>
       <div className="space-y-4 text-xs font-bold text-gray-800">
-        <p onClick={() => setView(1)} className="cursor-pointer hover:text-blue-600 line-clamp-2 italic hover:font-black transition-colors">1. O fenômeno @euvouserdoutor na UFMG</p>
-        <p className="opacity-50">2. Estrutura de Redação Nota 920+</p>
-        <p className="opacity-50">3. Como usar Flashcards no ENEM</p>
+        <p onClick={() => setView(1)} className="cursor-pointer hover:text-blue-600 line-clamp-2 italic uppercase">1. O fenômeno @euvouserdoutor na UFMG</p>
+        <p onClick={() => setView('flashcards_info')} className="cursor-pointer hover:text-blue-600">2. A ciência por trás dos Flashcards</p>
       </div>
     </div>
   </div>

@@ -6,19 +6,21 @@ import { News } from './pages/News';
 import { Materials } from './pages/Materials';
 import { Mentorship } from './pages/Mentorship';
 import { Article } from './pages/Article';
+import { FlashcardsPage } from './pages/FlashcardsPage';
 
 const App = () => {
   const [view, setView] = useState('home');
   const telegram = "https://t.me/Euvouserdoutor";
-  const profileImg = "https://i.imgur.com/w9OO6uT.jpeg";
+  const profileImg = "https://i.imgur.com/9QVE0X7.jpeg";
 
   const renderContent = () => {
     switch(view) {
       case 'home': return <Home setView={setView} profileImg={profileImg} />;
-      case 'news': return <News setView={setView} profileImg={profileImg} />;
-      case 'materials': return <Materials telegram={telegram} />;
+      case 'news': return <News setView={setView} profileImg={profileImg} telegram={telegram} />;
+      case 'materials': return <Materials setView={setView} telegram={telegram} />;
       case 'mentorship': return <Mentorship telegram={telegram} />;
-      case 1: return <Article setView={setView} profileImg={profileImg} />;
+      case 'flashcards_info': return <FlashcardsPage setView={setView} profileImg={profileImg} telegram={telegram} />;
+      case 1: return <Article setView={setView} profileImg={profileImg} telegram={telegram} />;
       default: return <Home setView={setView} profileImg={profileImg} />;
     }
   };
