@@ -1,9 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.bg-medical-gradient {
-  background: radial-gradient(circle at top right, #11294D, #0A192F);
-}
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.dropcap::first-letter { @apply text-5xl font-black mr-3 float-left text-[#2E70CE] mt-2; }
