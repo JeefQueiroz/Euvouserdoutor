@@ -2,6 +2,7 @@ import React from 'react';
 import { Download, CheckSquare, Percent, Zap, Target, Users, Quote } from 'lucide-react';
 
 export const Home = ({ setView, profileImg }) => {
+  const homeImg = "https://i.imgur.com/P8oXDVC.jpg";
   return (
     <div className="animate-in text-left">
       <section className="relative w-full overflow-hidden bg-[#0A192F] text-white pt-20 pb-40 md:pt-32 md:pb-56">
@@ -30,7 +31,7 @@ export const Home = ({ setView, profileImg }) => {
           </div>
           <div className="md:w-1/2 hidden md:block">
             <div className="w-full h-[540px] rounded-[40px] overflow-hidden border-8 border-white/5 shadow-2xl relative">
-              <img src={profileImg} alt="Jeff" className="w-full h-full object-cover object-top" />
+              <img src={homeImg} alt="Jeff" className="w-full h-full object-cover object-top" />
               <div className="absolute bottom-8 left-6 right-6 bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20">
                  <div className="space-y-3">
                     <div className="flex items-center gap-3">
