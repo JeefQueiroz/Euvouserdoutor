@@ -6,6 +6,7 @@ import { News } from './pages/News';
 import { Materials } from './pages/Materials';
 import { Mentorship } from './pages/Mentorship';
 import { FlashcardsPage } from './pages/FlashcardsPage';
+import { Article } from './pages/Article';
 
 export default function App() {
   const [view, setView] = useState('home');
@@ -20,8 +21,9 @@ export default function App() {
       <main>
         {view === 'home' && <Home setView={setView} profileImg={profileImg} />}
         {view === 'news' && <News setView={setView} profileImg={profileImg} telegram={telegram} />}
+        {view === 'article' && <Article setView={setView} profileImg={profileImg} telegram={telegram} />}
         {view === 'materials' && <Materials setView={setView} telegram={telegram} />}
-        {view === 'mentorship' && <Mentorship setView={setView} telegram={telegram} />}
+        {view === 'mentorship' && <Mentorship setView={setView} profileImg={profileImg} telegram={telegram} />}
         {view === 'flashcards' && <FlashcardsPage setView={setView} profileImg={profileImg} telegram={telegram} />}
       </main>
       <Footer telegram={telegram} />

@@ -17,7 +17,7 @@ export const News = ({ setView, profileImg, telegram }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-8 space-y-8">
             {[
-              { title: "O fenômeno @euvouserdoutor na UFMG", cat: "Inspiração e Rotina", img: personalImg, target: 'news' },
+              { title: "O fenômeno @euvouserdoutor na UFMG", cat: "Inspiração e Rotina", img: personalImg, target: 'article' },
               { title: "A ciência por trás dos Flashcards", cat: "Técnica de Estudo", img: flashcardImg, target: 'flashcards' },
               { title: "Redação 920+: O Guia Definitivo", cat: "Estratégia Nota 1000", img: writingImg, target: 'mentorship' }
             ].map((post, i) => (
