@@ -18,15 +18,15 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#F4F7FB] font-sans selection:bg-[#2E70CE] selection:text-white text-left">
       <Header setView={setView} currentView={view} telegram={telegram} />
-      <main>
+      <main className="pt-[148px]">
         {view === 'home' && <Home setView={setView} profileImg={profileImg} />}
         {view === 'news' && <News setView={setView} profileImg={profileImg} telegram={telegram} />}
-        {view === 'article' && <Article setView={setView} profileImg={profileImg} telegram={telegram} />}
+        {view === 'article' && <Article setView={setView} profileImg={profileImg} />}
         {view === 'materials' && <Materials setView={setView} telegram={telegram} />}
-        {view === 'mentorship' && <Mentorship setView={setView} profileImg={profileImg} telegram={telegram} />}
-        {view === 'flashcards' && <FlashcardsPage setView={setView} profileImg={profileImg} telegram={telegram} />}
+        {view === 'mentorship' && <Mentorship setView={setView} telegram={telegram} />}
+        {view === 'flashcards' && <FlashcardsPage setView={setView} />}
       </main>
-      <Footer telegram={telegram} />
+      <Footer setView={setView} telegram={telegram} />
     </div>
   );
 }
