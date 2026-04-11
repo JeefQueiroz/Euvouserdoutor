@@ -7,6 +7,7 @@ import { Materials } from './pages/Materials';
 import { Mentorship } from './pages/Mentorship';
 import { Article } from './pages/Article';
 import { FlashcardsPage } from './pages/FlashcardsPage';
+import WritingPage from './pages/WritingPage';
 
 const App = () => {
   const [view, setView] = useState('home');
@@ -20,6 +21,7 @@ const App = () => {
       case 'materials': return <Materials setView={setView} telegram={telegram} />;
       case 'mentorship': return <Mentorship telegram={telegram} />;
       case 'flashcards_info': return <FlashcardsPage setView={setView} profileImg={profileImg} telegram={telegram} />;
+      case 'writing': return <WritingPage setView={setView} profileImg={profileImg} telegram={telegram} />;
       case 1: return <Article setView={setView} profileImg={profileImg} telegram={telegram} />;
       default: return <Home setView={setView} profileImg={profileImg} />;
     }
