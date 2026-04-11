@@ -1,41 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { News } from './pages/News';
 import { Materials } from './pages/Materials';
 import { Mentorship } from './pages/Mentorship';
-import { Article } from './pages/Article';
 import { FlashcardsPage } from './pages/FlashcardsPage';
-import WritingPage from './pages/WritingPage';
 
-const App = () => {
+export default function App() {
   const [view, setView] = useState('home');
   const telegram = "https://t.me/Euvouserdoutor";
   const profileImg = "https://i.imgur.com/9QVE0X7.jpeg";
 
-  const renderContent = () => {
-    switch(view) {
-      case 'home': return <Home setView={setView} profileImg={profileImg} />;
-      case 'news': return <News setView={setView} profileImg={profileImg} telegram={telegram} />;
-      case 'materials': return <Materials setView={setView} telegram={telegram} />;
-      case 'mentorship': return <Mentorship telegram={telegram} />;
-      case 'flashcards_info': return <FlashcardsPage setView={setView} profileImg={profileImg} telegram={telegram} />;
-      case 'writing': return <WritingPage setView={setView} profileImg={profileImg} telegram={telegram} />;
-      case 1: return <Article setView={setView} profileImg={profileImg} telegram={telegram} />;
-      default: return <Home setView={setView} profileImg={profileImg} />;
-    }
-  };
+  useEffect(() => { window.scrollTo(0, 0); }, [view]);
 
   return (
-    <div className="min-h-screen bg-[#F4F7FB] font-sans text-gray-900">
+    <div className="min-h-screen bg-[#F4F7FB] font-sans selection:bg-[#2E70CE] selection:text-white text-left">
       <Header setView={setView} currentView={view} telegram={telegram} />
-      <main className="min-h-[70vh]">
-        {renderContent()}
+      <main>
+        {view === 'home' && <Home setView={setView} profileImg={profileImg} />}
+        {view === 'news' && <News setView={setView} profileImg={profileImg} telegram={telegram} />}
+        {view === 'materials' && <Materials setView={setView} telegram={telegram} />}
+        {view === 'mentorship' && <Mentorship setView={setView} telegram={telegram} />}
+        {view === 'flashcards' && <FlashcardsPage setView={setView} profileImg={profileImg} telegram={telegram} />}
       </main>
       <Footer telegram={telegram} />
     </div>
   );
-};
-
-export default App;
+}
