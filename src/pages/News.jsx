@@ -17,9 +17,27 @@ export const News = ({ setView, profileImg, telegram }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-8 space-y-8">
             {[
-              { title: "O fenômeno @euvouserdoutor na UFMG", cat: "Inspiração e Rotina", img: personalImg, target: 'article' },
-              { title: "A ciência por trás dos Flashcards", cat: "Técnica de Estudo", img: flashcardImg, target: 'flashcards' },
-              { title: "Redação 920+: O Guia Definitivo", cat: "Estratégia Nota 1000", img: writingImg, target: 'mentorship' }
+              {
+                title: "O fenômeno @euvouserdoutor na UFMG",
+                subtitle: "Como Jefferson Queiroz está transformando a forma como futuros médicos se preparam para o vestibular",
+                cat: "Inspiração e Rotina",
+                img: personalImg,
+                target: 'article'
+              },
+              {
+                title: "A ciência por trás dos Flashcards",
+                subtitle: "Entenda como a repetição espaçada e a neurociência do aprendizado podem dobrar sua retenção de conteúdo",
+                cat: "Técnica de Estudo",
+                img: flashcardImg,
+                target: 'flashcards'
+              },
+              {
+                title: "Redação 920+: O Guia Definitivo",
+                subtitle: "O passo a passo que alunos da Mentoria Aprovado usam para dominar a redação do ENEM e alcançar notas acima de 900",
+                cat: "Estratégia Nota 1000",
+                img: writingImg,
+                target: 'mentorship'
+              }
             ].map((post, i) => (
               <div key={i} onClick={() => setView(post.target)} className="bg-white rounded-[40px] p-6 shadow-xl border border-gray-100 flex flex-col md:flex-row gap-8 items-center group cursor-pointer hover:scale-[1.01] transition-all">
                 <div className="w-full md:w-2/5 aspect-[4/3] overflow-hidden rounded-[30px] relative">
@@ -27,7 +45,9 @@ export const News = ({ setView, profileImg, telegram }) => {
                 </div>
                 <div className="w-full md:w-3/5 text-left">
                   <span className="text-blue-600 font-black text-[10px] uppercase tracking-[0.2em]">{post.cat}</span>
-                  <h3 className="text-2xl font-black text-[#0A192F] uppercase italic mt-2 mb-4 group-hover:text-blue-600">{post.title}</h3>
+                  <h3 className="text-2xl font-black text-[#0A192F] uppercase italic mt-2 mb-2 group-hover:text-blue-600">{post.title}</h3>
+                  {/* Linha fina */}
+                  <p className="text-sm text-gray-500 font-medium italic mb-4 leading-snug">{post.subtitle}</p>
                   <button className="flex items-center gap-2 text-[#0A192F] font-black text-[10px] uppercase tracking-widest">Ler Agora <ArrowRight size={14} className="text-blue-600" /></button>
                 </div>
               </div>
