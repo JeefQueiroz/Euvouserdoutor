@@ -17,8 +17,8 @@ export const Materials = ({ setView, telegram }) => (
            Baixado por +15.000 alunos
          </div>
          <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
-           <span className="text-white/50">Biblioteca </span>
-           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5CE1E6] to-white">Exclusiva</span>
+           <span className="text-white">Biblioteca </span>
+           <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Exclusiva</span>
          </h1>
          <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed max-w-2xl font-medium">
            Material restrito de alto impacto. <strong className="text-white">Arquivos que garantiram a aprovação</strong> na UFMG, liberados por tempo limitado.

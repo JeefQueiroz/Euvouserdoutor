@@ -12,8 +12,8 @@ export const FlashcardsPage = ({ setView, profileImg, telegram }) => (
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center gap-6">
         <button onClick={() => setView('materials')} className="flex items-center gap-2 text-[10px] font-black text-blue-200 uppercase bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition-all mb-2"><ArrowLeft size={14}/> Voltar</button>
         <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
-          <span className="text-white/50">Flashcards </span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5CE1E6] to-white">Doutor</span>
+          <span className="text-white">Flashcards </span>
+          <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Doutor</span>
         </h1>
         <p className="text-lg md:text-xl text-blue-100 opacity-90 max-w-2xl font-light">
           A união perfeita entre <strong className="text-white">Active Recall</strong> e <strong className="text-white">Repetição Espaçada</strong>. 

@@ -15,8 +15,8 @@ export const Mentorship = ({ setView, profileImg, telegram }) => (
           Apenas 7 Vagas Restantes
         </div>
         <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
-          <span className="text-white/50">Mentoria </span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5CE1E6] to-white">Aprovado</span>
+          <span className="text-white">Mentoria </span>
+          <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Aprovado</span>
         </h1>
         <p className="text-lg md:text-xl text-blue-100 font-medium leading-relaxed max-w-2xl">
           O sistema de elite, fechado e exclusivo para futuros médicos da UFMG. Estratégia letal, estudo ativo e acompanhamento com quem já trilhou o caminho.
