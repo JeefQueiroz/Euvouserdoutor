@@ -20,14 +20,6 @@ export const Sidebar = ({ setView }) => {
         </div>
         <p className="text-xs text-gray-600 italic leading-relaxed">"Ajudando você a conquistar a sua vaga. Criador da Mentoria Aprovado."</p>
       </div>
-      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-        <h3 className="font-black text-[10px] text-gray-400 mb-4 uppercase tracking-[0.2em] flex items-center gap-2"><BarChart size={12} /> Mais Lidas</h3>
-        <div className="space-y-4 text-xs font-bold text-gray-800 uppercase">
-          <p onClick={() => setView('news')} className="cursor-pointer hover:text-blue-600 italic">1. O fenômeno @euvouserdoutor</p>
-          <p onClick={() => setView('flashcards')} className="cursor-pointer hover:text-blue-600 italic">2. A ciência dos Flashcards</p>
-          <p onClick={() => setView('mentorship')} className="cursor-pointer hover:text-blue-600 italic">3. O Caminho da UFMG</p>
-        </div>
-      </div>
     </div>
   );
 };

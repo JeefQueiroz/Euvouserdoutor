@@ -72,7 +72,7 @@ const WritingPage = ({ setView, profileImg, telegram }) => {
           <button onClick={() => handleSetView('materials')} className="flex items-center gap-2 text-[10px] font-black text-blue-200 hover:text-white transition-colors mb-8 uppercase tracking-[0.2em] bg-white/10 px-4 py-2 rounded-full w-fit backdrop-blur-md">
             <ArrowLeft size={14} /> Voltar para Materiais
           </button>
-          <div className="inline-flex items-center gap-2 bg-green-600 text-white text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-widest mb-6">MÉTODO NOTA 1000</div>
+          <div className="inline-flex items-center gap-2 bg-[#A02070] text-white text-[10px] font-black px-3 py-1.5 rounded-md uppercase tracking-widest mb-6 shadow-lg shadow-[#A02070]/20">MÉTODO NOTA 1000</div>
           <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter italic uppercase">Redação Premium</h1>
           <p className="text-lg md:text-xl text-blue-100 font-light leading-relaxed max-w-3xl opacity-90">
             A redação do ENEM é o atalho para aprovação em Medicina. Domine as 5 competências e alcance nota 1000.
@@ -135,13 +135,13 @@ const WritingPage = ({ setView, profileImg, telegram }) => {
             <section>
               <h2 className="text-3xl font-black text-[#0A192F] uppercase tracking-tight mb-8">Proposta Nota 1000</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-                <div className="bg-red-50 p-6 rounded-3xl border border-red-100">
+                <div className="bg-red-50 p-6 rounded-3xl border border-red-100 hover:shadow-md transition-shadow">
                   <p className="text-red-800 font-bold text-[10px] uppercase tracking-widest mb-2 flex items-center gap-2">❌ Proposta Fraca</p>
-                  <p className="text-sm text-red-700 font-medium">"O governo deve investir em educação."</p>
+                  <p className="text-sm text-red-700 font-medium leading-relaxed">"O governo deve investir em educação."</p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-3xl border border-green-100">
-                  <p className="text-green-800 font-bold text-[10px] uppercase tracking-widest mb-2 flex items-center gap-2">✅ Proposta Elite</p>
-                  <p className="text-sm text-green-900 font-medium">"O Ministério deve implementar, por meio de políticas de formação continuada, programas de letramento digital..."</p>
+                <div className="bg-[#F4F7FB] p-6 rounded-3xl border border-[#2E70CE]/20 hover:border-[#2E70CE]/50 hover:shadow-md transition-all">
+                  <p className="text-[#2E70CE] font-bold text-[10px] uppercase tracking-widest mb-2 flex items-center gap-2">✅ Proposta Elite</p>
+                  <p className="text-sm text-[#0A192F] font-medium leading-relaxed">"O Ministério deve implementar, por meio de políticas de formação continuada, programas de letramento digital..."</p>
                 </div>
               </div>
             </section>
@@ -206,7 +206,7 @@ const WritingPage = ({ setView, profileImg, telegram }) => {
                 <p className="opacity-90 leading-relaxed text-lg mb-8">
                   Flashcards de vocabulário + simulados semanais elevaram a média dos alunos para <strong>920 pontos</strong>.
                 </p>
-                <a href={tgLink} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#2E70CE] hover:bg-blue-600 text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all">
+                <a href={tgLink} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#5CE1E6] hover:bg-[#4bcad0] text-[#0A192F] px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest shadow-[0_10px_30px_rgba(92,225,230,0.3)] hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(92,225,230,0.5)] transition-all duration-300">
                   Garantir vaga na Mentoria <PenTool size={20} />
                 </a>
               </div>
