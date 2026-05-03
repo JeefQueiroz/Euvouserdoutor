@@ -67,15 +67,25 @@ const WritingPage = ({ setView, profileImg, telegram }) => {
 
   return (
     <div className="animate-in pb-20 text-left bg-[#F4F7FB] min-h-screen">
-      <div className="bg-gradient-to-r from-[#0A192F] to-[#2E70CE] text-white pt-12 pb-24 px-6 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto relative z-10">
-          <button onClick={() => handleSetView('materials')} className="flex items-center gap-2 text-[10px] font-black text-blue-200 hover:text-white transition-colors mb-8 uppercase tracking-[0.2em] bg-white/10 px-4 py-2 rounded-full w-fit backdrop-blur-md">
+      <div className="bg-[#0A192F] text-white pt-12 pb-20 px-6 relative overflow-hidden">
+        {/* Glow orbs — padrão Deep Blue */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#2E70CE]/20 rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4 z-0"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#5CE1E6]/10 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2 z-0"></div>
+
+        <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center gap-6">
+          <button onClick={() => handleSetView('materials')} className="inline-flex items-center gap-2 text-[10px] font-black text-blue-200 uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 hover:border-white/20 transition-all mb-2">
             <ArrowLeft size={14} /> Voltar para Materiais
           </button>
-          <div className="inline-flex items-center gap-2 bg-[#A02070] text-white text-[10px] font-black px-3 py-1.5 rounded-md uppercase tracking-widest mb-6 shadow-lg shadow-[#A02070]/20">MÉTODO NOTA 1000</div>
-          <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter italic uppercase">Redação Premium</h1>
-          <p className="text-lg md:text-xl text-blue-100 font-light leading-relaxed max-w-3xl opacity-90">
-            A redação do ENEM é o atalho para aprovação em Medicina. Domine as 5 competências e alcance nota 1000.
+          <div className="inline-flex items-center justify-center gap-2 bg-[#A02070]/20 border border-[#A02070]/50 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-[0_0_15px_rgba(160,32,112,0.3)]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#A02070] animate-pulse"></span>
+            Método Nota 1000
+          </div>
+          <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
+            <span className="text-white">Redação </span>
+            <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Premium</span>
+          </h1>
+          <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed max-w-2xl font-medium">
+            A redação do ENEM é o atalho para aprovação em Medicina. Domine as 5 competências e alcance <strong className="text-white">nota 1000</strong>.
           </p>
         </div>
       </div>

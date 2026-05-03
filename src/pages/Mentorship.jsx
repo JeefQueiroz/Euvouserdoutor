@@ -14,7 +14,7 @@ export const Mentorship = ({ setView, profileImg, telegram }) => (
           <span className="w-2 h-2 rounded-full bg-[#A02070] animate-pulse"></span>
           Apenas 7 Vagas Restantes
         </div>
-        <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none whitespace-nowrap">
           <span className="text-white">Mentoria </span>
           <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Aprovado</span>
         </h1>

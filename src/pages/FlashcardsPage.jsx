@@ -11,7 +11,7 @@ export const FlashcardsPage = ({ setView, profileImg, telegram }) => (
       
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center gap-6">
         <button onClick={() => setView('materials')} className="flex items-center gap-2 text-[10px] font-black text-blue-200 uppercase bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition-all mb-2"><ArrowLeft size={14}/> Voltar</button>
-        <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none whitespace-nowrap">
           <span className="text-white">Flashcards </span>
           <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Doutor</span>
         </h1>

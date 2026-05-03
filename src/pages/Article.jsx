@@ -20,7 +20,7 @@ export const Article = ({ setView, profileImg, telegram }) => {
           </div>
 
           {/* MANCHETE */}
-          <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none whitespace-nowrap mb-6">
             <span className="text-white">O Fenômeno </span>
             <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">@euvouserdoutor</span>
           </h1>
