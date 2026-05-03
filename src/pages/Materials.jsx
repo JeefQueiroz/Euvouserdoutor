@@ -16,9 +16,8 @@ export const Materials = ({ setView, telegram }) => (
            <span className="w-1.5 h-1.5 rounded-full bg-[#A02070] animate-ping"></span> 
            Baixado por +15.000 alunos
          </div>
-         <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
-           <span className="text-white">Biblioteca </span>
-           <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Exclusiva</span>
+         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none whitespace-nowrap">
+           <span className="text-white">Biblioteca </span><span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Exclusiva</span>
          </h1>
          <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed max-w-2xl font-medium">
            Material restrito de alto impacto. <strong className="text-white">Arquivos que garantiram a aprovação</strong> na UFMG, liberados por tempo limitado.
@@ -27,14 +26,13 @@ export const Materials = ({ setView, telegram }) => (
     </div>
     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 -mt-16 relative z-20">
       <div className="lg:col-span-8 space-y-6">
-          <div className="bg-gradient-to-r from-[#A02070]/5 to-transparent border border-[#A02070]/20 rounded-3xl p-5 shadow-sm flex items-center gap-4 relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-1 h-full bg-[#A02070]"></div>
+          <div className="bg-white border-l-4 border-[#A02070] rounded-2xl p-5 shadow-md flex items-center gap-4">
              <div className="w-10 h-10 bg-[#A02070]/10 text-[#A02070] rounded-full flex items-center justify-center shrink-0">
                <AlertCircle size={20} strokeWidth={2.5} className="animate-pulse" />
              </div>
              <div>
                <p className="text-[#A02070] font-black uppercase text-xs tracking-widest">Baixe Agora Mesmo</p>
-               <p className="text-gray-600 text-xs font-medium mt-1">Os links de download para os manuais gratuitos expiram a qualquer momento.</p>
+               <p className="text-gray-500 text-xs font-medium mt-1">Os links de download para os manuais gratuitos expiram a qualquer momento.</p>
              </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
