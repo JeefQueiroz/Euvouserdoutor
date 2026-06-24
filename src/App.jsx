@@ -8,6 +8,7 @@ import { Mentorship } from './pages/Mentorship';
 import { FlashcardsPage } from './pages/FlashcardsPage';
 import { Article } from './pages/Article';
 import { BlogPost } from './pages/BlogPost';
+import { GoogleAnalytics } from './components/analytics/GoogleAnalytics';
 
 export default function App() {
   const [view, setView] = useState('home');
@@ -18,6 +19,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#F4F7FB] font-sans selection:bg-[#2E70CE] selection:text-white text-left">
+      <GoogleAnalytics />
       <Header setView={setView} currentView={view} telegram={telegram} />
       <main>
         {view === 'home' && <Home setView={setView} profileImg={profileImg} />}

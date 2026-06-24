@@ -2,7 +2,7 @@ import React from 'react';
 import { Download, CheckSquare, Percent, Zap, Target, Users, Quote, Youtube, Instagram, Send, Check, Stethoscope, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const Home = ({ setView, profileImg }) => {
-  const homeImg = "https://i.imgur.com/P8oXDVC.jpg";
+  const homeImg = "/jeff-queiroz-eu-vou-ser-doutor.png";
   return (
     <div className="animate-in text-left bg-[#F0F4F8]">
       <section className="relative w-full overflow-hidden bg-[#0A192F] text-white pt-20 pb-40 md:pt-32 md:pb-56">
@@ -50,7 +50,7 @@ export const Home = ({ setView, profileImg }) => {
             {/* Imagem Principal */}
             <div className="w-full h-[600px] rounded-[40px] overflow-hidden border-8 border-white/10 shadow-[0_0_50px_rgba(46,112,206,0.3)] relative z-10 group">
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/20 to-transparent z-10 opacity-60"></div>
-              <img src={homeImg} alt="Jeff Queiroz" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-1000" />
+              <img src={homeImg} alt="Ilustração de Jeff Queiroz como médico" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-1000" />
             </div>
           </div>
         </div>
@@ -296,5 +296,4 @@ export const Home = ({ setView, profileImg }) => {
     </div>
   );
 };
-
 
