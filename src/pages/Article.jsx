@@ -1,116 +1,115 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
+import { institutional } from '../institutional';
 
-export const Article = ({ setView, profileImg, telegram }) => {
-  return (
-    <div className="animate-in pb-20 text-left bg-[#F4F7FB] min-h-screen">
-      <div className="bg-[#0A192F] text-white pt-12 pb-24 px-6 relative overflow-hidden text-left">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#2E70CE]/20 rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4 z-0"></div>
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#5CE1E6]/10 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2 z-0"></div>
+export const Article = ({ setView, profileImg }) => (
+  <div className="animate-in pb-20 text-left bg-[#F4F7FB] min-h-screen">
+    <div className="bg-[#0A192F] text-white pt-14 pb-24 px-6 relative overflow-hidden text-left">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(46,112,206,0.28),transparent_34%)]" />
 
-        <div className="max-w-4xl mx-auto relative z-10">
-          <button onClick={() => setView('news')} className="inline-flex items-center gap-2 text-[10px] font-black text-blue-200 uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 hover:border-white/20 transition-all mb-8">
-            <ArrowLeft size={14}/> Voltar
-          </button>
+      <div className="max-w-7xl mx-auto relative z-10">
+        <button
+          type="button"
+          onClick={() => setView('news')}
+          className="inline-flex items-center gap-2 text-[10px] font-black text-blue-200 uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-all mb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        >
+          <ArrowLeft size={14} aria-hidden="true" /> Voltar
+        </button>
 
-          {/* Categoria */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6 block w-fit">
-            Inspiração e Rotina
+        <div className="max-w-4xl">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
+            Técnicas de estudo
           </div>
-
-          {/* MANCHETE */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none whitespace-nowrap mb-6">
-            <span className="text-white">O Fenômeno </span>
-            <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">@euvouserdoutor</span>
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6">
+            Como estudar para Medicina com método e constância
           </h1>
-
-          {/* LINHA FINA */}
-          <p className="text-lg md:text-xl text-blue-100/80 font-medium leading-relaxed max-w-2xl mb-6">
-            Como Jefferson Queiroz está transformando a forma como futuros médicos se preparam para o vestibular
+          <p className="text-lg md:text-xl text-blue-100/85 font-medium leading-relaxed max-w-3xl mb-6">
+            Um guia editorial sobre rotina, revisão e organização para transformar esforço em processo de estudo.
           </p>
-
-          {/* CRÉDITO E DATA */}
-          <div className="flex flex-wrap items-center gap-2 text-blue-300/60 text-[11px] font-bold uppercase tracking-widest border-t border-white/10 pt-6">
+          <div className="flex flex-wrap items-center gap-2 text-blue-300/70 text-[11px] font-bold uppercase tracking-widest border-t border-white/10 pt-6">
             <span>Por Jeff Queiroz</span>
-            <span>—</span>
-            <span>Eu Vou Ser Doutor</span>
             <span>|</span>
-            <span>12/04/2026</span>
+            <span>EuVouSerDoutor</span>
+            <span>|</span>
+            <span>Atualizado em 2026</span>
           </div>
         </div>
       </div>
+    </div>
 
-      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-12 -mt-12 relative z-20">
-        <div className="lg:w-2/3">
-          <div className="bg-white rounded-[40px] p-8 md:p-16 shadow-2xl border border-gray-100">
-            <div className="prose max-w-none text-gray-700 leading-relaxed space-y-8">
+    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 -mt-12 relative z-20">
+      <article className="lg:col-span-8 xl:col-span-9">
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_24px_60px_rgba(10,25,47,0.10)] border border-[#DDE6F2]">
+          <section className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
+            <div className="md:col-span-4">
+              <img src={profileImg} alt="Jeff Queiroz" className="w-full h-auto rounded-3xl shadow-sm object-cover aspect-[4/5] border border-[#DDE6F2]" />
+            </div>
+            <div className="md:col-span-8 space-y-5 text-gray-600 leading-relaxed text-lg">
+              <p className="text-xl md:text-2xl text-[#0A192F] font-bold leading-relaxed border-l-4 border-[#2E70CE] pl-6">
+                Estudar para Medicina exige método, constância e capacidade de revisar o próprio processo sem depender de fórmulas prontas.
+              </p>
+              <p>
+                O EuVouSerDoutor reúne conteúdos educacionais, materiais de apoio e ideias de organização para estudantes e vestibulandos que querem mais clareza na rotina.
+              </p>
+            </div>
+          </section>
 
-              {/* LIDE COM IMAGEM */}
-              <section className="flex flex-col md:flex-row gap-8 items-start mb-12">
-                <div className="w-full md:w-1/3 flex-shrink-0">
-                  <img src={profileImg} alt="Jeff Queiroz" className="w-full h-auto rounded-3xl shadow-xl object-cover aspect-[4/5] border border-gray-100" />
-                </div>
-                <div className="w-full md:w-2/3 space-y-6">
-                  <p className="text-xl md:text-2xl text-gray-800 italic font-medium leading-relaxed border-l-4 border-blue-500 pl-6">
-                    Jeff Queiroz, estudante de Medicina na UFMG e criador do perfil @euvouserdoutor, construiu em menos de 5 anos uma comunidade de mais de 135 mil vestibulandos que sonham com o jaleco branco.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed text-lg">
-                    Com conteúdo gratuito, estudo ativo baseado em ciências do aprendizado e materiais de apoio, ele contribui para ampliar o acesso a informações sobre a preparação para Medicina.
-                  </p>
-                  
-                  <div className="pt-4">
-                    <h2 className="text-2xl font-black text-[#0A192F] uppercase mb-4">A Realidade do Curso</h2>
-                    <p className="text-gray-600 leading-relaxed">O que diferencia Jeff é sua abordagem transparente. Ele não vende falsas esperanças — mostra a realidade crua e inspiradora do curso de Medicina na UFMG. Desde os primeiros dias de aula até as complexidades do estudo científico, sua narrativa cativa porque é verdadeira.</p>
-                  </div>
-                </div>
-              </section>
+          <div className="space-y-10 text-gray-600 leading-relaxed text-lg">
+            <section>
+              <h2 className="text-3xl font-black text-[#0A192F] mb-4">Organização antes de volume</h2>
+              <p>
+                Uma rotina eficiente não depende apenas de horas acumuladas. O ponto central é saber o que estudar, quando revisar e como transformar erros em decisões para a próxima semana.
+              </p>
+            </section>
 
-              <section>
-                <h2 className="text-3xl font-black text-[#0A192F] uppercase mb-4">Mentoria Aprovado: Um Ecossistema Completo</h2>
-                <p>A Mentoria Aprovado vai além de simples orientações. Integra:</p>
-                <ul className="space-y-3 mt-4 ml-4">
-                  <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Cronogramas de 30 semanas focados nos pesos do ENEM</span></li>
-                  <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Flashcards com repetição espaçada inspirada em princípios da neurociência</span></li>
-                  <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Comunidade de estudantes com o mesmo objetivo</span></li>
-                  <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Suporte de alguém que PASSOU por isso</span></li>
-                </ul>
-              </section>
+            <section>
+              <h2 className="text-3xl font-black text-[#0A192F] mb-4">Pilares de uma rotina mais clara</h2>
+              <ul className="space-y-3 mt-4">
+                {[
+                  'Planejamento semanal com prioridades visíveis.',
+                  'Revisão ativa para diminuir releitura passiva.',
+                  'Registro de erros depois de exercícios e simulados.',
+                  'Ajustes periódicos conforme desempenho e disponibilidade real.',
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <CheckCircle2 className="text-[#A02070] shrink-0 mt-1" size={18} aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
 
-              <section>
-                <h2 className="text-3xl font-black text-[#0A192F] uppercase mb-4">Os Números Não Mentem</h2>
-                <p>Alunos que acompanham a Mentoria Aprovado usam metas, revisão e análise de desempenho para estudar com mais consistência. A proposta é transformar esforço em rotina organizada.</p>
-              </section>
+            <section>
+              <h2 className="text-3xl font-black text-[#0A192F] mb-4">Mentoria como acompanhamento educacional</h2>
+              <p>
+                A mentoria do projeto é apresentada como acompanhamento de organização, rotina e revisão. Ela não garante resultado e depende de fatores como base prévia, tempo disponível, constância e execução individual.
+              </p>
+            </section>
 
-              <section>
-                <h2 className="text-3xl font-black text-[#0A192F] uppercase mb-4">Por Que Funciona?</h2>
-                <p>A diferença está na abordagem. Enquanto a maioria dos cursos oferece conteúdo genérico, Jeff personifica a jornada. Ele entende as dificuldades porque as viveu. E isso muda tudo.</p>
-                <p className="mt-4">O fenômeno @euvouserdoutor na UFMG não é sobre um criador — é sobre uma comunidade de futuros médicos que acreditam que é possível. E que estão dispostos a fazer o trabalho para chegar lá.</p>
-              </section>
+            <div className="bg-blue-50 border border-blue-100 p-6 rounded-3xl">
+              <p className="text-[#0A192F] font-medium">{institutional.medicalNotice}</p>
+            </div>
 
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-8 rounded-lg mt-12">
-                <p className="text-gray-700 italic font-bold">"Democratizar o acesso à Medicina não é um slogan. É a missão que move cada decisão na Mentoria Aprovado."</p>
-              </div>
-
-              <div className="bg-gradient-to-r from-[#0A192F] to-[#2E70CE] rounded-[30px] p-8 md:p-12 mt-12 text-white text-center shadow-2xl relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                <div className="relative z-10">
-                  <p className="text-2xl font-black uppercase mb-4 tracking-tight">Quer entrar em Medicina?</p>
-                  <p className="text-blue-100 text-base mb-8 max-w-lg mx-auto">Acesse o Guia de Cronograma para Medicina e monte sua estratégia de estudo para o ENEM agora mesmo.</p>
-                  <button
-                    onClick={() => setView('mentorship')}
-                    className="inline-flex items-center gap-3 bg-[#5CE1E6] text-[#0A192F] font-black text-sm uppercase tracking-widest px-8 py-4 rounded-2xl hover:bg-[#4bcad0] hover:-translate-y-1 transition-all shadow-[0_10px_30px_rgba(92,225,230,0.3)] hover:shadow-[0_15px_40px_rgba(92,225,230,0.5)]"
-                  >
-                    Conhecer a Mentoria Aprovado <ArrowRight size={18} strokeWidth={2.5} />
-                  </button>
-                </div>
-              </div>
-
+            <div className="bg-[#0A192F] rounded-3xl p-8 md:p-10 text-white">
+              <p className="text-2xl font-black mb-4 tracking-tight">Quer organizar melhor sua preparação?</p>
+              <p className="text-blue-100 text-base mb-8 max-w-2xl">
+                Conheça os materiais e a mentoria educacional do EuVouSerDoutor pelos canais oficiais.
+              </p>
+              <button
+                type="button"
+                onClick={() => setView('mentorship')}
+                className="inline-flex items-center gap-3 bg-[#5CE1E6] text-[#0A192F] font-black text-sm uppercase tracking-widest px-6 py-4 rounded-full hover:bg-white active:scale-[0.98] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Conhecer a mentoria <ArrowRight size={18} aria-hidden="true" />
+              </button>
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3"><Sidebar setView={setView} profileImg={profileImg} /></div>
+      </article>
+      <div className="lg:col-span-4 xl:col-span-3">
+        <Sidebar setView={setView} />
       </div>
     </div>
-  );
-};
+  </div>
+);

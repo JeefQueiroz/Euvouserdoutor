@@ -1,117 +1,192 @@
 import React from 'react';
-import { Trophy, Calendar, Zap, PenTool, ShieldCheck, AlertCircle, Clock, Target, Lock } from 'lucide-react';
+import { ArrowRight, Calendar, CheckCircle2, Clock, HelpCircle, Layers, MessageCircle, PenTool, ShieldCheck, Target, Users } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
+import { institutional } from '../institutional';
 
-export const Mentorship = ({ setView, profileImg, telegram }) => (
-  <div className="pb-20 bg-[#F4F7FB] min-h-screen text-left animate-in">
-    {/* Hero FOMO */}
-    <div className="bg-[#0A192F] text-white pt-12 pb-20 px-6 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#2E70CE]/20 rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4 z-0"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#5CE1E6]/10 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2 z-0"></div>
-      
-      <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center gap-6">
-        <div className="inline-flex items-center justify-center gap-2 bg-[#A02070]/20 border border-[#A02070]/50 text-[#F0F4F8] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-[0_0_15px_rgba(160,32,112,0.4)]">
-          <span className="w-2 h-2 rounded-full bg-[#A02070] animate-pulse"></span>
-          Acompanhamento em turma limitada
-        </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-none whitespace-nowrap">
-          <span className="text-white">Mentoria </span>
-          <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Aprovado</span>
-        </h1>
-        <p className="text-lg md:text-xl text-blue-100 font-medium leading-relaxed max-w-2xl">
-          Um acompanhamento organizado para futuros estudantes de Medicina, com estudo ativo, rotina e troca de experiências com quem já trilhou esse caminho.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-2">
-          <a href={telegram} target="_blank" rel="noreferrer" className="bg-[#A02070] hover:bg-[#8A1B60] text-white px-8 py-5 rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(160,32,112,0.6)] hover:shadow-[0_15px_40px_-10px_rgba(160,32,112,0.8)] hover:-translate-y-1 flex items-center justify-center gap-2">
-            Conhecer a Comunidade <Lock size={16}/>
-          </a>
-        </div>
-      </div>
-    </div>
+export const Mentorship = ({ setView }) => {
+  const sections = [
+    {
+      icon: Users,
+      title: 'Para quem é',
+      items: [
+        'Vestibulandos que precisam organizar rotina e prioridades.',
+        'Estudantes que querem revisar com mais constância.',
+        'Pessoas que buscam acompanhamento educacional sem depender de improviso.',
+      ],
+    },
+    {
+      icon: Target,
+      title: 'Dores que resolve',
+      items: [
+        'Excesso de materiais sem ordem clara.',
+        'Dificuldade para manter revisão semanal.',
+        'Falta de critério para transformar erros em plano de estudo.',
+      ],
+    },
+    {
+      icon: ShieldCheck,
+      title: 'O que está incluso',
+      items: [
+        'Organização de rotina e revisão.',
+        'Direcionamento educacional para estudo ativo.',
+        'Acompanhamento conforme disponibilidade de agenda.',
+      ],
+    },
+  ];
 
-    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 -mt-16 relative z-20">
-      <div className="lg:col-span-8 space-y-10">
-        
-        {/* FOMO Banner alert */}
-        <div className="bg-red-50 border border-red-200 rounded-3xl p-6 flex flex-col sm:flex-row items-center gap-6 shadow-lg relative overflow-hidden">
-           <div className="absolute top-0 left-0 w-2 h-full bg-red-500"></div>
-           <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center shrink-0">
-             <Clock size={24} strokeWidth={2.5} className="animate-pulse" />
-           </div>
-           <div>
-             <h3 className="text-red-800 font-black uppercase tracking-tight text-lg mb-1">Acompanhamento com vagas limitadas</h3>
-             <p className="text-red-700/80 text-sm font-medium">Para manter organização e qualidade de acompanhamento, as turmas podem ter limite de participantes. As informações atualizadas ficam nos canais oficiais.</p>
-           </div>
-        </div>
+  const faq = [
+    {
+      question: 'A mentoria garante aprovação?',
+      answer:
+        'Não. A mentoria oferece organização, estratégia e acompanhamento educacional, mas o resultado depende de múltiplos fatores, incluindo constância, base prévia, tempo disponível e execução individual.',
+    },
+    {
+      question: 'É orientação médica?',
+      answer:
+        'Não. O conteúdo é educacional e acadêmico. Não substitui consulta médica, diagnóstico, tratamento ou orientação profissional individualizada.',
+    },
+  ];
 
-        {/* Método */}
-        <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-xl border border-gray-100">
-          <h2 className="text-3xl font-black text-[#0A192F] uppercase tracking-tight flex items-center gap-3 mb-8 italic"><ShieldCheck className="text-[#2E70CE]" size={32}/> Método de estudo</h2>
-          <p className="text-gray-600 leading-relaxed mb-10 text-lg">A preparacao fica mais clara quando teoria, revisao e rotina trabalham juntas. O foco aqui e organizar prioridades, acompanhar desempenho e transformar estudo em processo consistente.</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[#F4F7FB] p-8 rounded-[32px] border border-gray-100 hover:border-[#2E70CE]/30 transition-colors group">
-              <Calendar className="text-[#2E70CE] mb-6 group-hover:scale-110 transition-transform duration-300" size={36} strokeWidth={1.5} />
-              <h3 className="font-black uppercase text-[#0A192F] text-lg">Cronograma de 30 semanas</h3>
-              <p className="text-sm text-gray-500 mt-3 leading-relaxed">Um plano de estudos ajuda a organizar prioridades, revisar conteúdos e acompanhar a própria evolução.</p>
+  return (
+    <div className="pb-20 bg-[#F4F7FB] min-h-screen text-left animate-in">
+      <div className="bg-[#0A192F] text-white pt-16 pb-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(46,112,206,0.30),transparent_34%),radial-gradient(circle_at_10%_100%,rgba(160,32,112,0.20),transparent_30%)]" />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center justify-center gap-2 bg-[#A02070]/20 border border-[#A02070]/50 text-[#F0F4F8] px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-7">
+              <Clock size={14} aria-hidden="true" />
+              Acompanhamento com vagas limitadas por agenda
             </div>
-            <div className="bg-[#F4F7FB] p-8 rounded-[32px] border border-gray-100 hover:border-[#A02070]/30 transition-colors group">
-              <Target className="text-[#A02070] mb-6 group-hover:scale-110 transition-transform duration-300" size={36} strokeWidth={1.5} />
-              <h3 className="font-black uppercase text-[#0A192F] text-lg">Revisão com critério</h3>
-              <p className="text-sm text-gray-500 mt-3 leading-relaxed">A proposta é mapear dificuldades, revisar com constância e reduzir decisões feitas no improviso.</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Retenção */}
-        <div className="bg-[#0A192F] rounded-[40px] p-8 md:p-12 text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2E70CE]/10 to-transparent z-0"></div>
-          <div className="relative z-10">
-            <h2 className="text-3xl font-black uppercase italic mb-10 flex items-center gap-3"><Trophy className="text-yellow-400" size={32}/> Revisão e consistência</h2>
-            <p className="text-blue-100 mb-10 leading-relaxed">Mais importante do que acumular horas é estudar com método, revisar com frequência e acompanhar o próprio desempenho.</p>
-            
-            <div className="space-y-10">
-              <div>
-                <div className="flex justify-between items-end mb-3">
-                  <span className="text-xs uppercase font-bold text-gray-400 tracking-widest">Estudo sem revisão estruturada</span>
-                  <span className="text-xl font-black text-gray-400">Baixa retenção</span>
-                </div>
-                <div className="h-4 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div className="h-full bg-gray-500 w-[30%] rounded-full"></div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-end mb-3">
-                  <span className="text-xs uppercase font-black text-[#5CE1E6] tracking-widest flex items-center gap-2">
-                    <Zap size={14} className="text-[#5CE1E6]"/> Estudo ativo e revisão
-                  </span>
-                  <span className="text-3xl font-black text-white">Constância</span>
-                </div>
-                <div className="h-4 w-full bg-white/10 rounded-full overflow-hidden relative shadow-[0_0_15px_rgba(92,225,230,0.2)]">
-                  <div className="absolute top-0 left-0 h-full w-full bg-white/5"></div>
-                  <div className="h-full bg-gradient-to-r from-[#2E70CE] to-[#5CE1E6] w-[70%] rounded-full relative z-10">
-                    <div className="absolute top-0 right-0 bottom-0 w-20 bg-gradient-to-l from-white/30 to-transparent"></div>
-                  </div>
-                </div>
-              </div>
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+              Mentoria EuVouSerDoutor
+            </h1>
+            <p className="text-lg md:text-xl text-blue-100 font-medium leading-relaxed max-w-3xl mt-5">
+              Acompanhamento educacional para organizar rotina, revisão e evolução nos estudos para Medicina.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 mt-8">
+              <button
+                type="button"
+                onClick={() => setView('contact')}
+                className="inline-flex items-center justify-center gap-3 bg-[#A02070] hover:bg-[#8A1B60] text-white px-7 py-4 rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Falar sobre mentoria <MessageCircle size={16} aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                onClick={() => setView('materials')}
+                className="inline-flex items-center justify-center gap-3 bg-white/10 text-white border border-white/15 px-7 py-4 rounded-full font-black text-xs uppercase tracking-widest transition-all hover:bg-white/15 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Acessar materiais <Layers size={16} aria-hidden="true" />
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Final CTA FOMO */}
-        <div className="bg-gradient-to-br from-white to-[#F4F7FB] border-2 border-[#2E70CE]/10 rounded-[40px] p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
-           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-[#2E70CE] to-transparent"></div>
-           <AlertCircle size={48} className="text-[#2E70CE] mx-auto mb-6" strokeWidth={1.5} />
-           <h2 className="text-3xl md:text-4xl font-black text-[#0A192F] uppercase italic tracking-tight mb-4">Organize sua rotina de estudo</h2>
-           <p className="text-gray-600 mb-10 max-w-xl mx-auto leading-relaxed">Se voce quer organizar melhor sua rotina para Medicina, entre no canal oficial e acompanhe as orientacoes disponiveis para a comunidade.</p>
-           
-           <a href={telegram} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#2E70CE] text-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest shadow-[0_10px_30px_-10px_rgba(46,112,206,0.6)] hover:shadow-[0_15px_40px_-10px_rgba(46,112,206,0.8)] hover:-translate-y-1 hover:bg-[#1f56a3] transition-all duration-300 w-full sm:w-auto">
-             Acessar canal oficial <PenTool size={18}/>
-           </a>
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 -mt-16 relative z-20">
+        <div className="lg:col-span-8 xl:col-span-9 space-y-8">
+          <div className="bg-white border border-[#DDE6F2] rounded-3xl p-6 md:p-8 shadow-[0_18px_48px_rgba(10,25,47,0.08)]">
+            <div className="flex flex-col sm:flex-row gap-5">
+              <div className="w-12 h-12 bg-[#A02070]/10 text-[#A02070] rounded-2xl flex items-center justify-center shrink-0">
+                <Clock size={24} strokeWidth={2.2} aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="text-xl font-black text-[#0A192F] mb-2">Acompanhamento com vagas limitadas por agenda.</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  Para manter organização e qualidade no acompanhamento, as turmas podem ter limite de participantes. Informações atualizadas ficam nos canais oficiais.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {sections.map((section) => (
+              <article key={section.title} className="bg-white rounded-3xl p-6 border border-[#DDE6F2] shadow-sm">
+                <section.icon className="text-[#2E70CE] mb-5" size={28} aria-hidden="true" />
+                <h2 className="text-xl font-black text-[#0A192F] mb-5">{section.title}</h2>
+                <ul className="space-y-3">
+                  {section.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
+                      <CheckCircle2 size={17} className="text-[#A02070] shrink-0 mt-0.5" aria-hidden="true" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </section>
+
+          <section className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_18px_48px_rgba(10,25,47,0.07)] border border-[#DDE6F2]">
+            <h2 className="text-3xl font-black text-[#0A192F] tracking-tight flex items-center gap-3 mb-6">
+              <ShieldCheck className="text-[#2E70CE]" size={30} aria-hidden="true" /> Método de estudo
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+              A preparação fica mais clara quando teoria, revisão, exercícios e descanso são organizados como processo. O foco é acompanhar prioridades e reduzir decisões feitas no improviso.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="bg-[#F4F7FB] p-6 rounded-3xl border border-[#DDE6F2]">
+                <Calendar className="text-[#2E70CE] mb-5" size={32} strokeWidth={1.8} aria-hidden="true" />
+                <h3 className="font-black text-[#0A192F] text-lg mb-2">Rotina com ciclos claros</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">Organização de blocos de estudo, revisão e autoavaliação para cada semana.</p>
+              </div>
+              <div className="bg-[#F4F7FB] p-6 rounded-3xl border border-[#DDE6F2]">
+                <PenTool className="text-[#A02070] mb-5" size={32} strokeWidth={1.8} aria-hidden="true" />
+                <h3 className="font-black text-[#0A192F] text-lg mb-2">Revisão com critério</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">Mapeamento de dificuldades e registro de erros para orientar a próxima etapa de estudo.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-[#0A192F] rounded-3xl p-8 md:p-10 text-white shadow-[0_24px_60px_rgba(10,25,47,0.18)]">
+            <h2 className="text-3xl font-black tracking-tight mb-7">Estudo sem método vs estudo com direção</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
+                <p className="text-gray-300 text-[10px] font-black uppercase tracking-widest mb-3">Sem método</p>
+                <p className="text-blue-100 leading-relaxed">Muitos materiais abertos, pouca revisão, dúvidas acumuladas e dificuldade para avaliar progresso.</p>
+              </div>
+              <div className="bg-white/10 border border-[#5CE1E6]/25 rounded-3xl p-6">
+                <p className="text-[#5CE1E6] text-[10px] font-black uppercase tracking-widest mb-3">Com direção</p>
+                <p className="text-blue-100 leading-relaxed">Prioridades claras, revisão recorrente, registro de erros e ajustes de rotina ao longo do ciclo.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-3xl p-8 md:p-10 border border-[#DDE6F2] shadow-sm">
+            <h2 className="text-3xl font-black text-[#0A192F] tracking-tight flex items-center gap-3 mb-8">
+              <HelpCircle className="text-[#A02070]" size={30} aria-hidden="true" /> Perguntas frequentes
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {faq.map((item) => (
+                <article key={item.question} className="bg-[#F4F7FB] rounded-3xl p-6 border border-[#DDE6F2]">
+                  <h3 className="font-black text-[#0A192F] text-lg mb-3">{item.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-gradient-to-br from-white to-[#F4F7FB] border border-[#DDE6F2] rounded-3xl p-8 md:p-10 text-center shadow-[0_18px_48px_rgba(10,25,47,0.07)]">
+            <h2 className="text-3xl md:text-4xl font-black text-[#0A192F] tracking-tight mb-4">Organize sua rotina de estudo</h2>
+            <p className="text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Para dúvidas sobre disponibilidade, formato e próximos ciclos da mentoria, fale pelos canais institucionais.
+            </p>
+            <p className="text-gray-500 text-sm mb-8 max-w-2xl mx-auto leading-relaxed">
+              {institutional.medicalNotice}
+            </p>
+            <button
+              type="button"
+              onClick={() => setView('contact')}
+              className="inline-flex items-center justify-center gap-3 bg-[#2E70CE] text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest hover:bg-[#1f56a3] hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-300 w-full sm:w-auto focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2E70CE]"
+            >
+              Falar com o projeto <ArrowRight size={18} aria-hidden="true" />
+            </button>
+          </section>
         </div>
 
+        <div className="lg:col-span-4 xl:col-span-3">
+          <Sidebar setView={setView} />
+        </div>
       </div>
-      <div className="lg:col-span-4"><Sidebar setView={setView} profileImg={profileImg} /></div>
     </div>
-  </div>
-);
+  );
+};

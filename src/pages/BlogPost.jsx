@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
-export const BlogPost = ({ setView, postId, profileImg }) => {
+export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Cronogramas Estratégicos</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Na <strong>Mentoria Aprovado</strong>, nós não apenas mandamos você aplicar o Pomodoro. Nossos <strong>Cronogramas de 30 Semanas</strong> já dividem os tópicos de Biologia, Química e Física na medida exata para encaixar em blocos de 30 a 50 minutos. 
+                Na mentoria educacional do EuVouSerDoutor, a técnica é tratada dentro de uma rotina organizada, com blocos de estudo, revisão e descanso planejados conforme a disponibilidade do estudante.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
                 Conheça a Mentoria
@@ -74,7 +74,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
       content: (
         <>
           <p className="text-xl text-gray-600 leading-relaxed font-medium mb-10 first-letter:text-7xl first-letter:font-black first-letter:text-[#0A192F] first-letter:mr-3 first-letter:float-left">
-            O maior erro do estudante tradicional é acreditar que ler um resumo várias vezes equivale a aprender. Sem revisar de forma ativa e estratégica, você perde até 70% do que estudou em apenas 24 horas.
+            Um erro comum é acreditar que ler um resumo várias vezes equivale a aprender. Revisar de forma ativa ajuda a testar lembrança, identificar lacunas e distribuir melhor o contato com o conteúdo.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -83,7 +83,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
                 <ArrowLeft size={24} />
               </div>
               <h3 className="text-xl font-black text-[#0A192F] mb-3">Estudo Passivo</h3>
-              <p className="text-gray-600">Reler, grifar e assistir videoaulas. Dá a falsa sensação de fluência, mas na hora da prova o "branco" acontece.</p>
+              <p className="text-gray-600">Reler, grifar e assistir videoaulas pode gerar sensação de fluência sem testar se a informação foi realmente recuperada.</p>
             </div>
             <div className="bg-white p-8 rounded-3xl shadow-lg border border-blue-100 hover:-translate-y-2 transition-transform relative overflow-hidden">
               <div className="absolute top-0 right-0 w-2 h-full bg-gradient-to-b from-[#5CE1E6] to-[#2E70CE]"></div>
@@ -100,7 +100,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
             A Curva do Esquecimento
           </h2>
           <p className="text-gray-700 leading-relaxed mb-12 text-lg">
-            O psicólogo Hermann Ebbinghaus descobriu que a nossa memória declina exponencialmente com o tempo. A única forma de "quebrar" essa curva e transformar a memória de curto prazo em longo prazo é revisar a matéria <em>exatamente</em> no momento em que você está prestes a esquecê-la. Isso é a Revisão Espaçada (Spaced Repetition).
+            Estudos clássicos de memória mostram que o esquecimento aumenta com o tempo quando não há novo contato com o conteúdo. A revisão espaçada organiza revisitas periódicas para apoiar a lembrança e a constância.
           </p>
 
           <div className="bg-gradient-to-br from-[#0A192F] to-[#2E70CE] p-10 rounded-[32px] text-white shadow-2xl relative overflow-hidden my-12">
@@ -108,14 +108,14 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
                 <Sparkles size={14} className="text-[#5CE1E6]" />
-                A Solução Definitiva
+                Apoio ao estudo ativo
               </div>
-              <h3 className="text-3xl font-black uppercase mb-4">Flashcards Aprovado</h3>
+              <h3 className="text-3xl font-black uppercase mb-4">Flashcards EuVouSerDoutor</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                É exatamente por isso que criamos os <strong>Flashcards Aprovado</strong>. Você não precisa montar planilhas complexas de revisão. Nossos baralhos utilizam algoritmos que programam automaticamente quando você deve rever cada carta com base na sua taxa de acerto. É retenção máxima com zero perda de tempo no planejamento.
+                Os flashcards ajudam a transformar revisão em prática recorrente. Eles podem apoiar o planejamento de revisões e diminuir a dependência de releitura passiva.
               </p>
               <button onClick={() => setView('flashcards')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
-                Garantir Retenção
+                Ver flashcards
               </button>
             </div>
           </div>
@@ -162,10 +162,10 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Plantões Tira-Dúvidas</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Nosso ecossistema estimula o Metodo Feynman por meio dos nossos <strong>Plantoes Tira-Duvidas ao Vivo</strong>. Na Mentoria Aprovado, incentivamos os alunos a explicarem suas linhas de raciocinio. Mentores e professores ajudam a identificar erros conceituais e melhorar a clareza da explicacao.
+                O ecossistema estimula o Metodo Feynman por meio de explicação ativa, registro de dúvidas e revisão conceitual. Na mentoria educacional, o foco é melhorar clareza de raciocínio e organização do estudo.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
-                Fazer Parte
+                Conhecer mentoria
               </button>
             </div>
           </div>
@@ -202,7 +202,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Biblioteca de Ouro</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Nossa equipe já dissecou o que cai na FUVEST e no ENEM. Na nossa <strong>Biblioteca de Materiais</strong>, você acessa apostilas focadas que já destacam as palavras-chave exigidas pelos corretores. Ensinamos você a extrair o suprassumo da teoria e aplicar imediatamente nas questões.
+                Na <strong>Biblioteca de Materiais</strong>, você encontra conteúdos de apoio para organizar revisão, identificar palavras-chave e praticar com mais direção.
               </p>
               <button onClick={() => setView('materials')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
                 Acessar Materiais
@@ -244,10 +244,10 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Simulados Inéditos</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Na <strong>Mentoria Aprovado</strong>, disponibilizamos simulados padronizados. Mais importante do que as questões é o processo de <em>Análise de Desempenho e Mapeamento de Erros</em>. A proposta é ajudar o estudante a registrar dificuldades e revisar com mais critério.
+                Na mentoria educacional, simulados e exercícios podem ser usados como ponto de partida para <em>análise de desempenho e mapeamento de erros</em>. A proposta é ajudar o estudante a registrar dificuldades e revisar com mais critério.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
-                Fazer Diagnóstico
+                Organizar revisão
               </button>
             </div>
           </div>
@@ -267,7 +267,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
 
           <h2 className="text-2xl font-black text-[#0A192F] uppercase mb-4 mt-8">A Força do Ambiente</h2>
           <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-            Grupos de estudo desorganizados rapidamente se transformam em clubes sociais de procrastinação. Mas um grupo de alta performance, onde todos têm a mesma meta de aprovação, eleva a barra de excelência de forma natural. Ver seus pares batendo metas gera um senso de urgência altamente construtivo e positivo.
+            Grupos de estudo desorganizados rapidamente se transformam em espaços de dispersão. Um grupo com propósito claro pode favorecer constância, troca de experiências e responsabilidade compartilhada.
           </p>
 
           <div className="bg-gradient-to-br from-[#0A192F] to-[#2E70CE] p-10 rounded-[32px] text-white shadow-2xl relative overflow-hidden my-12">
@@ -275,14 +275,14 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
                 <Sparkles size={14} className="text-[#5CE1E6]" />
-                Ecossistema Imparável
+                Comunidade de estudo
               </div>
-              <h3 className="text-3xl font-black uppercase mb-4">A Comunidade VIP</h3>
+              <h3 className="text-3xl font-black uppercase mb-4">A comunidade</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Nós entendemos a solidão dessa jornada. Ao se juntar ao <strong>Ecossistema Eu Vou Ser Doutor</strong>, você entra em nossa Comunidade VIP exclusiva. Um espaço 100% livre de toxicidade e competição agressiva; aqui o propósito é colaboração, networking e apoio moral direcionado.
+                Ao acompanhar o <strong>EuVouSerDoutor</strong>, você encontra um espaço voltado a colaboração, avisos de materiais e troca de experiências sobre rotina de estudos.
               </p>
               <button onClick={() => window.open(telegram, '_blank')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
-                Entrar no Ecossistema
+                Acessar comunidade
               </button>
             </div>
           </div>
@@ -297,12 +297,12 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
       content: (
         <>
           <p className="text-xl text-gray-600 leading-relaxed font-medium mb-10 first-letter:text-7xl first-letter:font-black first-letter:text-[#0A192F] first-letter:mr-3 first-letter:float-left">
-            De nada adianta dominar todo o conteúdo se, no dia da prova, o pico de cortisol desencadear o temido "branco". O controle emocional é responsável por pelo menos 50% da sua nota final.
+            Organização emocional também faz parte da preparação. Cansaço, ansiedade e falta de descanso podem atrapalhar concentração e tomada de decisão durante provas.
           </p>
 
           <h2 className="text-3xl font-black text-[#0A192F] mb-6">A Fisiologia do Nervosismo</h2>
           <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-            Sob extremo estresse, o seu córtex pré-frontal (responsável pela lógica e memória) literalmente "desliga" para que a amígdala (área de sobrevivência e medo) assuma o controle. Você não esqueceu a fórmula; seu cérebro só cortou o acesso a ela para te focar em "sobreviver".
+            Sob estresse intenso, atenção e memória podem ficar prejudicadas. Por isso, descanso, respiração, planejamento e revisão progressiva ajudam a manter uma rotina mais sustentável.
           </p>
 
           <div className="flex gap-4 p-6 bg-orange-50 border border-orange-100 rounded-3xl my-8">
@@ -310,9 +310,9 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               <Clock size={24} />
             </div>
             <div>
-              <h4 className="text-lg font-black text-orange-900 mb-2">Hackeamento Biológico</h4>
+              <h4 className="text-lg font-black text-orange-900 mb-2">Regulação e pausa</h4>
               <p className="text-orange-800">
-                Respirar corretamente e ancorar pensamentos positivos são técnicas para devolver o sangue oxigenado para a parte lógica do cérebro em menos de 2 minutos.
+                Respirar com calma, fazer pausas planejadas e revisar com antecedência são práticas gerais que podem ajudar na organização da rotina.
               </p>
             </div>
           </div>
@@ -322,14 +322,14 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
                 <Sparkles size={14} className="text-[#5CE1E6]" />
-                Psicologia Estratégica
+                Rotina e equilíbrio
               </div>
-              <h3 className="text-3xl font-black uppercase mb-4">Blindagem Emocional</h3>
+              <h3 className="text-3xl font-black uppercase mb-4">Preparação sustentável</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
                 No <strong>Eu Vou Ser Doutor</strong>, o conteúdo educacional aborda Biologia, Física, rotina e controle emocional. As reuniões periódicas da Mentoria trazem estratégias de organização para lidar melhor com ansiedade e revisão antes das provas.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
-                Fazer a Mentoria
+                Conhecer mentoria
               </button>
             </div>
           </div>
@@ -389,7 +389,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
              <img src={profileImg} alt="Jeff Queiroz" className="w-12 h-12 rounded-full border-2 border-blue-500 object-cover shadow-xl" />
              <div>
                <div className="text-white font-bold text-base">Jeff Queiroz</div>
-               <div className="text-xs uppercase tracking-widest text-[#5CE1E6]">Especialista em Aprovação</div>
+               <div className="text-xs uppercase tracking-widest text-[#5CE1E6]">Conteúdo educacional</div>
              </div>
            </div>
         </div>
@@ -414,7 +414,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
             {/* Global CTA for Medicine (Simplified to just a button) */}
             <div className="flex justify-end mt-12 mb-8">
               <button onClick={() => setView('mentorship')} className="bg-[#2E70CE] text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-600 hover:-translate-y-1 transition-all shadow-[0_10px_30px_rgba(46,112,206,0.3)] hover:shadow-[0_15px_40px_rgba(46,112,206,0.5)] inline-flex items-center justify-center gap-3 w-full sm:w-auto">
-                CONHECER A MENTORIA APROVADO <ArrowRight size={20} strokeWidth={2.5} />
+                CONHECER A MENTORIA <ArrowRight size={20} strokeWidth={2.5} />
               </button>
             </div>
 
@@ -448,7 +448,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               <div>
                 <h4 className="text-2xl font-black text-[#0A192F] uppercase italic mb-2">Sobre o Autor</h4>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  Jeff Queiroz é acadêmico de Medicina na UFMG e fundador do ecossistema <strong>Eu vou ser Doutor</strong>. Já ajudou milhares de vestibulandos a transformarem a maneira como estudam através da ciência do aprendizado ativo.
+                  Jeff Queiroz é acadêmico de Medicina na UFMG e fundador do ecossistema <strong>Eu vou ser Doutor</strong>. O projeto publica conteúdos educacionais sobre rotina, organização e estudo ativo para vestibulandos e estudantes.
                 </p>
               </div>
             </div>

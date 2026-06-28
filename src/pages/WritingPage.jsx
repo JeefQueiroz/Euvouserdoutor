@@ -31,12 +31,12 @@ const Sidebar = ({ setView, profileImg, telegram }) => (
           <p className="text-[10px] text-gray-400 font-bold uppercase mt-1">Medicina | UFMG</p>
         </div>
       </div>
-      <p className="text-xs text-gray-600 italic leading-relaxed text-left">Ajudando você a conquistar a sua vaga. Criador da Mentoria Aprovado.</p>
+      <p className="text-xs text-gray-600 italic leading-relaxed text-left">Conteúdo educacional sobre rotina, redação e organização de estudos.</p>
     </div>
     <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-left">
       <h3 className="font-black text-[10px] text-gray-400 mb-4 uppercase tracking-[0.2em] flex items-center gap-2"><BarChart size={12} /> Mais Lidas</h3>
       <div className="space-y-4 text-xs font-bold text-gray-800 text-left">
-        <p onClick={() => setView(1)} className="cursor-pointer hover:text-blue-600 line-clamp-2 italic uppercase">1. O fenômeno @euvouserdoutor</p>
+        <p onClick={() => setView(1)} className="cursor-pointer hover:text-blue-600 line-clamp-2 italic uppercase">1. Rotina de estudo com método</p>
         <p onClick={() => setView('flashcards_info')} className="cursor-pointer hover:text-blue-600">2. Neurociência dos Flashcards</p>
       </div>
     </div>
@@ -85,7 +85,7 @@ const WritingPage = ({ setView, profileImg, telegram }) => {
             <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Premium</span>
           </h1>
           <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed max-w-2xl font-medium">
-            A redação do ENEM é o atalho para aprovação em Medicina. Domine as 5 competências e alcance <strong className="text-white">nota 1000</strong>.
+            A redação do ENEM exige repertório, estrutura e treino constante. Organize as 5 competências com mais clareza.
           </p>
         </div>
       </div>
@@ -211,7 +211,7 @@ const WritingPage = ({ setView, profileImg, telegram }) => {
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="bg-blue-500 p-3 rounded-2xl"><MessageSquare size={24} /></div>
-                  <h2 className="text-2xl font-black uppercase tracking-tight italic">Mentoria Aprovado</h2>
+                  <h2 className="text-2xl font-black uppercase tracking-tight italic">Mentoria EuVouSerDoutor</h2>
                 </div>
                 <p className="opacity-90 leading-relaxed text-lg mb-8">
                   Flashcards de vocabulário + simulados semanais elevaram a média dos alunos para <strong>920 pontos</strong>.

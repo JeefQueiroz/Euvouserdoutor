@@ -12,30 +12,36 @@ export const institutional = {
   site: 'https://www.euvouserdoutor.com',
   siteLabel: 'www.euvouserdoutor.com',
   facebook: 'https://www.facebook.com/Euvouserdoutor/',
+  youtube: 'https://youtube.com/@Euvouserdoutor',
+  instagram: 'https://instagram.com/euvouserdoutor',
+  telegram: 'https://t.me/Euvouserdoutor',
+  whatsapp: 'https://wa.me/5531991569089',
   metaBusinessPortfolioId: '637476149251537',
   metaPage: 'Eu Vou Ser Doutor Curiosidades Médicas',
   trademarkProcess: '921406193',
   description:
     'Projeto digital de educação, organização acadêmica e conteúdo para estudantes e vestibulandos de Medicina.',
+  medicalNotice:
+    'O conteúdo do EuVouSerDoutor é educacional e informativo. Não substitui consulta médica, diagnóstico, tratamento ou orientação profissional individualizada.',
 };
 
 export const routeMeta = {
   home: {
     title: 'Eu Vou Ser Doutor | Organização, rotina e evolução em Medicina',
     description:
-      'Projeto digital de educação, organização acadêmica e conteúdo para estudantes e vestibulandos de Medicina.',
+      'Conteúdos, materiais, notícias e mentoria para estudantes e vestibulandos de Medicina que querem estudar com mais direção.',
     path: '/',
   },
   about: {
-    title: 'Sobre | Eu vou ser Doutor',
+    title: 'Sobre | EuVouSerDoutor',
     description:
-      'Conheça o Eu vou ser Doutor, projeto digital de educação, organização acadêmica e conteúdo para estudantes de Medicina.',
+      'Conheça o EuVouSerDoutor, projeto educacional criado para apoiar estudantes e vestibulandos de Medicina com organização, rotina e conteúdo informativo.',
     path: '/sobre',
   },
   contact: {
-    title: 'Contato | Eu vou ser Doutor',
+    title: 'Contato | EuVouSerDoutor',
     description:
-      'Canais oficiais de contato institucional do Eu vou ser Doutor.',
+      'Fale com o EuVouSerDoutor pelos canais oficiais para dúvidas, materiais, mentoria, parcerias e assuntos institucionais.',
     path: '/contato',
   },
   privacy: {
@@ -69,21 +75,21 @@ export const routeMeta = {
     path: '/politica-de-cookies',
   },
   news: {
-    title: 'Noticias | Eu vou ser Doutor',
+    title: 'Notícias e Estratégias | EuVouSerDoutor',
     description:
-      'Conteúdos sobre organização acadêmica, rotina de estudos e curiosidades médicas.',
+      'Artigos, notícias e estratégias de estudo para futuros médicos, vestibulandos e estudantes de Medicina.',
     path: '/noticias',
   },
   materials: {
-    title: 'Materiais | Eu vou ser Doutor',
+    title: 'Materiais Gratuitos | EuVouSerDoutor',
     description:
-      'Materiais educacionais e conteudos de apoio para estudantes e vestibulandos de Medicina.',
+      'Acesse materiais de apoio, flashcards, checklists, cronogramas e guias para organizar seus estudos.',
     path: '/materiais',
   },
   mentorship: {
-    title: 'Mentoria | Eu vou ser Doutor',
+    title: 'Mentoria | EuVouSerDoutor',
     description:
-      'Informações sobre acompanhamento, rotina de estudos e organização acadêmica.',
+      'Acompanhamento educacional para organizar rotina, revisão e evolução nos estudos para Medicina.',
     path: '/mentoria',
   },
   flashcards: {
