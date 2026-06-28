@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getCookieConsent } from '../CookieConsent';
 
 const DEFAULT_SCRIPT_ORIGIN = 'https://www.googletagmanager.com';
 
@@ -62,18 +63,26 @@ export function GoogleAnalytics() {
   useEffect(() => {
     if (!shouldEnableAnalytics()) return;
 
-    const gtmId = import.meta.env.VITE_GTM_ID;
-    const ga4Id = import.meta.env.VITE_GA4_ID;
-    const scriptOrigin = getScriptOrigin();
+    const loadAnalyticsAfterConsent = () => {
+      if (getCookieConsent() !== 'accepted') return;
 
-    if (gtmId) {
-      loadGtm(scriptOrigin, gtmId);
-      return;
-    }
+      const gtmId = import.meta.env.VITE_GTM_ID;
+      const ga4Id = import.meta.env.VITE_GA4_ID;
+      const scriptOrigin = getScriptOrigin();
 
-    if (ga4Id) {
-      loadGa4(scriptOrigin, ga4Id);
-    }
+      if (gtmId) {
+        loadGtm(scriptOrigin, gtmId);
+        return;
+      }
+
+      if (ga4Id) {
+        loadGa4(scriptOrigin, ga4Id);
+      }
+    };
+
+    loadAnalyticsAfterConsent();
+    window.addEventListener('evsd-cookie-consent-changed', loadAnalyticsAfterConsent);
+    return () => window.removeEventListener('evsd-cookie-consent-changed', loadAnalyticsAfterConsent);
   }, []);
 
   return null;

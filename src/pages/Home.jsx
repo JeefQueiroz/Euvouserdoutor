@@ -34,9 +34,9 @@ export const Home = ({ setView, profileImg }) => {
               <div className="grid grid-cols-2 gap-y-8 gap-x-6">
                 {[
                   { label: 'Seguidores no IG', val: '135K' },
-                  { label: 'Taxa Aprovação', val: '85%' },
-                  { label: 'Retenção Natureza', val: '92%' },
-                  { label: 'Simulados Inéditos', val: '100+' }
+                  { label: 'Conteúdos publicados', val: 'Guias' },
+                  { label: 'Foco em revisão', val: 'Ativo' },
+                  { label: 'Materiais de apoio', val: 'Guias' }
                 ].map((item, i) => (
                   <div key={i} className="text-left border-l-4 border-[#5CE1E6] pl-5 hover:translate-x-2 transition-transform cursor-default">
                     <p className="text-3xl lg:text-4xl font-black text-white italic drop-shadow-lg leading-none mb-2">{item.val}</p>
@@ -59,7 +59,7 @@ export const Home = ({ setView, profileImg }) => {
         <div className="text-center mb-16">
           <span className="text-[#2E70CE] font-black text-[10px] uppercase tracking-[0.3em] bg-blue-50 px-4 py-2 rounded-full inline-block mb-4">A Ciência do Aprendizado</span>
           <h2 className="text-4xl md:text-5xl font-black text-[#0A192F] mt-2 italic uppercase">Os 3 Pilares da Aprovação</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto mt-6 text-lg">Nosso método foge do ensino tradicional passivo. Construímos um ecossistema focado no que realmente importa para a sua nota no ENEM e grandes vestibulares.</p>
+          <p className="text-gray-500 max-w-2xl mx-auto mt-6 text-lg">Nossa abordagem organiza estudo ativo, revisão e rotina para ajudar estudantes a construírem uma preparação mais clara para o ENEM e grandes vestibulares.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
@@ -70,7 +70,7 @@ export const Home = ({ setView, profileImg }) => {
                 <Zap size={32} strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tight">1. Mentalidade Inabalável</h3>
-              <p className="text-blue-100 leading-relaxed mb-6">A aprovação começa na mente. Fornecemos a inspiração e a blindagem emocional necessárias para enfrentar a maratona de estudos sem desistir.</p>
+                <p className="text-blue-100 leading-relaxed mb-6">A preparação começa com rotina e clareza. Reunimos inspiração e organização para apoiar a constância durante a maratona de estudos.</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-sm font-medium text-blue-50">
                   <CheckCircle2 size={18} className="text-[#A02070] shrink-0 mt-0.5" /> Rotina real de estudante de Medicina da UFMG.
@@ -94,7 +94,7 @@ export const Home = ({ setView, profileImg }) => {
                 <Target size={32} strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tight">2. Estratégia Técnica</h3>
-              <p className="text-blue-100 leading-relaxed mb-6">Chega de resumos passivos. Nosso núcleo é fundamentado na ciência do Active Recall e nas métricas do TRI.</p>
+                <p className="text-blue-100 leading-relaxed mb-6">Em vez de depender apenas de resumos passivos, o conteúdo valoriza estudo ativo, revisão espaçada e compreensão do TRI.</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-sm font-medium text-blue-50">
                   <CheckCircle2 size={18} className="text-[#A02070] shrink-0 mt-0.5" /> Flashcards com Revisão Espaçada automática.
@@ -117,7 +117,7 @@ export const Home = ({ setView, profileImg }) => {
                 <Users size={32} strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tight">3. Ecossistema VIP</h3>
-              <p className="text-blue-100 leading-relaxed mb-6">A jornada é solitária, mas não precisa ser. Você inevitavelmente se torna a média das pessoas com as quais convive.</p>
+                <p className="text-blue-100 leading-relaxed mb-6">A jornada pode ser mais leve com comunidade, troca de experiências e acompanhamento de rotina.</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-sm font-medium text-blue-50">
                   <CheckCircle2 size={18} className="text-[#A02070] shrink-0 mt-0.5" /> Rede de alunos de altíssima performance.
@@ -202,7 +202,7 @@ export const Home = ({ setView, profileImg }) => {
               </div>
               <h3 className="text-2xl font-black text-[#0A192F] mb-4">YouTube</h3>
               <p className="text-gray-500 text-sm leading-relaxed flex-grow">
-                Temos lives semanais, resoluções de provas e vídeos de direcionamento prático focados na sua aprovação em Medicina.
+                Temos lives, resoluções de provas e vídeos de direcionamento prático para estudantes que se preparam para Medicina.
               </p>
               <a href="https://youtube.com/@Euvouserdoutor" target="_blank" rel="noreferrer" className="w-full bg-red-500 text-white py-3.5 px-6 mt-8 rounded-xl font-black uppercase text-[11px] tracking-wider hover:bg-red-600 hover:scale-[1.02] transition-all shadow-md">
                 Ver YouTube
@@ -276,7 +276,7 @@ export const Home = ({ setView, profileImg }) => {
           {/* Coluna da Direita */}
           <div className="md:w-7/12 flex flex-col gap-5">
             {[
-              "Método validado com cronogramas estratégicos para o ENEM e grandes vestibulares",
+              "Cronogramas e materiais de apoio para o ENEM e grandes vestibulares",
               "Plataforma completa de Flashcards com alta retenção e revisão espaçada",
               "Plantões tira-dúvidas e mentorias em grupo com aprovados em Medicina",
               "Simulados inéditos focados em Redação e Ciências da Natureza",
@@ -296,4 +296,3 @@ export const Home = ({ setView, profileImg }) => {
     </div>
   );
 };
-

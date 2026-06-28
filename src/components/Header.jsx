@@ -10,16 +10,23 @@ export const Header = ({ setView, currentView, telegram }) => (
     <div className="bg-white border-b border-gray-100 py-3.5 px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
       {/* Left side: Logo & Nav Links */}
       <div className="flex flex-col md:flex-row items-center gap-8 w-full md:w-auto">
-        <h1 onClick={() => setView('home')} className="text-2xl md:text-3xl font-black tracking-tighter cursor-pointer flex items-center group">
-          <span className="text-[#0A192F] mr-1.5">Eu vou ser</span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2E70CE] to-[#0A192F] group-hover:from-[#A02070] group-hover:to-[#A02070] transition-all duration-300">Doutor</span>
+        <h1 onClick={() => setView('home')} className="cursor-pointer flex items-center group shrink-0" aria-label="Eu vou ser Doutor">
+          <img src="/logo-euvouserdoutor.png" alt="Eu vou ser Doutor" className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" />
         </h1>
         
-        <nav className="flex gap-6 text-[10px] font-bold uppercase tracking-widest text-gray-400 overflow-x-auto no-scrollbar">
-          <span onClick={() => setView('home')} className={`cursor-pointer transition-all ${currentView === 'home' ? 'text-[#2E70CE] border-b-2 border-[#2E70CE] pb-1' : 'hover:text-[#A02070]'}`}>Home</span>
-          <span onClick={() => setView('news')} className={`cursor-pointer transition-all ${currentView === 'news' ? 'text-[#2E70CE] border-b-2 border-[#2E70CE] pb-1' : 'hover:text-[#A02070]'}`}>Notícias</span>
-          <span onClick={() => setView('materials')} className={`cursor-pointer transition-all ${currentView === 'materials' ? 'text-[#2E70CE] border-b-2 border-[#2E70CE] pb-1' : 'hover:text-[#A02070]'}`}>Materiais</span>
-          <span onClick={() => setView('mentorship')} className={`cursor-pointer transition-all ${currentView === 'mentorship' ? 'text-[#2E70CE] border-b-2 border-[#2E70CE] pb-1' : 'hover:text-[#A02070]'}`}>Mentoria</span>
+        <nav className="flex gap-5 text-[10px] font-bold uppercase tracking-widest text-gray-400 overflow-x-auto no-scrollbar max-w-full">
+          {[
+            ['home', 'Início'],
+            ['about', 'Sobre'],
+            ['news', 'Notícias'],
+            ['materials', 'Materiais'],
+            ['mentorship', 'Mentoria'],
+            ['contact', 'Contato'],
+          ].map(([view, label]) => (
+            <span key={view} onClick={() => setView(view)} className={`cursor-pointer transition-all whitespace-nowrap ${currentView === view ? 'text-[#2E70CE] border-b-2 border-[#2E70CE] pb-1' : 'hover:text-[#A02070]'}`}>
+              {label}
+            </span>
+          ))}
         </nav>
       </div>
 
@@ -31,4 +38,3 @@ export const Header = ({ setView, currentView, telegram }) => (
     </div>
   </header>
 );
-

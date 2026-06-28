@@ -162,7 +162,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Plantões Tira-Dúvidas</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Nosso ecossistema estimula o Método Feynman através dos nossos <strong>Plantões Tira-Dúvidas ao Vivo</strong>. Na Mentoria Aprovado, incentivamos os alunos a explicarem suas linhas de raciocínio. Mentores e professores corrigem os pequenos erros conceituais na hora, garantindo precisão cirúrgica.
+                Nosso ecossistema estimula o Metodo Feynman por meio dos nossos <strong>Plantoes Tira-Duvidas ao Vivo</strong>. Na Mentoria Aprovado, incentivamos os alunos a explicarem suas linhas de raciocinio. Mentores e professores ajudam a identificar erros conceituais e melhorar a clareza da explicacao.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
                 Fazer Parte
@@ -244,7 +244,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Simulados Inéditos</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                Na <strong>Mentoria Aprovado</strong>, disponibilizamos simulados padronizados. Mais importante do que as questões é o nosso método de <em>Análise de Desempenho e Mapeamento de Erros</em>. Entregamos as ferramentas exatas para catalogar suas fraquezas e alavancar seu TRI.
+                Na <strong>Mentoria Aprovado</strong>, disponibilizamos simulados padronizados. Mais importante do que as questões é o processo de <em>Análise de Desempenho e Mapeamento de Erros</em>. A proposta é ajudar o estudante a registrar dificuldades e revisar com mais critério.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
                 Fazer Diagnóstico
@@ -326,7 +326,7 @@ export const BlogPost = ({ setView, postId, profileImg }) => {
               </div>
               <h3 className="text-3xl font-black uppercase mb-4">Blindagem Emocional</h3>
               <p className="text-blue-100 leading-relaxed text-lg mb-6">
-                No <strong>Eu Vou Ser Doutor</strong>, não ensinamos apenas Biologia e Física. Nossas reuniões periódicas da Mentoria trazem estratégias reais e validadas para evitar o branco e formar candidatos emocionalmente inabaláveis para qualquer prova.
+                No <strong>Eu Vou Ser Doutor</strong>, o conteúdo educacional aborda Biologia, Física, rotina e controle emocional. As reuniões periódicas da Mentoria trazem estratégias de organização para lidar melhor com ansiedade e revisão antes das provas.
               </p>
               <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
                 Fazer a Mentoria

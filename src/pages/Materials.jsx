@@ -20,7 +20,7 @@ export const Materials = ({ setView, telegram }) => (
            <span className="text-white">Biblioteca </span><span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#96A1DF] to-white">Exclusiva</span>
          </h1>
          <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed max-w-2xl font-medium">
-           Material restrito de alto impacto. <strong className="text-white">Arquivos que garantiram a aprovação</strong> na UFMG, liberados por tempo limitado.
+           Material de apoio para estudo. <strong className="text-white">Arquivos usados na rotina de preparação</strong> para Medicina, organizados para consulta prática.
          </p>
       </div>
     </div>

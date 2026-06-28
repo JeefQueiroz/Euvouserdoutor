@@ -17,7 +17,7 @@ export const FlashcardsPage = ({ setView, profileImg, telegram }) => (
         </h1>
         <p className="text-lg md:text-xl text-blue-100 opacity-90 max-w-2xl font-light">
           A união perfeita entre <strong className="text-white">Active Recall</strong> e <strong className="text-white">Repetição Espaçada</strong>. 
-          Abandone resumos passivos e estude com o método comprovado pela neurociência para retenção de longo prazo.
+          Use estudo ativo e revisão espaçada como apoio para melhorar retenção e constância ao longo da preparação.
         </p>
       </div>
     </div>
@@ -34,7 +34,7 @@ export const FlashcardsPage = ({ setView, profileImg, telegram }) => (
               Segundo as pesquisas do Dr. Hermann Ebbinghaus, o cérebro humano esquece cerca de <strong>70% de qualquer nova informação nas primeiras 24 horas</strong>. A única forma de "hackear" essa curva do esquecimento é através de revisões ativas programadas.
             </p>
             <p>
-              Ao invés de reler apostilas grifadas (um método passivo de baixa retenção), nossos Flashcards forçam o seu cérebro a <em>buscar</em> a resposta antes de virar a carta. Isso fortalece as sinapses nervosas e garante que a matéria esteja fresca no dia do ENEM ou da FUVEST.
+              Ao inves de reler apostilas grifadas (um metodo passivo de baixa retencao), os flashcards estimulam o cerebro a <em>buscar</em> a resposta antes de virar a carta. Isso favorece revisoes mais ativas antes do ENEM ou da FUVEST.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export const FlashcardsPage = ({ setView, profileImg, telegram }) => (
         <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-xl border border-gray-100 text-left">
           <h2 className="text-2xl font-black text-[#0A192F] uppercase flex items-center gap-3 mb-6"><Microscope className="text-[#5CE1E6]" size={28} /> O que tem nos Nossos Decks?</h2>
           <p className="text-gray-600 mb-8 leading-relaxed">
-            Nossos decks foram construídos meticulosamente com base no mapeamento de incidência do <strong>ENEM</strong> e dos principais vestibulares paulistas. Nada de cards inúteis, focamos no suprassumo do que realmente garante pontos.
+            Os decks foram organizados com base em temas recorrentes do <strong>ENEM</strong> e dos principais vestibulares paulistas. A ideia e reduzir dispersao e priorizar revisoes com criterio.
           </p>
 
           <ul className="space-y-4">

@@ -56,7 +56,7 @@ export const Article = ({ setView, profileImg, telegram }) => {
                     Jeff Queiroz, estudante de Medicina na UFMG e criador do perfil @euvouserdoutor, construiu em menos de 5 anos uma comunidade de mais de 135 mil vestibulandos que sonham com o jaleco branco.
                   </p>
                   <p className="text-gray-600 leading-relaxed text-lg">
-                    Com conteúdo gratuito, um método validado baseado em ciências do aprendizado e uma mentoria completa, ele está mudando o acesso à medicina no Brasil.
+                    Com conteúdo gratuito, estudo ativo baseado em ciências do aprendizado e materiais de apoio, ele contribui para ampliar o acesso a informações sobre a preparação para Medicina.
                   </p>
                   
                   <div className="pt-4">
@@ -71,7 +71,7 @@ export const Article = ({ setView, profileImg, telegram }) => {
                 <p>A Mentoria Aprovado vai além de simples orientações. Integra:</p>
                 <ul className="space-y-3 mt-4 ml-4">
                   <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Cronogramas de 30 semanas focados nos pesos do ENEM</span></li>
-                  <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Flashcards com repetição espaçada validada pela neurociência</span></li>
+                  <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Flashcards com repetição espaçada inspirada em princípios da neurociência</span></li>
                   <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Comunidade de estudantes com o mesmo objetivo</span></li>
                   <li className="flex gap-3"><span className="text-blue-600 font-black">→</span> <span>Suporte de alguém que PASSOU por isso</span></li>
                 </ul>
@@ -79,7 +79,7 @@ export const Article = ({ setView, profileImg, telegram }) => {
 
               <section>
                 <h2 className="text-3xl font-black text-[#0A192F] uppercase mb-4">Os Números Não Mentem</h2>
-                <p>Alunos da Mentoria Aprovado alcançam uma média de <strong>920 pontos em redação</strong> e <strong>92% de retenção em Ciências da Natureza</strong>. Esses não são números aleatórios — são resultado de estratégia e consistência.</p>
+                <p>Alunos que acompanham a Mentoria Aprovado usam metas, revisão e análise de desempenho para estudar com mais consistência. A proposta é transformar esforço em rotina organizada.</p>
               </section>
 
               <section>
