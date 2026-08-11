@@ -48,42 +48,64 @@ export const Home = ({ setView }) => {
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
       {/* Mega Premium Hero Section */}
-      <section className="relative w-full overflow-hidden pt-16 pb-24 border-b border-white/[0.03]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_10%,rgba(79,140,255,0.08),transparent_45%)]" />
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.02] pointer-events-none" />
+      <section className="relative w-full overflow-hidden pt-16 pb-32 border-b border-white/[0.03]">
+        {/* Premium Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_10%,rgba(79,140,255,0.1),transparent_45%)]" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        <div className="absolute left-0 top-0 w-1/4 h-full bg-gradient-to-r from-[#4F8CFF]/5 to-transparent pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             {/* Left: Main Editorial Intro */}
-            <div className="lg:col-span-7 space-y-8">
-              <div className="inline-flex items-center gap-2.5 bg-[#4F8CFF]/5 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.25em] animate-blur-reveal">
-                <Zap size={12} className="fill-[#4F8CFF]" />
-                Portal Editorial & Pesquisa
+            <div className="lg:col-span-7 space-y-10">
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2.5 bg-[#4F8CFF]/5 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.25em] animate-blur-reveal">
+                  <Zap size={12} className="fill-[#4F8CFF]" />
+                  Portal Editorial & Pesquisa
+                </div>
+                
+                <h1 className="text-4xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#F8FAFC] text-balance">
+                  Informação de <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Elite</span> para Medicina.
+                </h1>
+                
+                <p className="text-base md:text-xl text-[#98A2B3] leading-relaxed max-w-xl font-medium text-pretty">
+                  Notícias de impacto, pesquisas científicas de ponta e estratégias acadêmicas com o mais alto rigor editorial e científico.
+                </p>
               </div>
-              
-              <h1 className="text-4xl md:text-6xl font-black tracking-tighter leading-[1.05] text-[#F8FAFC] text-balance">
-                Informação de elite para a jornada na <span className="text-[#4F8CFF]">Medicina.</span>
-              </h1>
-              
-              <p className="text-base md:text-lg text-[#98A2B3] leading-relaxed max-w-xl font-medium text-pretty">
-                Notícias de impacto, pesquisas científicas de ponta e estratégias acadêmicas com o mais alto rigor editorial.
-              </p>
 
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="flex flex-wrap gap-5">
                 <button
                   type="button"
                   onClick={() => setView('news')}
-                  className="bg-[#4F8CFF] text-[#080A0F] px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-[#7EA6FF] hover-lift transition-all flex items-center gap-3 shadow-[0_20px_40px_rgba(79,140,255,0.2)]"
+                  className="bg-[#4F8CFF] text-[#080A0F] px-10 py-5 rounded-[24px] font-black text-xs uppercase tracking-widest hover:bg-[#7EA6FF] hover-lift transition-all flex items-center gap-3 shadow-[0_20px_40px_rgba(79,140,255,0.2)]"
                 >
                   Explorar Notícias <ArrowRight size={16} strokeWidth={3} />
                 </button>
                 <button
                   type="button"
                   onClick={() => setView('mentorship')}
-                  className="bg-white/[0.03] text-white border border-white/[0.08] px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white/[0.06] hover-lift transition-all flex items-center gap-3"
+                  className="bg-white/[0.03] text-white border border-white/[0.08] px-10 py-5 rounded-[24px] font-black text-xs uppercase tracking-widest hover:bg-white/[0.06] hover-lift transition-all flex items-center gap-3"
                 >
                   Mentoria Premium
                 </button>
+              </div>
+
+              {/* Authority Block to fill space and add value */}
+              <div className="hidden md:flex items-center gap-8 pt-6 opacity-60">
+                <div className="flex flex-col gap-1">
+                  <p className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF]">Verificação</p>
+                  <p className="text-white text-xs font-bold">Rigor Científico</p>
+                </div>
+                <div className="h-8 w-px bg-white/10" />
+                <div className="flex flex-col gap-1">
+                  <p className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF]">Atualização</p>
+                  <p className="text-white text-xs font-bold">Plantão 24h</p>
+                </div>
+                <div className="h-8 w-px bg-white/10" />
+                <div className="flex flex-col gap-1">
+                  <p className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF]">Origem</p>
+                  <p className="text-white text-xs font-bold">Medicina UFMG</p>
+                </div>
               </div>
             </div>
 
