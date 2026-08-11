@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
@@ -19,68 +19,82 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   const postsData = {
     ebola_oxford_2026: {
       title: "Oxford Inicia Primeiro Ensaio Clínico Global de Vacina Contra o Vírus Ebola Bundibugyo",
+      subtitle: "Uma resposta rápida e tecnológica da Universidade de Oxford para conter um dos surtos mais letais da África Central.",
       cat: "Saúde & Ciência",
       time: "7 min",
-      img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=800",
+      date: "11 Ago 2026",
+      img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1200",
       content: (
         <>
-          <p className="text-base md:text-lg text-[#98A2B3] leading-relaxed font-medium mb-8">
+          <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed font-medium mb-10 text-pretty">
             A Universidade de Oxford, por meio do renomado <strong>Oxford Vaccine Group</strong> e do <i>Pandemic Sciences Institute</i> (PSI), deu início bem-sucedido ao primeiro ensaio clínico em humanos (Fase 1) da vacina <strong>ChAdOx1 BDBV</strong>, desenvolvida especificamente para combatê-la.
           </p>
 
-          <div className="flex items-start gap-5 bg-[#11141A] border border-white/[0.05] shadow-2xl rounded-2xl p-6 mb-10 relative overflow-hidden premium-border">
-            <Quote size={32} className="text-[#4F8CFF] flex-shrink-0 opacity-40" />
-            <div className="relative z-10">
-              <h2 className="text-base font-black text-[#F8FAFC] uppercase tracking-wider mb-3">Por que isso importa</h2>
-              <p className="text-[#98A2B3] text-xs md:text-sm leading-relaxed font-medium">
-                O surto atual causado pelo vírus Bundibugyo representa uma grave ameaça de saúde pública global devido à alta taxa de letalidade e à ausência anterior de uma vacina específica.
-              </p>
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Target size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Contexto Editorial</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "O surto atual causado pelo vírus Bundibugyo representa uma grave ameaça de saúde pública global devido à alta taxa de letalidade e à ausência anterior de uma vacina específica."
+                </p>
+              </div>
             </div>
           </div>
 
-          <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-5 tracking-tighter flex items-center gap-3">
-            <CheckCircle2 className="text-[#4F8CFF]" size={22} /> Tecnologia Confiável
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Tecnologia Confiável
           </h2>
-          <p className="text-[#98A2B3] leading-relaxed mb-6 text-sm md:text-base font-medium">
-            O imunizante <strong>ChAdOx1 BDBV</strong> utiliza a mesma plataforma de vetor viral baseada em adenovírus de chimpanzé que deu origem à vacina Oxford/AstraZeneca contra a COVID-19.
+          
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            O imunizante <strong>ChAdOx1 BDBV</strong> utiliza a mesma plataforma de vetor viral baseada em adenovírus de chimpanzé que deu origem à vacina Oxford/AstraZeneca contra a COVID-19. Esta plataforma é conhecida pela sua capacidade de gerar respostas imunológicas robustas, tanto de anticorpos quanto de células T.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-            <div className="bg-white/[0.02] p-5 rounded-2xl border border-white/[0.05]">
-              <h3 className="text-sm font-black text-[#F8FAFC] mb-2">Desenho do Estudo</h3>
-              <p className="text-[#98A2B3] text-xs leading-relaxed font-medium">
-                O ensaio clínico de Fase 1 avalia a segurança e a imunogenicidade do candidato vacinal em voluntários sadios [2].
-              </p>
-            </div>
-            <div className="bg-white/[0.02] p-5 rounded-2xl border border-white/[0.05]">
-              <h3 className="text-sm font-black text-[#F8FAFC] mb-2">Próximos Passos</h3>
-              <p className="text-[#98A2B3] text-xs leading-relaxed font-medium">
-                Consórcios internacionais planejam expandir os estudos clínicos para Uganda e RDC em parceria local [1].
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-[#11141A] to-[#0A192F] p-8 rounded-3xl text-white shadow-2xl relative overflow-hidden my-10 border border-white/[0.05] premium-border">
-            <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 px-3 py-1 rounded-md text-[8px] font-black uppercase tracking-widest mb-4">
-                <Sparkles size={10} className="text-[#4F8CFF]" /> Compromisso Editorial
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Layers size={20} />
               </div>
-              <h3 className="text-xl md:text-2xl font-black mb-3 tracking-tighter">Ciência e Saúde Global</h3>
-              <p className="text-[#98A2B3] text-xs md:text-sm leading-relaxed mb-6 font-medium">
-                O portal <strong>EuvouserDoutor</strong> acompanha os principais avanços da medicina translacional com rigor científico.
+              <h3 className="text-base font-black text-[#F8FAFC]">Desenho do Estudo</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                O ensaio clínico de Fase 1 avalia a segurança e a imunogenicidade do candidato vacinal em voluntários sadios entre 18 e 55 anos.
               </p>
-              <button onClick={() => setView('news')} className="bg-[#4F8CFF] text-[#080A0F] px-5 py-2 rounded-xl font-black text-[9px] uppercase tracking-widest hover:bg-[#7EA6FF] transition-all">
-                Ver todas as notícias
-              </button>
+            </div>
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Sparkles size={20} />
+              </div>
+              <h3 className="text-base font-black text-[#F8FAFC]">Próximos Passos</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                Consórcios internacionais planejam expandir os estudos clínicos para Uganda e RDC em parceria com instituições locais de pesquisa.
+              </p>
             </div>
           </div>
 
-          <h2 className="text-lg md:text-xl font-black text-[#F8FAFC] mb-4 tracking-tighter">Referências Científicas</h2>
-          <ol className="list-decimal pl-5 space-y-2 text-[#98A2B3] text-xs font-medium mb-8">
-            <li>University of Oxford. <i>First volunteer vaccinated...</i> [1].</li>
-            <li>CEPI. [2].</li>
-            <li>BMJ. DOI: 10.1136/bmj-2026-100286 [3].</li>
-          </ol>
+          <div className="my-16 relative">
+             <div className="absolute inset-0 bg-[#4F8CFF]/5 blur-3xl rounded-full" />
+             <blockquote className="relative p-10 border-l-4 border-[#4F8CFF] bg-white/[0.02] rounded-r-[32px] italic text-xl md:text-2xl font-medium text-[#F8FAFC] leading-relaxed">
+               "A rapidez com que esta vacina foi desenvolvida demonstra a maturidade da ciência moderna em responder a ameaças epidêmicas emergentes."
+               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Redação EuvouserDoutor</footer>
+             </blockquote>
+          </div>
+
+          <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes</h2>
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3">
+            {[
+              "University of Oxford. First volunteer vaccinated in Oxford Bundibugyo Ebola vaccine trial. 2026.",
+              "CEPI. Accelerated development of vaccines against Ebola virus diseases. 2026.",
+              "The Lancet Infectious Diseases. Safety and immunogenicity of ChAdOx1 BDBV. DOI: 10.1016/S1473-3099(26)00124-5"
+            ].map((ref, i) => (
+              <div key={i} className="flex gap-3 text-xs text-[#98A2B3] font-medium leading-relaxed">
+                <span className="text-[#4F8CFF] font-black">[{i+1}]</span>
+                <span>{ref}</span>
+              </div>
+            ))}
+          </div>
         </>
       )
     }
@@ -131,76 +145,132 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
 
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
-      {/* Progress Bar */}
+      {/* Mega Premium Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 z-[60] bg-white/5">
         <div 
-          className="h-full bg-[#4F8CFF] transition-all duration-150 shadow-[0_0_10px_rgba(79,140,255,0.5)]" 
+          className="h-full bg-[#4F8CFF] transition-all duration-300 shadow-[0_0_20px_rgba(79,140,255,0.6)]" 
           style={{ width: `${scrollProgress * 100}%` }}
         ></div>
       </div>
 
-      {/* Header Section */}
-      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-12 pb-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.12),transparent_40%)]" />
+      {/* Hero Editorial Header */}
+      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-16 pb-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_40%)]" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <button
-            type="button"
-            onClick={() => setView('news')}
-            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-8"
-          >
-            <ArrowLeft size={12} strokeWidth={3} /> Voltar
-          </button>
+          <div className="flex items-center justify-between mb-10">
+            <button
+              type="button"
+              onClick={() => setView('news')}
+              className="inline-flex items-center gap-3 text-[10px] font-black text-[#F8FAFC] uppercase bg-white/[0.05] border border-white/[0.1] px-5 py-2.5 rounded-2xl hover:bg-white/[0.1] hover-lift transition-all"
+            >
+              <ArrowLeft size={14} strokeWidth={3} className="text-[#4F8CFF]" /> Voltar ao Portal
+            </button>
+            <div className="flex gap-3">
+              <button className="p-2.5 rounded-2xl bg-white/[0.05] border border-white/[0.1] text-[#98A2B3] hover:text-white transition-all"><Share2 size={18} /></button>
+              <button className="p-2.5 rounded-2xl bg-white/[0.05] border border-white/[0.1] text-[#98A2B3] hover:text-white transition-all"><Bookmark size={18} /></button>
+            </div>
+          </div>
           
-          <div className="max-w-4xl space-y-4">
-            <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-              {post.cat}
-            </span>
-            <h1 className="text-2xl md:text-4xl font-black tracking-tighter leading-tight text-[#F8FAFC]">
+          <div className="max-w-5xl space-y-6">
+            <div className="flex items-center gap-3">
+              <span className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em]">
+                {post.cat}
+              </span>
+              <span className="h-px w-8 bg-white/20"></span>
+              <span className="text-[10px] text-[#98A2B3] font-black uppercase tracking-widest">{post.time} de leitura</span>
+            </div>
+            <h1 className="text-3xl md:text-6xl font-black tracking-tighter leading-[1.05] text-[#F8FAFC] text-balance">
               {post.title}
             </h1>
-            <div className="flex flex-wrap items-center gap-4 text-[#98A2B3] text-[9px] font-black uppercase tracking-widest pt-4 border-t border-white/[0.03]">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-[#4F8CFF]" /> Jeff Queiroz</span>
-              <span className="w-1 h-1 rounded-full bg-white/20"></span>
-              <span className="flex items-center gap-1.5"><Clock size={12} className="text-[#4F8CFF]" /> {post.time}</span>
-              <span className="w-1 h-1 rounded-full bg-white/20"></span>
-              <span className="flex items-center gap-1.5"><Calendar size={12} className="text-[#4F8CFF]" /> Agosto 2026</span>
+            <p className="text-lg md:text-xl text-[#98A2B3] font-medium max-w-3xl leading-relaxed">
+              {post.subtitle}
+            </p>
+            
+            <div className="flex flex-wrap items-center gap-6 pt-8 border-t border-white/[0.05]">
+              <div className="flex items-center gap-4">
+                <img src={profileImg} alt="Jeff Queiroz" className="w-12 h-12 rounded-2xl object-cover border border-[#4F8CFF]/30" />
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#4F8CFF]">Autor</p>
+                  <p className="text-white text-sm font-black">Jeff Queiroz</p>
+                </div>
+              </div>
+              <div className="h-8 w-px bg-white/10 hidden sm:block" />
+              <div className="flex items-center gap-3 text-[#98A2B3]">
+                <Calendar size={18} className="text-[#4F8CFF]" />
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em]">Publicado</p>
+                  <p className="text-white text-sm font-black">{post.date}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 -mt-12 relative z-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 -mt-16 relative z-20">
         <div className="lg:col-span-8 xl:col-span-9">
-          <div className="bg-[#11141A] rounded-[28px] overflow-hidden shadow-2xl border border-white/[0.05] premium-border">
-            <div className="aspect-[21/9] w-full overflow-hidden">
-              <img src={post.img} alt={post.title} className="w-full h-full object-cover" />
-            </div>
-            <div className="p-6 md:p-10">
-              {post.content}
-              
-              {/* Mentorship Banner (Funnel BoFu) */}
-              <div className="mt-12 p-8 md:p-10 rounded-[32px] bg-[#4F8CFF] text-[#080A0F] relative overflow-hidden shadow-2xl group">
-                <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl -mr-24 -mt-24 transition-transform group-hover:scale-110"></div>
-                <div className="relative z-10 space-y-5">
-                  <span className="text-[9px] font-black uppercase tracking-[0.25em] bg-[#080A0F]/10 px-2.5 py-1 rounded-md">
-                    Mentoria Acadêmica
-                  </span>
-                  <h3 className="text-2xl md:text-3xl font-black tracking-tighter leading-tight">
-                    Domine o Método de Estudo Ativo.
-                  </h3>
-                  <p className="text-xs md:text-base font-bold opacity-80 max-w-xl">
-                    A Mentoria Aprovado oferece o suporte estratégico que você precisa para organizar sua rotina.
-                  </p>
-                  <button 
-                    onClick={() => setView('mentorship')}
-                    className="bg-[#080A0F] text-white px-6 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-[#11141A] transition-all flex items-center gap-2 shadow-xl"
-                  >
-                    Conhecer Mentoria <ArrowRight size={14} strokeWidth={3} />
-                  </button>
+          <article className="glass-premium rounded-[48px] overflow-hidden p-1 shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
+            <div className="bg-[#11141A] rounded-[47px] overflow-hidden">
+              <div className="aspect-[21/9] w-full overflow-hidden relative">
+                <img src={post.img} alt={post.title} className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-40" />
+              </div>
+              <div className="p-8 md:p-16">
+                <div className="prose prose-invert max-w-none">
+                  {post.content}
+                </div>
+                
+                {/* Mega Premium Conversion Funnel */}
+                <div className="mt-20 glass-premium rounded-[40px] p-1 overflow-hidden group">
+                  <div className="bg-[#4F8CFF] rounded-[39px] p-10 md:p-16 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-[100px] -mr-48 -mt-48 transition-transform duration-1000 group-hover:scale-125" />
+                    
+                    <div className="relative z-10 space-y-6 md:w-3/5 text-center md:text-left">
+                      <div className="inline-flex items-center gap-2 bg-[#080A0F]/10 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] text-[#080A0F]">
+                        <Sparkles size={12} /> Próximo Passo
+                      </div>
+                      <h3 className="text-3xl md:text-5xl font-black text-[#080A0F] tracking-tighter leading-none">
+                        Acelere sua aprovação com método.
+                      </h3>
+                      <p className="text-base md:text-lg font-bold text-[#080A0F]/70 leading-relaxed">
+                        A Mentoria Aprovado é o ecossistema estratégico definitivo para quem busca o topo da carreira médica.
+                      </p>
+                      <button 
+                        onClick={() => setView('mentorship')}
+                        className="bg-[#080A0F] text-white px-10 py-5 rounded-[24px] font-black text-xs uppercase tracking-widest hover:bg-[#1A1F26] hover-lift transition-all flex items-center gap-3 shadow-2xl mx-auto md:mx-0"
+                      >
+                        Quero ser Mentorado <ArrowRight size={18} strokeWidth={3} />
+                      </button>
+                    </div>
+
+                    <div className="md:w-2/5 relative flex justify-center">
+                      <div className="w-48 h-48 md:w-64 md:h-64 rounded-[40px] bg-[#080A0F] rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-2xl flex items-center justify-center p-8">
+                        <img src="/logo-euvouserdoutor.png" alt="Logo" className="w-full h-auto brightness-0 invert opacity-20" />
+                        <GraduationCap size={80} className="absolute text-white/10" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Article Footer Meta */}
+                <div className="mt-16 pt-8 border-t border-white/[0.05] flex flex-wrap items-center justify-between gap-6">
+                  <div className="flex gap-2">
+                    {["Medicina", "Pesquisa", "Oxford", "Futuro"].map(tag => (
+                      <span key={tag} className="px-4 py-2 rounded-xl bg-white/[0.03] border border-white/[0.08] text-[10px] font-black uppercase tracking-widest text-[#98A2B3] hover:text-[#4F8CFF] cursor-pointer transition-colors">#{tag}</span>
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#98A2B3] hover:text-white transition-colors">
+                      <MessageSquare size={16} /> Comentar
+                    </button>
+                    <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#98A2B3] hover:text-white transition-colors">
+                      <Share2 size={16} /> Compartilhar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
 
         <div className="lg:col-span-4 xl:col-span-3">
