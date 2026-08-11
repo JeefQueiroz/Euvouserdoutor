@@ -5,6 +5,16 @@ import { Sidebar } from '../components/Sidebar';
 export const News = ({ setView }) => {
   const posts = [
     {
+      title: 'Oxford Inicia Primeiro Ensaio Clínico Global de Vacina Inovadora Contra o Vírus Ebola Bundibugyo',
+      subtitle: 'Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV em voluntários sadios, marcando resposta rápida a surto severo na República Democrática do Congo.',
+      cat: 'Saúde & Ciência',
+      date: '25 Jul 2026',
+      readTime: '7 min',
+      img: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=800',
+      target: 'post_ebola_oxford_2026',
+      featured: true,
+    },
+    {
       title: 'Como estudar para Medicina com método e constância',
       subtitle: 'Um guia editorial sobre rotina, revisão e organização para transformar esforço em processo de estudo.',
       cat: 'Técnicas de estudo',

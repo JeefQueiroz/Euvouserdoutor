@@ -17,6 +17,80 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    ebola_oxford_2026: {
+      title: "Oxford Inicia Primeiro Ensaio Clínico Global de Vacina Inovadora Contra o Vírus Ebola Bundibugyo",
+      cat: "Saúde & Ciência",
+      time: "7 min de leitura",
+      img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=800",
+      content: (
+        <>
+          <p className="text-xl text-gray-600 leading-relaxed font-medium mb-10 first-letter:text-7xl first-letter:font-black first-letter:text-[#0A192F] first-letter:mr-3 first-letter:float-left">
+            A Universidade de Oxford, por meio do renomado <strong>Oxford Vaccine Group</strong> e do <i>Pandemic Sciences Institute</i> (PSI), deu início bem-sucedido ao primeiro ensaio clínico em humanos (Fase 1) da vacina <strong>ChAdOx1 BDBV</strong>, desenvolvida especificamente para combater o <i>Bundibugyo ebolavirus</i> (BDBV) [1] [2]. O marco histórico ocorre em resposta direta ao avanço da epidemia na República Democrática do Congo (RDC) e em países vizinhos, considerada a terceira maior onda de ebola já registrada na história [3].
+          </p>
+
+          <div className="flex items-start gap-6 bg-white border border-gray-100 shadow-xl rounded-3xl p-8 mb-12 relative overflow-hidden group hover:border-blue-200 transition-colors">
+            <Quote size={40} className="text-[#5CE1E6] flex-shrink-0" />
+            <div className="relative z-10">
+              <h2 className="text-2xl font-black text-[#0A192F] uppercase mb-4">Por que isso importa</h2>
+              <p className="text-gray-600 leading-relaxed">
+                O surto atual causado pelo vírus Bundibugyo representa uma grave ameaça de saúde pública global devido à alta taxa de letalidade e à ausência anterior de uma vacina específica licenciada contra esta cepa específica do ebola. A rápida transição do imunizante da bancada de laboratório para os testes clínicos em apenas oito semanas demonstra a eficácia de plataformas modernas de vetor viral em emergências sanitárias internacionais [1].
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-black text-[#0A192F] mb-6 flex items-center gap-3">
+            <CheckCircle2 className="text-blue-600" />
+            Tecnologia Confiável e Produção em Escala
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+            O imunizante <strong>ChAdOx1 BDBV</strong> utiliza a mesma plataforma de vetor viral baseada em adenovírus de chimpanzé que deu origem à vacina Oxford/AstraZeneca contra a COVID-19 — um avanço biotecnológico estimado em salvar mais de seis milhões de vidas no primeiro ano de uso global [2]. A velocidade do programa foi alcançada graças a uma parceria internacional estratégica financiada pela Coalizão para Inovações em Preparação para Epidemias (CEPI), em um aporte de US$ 8,6 milhões destinado a acelerar o desenvolvimento clínico e a fabricação industrial [3].
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+            A fabricação das doses para os testes e o estoque estratégico inicial ficaram a cargo do <i>Serum Institute of India</i> (SII), que produziu e armazenou aproximadamente 620.000 doses do imunizante em tempo recorde de duas semanas, fornecendo 4.000 doses investigacionais para o início imediato do ensaio de Fase 1 em Oxford [1] [3].
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+              <h3 className="text-xl font-black text-[#0A192F] mb-3">Desenho do Estudo (BD-Ebov)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                O ensaio clínico de Fase 1 avalia a segurança e a imunogenicidade do candidato vacinal em 50 voluntários sadios com idades entre 18 e 55 anos no Reino Unido, sob rigorosa supervisão regulatória da MHRA [2].
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-blue-100">
+              <h3 className="text-xl font-black text-[#0A192F] mb-3">Próximos Passos em Uganda</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Em paralelo aos testes na Europa, consórcios internacionais planejam expandir os estudos clínicos para Uganda e RDC em parceria com unidades de pesquisa locais, visando a futura autorização de uso emergencial [1] [3].
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-[#0A192F] to-[#2E70CE] p-10 rounded-[32px] text-white shadow-2xl relative overflow-hidden my-12">
+            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
+                <Sparkles size={14} className="text-[#5CE1E6]" />
+                Compromisso Editorial
+              </div>
+              <h3 className="text-3xl font-black uppercase mb-4">Ciência, Rigor e Saúde Global</h3>
+              <p className="text-blue-100 leading-relaxed text-lg mb-6">
+                O portal <strong>EuvouserDoutor</strong> acompanha os principais avanços da medicina translacional, infeciologia e biotecnologia com rigor científico e compromisso com a verdade. Conheça nossas diretrizes e nossa cobertura editorial permanente.
+              </p>
+              <button onClick={() => setView('news')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
+                Ver todas as notícias
+              </button>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-black text-[#0A192F] mb-6">Fontes e Referências Científicas</h2>
+          <ol className="list-decimal pl-6 space-y-2 text-gray-600 text-base mb-8">
+            <li>University of Oxford. <i>First volunteer vaccinated in the world's first Bundibugyo ebolavirus vaccine trial</i>. Publicado em 24 de julho de 2026. Disponível em: <a href="https://www.ox.ac.uk/news/2026-07-24-first-volunteer-vaccinated-in-the-worlds-first-bundibugyo-ebolavirus-vaccine-trial" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ox.ac.uk</a> [1].</li>
+            <li>Coalition for Epidemic Preparedness Innovations (CEPI). <i>CEPI-backed Bundibugyo ebolavirus vaccine trial launched by Oxford</i>. Disponível em: <a href="https://cepi.net/cepi-backed-bundibugyo-ebolavirus-vaccine-trial-launched-oxford" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">cepi.net</a> [2].</li>
+            <li>British Medical Journal (BMJ). <i>Ebola vaccine: Oxford starts UK trial against Bundibugyo strain</i>. DOI: 10.1136/bmj-2026-100286 [3].</li>
+          </ol>
+        </>
+      )
+    },
     pomodoro: {
       title: "Técnica Pomodoro: Foco Total em Blocos de Tempo",
       cat: "Gestão de Tempo",
@@ -440,10 +514,10 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
            </h1>
            
            <div className="flex items-center gap-4 text-blue-200/80 text-sm font-medium border-t border-white/10 pt-8 mt-4">
-             <img src={profileImg} alt="Jeff Queiroz" className="w-12 h-12 rounded-full border-2 border-blue-500 object-cover shadow-xl" />
+             <img src={profileImg} alt="EuvouserDoutor - Jeff Queiroz" className="w-12 h-12 rounded-full border-2 border-blue-500 object-cover shadow-xl" />
              <div>
-               <div className="text-white font-bold text-base">Jeff Queiroz</div>
-               <div className="text-xs uppercase tracking-widest text-[#5CE1E6]">Conteúdo educacional</div>
+               <div className="text-white font-bold text-base">EuvouserDoutor - Jeff Queiroz</div>
+               <div className="text-xs uppercase tracking-widest text-[#5CE1E6]">Publicado em: 25/07/2026 às 08:30</div>
              </div>
            </div>
         </div>
