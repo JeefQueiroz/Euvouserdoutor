@@ -96,8 +96,8 @@ export const Materials = ({ setView }) => {
                   </span>
                 </div>
                 
-                <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] text-[#F8FAFC]">
-                  Materiais de <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Apoio & Métodos</span>
+                <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] text-[#F8FAFC] whitespace-nowrap">
+                  Materiais de <br className="md:hidden" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Apoio & Métodos</span>
                 </h1>
                 
                 <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
