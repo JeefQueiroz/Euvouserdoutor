@@ -1,5 +1,5 @@
 export const institutional = {
-  name: 'Eu Vou Ser Doutor',
+  name: 'Eu Vou Ser Doutor | Jeff Queiroz',
   legalName: 'Eu Vou Ser Doutor',
   owner: 'Jefferson Viana Queiroz',
   address: 'Rua Ana Dias Duarte, 191, apto 902, Belo Horizonte/MG, CEP 31742-273, Brasil',
@@ -27,19 +27,19 @@ export const institutional = {
 
 export const routeMeta = {
   home: {
-    title: 'Eu Vou Ser Doutor | Organização, rotina e evolução em Medicina',
+    title: 'Eu Vou Ser Doutor | Jeff Queiroz',
     description:
       'Conteúdos, materiais, notícias e mentoria para estudantes e vestibulandos de Medicina que querem estudar com mais direção.',
     path: '/',
   },
   about: {
-    title: 'Sobre | EuVouSerDoutor',
+    title: 'Sobre | Eu Vou Ser Doutor',
     description:
       'Conheça o EuVouSerDoutor, projeto educacional criado para apoiar estudantes e vestibulandos de Medicina com organização, rotina e conteúdo informativo.',
     path: '/sobre',
   },
   contact: {
-    title: 'Contato | EuVouSerDoutor',
+    title: 'Contato | Eu Vou Ser Doutor',
     description:
       'Fale com o EuVouSerDoutor pelos canais oficiais para dúvidas, materiais, mentoria, parcerias e assuntos institucionais.',
     path: '/contato',
@@ -75,19 +75,19 @@ export const routeMeta = {
     path: '/politica-de-cookies',
   },
   news: {
-    title: 'Notícias e Estratégias | EuVouSerDoutor',
+    title: 'Notícias | Eu Vou Ser Doutor',
     description:
       'Artigos, notícias e estratégias de estudo para futuros médicos, vestibulandos e estudantes de Medicina.',
     path: '/noticias',
   },
   materials: {
-    title: 'Materiais Gratuitos | EuVouSerDoutor',
+    title: 'Materiais | Eu Vou Ser Doutor',
     description:
       'Acesse materiais de apoio, flashcards, checklists, cronogramas e guias para organizar seus estudos.',
     path: '/materiais',
   },
   mentorship: {
-    title: 'Mentoria | EuVouSerDoutor',
+    title: 'Mentoria | Eu Vou Ser Doutor',
     description:
       'Acompanhamento educacional para organizar rotina, revisão e evolução nos estudos para Medicina.',
     path: '/mentoria',
@@ -106,7 +106,7 @@ export const routeMeta = {
     requiresAuth: true,
   },
   author: {
-    title: 'Jeff Queiroz · Criador e Editor Científico | EuVouSerDoutor',
+    title: 'Jeff Queiroz | Eu Vou Ser Doutor',
     description:
       'Conheça a trajetória de Jefferson Viana Queiroz (Jeff Queiroz), acadêmico de Medicina na UFMG e fundador do portal EuVouSerDoutor.',
     path: '/autor/jeff-queiroz',

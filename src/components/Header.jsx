@@ -38,7 +38,7 @@ export const Header = ({ setView, currentView, telegram }) => {
         </div>
         
         {/* Main Navigation Bar */}
-        <div className={`transition-all duration-300 ${isScrolled ? 'bg-[#080A0F]/95 backdrop-blur-2xl py-2 border-b border-white/[0.08] shadow-[0_10px_40px_rgba(0,0,0,0.5)]' : 'bg-[#080A0F]/80 backdrop-blur-xl border-b border-white/[0.05] py-4'} px-4 md:px-8`}>
+        <div className={`transition-all duration-300 ${isScrolled ? 'bg-[#080A0F]/95 backdrop-blur-2xl py-1.5 border-b border-white/[0.08] shadow-[0_10px_40px_rgba(0,0,0,0.5)]' : 'bg-[#080A0F]/80 backdrop-blur-xl border-b border-white/[0.05] py-3'} px-4 md:px-8`}>
           <div className="max-w-7xl mx-auto flex justify-between items-center gap-6">
             <div className="flex items-center gap-10">
               <button
@@ -47,7 +47,7 @@ export const Header = ({ setView, currentView, telegram }) => {
                 className="flex items-center group shrink-0 focus:outline-none transition-transform hover:scale-[1.02]"
                 aria-label="Ir para a página inicial"
               >
-                <img src="/logo-euvouserdoutor.png" alt="Logo" className="h-16 md:h-24 w-auto object-contain transition-opacity group-hover:opacity-90" />
+                <img src="/logo-euvouserdoutor.png" alt="Logo" className="h-10 md:h-14 w-auto object-contain transition-opacity group-hover:opacity-90" />
               </button>
             
               <nav className="hidden lg:flex items-center gap-1 text-[11px] font-black uppercase tracking-[0.15em] text-[#98A2B3]" aria-label="Navegação principal">
