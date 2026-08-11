@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, ShieldCheck, Sparkles, Youtube, Globe, MapPin, Briefcase, History, Heart, Brain, Rocket, Code } from 'lucide-react';
+import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, ShieldCheck, Sparkles, Youtube, Globe, MapPin, Briefcase, History, Heart, Brain, Rocket, Code, Lightbulb, Target, Compass, BookOpenCheck, Globe2, User } from 'lucide-react';
 import { institutional } from '../institutional';
 
 const PinterestIcon = ({ size = 18, className = "" }) => (
@@ -27,6 +27,36 @@ export const Author = ({ setView }) => {
       category: 'Produção Científica',
       date: 'Julho de 2026',
     },
+  ];
+
+  const blocks = [
+    {
+      icon: Target,
+      title: 'Missão',
+      text: 'Apoiar estudantes e vestibulandos de Medicina com conteúdo educacional, organização acadêmica e curadoria informativa de alto rigor.',
+    },
+    {
+      icon: GraduationCap,
+      title: 'Para quem é',
+      text: 'Para quem busca o topo da carreira médica, quer estudar com mais direção, revisar com critério e acompanhar o futuro da saúde.',
+    },
+    {
+      icon: Compass,
+      title: 'Como ajuda',
+      text: 'Reunindo materiais, notícias e métodos validados (como revisão espaçada e estudo ativo) para reduzir o improviso na preparação.',
+    },
+    {
+      icon: BookOpenCheck,
+      title: 'Compromisso',
+      text: 'Publicar conteúdo cientificamente verificado, informativo e responsável, fortalecendo a associação entre ciência e educação.',
+    },
+  ];
+
+  const facts = [
+    { icon: User, label: 'Responsável', value: institutional.owner },
+    { icon: Award, label: 'Marca registrada', value: `INPI - nº ${institutional.trademarkProcess}` },
+    { icon: Globe2, label: 'Site oficial', value: institutional.siteLabel },
+    { icon: ShieldCheck, label: 'Finalidade', value: 'Educação & Ciência' },
   ];
 
   return (
@@ -64,7 +94,7 @@ export const Author = ({ setView }) => {
               </div>
               
               <h1 className="text-3xl md:text-6xl font-black tracking-tighter leading-[0.9] text-[#F8FAFC]">
-                Jefferson Viana Queiroz
+                Sobre o Projeto <br /> & Jeff Queiroz
               </h1>
               
               <div className="flex flex-wrap justify-center md:justify-start gap-5 text-xs text-[#98A2B3] font-bold">
@@ -122,47 +152,71 @@ export const Author = ({ setView }) => {
             </div>
           </section>
 
-          {/* Interseção Tech & Medicina Section */}
-          <section className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 md:p-12 shadow-2xl space-y-8 premium-border">
+          {/* O Ecossistema Section (Merged from About) */}
+          <section className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 md:p-12 shadow-2xl space-y-8 premium-border relative overflow-hidden">
             <div className="space-y-6">
               <h2 className="text-2xl md:text-4xl font-black text-[#F8FAFC] tracking-tighter flex items-center gap-4">
-                <Code className="text-[#4F8CFF]" size={28} /> Inovação & Tecnologia
+                <Globe2 className="text-[#4F8CFF]" size={28} /> O Ecossistema EVD
               </h2>
               <p className="text-[#98A2B3] leading-relaxed text-base md:text-lg font-medium">
-                Jeff representa uma nova geração de médicos: aqueles construídos na interseção entre <strong>educação e inovação</strong>. Com experiência prévia como desenvolvedor de produtos digitais e estrategista em Web3, ele aplica hoje essa visão tecnológica para criar ferramentas que tornam o aprendizado mais organizado e acessível.
+                O <strong>EuVouSerDoutor</strong> nasceu do desejo de transformar experiência, conhecimento e tecnologia em ferramentas que ajudem outras pessoas a avançarem em sua própria jornada acadêmica. O projeto evoluiu de uma página de conteúdo para um ecossistema digital completo que acompanha o estudante desde o vestibular até a formação médica.
               </p>
-              <div className="bg-white/[0.02] border border-white/[0.05] rounded-2xl p-6 italic text-sm md:text-base text-[#F8FAFC]/80 border-l-4 border-l-[#4F8CFF]">
-                "O Eu Vou Ser Doutor não é apenas um portal de conteúdo; é a expressão de como a tecnologia e a inteligência artificial podem ser aliadas na construção de um projeto de vida concreto."
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                <div className="bg-white/[0.02] p-8 rounded-[28px] border border-white/[0.05] space-y-4">
+                  <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF]">
+                    <Rocket size={24} />
+                  </div>
+                  <h3 className="text-xl font-black text-[#F8FAFC] tracking-tight">Inovação Tecnológica</h3>
+                  <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                    Aplicamos algoritmos de repetição espaçada e inteligência artificial para otimizar a retenção de conteúdo médico denso.
+                  </p>
+                </div>
+                <div className="bg-white/[0.02] p-8 rounded-[28px] border border-white/[0.05] space-y-4">
+                  <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF]">
+                    <Heart size={24} />
+                  </div>
+                  <h3 className="text-xl font-black text-[#F8FAFC] tracking-tight">Rigor Editorial</h3>
+                  <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                    Cada notícia e material passa por uma curadoria rigorosa baseada em fontes primárias e evidências científicas.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
 
-          {/* Publicações em Destaque */}
+          {/* Interseção Tech & Medicina Section */}
           <section className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 md:p-12 shadow-2xl space-y-8 premium-border">
-            <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] tracking-tighter">
-              Produção Acadêmica & Editorial
-            </h2>
-            <div className="space-y-4">
-              {publications.map((pub, idx) => (
-                <div key={idx} className="group bg-white/[0.02] border border-white/[0.05] hover:border-[#4F8CFF]/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all">
-                  <div className="space-y-2">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF] bg-[#4F8CFF]/5 px-2.5 py-1 rounded-md border border-[#4F8CFF]/10">
-                      {pub.category}
-                    </span>
-                    <h3 className="text-base md:text-lg font-black text-[#F8FAFC] group-hover:text-white transition-colors">{pub.title}</h3>
-                  </div>
-                  <span className="text-[11px] text-[#98A2B3] font-bold shrink-0">{pub.date}</span>
-                </div>
-              ))}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-black text-[#F8FAFC] tracking-tighter flex items-center gap-4">
+                <Code className="text-[#4F8CFF]" size={28} /> Inovação & Futuro
+              </h2>
+              <p className="text-[#98A2B3] leading-relaxed text-base md:text-lg font-medium">
+                Com experiência prévia como desenvolvedor e estrategista digital, Jeff aplica hoje essa visão para criar ferramentas que tornam o aprendizado mais organizado e acessível.
+              </p>
+              <div className="bg-white/[0.02] border border-white/[0.05] rounded-2xl p-6 italic text-sm md:text-base text-[#F8FAFC]/80 border-l-4 border-l-[#4F8CFF]">
+                "O Eu Vou Ser Doutor é a expressão de como a tecnologia pode ser aliada na construção de um projeto de vida concreto: transformar o objetivo de cursar Medicina em realidade."
+              </div>
             </div>
           </section>
         </div>
 
         {/* Sidebar */}
         <div className="lg:col-span-4 space-y-8">
+          {/* Quick Facts Card (from About) */}
+          <div className="grid grid-cols-1 gap-4">
+            {facts.map((item) => (
+              <div key={item.label} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-6 premium-border group hover:bg-white/[0.02] transition-all">
+                <item.icon size={20} className="text-[#4F8CFF] mb-4 group-hover:scale-110 transition-transform" aria-hidden="true" />
+                <p className="text-[10px] font-black uppercase tracking-widest text-[#98A2B3] mb-1">{item.label}</p>
+                <p className="text-sm font-black text-[#F8FAFC] leading-snug">{item.value}</p>
+              </div>
+            ))}
+          </div>
+
           {/* Social Links Card */}
           <div className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 space-y-8 premium-border">
-            <h3 className="text-xs font-black text-[#F8FAFC] uppercase tracking-[0.2em]">Conecte-se com Jeff</h3>
+            <h3 className="text-xs font-black text-[#F8FAFC] uppercase tracking-[0.2em]">Conecte-se</h3>
             <div className="space-y-3">
               <a href={institutional.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-[#F8FAFC] hover:border-[#4F8CFF]/40 hover:bg-[#4F8CFF]/5 transition-all text-sm font-bold group">
                 <Instagram size={18} className="text-[#4F8CFF] group-hover:scale-110 transition-transform" /> @euvouserdoutor
@@ -176,9 +230,6 @@ export const Author = ({ setView }) => {
               <a href={institutional.pinterest} target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-[#F8FAFC] hover:border-[#4F8CFF]/40 hover:bg-[#4F8CFF]/5 transition-all text-sm font-bold group">
                 <PinterestIcon size={18} className="text-[#4F8CFF] group-hover:scale-110 transition-transform" /> Pinterest
               </a>
-              <a href={`mailto:${institutional.email}`} className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-[#F8FAFC] hover:border-[#4F8CFF]/40 hover:bg-[#4F8CFF]/5 transition-all text-sm font-bold group">
-                <Mail size={18} className="text-[#4F8CFF] group-hover:scale-110 transition-transform" /> {institutional.email}
-              </a>
             </div>
           </div>
           
@@ -187,7 +238,7 @@ export const Author = ({ setView }) => {
             <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl -mr-24 -mt-24 transition-transform duration-1000 group-hover:scale-150" />
             <Sparkles size={32} className="text-[#080A0F] opacity-80" />
             <h3 className="text-2xl font-black text-[#080A0F] tracking-tighter leading-tight relative z-10">
-              Transforme sua <br /> jornada hoje.
+              Acelere sua <br /> Aprovação.
             </h3>
             <p className="text-[#080A0F]/80 text-sm font-bold leading-relaxed relative z-10">
               Acompanhe os métodos que levaram Jeff ao topo da Federal e aplique-os na sua rotina.
@@ -199,6 +250,28 @@ export const Author = ({ setView }) => {
               Conhecer Mentoria
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Mission Blocks Section (from About) */}
+      <div className="max-w-7xl mx-auto px-6 pt-20 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {blocks.map((item) => (
+          <article key={item.title} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-8 shadow-2xl premium-border hover:border-[#4F8CFF]/30 transition-colors">
+            <div className="w-12 h-12 rounded-xl bg-[#4F8CFF]/10 text-[#4F8CFF] flex items-center justify-center mb-6">
+              <item.icon size={24} aria-hidden="true" />
+            </div>
+            <h2 className="text-xl font-black text-[#F8FAFC] mb-3 tracking-tight">{item.title}</h2>
+            <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">{item.text}</p>
+          </article>
+        ))}
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="bg-[#11141A] border border-[#4F8CFF]/20 rounded-[24px] p-8 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[#4F8CFF]/5" />
+          <p className="text-[#98A2B3] text-xs md:text-sm leading-relaxed font-medium italic relative z-10 text-center">
+            {institutional.medicalNotice}
+          </p>
         </div>
       </div>
     </div>

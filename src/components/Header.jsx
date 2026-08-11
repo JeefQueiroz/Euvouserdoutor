@@ -56,8 +56,7 @@ export const Header = ({ setView, currentView, telegram }) => {
                   ['news', 'Notícias'],
                   ['materials', 'Materiais'],
                   ['mentorship', 'Mentoria'],
-                  ['about', 'Sobre'],
-                  ['author', 'Autor'],
+                  ['author', 'Sobre'],
                   ['contact', 'Contato'],
                 ].map(([view, label]) => (
                   <button

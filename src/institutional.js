@@ -32,12 +32,7 @@ export const routeMeta = {
       'Conteúdos, materiais, notícias e mentoria para estudantes e vestibulandos de Medicina que querem estudar com mais direção.',
     path: '/',
   },
-  about: {
-    title: 'Sobre | Eu Vou Ser Doutor',
-    description:
-      'Conheça o EuVouSerDoutor, projeto educacional criado para apoiar estudantes e vestibulandos de Medicina com organização, rotina e conteúdo informativo.',
-    path: '/sobre',
-  },
+
   contact: {
     title: 'Contato | Eu Vou Ser Doutor',
     description:
@@ -106,10 +101,10 @@ export const routeMeta = {
     requiresAuth: true,
   },
   author: {
-    title: 'Jeff Queiroz | Eu Vou Ser Doutor',
+    title: 'Sobre & Autor | Eu Vou Ser Doutor',
     description:
-      'Conheça a trajetória de Jefferson Viana Queiroz (Jeff Queiroz), acadêmico de Medicina na UFMG e fundador do portal EuVouSerDoutor.',
-    path: '/autor/jeff-queiroz',
+      'Conheça a trajetória de Jefferson Viana Queiroz e a missão do ecossistema Eu Vou Ser Doutor na preparação para Medicina.',
+    path: '/sobre',
   },
   notfound: {
     title: 'Página Não Encontrada | EuVouSerDoutor',
@@ -163,6 +158,9 @@ export const routeMeta = {
   },
 };
 
-export const pathToView = Object.fromEntries(
-  Object.entries(routeMeta).map(([view, meta]) => [meta.path, view])
-);
+export const pathToView = {
+  ...Object.fromEntries(
+    Object.entries(routeMeta).map(([view, meta]) => [meta.path, view])
+  ),
+  '/autor/jeff-queiroz': 'author', // Redirect legacy path to unified view
+};

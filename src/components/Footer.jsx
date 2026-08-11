@@ -86,8 +86,7 @@ export const Footer = ({ setView, telegram }) => (
             <h3 className="text-white font-black uppercase tracking-[0.2em] text-[10px]">Institucional</h3>
             <ul className="space-y-3">
               {[
-                ['about', 'Sobre'],
-                ['author', 'Autor'],
+                ['author', 'Sobre'],
                 ['contact', 'Contato'],
               ].map(([view, label]) => (
                 <li key={view}>
