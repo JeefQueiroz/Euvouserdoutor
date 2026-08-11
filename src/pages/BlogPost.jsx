@@ -88,6 +88,47 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
 
   const post = postsData[postId] || postsData.ebola_oxford_2026;
 
+  useEffect(() => {
+    const scriptId = 'news-article-schema';
+    let script = document.getElementById(scriptId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = scriptId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": post.title,
+      "image": [post.img],
+      "datePublished": "2026-08-11T08:00:00-03:00",
+      "dateModified": "2026-08-11T08:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "Jefferson Viana Queiroz",
+        "url": "https://www.euvouserdoutor.com/autor/jeff-queiroz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Eu Vou Ser Doutor",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.euvouserdoutor.com/logo-euvouserdoutor.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": window.location.href
+      }
+    });
+
+    return () => {
+      const s = document.getElementById(scriptId);
+      if (s) s.remove();
+    };
+  }, [post]);
+
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
       {/* Progress Bar */}
@@ -128,7 +169,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 -mt-10 relative z-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 -mt-12 relative z-20">
         <div className="lg:col-span-8 xl:col-span-9">
           <div className="bg-[#11141A] rounded-[28px] overflow-hidden shadow-2xl border border-white/[0.05] premium-border">
             <div className="aspect-[21/9] w-full overflow-hidden">
