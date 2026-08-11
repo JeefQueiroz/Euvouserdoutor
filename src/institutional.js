@@ -2,7 +2,7 @@ export const institutional = {
   name: 'Eu Vou Ser Doutor | Jeff Queiroz',
   legalName: 'Eu Vou Ser Doutor',
   owner: 'Jefferson Viana Queiroz',
-  address: 'Rua Ana Dias Duarte, 191, apto 902, Belo Horizonte/MG, CEP 31742-273, Brasil',
+  address: '',
   alternatePhone: '+55 (31) 98297-2421',
   email: 'jeffqueiroz@icloud.com',
   alternateEmail: 'jeffqueiroz123@gmail.com',

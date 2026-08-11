@@ -184,8 +184,7 @@ export const Footer = ({ setView, telegram }) => (
             <div>
               <p className="text-[10px] font-black uppercase tracking-widest text-white/50 mb-1">Responsabilidade Institucional</p>
               <p className="text-[11px] text-[#98A2B3] font-medium leading-relaxed">
-                {institutional.legalName} | Responsável: {institutional.owner}<br />
-                {institutional.address}
+                {institutional.legalName} | Responsável: {institutional.owner}
               </p>
             </div>
           </div>
