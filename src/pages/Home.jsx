@@ -200,7 +200,7 @@ export const Home = ({ setView }) => {
                 <h3 className="text-3xl md:text-5xl font-black text-[#F8FAFC] tracking-tighter">Jeff Queiroz <span className="text-[#98A2B3]/30">·</span> Medicina UFMG</h3>
               </div>
               <p className="text-[#98A2B3] text-sm md:text-base leading-relaxed max-w-2xl font-medium">
-                Pesquisador e estrategista acadêmico, Jeff Queiroz fundou o **EuVouSerDoutor** para elevar o padrão da comunicação científica e preparação médica no Brasil, unindo rigor editorial e inovação tecnológica.
+                Pesquisador e estrategista acadêmico, Jeff Queiroz fundou o <strong>EuVouSerDoutor</strong> para elevar o padrão da comunicação científica e preparação médica no Brasil, unindo rigor editorial e inovação tecnológica.
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-6 pt-2">
                 <button
@@ -212,7 +212,7 @@ export const Home = ({ setView }) => {
                 <div className="h-4 w-px bg-white/10 hidden md:block" />
                 <div className="flex items-center gap-2 text-[10px] font-bold text-[#98A2B3]">
                   <Layers size={14} className="text-[#4F8CFF]" />
-                  <span>+500 Artigos Publicados</span>
+                  <span>Conteúdo Editorial Científico</span>
                 </div>
               </div>
             </div>
