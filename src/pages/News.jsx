@@ -15,6 +15,14 @@ export const News = ({ setView }) => {
       featured: true,
     },
     {
+      title: 'Polilaminina e os Avanços na Regeneração Neural',
+      subtitle: 'Descobertas recentes em neurologia avaliam o potencial da polilaminina na regeneração axonal e no tratamento de lesões complexas.',
+      cat: 'Neurologia',
+      readTime: '6 min',
+      img: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800',
+      target: 'post_polilaminina',
+    },
+    {
       title: 'Técnica Pomodoro para blocos de foco',
       subtitle: 'Como usar ciclos curtos de estudo e pausa para manter atenção sem depender de maratonas improdutivas.',
       cat: 'Rotina',

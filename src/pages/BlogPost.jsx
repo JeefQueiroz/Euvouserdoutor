@@ -335,6 +335,60 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           </div>
         </>
       )
+    },
+    polilaminina: {
+      title: "Polilaminina e os Avanços na Regeneração Neural",
+      cat: "Neurologia",
+      time: "6 min de leitura",
+      img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800",
+      content: (
+        <>
+          <p className="text-xl text-gray-600 leading-relaxed font-medium mb-10 first-letter:text-7xl first-letter:font-black first-letter:text-[#0A192F] first-letter:mr-3 first-letter:float-left">
+            A pesquisa translacional em neurologia tem avançado na busca por soluções para lesões complexas do sistema nervoso central. Entre as inovações recentes, a polilaminina — uma versão sintética e estável da laminina — gerou debates e expectativas na comunidade científica internacional sobre o estímulo ao crescimento de axônios.
+          </p>
+
+          <div className="flex items-start gap-6 bg-white border border-gray-100 shadow-xl rounded-3xl p-8 mb-12 relative overflow-hidden group hover:border-blue-200 transition-colors">
+            <Quote size={40} className="text-[#5CE1E6] flex-shrink-0" />
+            <div className="relative z-10">
+              <h2 className="text-2xl font-black text-[#0A192F] uppercase mb-4">O Papel da Laminina na Matriz Extracelular</h2>
+              <p className="text-gray-600 leading-relaxed">
+                A laminina é uma proteína essencial na organização estrutural dos tecidos e no desenvolvimento das células nervosas. Em modelos experimentais, pesquisadores investigam como a polimerização controlada dessa proteína pode auxiliar na formação de microestruturas que favorecem a regeneração axonal e a modulação da plasticidade neural [1] [2].
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-black text-[#0A192F] mb-6 flex items-center gap-3">
+            <CheckCircle2 className="text-blue-600" />
+            Rigor Científico e Perspectiva Translacional
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+            Apesar do entusiasmo gerado em torno de terapias experimentais para lesões medulares e doenças neurodegenerativas, sociedades científicas e pesquisadores reforçam a necessidade de ensaios clínicos controlados, duplo-cegos e revisados por pares antes de qualquer aplicação clínica generalizada. A segurança do paciente e a reprodutibilidade dos dados continuam sendo os pilares fundamentais da medicina baseada em evidências.
+          </p>
+
+          <div className="bg-gradient-to-br from-[#0A192F] to-[#2E70CE] p-10 rounded-[32px] text-white shadow-2xl relative overflow-hidden my-12">
+            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
+                <Sparkles size={14} className="text-[#5CE1E6]" />
+                Formação Médica Crítica
+              </div>
+              <h3 className="text-3xl font-black uppercase mb-4">Estudo Crítico de Evidências</h3>
+              <p className="text-blue-100 leading-relaxed text-lg mb-6">
+                Para futuros médicos e estudantes, analisar descobertas científicas com rigor metodológico é essencial. No ecossistema <strong>Eu Vou Ser Doutor</strong>, o incentivo à leitura crítica e ao pensamento científico acompanha a preparação acadêmica.
+              </p>
+              <button onClick={() => setView('mentorship')} className="bg-[#5CE1E6] text-[#0A192F] px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-lg">
+                Conheça a Mentoria
+              </button>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-black text-[#0A192F] mb-6">Referências Bibliográficas</h2>
+          <ol className="list-decimal pl-6 space-y-2 text-gray-600 text-base mb-8">
+            <li>Metrópoles Saúde. <i>Estudo sobre polilaminina tem chance de ganhar o Prêmio Nobel</i>. Disponível em: <a href="https://www.metropoles.com/saude/polilaminina-chances-premio-nobel" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">metropoles.com</a> [1].</li>
+            <li>Deutsche Welle (DW). <i>As promessas e as polêmicas da polilaminina</i>. Disponível em: <a href="https://www.dw.com/pt-br/as-promessas-e-as-pol%C3%AAmicas-da-polilaminina/a-76148863" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">dw.com</a> [2].</li>
+          </ol>
+        </>
+      )
     }
   };
 
