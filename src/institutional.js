@@ -98,6 +98,13 @@ export const routeMeta = {
       'Conteúdo sobre revisão ativa, flashcards e organização de estudos.',
     path: '/flashcards',
   },
+  admin: {
+    title: 'Painel Administrativo | Eu Vou Ser Doutor',
+    description:
+      'Área restrita para gestão editorial e monitoramento do portal.',
+    path: '/admin',
+    requiresAuth: true,
+  },
 };
 
 export const pathToView = Object.fromEntries(

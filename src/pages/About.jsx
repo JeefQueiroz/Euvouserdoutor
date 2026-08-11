@@ -50,22 +50,19 @@ export const About = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
         <article className="lg:col-span-7 bg-white rounded-3xl border border-[#DDE6F2] shadow-[0_18px_48px_rgba(10,25,47,0.07)] p-8 md:p-10">
-          <p className="text-[#2E70CE] text-[10px] font-black uppercase tracking-[0.25em] mb-4">O projeto</p>
+          <p className="text-[#2E70CE] text-[10px] font-black uppercase tracking-[0.25em] mb-4">Criador e Autor</p>
           <h2 className="text-3xl md:text-4xl font-black text-[#0A192F] tracking-tight mb-6">
-            Conteúdo e organização para uma trajetória mais clara.
+            Criado por Jefferson Queiroz (Jeff Queiroz)
           </h2>
           <div className="space-y-5 text-gray-600 leading-relaxed text-lg">
             <p>
-              O {institutional.name} reúne conteúdos educacionais, materiais de apoio, ideias de rotina,
-              organização acadêmica e informações úteis para quem está construindo uma trajetória na Medicina.
+              O <strong className="text-[#0A192F]">{institutional.name}</strong> foi criado e é liderado por <strong className="text-[#0A192F]">Jefferson Viana Queiroz (Jeff Queiroz)</strong>, estudante de Medicina da UFMG e referência em organização acadêmica, rotina e curadoria de conteúdo para vestibulandos e futuros médicos.
             </p>
             <p>
-              A proposta é ajudar estudantes e vestibulandos a estudarem com mais direção, método e constância,
-              sempre com linguagem informativa e sem promessa de resultado.
+              O portal reúne conteúdos educacionais, materiais de apoio, artigos científicos rigorosamente verificados e estratégias de estudo para democratizar o acesso à aprovação e à evolução na carreira médica.
             </p>
             <p>
-              O site funciona como ponto oficial da presença digital do projeto, conectado aos canais sociais
-              e aos materiais publicados para estudantes, vestibulandos e pessoas interessadas no universo da Medicina.
+              Todas as publicações do portal são assinadas sob o padrão oficial <strong className="text-[#0A192F]">EuvouserDoutor - Jeff Queiroz</strong>, garantindo autenticidade, rigor científico e compromisso editorial com a verdade.
             </p>
           </div>
         </article>
