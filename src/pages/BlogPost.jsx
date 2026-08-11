@@ -17,6 +17,116 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    cart_brasil_2026: {
+      title: "Terapia CAR-T 100% Nacional Atinge 72% de Remissão em Cânceres Avançados do Sangue",
+      subtitle: "Desenvolvida por USP, Hemocentro de Ribeirão Preto e Instituto Butantan, inovação biotecnológica abre caminho para o acesso democrático a tratamentos genéticos avançados no SUS.",
+      cat: "Saúde & Ciência",
+      time: "8 min",
+      date: "11 Ago 2026",
+      img: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A ciência brasileira alcançou um marco histórico na oncologia e na biotecnologia avançada. Os primeiros resultados dos ensaios clínicos da <strong>terapia CAR-T 100% nacional</strong> — desenvolvida por uma força-tarefa que une a Universidade de São Paulo (USP), o Hemocentro de Ribeirão Preto (CTC-USP) e o Instituto Butantan — revelaram uma taxa de resposta global de 81% e uma <strong>remissão completa de 72%</strong> em pacientes com leucemias e linfomas agressivos que já haviam esgotado todas as alternativas terapêuticas tradicionais.
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            O avanço representa uma mudança de patamar para o Sistema Único de Saúde (SUS). Até então restrita a centros de excelência no exterior com custos milionários que inviabilizavam a incorporação em larga escala, a produção soberana de células geneticamente modificadas no Brasil democratiza o acesso a uma das armas mais poderosas da medicina moderna contra o câncer.
+          </p>
+
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Target size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por que isso importa</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  \"A transição de terapias gênicas importadas de milhões de dólares para uma plataforma nacional viável no SUS não é apenas uma conquista científica; é uma questão de soberania sanitária e direito à vida para milhares de brasileiros.\"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Como Funciona a Reprogramação Celular
+          </h2>
+          
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            A terapia CAR-T (<i>Chimeric Antigen Receptor T-cell</i>) é uma forma avançada de imunoterapia viva. O processo começa com a coleta dos linfócitos T do próprio paciente através de aférese. Em laboratório, essas células de defesa são geneticamente reprogramadas com a inserção de um gene sintético que lhes confere um "radar" molecular — o receptor quimérico de antígeno.
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            Quando reinfundidas no organismo do paciente, as células CAR-T passam a reconhecer e destruir com precisão cirúrgica as células tumorais que expressam o antígeno CD19, característico de neoplasias hematológicas como a leucemia linfoblástica aguda e o linfoma não-Hodgkin. O tratamento age como um medicamento vivo que persiste no corpo, vigiando e eliminando recidivas.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Sparkles size={20} />
+              </div>
+              <h3 className="text-base font-black text-[#F8FAFC]">Independência Tecnológica</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                A capacidade de fabricação nacional em centros certificados reduz a dependência de insumos internacionais e reduz custos operacionais em até 80%.
+              </p>
+            </div>
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Clock size={20} />
+              </div>
+              <h3 className="text-base font-black text-[#F8FAFC]">Resposta Rápida</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                Avaliações clínicas de acompanhamento demonstraram que a remissão completa pode ser detectada em exames de imagem logo no primeiro mês após a infusão.
+              </p>
+            </div>
+          </div>
+
+          <div className="my-16 relative">
+             <div className="absolute inset-0 bg-[#4F8CFF]/5 blur-3xl rounded-full" />
+             <blockquote className="relative p-10 border-l-4 border-[#4F8CFF] bg-white/[0.02] rounded-r-[32px] italic text-xl md:text-2xl font-medium text-[#F8FAFC] leading-relaxed">
+               \"Ver pacientes sem nenhuma outra expectativa de cura retornarem à vida normal após uma única infusão de células modificadas no Brasil é a coroação de anos de pesquisa pública e rigor científico.\"
+               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Comitê Científico do Centro de Terapia Celular (CTC-USP)</footer>
+             </blockquote>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Desafios e Próximos Passos Clínicos
+          </h2>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            Embora os índices de 72% de remissão completa coloquem o Brasil no seleto grupo de nações capazes de desenvolver terapias gênicas avançadas, os pesquisadores ressaltam que o monitoramento de longo prazo continua essencial. Efeitos colaterais imunológicos, como a síndrome de liberação de citocinas (SLC), exigem protocolos hospitalares altamente especializados.
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-12 text-base md:text-lg font-medium">
+            Atualmente, os institutos parceiros expandem os ensaios clínicos para novos centros oncológicos no país e preparam a submissão regulatória definitiva à Agência Nacional de Vigilância Sanitária (Anvisa), pavimentando a incorporação gradual do tratamento nas redes pública e suplementar.
+          </p>
+
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-4 mb-12">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-[#4F8CFF]">Conteúdo Relacionado</h4>
+            <button onClick={() => setView("news")} className="flex items-center justify-between w-full group text-left">
+              <span className="text-sm font-bold text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors underline decoration-[#4F8CFF]/30 underline-offset-4">Oxford inicia ensaio clínico global de vacina inovadora contra o vírus Ebola</span>
+              <ExternalLink size={14} className="text-[#98A2B3] group-hover:text-[#4F8CFF] shrink-0 ml-4" />
+            </button>
+          </div>
+
+          <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes Científicas</h2>
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3">
+            {[
+              "Universidade de São Paulo (USP) / Centro de Terapia Celular (CTC-RP). Resultados preliminares do ensaio clínico de terapia CAR-T nacional. 2026.",
+              "Instituto Butantan. Avanços no desenvolvimento soberano de imunoterapias celulares para o SUS. 2026.",
+              "Frontiers in Hematology. The evolving landscape of CAR T-cell therapy access in Brazil. DOI: 10.3389/frhem.2026.1813861"
+            ].map((ref, i) => (
+              <div key={i} className="flex gap-3 text-xs text-[#98A2B3] font-medium leading-relaxed">
+                <span className="text-[#4F8CFF] font-black">[{i+1}]</span>
+                <span>{ref}</span>
+              </div>
+            ))}
+          </div>
+        </>
+      )
+    },
+
     ebola_oxford_2026: {
       title: "Oxford Inicia Primeiro Ensaio Clínico Global de Vacina Contra o Vírus Ebola Bundibugyo",
       subtitle: "Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV, marcando resposta rápida a surto severo na África.",

@@ -9,6 +9,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "cart_brasil_2026",
+      title: "Terapia CAR-T 100% Nacional Atinge 72% de Remissão em Cânceres Avançados do Sangue",
+      subtitle: "Desenvolvida por USP, Hemocentro de Ribeirão Preto e Instituto Butantan, inovação biotecnológica abre caminho para o acesso democrático a tratamentos genéticos avançados no SUS.",
+      cat: "Saúde & Ciência",
+      date: "11 Ago 2026",
+      readTime: "8 min",
+      img: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&q=80&w=1200",
+      target: "post_cart_brasil_2026",
+      featured: true,
+    },
+    {
       id: 'ebola_oxford_2026',
       title: 'Oxford Inicia Primeiro Ensaio Clínico Global de Vacina Inovadora Contra o Vírus Ebola Bundibugyo',
       subtitle: 'Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV em voluntários sadios, marcando resposta rápida a surto severo na República Democrática do Congo.',
