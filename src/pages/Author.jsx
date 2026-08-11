@@ -62,76 +62,74 @@ export const Author = ({ setView }) => {
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
       {/* Editorial Header - Mega Premium */}
-      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-28 px-6 relative overflow-hidden">
+      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-12 pb-24 px-6 relative overflow-hidden">
         {/* Advanced Visual Layers */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_45%)]" />
         <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-        <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-r from-[#4F8CFF]/5 to-transparent pointer-events-none" />
         
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
-            <div className="max-w-4xl space-y-8 text-left">
-              <button
-                type="button"
-                onClick={() => setView('home')}
-                className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-4 py-2 rounded-xl hover:bg-white/[0.06] transition-all"
-              >
-                <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
-              </button>
-              
-              <div className="space-y-6">
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                    <User size={10} /> Perfil Institucional
-                  </span>
-                  <span className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                    Acadêmico de Medicina UFMG
-                  </span>
-                </div>
-                
-                <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] text-[#F8FAFC] whitespace-nowrap">
-                  Sobre o Projeto <br className="md:hidden" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">& Jeff Queiroz</span>
-                </h1>
-                
-                <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
-                  Conheça a trajetória de superação e a visão tecnológica por trás do ecossistema <strong>Eu Vou Ser Doutor</strong>, unindo o rigor da ciência à eficiência da inovação.
-                </p>
+          <button
+            type="button"
+            onClick={() => setView('home')}
+            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-4 py-2 rounded-xl hover:bg-white/[0.06] transition-all mb-10"
+          >
+            <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
+          </button>
 
-                <div className="flex flex-wrap gap-6 pt-2">
-                  <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
-                    <MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG
+          <div className="flex flex-col md:flex-row items-center md:items-end gap-12">
+            {/* Profile Card - Mega Premium & Colorful */}
+            <div className="min-w-[280px] md:min-w-[320px]">
+              <div className="glass-premium rounded-[32px] p-1.5 border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative overflow-hidden group">
+                <div className="bg-[#11141A] rounded-[30px] overflow-hidden">
+                  <div className="aspect-[4/5] w-full overflow-hidden relative">
+                    {/* COLORFUL IMAGE - Grayscale removed */}
+                    <img src={profileImg} alt="Jefferson Queiroz" className="w-full h-full object-cover transition-all duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-40" />
+                    <div className="absolute bottom-5 left-5 right-5 z-10">
+                      <p className="text-[9px] font-black uppercase tracking-[0.3em] text-[#4F8CFF] mb-0.5">Fundador & Editor</p>
+                      <h3 className="text-lg font-black text-white tracking-tight">Jeff Queiroz</h3>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
-                    <Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital
-                  </div>
-                  <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
-                    <Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação
+                  <div className="p-5 space-y-3">
+                    <div className="flex items-center justify-between text-[8px] font-black uppercase tracking-widest text-[#98A2B3]">
+                      <span>Autoridade Acadêmica</span>
+                      <span className="text-[#4F8CFF]">Verificado</span>
+                    </div>
+                    <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-r from-[#4F8CFF] to-[#2E70CE] animate-pulse" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Profile Card - Mega Premium */}
-            <div className="hidden xl:block min-w-[360px]">
-              <div className="glass-premium rounded-[40px] p-2 border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative overflow-hidden group">
-                <div className="bg-[#11141A] rounded-[38px] overflow-hidden">
-                  <div className="aspect-[4/5] w-full overflow-hidden relative">
-                    <img src={profileImg} alt="Jefferson Queiroz" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-60" />
-                    <div className="absolute bottom-6 left-6 right-6 z-10">
-                      <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#4F8CFF] mb-1">Fundador & Editor</p>
-                      <h3 className="text-xl font-black text-white tracking-tight">Jeff Queiroz</h3>
-                    </div>
-                  </div>
-                  <div className="p-6 space-y-4">
-                    <div className="flex items-center justify-between text-[9px] font-black uppercase tracking-widest text-[#98A2B3]">
-                      <span>Autoridade Acadêmica</span>
-                      <span className="text-[#4F8CFF]">Verificado</span>
-                    </div>
-                    <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-r from-[#4F8CFF] to-[#2E70CE] animate-pulse" />
-                    </div>
-                  </div>
+            <div className="text-center md:text-left space-y-6">
+              <div className="flex flex-wrap justify-center md:justify-start items-center gap-3">
+                <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
+                  <User size={10} /> Perfil Institucional
+                </span>
+                <span className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
+                  Medicina UFMG
+                </span>
+              </div>
+              
+              <h1 className="text-4xl md:text-7xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
+                Sobre o Projeto & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Jeff Queiroz</span>
+              </h1>
+              
+              <p className="text-base md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium mx-auto md:mx-0">
+                Conheça a trajetória de superação e a visão tecnológica por trás do ecossistema <strong>Eu Vou Ser Doutor</strong>, unindo o rigor da ciência à eficiência da inovação.
+              </p>
+
+              <div className="flex flex-wrap justify-center md:justify-start gap-5 pt-2">
+                <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
+                  <MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
+                  <Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
+                  <Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação
                 </div>
               </div>
             </div>
@@ -140,7 +138,7 @@ export const Author = ({ setView }) => {
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 -mt-12 relative z-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 relative z-20">
         <div className="lg:col-span-8 space-y-12">
           
           {/* Biografia Section */}
