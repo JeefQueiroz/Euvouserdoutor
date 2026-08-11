@@ -61,28 +61,27 @@ export const Author = ({ setView }) => {
 
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
-      {/* Editorial Header - Mega Premium */}
-      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-12 pb-24 px-6 relative overflow-hidden">
-        {/* Advanced Visual Layers */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_45%)]" />
-        <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+      {/* Header - Restored to Clean Layout with Card */}
+      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-12 pb-24 px-6 relative overflow-hidden">
+        {/* Simple Radial Gradient - Removed Grid Dots for Cleanliness */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_40%)]" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <button
             type="button"
             onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-4 py-2 rounded-xl hover:bg-white/[0.06] transition-all mb-10"
+            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-12"
           >
             <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
           </button>
 
-          <div className="flex flex-col md:flex-row items-center md:items-end gap-12">
-            {/* Profile Card - Mega Premium & Colorful */}
-            <div className="min-w-[280px] md:min-w-[320px]">
-              <div className="glass-premium rounded-[32px] p-1.5 border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative overflow-hidden group">
+          <div className="max-w-6xl flex flex-col md:flex-row items-center md:items-end gap-12">
+            {/* Profile Card - COLORFUL & KEPT */}
+            <div className="min-w-[280px] md:min-w-[320px] relative group">
+              <div className="glass-premium rounded-[32px] p-1.5 border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.6)] overflow-hidden">
                 <div className="bg-[#11141A] rounded-[30px] overflow-hidden">
                   <div className="aspect-[4/5] w-full overflow-hidden relative">
-                    {/* COLORFUL IMAGE - Grayscale removed */}
+                    {/* COLOR IMAGE - NO GRAYSCALE */}
                     <img src={profileImg} alt="Jefferson Queiroz" className="w-full h-full object-cover transition-all duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-40" />
                     <div className="absolute bottom-5 left-5 right-5 z-10">
@@ -102,35 +101,25 @@ export const Author = ({ setView }) => {
                 </div>
               </div>
             </div>
-
+            
             <div className="text-center md:text-left space-y-6">
-              <div className="flex flex-wrap justify-center md:justify-start items-center gap-3">
-                <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                  <User size={10} /> Perfil Institucional
+              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                <span className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
+                  Fundador & Criador
                 </span>
-                <span className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
+                <span className="bg-white/5 border border-white/10 text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
                   Medicina UFMG
                 </span>
               </div>
               
-              <h1 className="text-4xl md:text-7xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
+              <h1 className="text-3xl md:text-7xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
                 Sobre o Projeto & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Jeff Queiroz</span>
               </h1>
               
-              <p className="text-base md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium mx-auto md:mx-0">
-                Conheça a trajetória de superação e a visão tecnológica por trás do ecossistema <strong>Eu Vou Ser Doutor</strong>, unindo o rigor da ciência à eficiência da inovação.
-              </p>
-
-              <div className="flex flex-wrap justify-center md:justify-start gap-5 pt-2">
-                <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
-                  <MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG
-                </div>
-                <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
-                  <Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital
-                </div>
-                <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
-                  <Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação
-                </div>
+              <div className="flex flex-wrap justify-center md:justify-start gap-5 text-xs text-[#98A2B3] font-bold">
+                <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG</span>
+                <span className="flex items-center gap-1.5"><Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital</span>
+                <span className="flex items-center gap-1.5"><Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação</span>
               </div>
             </div>
           </div>
@@ -138,7 +127,7 @@ export const Author = ({ setView }) => {
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 relative z-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16">
         <div className="lg:col-span-8 space-y-12">
           
           {/* Biografia Section */}
@@ -255,9 +244,6 @@ export const Author = ({ setView }) => {
             <h3 className="text-2xl font-black text-[#080A0F] tracking-tighter leading-tight relative z-10">
               Acelere sua <br /> Aprovação.
             </h3>
-            <p className="text-[#080A0F]/80 text-sm font-bold leading-relaxed relative z-10">
-              Acompanhe os métodos que levaram Jeff ao topo da Federal e aplique-os na sua rotina.
-            </p>
             <button 
               onClick={() => setView('mentorship')}
               className="w-full bg-[#080A0F] text-white py-4 rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-[#1A1F26] transition-all relative z-10 shadow-xl"
@@ -268,20 +254,7 @@ export const Author = ({ setView }) => {
         </div>
       </div>
 
-      {/* Mission Blocks Section */}
-      <div className="max-w-7xl mx-auto px-6 pt-20 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {blocks.map((item) => (
-          <article key={item.title} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-8 shadow-2xl premium-border hover:border-[#4F8CFF]/30 transition-colors">
-            <div className="w-12 h-12 rounded-xl bg-[#4F8CFF]/10 text-[#4F8CFF] flex items-center justify-center mb-6">
-              <item.icon size={24} aria-hidden="true" />
-            </div>
-            <h2 className="text-xl font-black text-[#F8FAFC] mb-3 tracking-tight">{item.title}</h2>
-            <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">{item.text}</p>
-          </article>
-        ))}
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 pt-20">
         <div className="bg-[#11141A] border border-[#4F8CFF]/20 rounded-[24px] p-8 relative overflow-hidden">
           <div className="absolute inset-0 bg-[#4F8CFF]/5" />
           <p className="text-[#98A2B3] text-xs md:text-sm leading-relaxed font-medium italic relative z-10 text-center">
