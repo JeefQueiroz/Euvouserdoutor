@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, ShieldCheck, Sparkles, Youtube } from 'lucide-react';
+import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, ShieldCheck, Sparkles, Youtube, Globe, MapPin, Briefcase } from 'lucide-react';
 import { institutional } from '../institutional';
 
 const PinterestIcon = ({ size = 18, className = "" }) => (
@@ -23,9 +23,9 @@ export const Author = ({ setView }) => {
       date: 'Agosto de 2026',
     },
     {
-      title: 'Organização do Ciclo Básico na Faculdade de Medicina',
-      category: 'Vida Acadêmica',
-      date: 'Julho de 2026',
+      title: 'Terapia CAR-T 100% Nacional e a Democratização do Tratamento',
+      category: 'Saúde & Ciência',
+      date: 'Agosto de 2026',
     },
   ];
 
@@ -49,14 +49,16 @@ export const Author = ({ setView }) => {
             </div>
             <div className="text-center md:text-left">
               <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em] mb-4">
-                Perfil de Autor & Criador
+                Fundador & Editor Científico
               </span>
               <h1 className="text-2xl md:text-4xl font-black tracking-tighter leading-tight text-[#F8FAFC] mb-2">
                 Jefferson Viana Queiroz (Jeff Queiroz)
               </h1>
-              <p className="text-base text-[#98A2B3] font-medium leading-relaxed">
-                Acadêmico de Medicina na UFMG e fundador do portal <strong>EuVouSerDoutor</strong>.
-              </p>
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 text-xs text-[#98A2B3] font-bold">
+                <span className="flex items-center gap-1.5"><GraduationCap size={14} className="text-[#4F8CFF]" /> Medicina UFMG</span>
+                <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG</span>
+                <span className="flex items-center gap-1.5"><Briefcase size={14} className="text-[#4F8CFF]" /> Estrategista Acadêmico</span>
+              </div>
             </div>
           </div>
         </div>
@@ -67,30 +69,33 @@ export const Author = ({ setView }) => {
         <div className="lg:col-span-8 space-y-8">
           <div className="bg-[#11141A] border border-white/[0.05] rounded-[28px] p-6 md:p-10 shadow-2xl space-y-6 text-[#98A2B3] leading-relaxed text-sm md:text-base font-medium premium-border">
             <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] tracking-tighter flex items-center gap-3">
-              <GraduationCap className="text-[#4F8CFF]" size={24} /> Trajetória Acadêmica
+              <Sparkles className="text-[#4F8CFF]" size={24} /> Biografia & Trajetória
             </h2>
             <p>
-              Jefferson Viana Queiroz é estudante de Medicina na Universidade Federal de Minas Gerais (UFMG) e criador do ecossistema <strong>EuVouSerDoutor</strong>. Desenvolve pesquisas focadas em transformar a rotina de estudos de vestibulandos e acadêmicos.
+              Natural de <strong>Pavão</strong>, no interior de Minas Gerais, Jefferson Viana Queiroz trilhou um caminho de superação e excelência acadêmica. Aos 18 anos, alcançou o <strong>1º lugar geral</strong> na UFVJM, marcando o início de uma jornada dedicada ao conhecimento.
             </p>
             <p>
-              Através do portal, Jeff lidera a curadoria editorial rigorosa, unindo descobertas científicas em saúde a práticas validadas de estudo ativo, com ênfase no rigor metodológico.
+              Antes de ingressar na Faculdade de Medicina da <strong>Universidade Federal de Minas Gerais (UFMG)</strong>, Jeff atuou no mercado de tecnologia como <strong>Web3 Developer & NFT Strategist</strong>, experiência que lhe conferiu uma visão única sobre inovação e processos estruturados.
+            </p>
+            <p>
+              Hoje, como acadêmico de Medicina e em fase de <strong>estágio obrigatório na clínica médica</strong>, ele une o rigor da ciência à eficiência tecnológica através do ecossistema <strong>Eu Vou Ser Doutor</strong>. Sua missão é transformar a preparação de vestibulandos e a rotina de acadêmicos através de métodos validados de estudo ativo e organização de alto desempenho.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-white/[0.05]">
               <div className="bg-white/[0.02] p-4 rounded-xl border border-white/[0.05]">
                 <Award className="text-[#4F8CFF] mb-2" size={20} />
-                <h3 className="font-black text-[#F8FAFC] text-[11px] uppercase tracking-widest mb-1">Formação</h3>
-                <p className="text-[10px] font-bold">Medicina na UFMG</p>
+                <h3 className="font-black text-[#F8FAFC] text-[11px] uppercase tracking-widest mb-1">Destaque</h3>
+                <p className="text-[10px] font-bold">1º Lugar Geral UFVJM</p>
               </div>
               <div className="bg-white/[0.02] p-4 rounded-xl border border-white/[0.05]">
                 <BookOpen className="text-[#4F8CFF] mb-2" size={20} />
-                <h3 className="font-black text-[#F8FAFC] text-[11px] uppercase tracking-widest mb-1">Especialidade</h3>
-                <p className="text-[10px] font-bold">Educação & Pesquisa</p>
+                <h3 className="font-black text-[#F8FAFC] text-[11px] uppercase tracking-widest mb-1">Pesquisa</h3>
+                <p className="text-[10px] font-bold">Metodologias Ativas</p>
               </div>
               <div className="bg-white/[0.02] p-4 rounded-xl border border-white/[0.05]">
-                <ShieldCheck className="text-[#4F8CFF] mb-2" size={20} />
-                <h3 className="font-black text-[#F8FAFC] text-[11px] uppercase tracking-widest mb-1">Plataforma</h3>
-                <p className="text-[10px] font-bold">EuVouSerDoutor.com</p>
+                <Globe className="text-[#4F8CFF] mb-2" size={20} />
+                <h3 className="font-black text-[#F8FAFC] text-[11px] uppercase tracking-widest mb-1">Inovação</h3>
+                <p className="text-[10px] font-bold">Tech & Medicina</p>
               </div>
             </div>
           </div>
@@ -98,7 +103,7 @@ export const Author = ({ setView }) => {
           {/* Published Articles List */}
           <div className="bg-[#11141A] border border-white/[0.05] rounded-[28px] p-6 md:p-10 shadow-2xl space-y-6 premium-border">
             <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] tracking-tighter">
-              Publicações em Destaque
+              Editorias Lideradas por Jeff
             </h2>
             <div className="space-y-3">
               {publications.map((pub, idx) => (
@@ -137,6 +142,22 @@ export const Author = ({ setView }) => {
                 <Mail size={16} className="text-[#4F8CFF]" /> {institutional.email}
               </a>
             </div>
+          </div>
+          
+          <div className="bg-[#4F8CFF] rounded-[28px] p-8 space-y-4 relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-16 -mt-16" />
+            <h3 className="text-xl font-black text-[#080A0F] tracking-tighter leading-tight relative z-10">
+              Transforme sua preparação hoje.
+            </h3>
+            <p className="text-[#080A0F]/70 text-xs font-bold leading-relaxed relative z-10">
+              Acompanhe os métodos que levaram Jeff ao topo e aplique-os na sua rotina.
+            </p>
+            <button 
+              onClick={() => setView('mentorship')}
+              className="w-full bg-[#080A0F] text-white py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#1A1F26] transition-all relative z-10"
+            >
+              Conhecer Mentoria
+            </button>
           </div>
         </div>
       </div>
