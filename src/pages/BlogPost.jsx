@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink, GraduationCap } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink, GraduationCap, Layers } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
