@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, ShieldCheck, Sparkles, Youtube, Globe, MapPin, Briefcase, History, Heart, Brain, Rocket, Code, Lightbulb, Target, Compass, BookOpenCheck, Globe2, User } from 'lucide-react';
+import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, ShieldCheck, Sparkles, Youtube, Globe, MapPin, Briefcase, History, Heart, Brain, Rocket, Code, Lightbulb, Target, Compass, BookOpenCheck, Globe2, User, Zap } from 'lucide-react';
 import { institutional } from '../institutional';
 
 const PinterestIcon = ({ size = 18, className = "" }) => (
@@ -61,46 +61,78 @@ export const Author = ({ setView }) => {
 
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
-      {/* Header - Mega Premium */}
-      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-12 pb-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_40%)]" />
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+      {/* Editorial Header - Mega Premium */}
+      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-28 px-6 relative overflow-hidden">
+        {/* Advanced Visual Layers */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_45%)]" />
+        <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-r from-[#4F8CFF]/5 to-transparent pointer-events-none" />
         
         <div className="max-w-7xl mx-auto relative z-10">
-          <button
-            type="button"
-            onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-12"
-          >
-            <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
-          </button>
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
+            <div className="max-w-4xl space-y-8 text-left">
+              <button
+                type="button"
+                onClick={() => setView('home')}
+                className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-4 py-2 rounded-xl hover:bg-white/[0.06] transition-all"
+              >
+                <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
+              </button>
+              
+              <div className="space-y-6">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
+                    <User size={10} /> Perfil Institucional
+                  </span>
+                  <span className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
+                    Acadêmico de Medicina UFMG
+                  </span>
+                </div>
+                
+                <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] text-[#F8FAFC] whitespace-nowrap">
+                  Sobre o Projeto <br className="md:hidden" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">& Jeff Queiroz</span>
+                </h1>
+                
+                <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
+                  Conheça a trajetória de superação e a visão tecnológica por trás do ecossistema <strong>Eu Vou Ser Doutor</strong>, unindo o rigor da ciência à eficiência da inovação.
+                </p>
 
-          <div className="max-w-5xl flex flex-col md:flex-row items-center md:items-end gap-10">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-tr from-[#4F8CFF] to-[#2E70CE] rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-              <div className="w-32 h-32 md:w-44 md:h-44 shrink-0 rounded-full overflow-hidden border-2 border-white/10 relative z-10">
-                <img src={profileImg} alt="Jefferson Queiroz" className="w-full h-full object-cover" />
+                <div className="flex flex-wrap gap-6 pt-2">
+                  <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
+                    <MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG
+                  </div>
+                  <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
+                    <Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital
+                  </div>
+                  <div className="flex items-center gap-2 text-[10px] font-black text-[#F8FAFC] uppercase tracking-widest">
+                    <Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div className="text-center md:text-left space-y-4">
-              <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                <span className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                  Fundador & Criador
-                </span>
-                <span className="bg-white/5 border border-white/10 text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                  Acadêmico de Medicina UFMG
-                </span>
-              </div>
-              
-              <h1 className="text-3xl md:text-7xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
-                Sobre o Projeto & Jeff Queiroz
-              </h1>
-              
-              <div className="flex flex-wrap justify-center md:justify-start gap-5 text-xs text-[#98A2B3] font-bold">
-                <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG</span>
-                <span className="flex items-center gap-1.5"><Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital</span>
-                <span className="flex items-center gap-1.5"><Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação</span>
+
+            {/* Profile Card - Mega Premium */}
+            <div className="hidden xl:block min-w-[360px]">
+              <div className="glass-premium rounded-[40px] p-2 border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative overflow-hidden group">
+                <div className="bg-[#11141A] rounded-[38px] overflow-hidden">
+                  <div className="aspect-[4/5] w-full overflow-hidden relative">
+                    <img src={profileImg} alt="Jefferson Queiroz" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-60" />
+                    <div className="absolute bottom-6 left-6 right-6 z-10">
+                      <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#4F8CFF] mb-1">Fundador & Editor</p>
+                      <h3 className="text-xl font-black text-white tracking-tight">Jeff Queiroz</h3>
+                    </div>
+                  </div>
+                  <div className="p-6 space-y-4">
+                    <div className="flex items-center justify-between text-[9px] font-black uppercase tracking-widest text-[#98A2B3]">
+                      <span>Autoridade Acadêmica</span>
+                      <span className="text-[#4F8CFF]">Verificado</span>
+                    </div>
+                    <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-r from-[#4F8CFF] to-[#2E70CE] animate-pulse" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -108,7 +140,7 @@ export const Author = ({ setView }) => {
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 -mt-12 relative z-20">
         <div className="lg:col-span-8 space-y-12">
           
           {/* Biografia Section */}
@@ -152,7 +184,7 @@ export const Author = ({ setView }) => {
             </div>
           </section>
 
-          {/* O Ecossistema Section (Merged from About) */}
+          {/* O Ecossistema Section */}
           <section className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 md:p-12 shadow-2xl space-y-8 premium-border relative overflow-hidden">
             <div className="space-y-6">
               <h2 className="text-2xl md:text-4xl font-black text-[#F8FAFC] tracking-tighter flex items-center gap-4">
@@ -184,26 +216,11 @@ export const Author = ({ setView }) => {
               </div>
             </div>
           </section>
-
-          {/* Interseção Tech & Medicina Section */}
-          <section className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 md:p-12 shadow-2xl space-y-8 premium-border">
-            <div className="space-y-6">
-              <h2 className="text-2xl md:text-4xl font-black text-[#F8FAFC] tracking-tighter flex items-center gap-4">
-                <Code className="text-[#4F8CFF]" size={28} /> Inovação & Futuro
-              </h2>
-              <p className="text-[#98A2B3] leading-relaxed text-base md:text-lg font-medium">
-                Com experiência prévia como desenvolvedor e estrategista digital, Jeff aplica hoje essa visão para criar ferramentas que tornam o aprendizado mais organizado e acessível.
-              </p>
-              <div className="bg-white/[0.02] border border-white/[0.05] rounded-2xl p-6 italic text-sm md:text-base text-[#F8FAFC]/80 border-l-4 border-l-[#4F8CFF]">
-                "O Eu Vou Ser Doutor é a expressão de como a tecnologia pode ser aliada na construção de um projeto de vida concreto: transformar o objetivo de cursar Medicina em realidade."
-              </div>
-            </div>
-          </section>
         </div>
 
         {/* Sidebar */}
         <div className="lg:col-span-4 space-y-8">
-          {/* Quick Facts Card (from About) */}
+          {/* Quick Facts Card */}
           <div className="grid grid-cols-1 gap-4">
             {facts.map((item) => (
               <div key={item.label} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-6 premium-border group hover:bg-white/[0.02] transition-all">
@@ -253,7 +270,7 @@ export const Author = ({ setView }) => {
         </div>
       </div>
 
-      {/* Mission Blocks Section (from About) */}
+      {/* Mission Blocks Section */}
       <div className="max-w-7xl mx-auto px-6 pt-20 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {blocks.map((item) => (
           <article key={item.title} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-8 shadow-2xl premium-border hover:border-[#4F8CFF]/30 transition-colors">
