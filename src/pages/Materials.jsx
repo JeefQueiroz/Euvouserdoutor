@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Calendar, CheckSquare, ClipboardCheck, FileText, Layers, PenTool, Stethoscope, TimerReset } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, CheckSquare, ClipboardCheck, FileText, Layers, PenTool, Sparkles, Stethoscope, TimerReset } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const Materials = ({ setView }) => {
