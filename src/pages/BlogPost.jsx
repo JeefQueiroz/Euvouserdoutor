@@ -426,22 +426,8 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
               {post.subtitle}
             </p>
             
-            <div className="flex flex-wrap items-center gap-6 pt-8 border-t border-white/[0.05]">
-              <div className="flex items-center gap-4">
-                <img src={profileImg} alt="Jeff Queiroz" className="w-12 h-12 rounded-2xl object-cover border border-[#4F8CFF]/30" />
-                <div>
-                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#4F8CFF]">Autor</p>
-                  <p className="text-white text-sm font-black">Jeff Queiroz</p>
-                </div>
-              </div>
-              <div className="h-8 w-px bg-white/10 hidden sm:block" />
-              <div className="flex items-center gap-3 text-[#98A2B3]">
-                <Calendar size={18} className="text-[#4F8CFF]" />
-                <div>
-                  <p className="text-[10px] font-black uppercase tracking-[0.2em]">Publicado</p>
-                  <p className="text-white text-sm font-black">{post.date}</p>
-                </div>
-              </div>
+            <div className="pt-6 border-t border-white/[0.05] text-xs md:text-sm text-[#98A2B3] font-medium flex flex-wrap items-center gap-2">
+              <span className="text-white font-bold">EuvouserDoutor - Jeff Queiroz</span>, em Belo Horizonte (MG) / <span className="text-[#4F8CFF] font-bold">{post.date} às 08:00</span> | Atualizado <span className="text-white">{post.date} às 17:17</span>
             </div>
           </div>
         </div>
@@ -454,6 +440,10 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
               <div className="aspect-[21/9] w-full overflow-hidden relative">
                 <img src={post.img} alt={post.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-40" />
+              </div>
+              <div className="px-6 py-3 bg-[#11141A] border-t border-white/[0.05] flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-[#98A2B3] gap-2">
+                <span className="italic">{post.title}</span>
+                <span className="font-bold text-[#4F8CFF] shrink-0">Foto: Reprodução / Banco Editorial EuvouserDoutor</span>
               </div>
               <div className="p-8 md:p-16">
                 <div className="prose prose-invert max-w-none">
