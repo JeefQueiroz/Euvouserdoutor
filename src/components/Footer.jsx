@@ -27,7 +27,7 @@ export const Footer = ({ setView, telegram }) => (
               className="flex items-center focus:outline-none group"
               aria-label="Início"
             >
-              <img src="/logo-euvouserdoutor.png" alt="Logo" loading="lazy" className="h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
+              <img src="/logo-euvouserdoutor.png" alt="Logo" loading="lazy" className="h-24 w-auto object-contain transition-opacity group-hover:opacity-80" />
             </button>
             <p className="text-[#98A2B3] text-sm leading-relaxed max-w-md font-medium">
               {institutional.description}
