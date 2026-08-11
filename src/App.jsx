@@ -6,22 +6,22 @@ import { CookieConsent } from './components/CookieConsent';
 import { institutional, pathToView, routeMeta } from './institutional';
 
 // Lazy loading for pages to improve initial load performance (Code Splitting)
-const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
-const News = lazy(() => import('./pages/News').then(m => ({ default: m.News })));
-const Materials = lazy(() => import('./pages/Materials').then(m => ({ default: m.Materials })));
-const Mentorship = lazy(() => import('./pages/Mentorship').then(m => ({ default: m.Mentorship })));
+import { Home } from './pages/Home';
+import { News } from './pages/News';
+import { Materials } from './pages/Materials';
+import { Mentorship } from './pages/Mentorship';
 const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage').then(m => ({ default: m.FlashcardsPage })));
 const Article = lazy(() => import('./pages/Article').then(m => ({ default: m.Article })));
-const BlogPost = lazy(() => import('./pages/BlogPost').then(m => ({ default: m.BlogPost })));
-const About = lazy(() => import('./pages/About').then(m => ({ default: m.About })));
-const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
-const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ default: m.PrivacyPolicy })));
-const TermsOfUse = lazy(() => import('./pages/TermsOfUse').then(m => ({ default: m.TermsOfUse })));
-const MedicalDisclaimer = lazy(() => import('./pages/MedicalDisclaimer').then(m => ({ default: m.MedicalDisclaimer })));
-const IntellectualProperty = lazy(() => import('./pages/IntellectualProperty').then(m => ({ default: m.IntellectualProperty })));
-const CookiePolicy = lazy(() => import('./pages/CookiePolicy').then(m => ({ default: m.CookiePolicy })));
-const Author = lazy(() => import('./pages/Author').then(m => ({ default: m.Author })));
-const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
+import { BlogPost } from './pages/BlogPost';
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfUse } from './pages/TermsOfUse';
+import { MedicalDisclaimer } from './pages/MedicalDisclaimer';
+import { IntellectualProperty } from './pages/IntellectualProperty';
+import { CookiePolicy } from './pages/CookiePolicy';
+import { Author } from './pages/Author';
+import { NotFound } from './pages/NotFound';
 
 export default function App() {
   const initialView = pathToView[window.location.pathname] || 'home';
@@ -75,13 +75,13 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F4F7FB] font-sans selection:bg-[#2E70CE] selection:text-white text-left">
+    <div className="min-h-screen bg-[#080A0F] font-sans selection:bg-[#4F8CFF] selection:text-white text-left">
       <GoogleAnalytics />
       <Header setView={navigate} currentView={view} telegram={telegram} />
       <main>
         <Suspense fallback={
-          <div className="flex items-center justify-center min-h-[60vh]">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2E70CE]"></div>
+          <div className="flex items-center justify-center min-h-[60vh] bg-[#080A0F]">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#4F8CFF]"></div>
           </div>
         }>
           {view === 'home' && <Home setView={navigate} profileImg={profileImg} />}
