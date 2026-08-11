@@ -64,27 +64,59 @@ export const Materials = ({ setView }) => {
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
       {/* Editorial Header */}
-      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-20 px-6 relative overflow-hidden">
+      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-24 px-6 relative overflow-hidden">
+        {/* Premium Background Elements */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.18),transparent_40%)]" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+        <div className="absolute left-0 top-0 w-1/3 h-full bg-gradient-to-r from-[#4F8CFF]/5 to-transparent pointer-events-none" />
+        
         <div className="max-w-7xl mx-auto relative z-10">
-          <button
-            type="button"
-            onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[10px] font-black text-[#4F8CFF] uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-all mb-8"
-          >
-            <ArrowLeft size={14} aria-hidden="true" /> Voltar ao Início
-          </button>
-          
-          <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
-              Biblioteca Gratuita
-            </span>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight text-[#F8FAFC] mb-6">
-              Materiais de Apoio & Guias
-            </h1>
-            <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-3xl font-normal">
-              Recursos educacionais, flashcards e checklists para apoiar sua organização e estudo diário.
-            </p>
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10">
+            <div className="max-w-4xl">
+              <button
+                type="button"
+                onClick={() => setView('home')}
+                className="inline-flex items-center gap-2 text-[10px] font-black text-[#4F8CFF] uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-all mb-10"
+              >
+                <ArrowLeft size={14} aria-hidden="true" /> Voltar ao Início
+              </button>
+              
+              <div className="relative">
+                <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                  <Sparkles size={12} className="animate-pulse" /> Biblioteca Gratuita
+                </span>
+                <h1 className="text-4xl md:text-7xl font-black tracking-tight leading-[0.9] text-[#F8FAFC] mb-8">
+                  Materiais de <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Apoio & Guias</span>
+                </h1>
+                <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
+                  Recursos educacionais, flashcards e checklists desenvolvidos para transformar sua organização e acelerar seu aprendizado.
+                </p>
+              </div>
+            </div>
+
+            {/* Authority/Stats Block to fill the space and add value */}
+            <div className="hidden xl:flex flex-col gap-4 mb-2">
+              <div className="bg-white/[0.03] border border-white/[0.08] rounded-3xl p-6 backdrop-blur-md premium-border min-w-[280px]">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-500">
+                    <ClipboardCheck size={20} />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-emerald-500">Qualidade Verificada</p>
+                    <p className="text-white text-xs font-bold">Rigor Científico</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-[10px] font-bold text-[#98A2B3]">
+                    <span>Atualização Semanal</span>
+                    <span className="text-[#4F8CFF]">Ativo</span>
+                  </div>
+                  <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                    <div className="w-full h-full bg-[#4F8CFF] animate-pulse" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
