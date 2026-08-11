@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight, Calendar, CheckSquare, ClipboardCheck, FileText, Layers, PenTool, Sparkles, Stethoscope, TimerReset, BookOpen, Target, Zap, ShieldCheck, Download } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, CheckSquare, ClipboardCheck, FileText, Layers, PenTool, Sparkles, Stethoscope, TimerReset, BookOpen, Target, Zap, ShieldCheck, Download, Clock } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const Materials = ({ setView }) => {
@@ -68,93 +68,36 @@ export const Materials = ({ setView }) => {
 
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
-      {/* Editorial Header - Mega Premium */}
-      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-28 px-6 relative overflow-hidden">
-        {/* Advanced Visual Layers */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_45%)]" />
-        <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-        <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-r from-[#4F8CFF]/5 to-transparent pointer-events-none" />
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
-            <div className="max-w-4xl space-y-8">
-              <button
-                type="button"
-                onClick={() => setView('home')}
-                className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-4 py-2 rounded-xl hover:bg-white/[0.06] transition-all"
-              >
-                <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
-              </button>
-              
-              <div className="space-y-6">
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                    <Sparkles size={10} className="animate-pulse" /> Biblioteca de Recursos
-                  </span>
-                  <span className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] text-[#98A2B3] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
-                    +12 Guias em Desenvolvimento
-                  </span>
-                </div>
-                
-                <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.85] text-[#F8FAFC] whitespace-nowrap">
-                  Materiais de <br className="md:hidden" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Apoio & Métodos</span>
-                </h1>
-                
-                <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
-                  Recursos educacionais de alta performance, flashcards e cronogramas estruturados com o rigor acadêmico da <strong>Medicina UFMG</strong> para transformar seu aprendizado.
-                </p>
-              </div>
+      {/* Editorial Header - Pattern from News.jsx */}
+      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-12 pb-16 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_40%)]" />
+        <div className="max-w-7xl mx-auto relative z-10 space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em] mb-4">
+                <Sparkles size={10} className="animate-pulse" /> Biblioteca de Recursos
+              </span>
+              <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-tight text-[#F8FAFC]">
+                Materiais de Apoio & Métodos
+              </h1>
             </div>
-
-            {/* Authority/Trust Card - Mega Premium */}
-            <div className="hidden xl:block min-w-[340px]">
-              <div className="glass-premium rounded-[32px] p-8 border border-white/[0.08] shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-[#4F8CFF]/20 transition-all duration-700" />
-                
-                <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] border border-[#4F8CFF]/20">
-                      <ShieldCheck size={24} />
-                    </div>
-                    <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-[#4F8CFF]">Padrão de Qualidade</p>
-                      <p className="text-white text-sm font-black tracking-tight">Curadoria Jeff Queiroz</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <Zap size={14} className="text-[#4F8CFF]" />
-                      <span className="text-[11px] font-bold text-[#98A2B3]">Baseado em Evidências Científicas</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Target size={14} className="text-[#4F8CFF]" />
-                      <span className="text-[11px] font-bold text-[#98A2B3]">Focado em Alta Performance</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <BookOpen size={14} className="text-[#4F8CFF]" />
-                      <span className="text-[11px] font-bold text-[#98A2B3]">Atualizado para o Ciclo 2026</span>
-                    </div>
-                  </div>
-
-                  <div className="pt-6 border-t border-white/[0.05]">
-                    <div className="flex items-center justify-between text-[9px] font-black uppercase tracking-widest text-[#98A2B3] mb-2">
-                      <span>Integridade dos Dados</span>
-                      <span className="text-[#4F8CFF]">100% Verificado</span>
-                    </div>
-                    <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-r from-[#4F8CFF] to-[#2E70CE] animate-pulse" />
-                    </div>
-                  </div>
-                </div>
+            <div className="bg-white/[0.03] border border-white/[0.08] px-4 py-3 rounded-2xl flex items-center gap-3">
+              <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+              <div>
+                <p className="text-[10px] font-black uppercase tracking-widest text-[#F8FAFC]">Plantão Acadêmico</p>
+                <p className="text-[11px] text-[#98A2B3]">Novos guias em breve</p>
               </div>
             </div>
           </div>
+          
+          <p className="text-base md:text-lg text-[#98A2B3] leading-relaxed max-w-2xl font-medium border-t border-white/[0.05] pt-6">
+            Recursos educacionais de alta performance, flashcards e cronogramas estruturados com o rigor acadêmico da <strong>Medicina UFMG</strong> para transformar seu aprendizado.
+          </p>
         </div>
       </div>
 
-      {/* Grid Section - Mega Premium Cards */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 -mt-16 relative z-20">
+      {/* Grid Section */}
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 mt-10 relative z-20">
         <div className="lg:col-span-8 xl:col-span-9 space-y-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {materials.map((item, idx) => {
@@ -167,7 +110,6 @@ export const Materials = ({ setView }) => {
                     item.disabled ? 'opacity-70 cursor-default' : 'cursor-pointer hover:border-[#4F8CFF]/40 hover:shadow-[0_20px_60px_rgba(0,0,0,0.6)]'
                   }`}
                 >
-                  {/* Card Background Glow */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-3xl -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   
                   <div className="relative z-10">
@@ -253,7 +195,6 @@ export const Materials = ({ setView }) => {
           </div>
         </div>
 
-        {/* Sidebar Section */}
         <div className="lg:col-span-4 xl:col-span-3">
           <Sidebar setView={setView} />
         </div>
