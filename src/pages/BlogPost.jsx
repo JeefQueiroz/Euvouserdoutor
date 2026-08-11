@@ -428,7 +428,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
             </p>
             
             <div className="pt-6 border-t border-white/[0.05] text-xs md:text-sm text-[#98A2B3] font-medium flex flex-wrap items-center gap-2">
-              <span className="text-white font-bold">EuvouserDoutor - Jeff Queiroz</span>, em Belo Horizonte (MG) / <span className="text-[#4F8CFF] font-bold">{post.date} às 08:00</span> | Atualizado <span className="text-white">{post.date} às 17:17</span>
+              <span className="text-white font-bold">EuvouserDoutor - Jeff Queiroz</span>, em Belo Horizonte (MG) / <span className="text-[#4F8CFF] font-bold">{post.date} às {post.pubTime || "08:00"}</span> | Atualizado <span className="text-white">{post.date} às {post.updateTime || post.pubTime || "08:00"}</span>
             </div>
           </div>
         </div>
