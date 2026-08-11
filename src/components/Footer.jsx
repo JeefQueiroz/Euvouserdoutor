@@ -38,10 +38,12 @@ export const Footer = ({ setView, telegram }) => (
           <ul className="space-y-2.5">
             {[
               ['home', 'Início'],
+              ['news', 'Notícias'],
+              ['materials', 'Materiais'],
+              ['mentorship', 'Mentoria'],
               ['about', 'Sobre'],
               ['author', 'Autor'],
-              ['news', 'Notícias'],
-              ['materials', 'Biblioteca'],
+              ['contact', 'Contato'],
             ].map(([view, label]) => (
               <li key={view}>
                 <button type="button" onClick={() => setView && setView(view)} className="text-[#98A2B3] hover:text-white transition-colors text-[11px] font-bold">

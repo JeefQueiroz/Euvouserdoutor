@@ -1,4 +1,4 @@
-import{c as r,j as e}from"./index-C_3FJbjO.js";import{B as d}from"./book-open-Ci7min13.js";import{M as o}from"./message-circle-D0Q1GWTR.js";/**
+import{c as r,j as e}from"./index-CXP0yMWD.js";import{B as d}from"./book-open-BAMaiIZC.js";import{M as o}from"./message-circle-d0e_5PMt.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.
