@@ -174,6 +174,25 @@ export const Materials = ({ setView }) => {
               );
             })}
           </div>
+
+          {/* MoFu Lead Capture / Community Banner */}
+          <div className="mt-12 bg-gradient-to-r from-[#0A192F] to-[#2E70CE] rounded-3xl p-8 md:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <p className="text-[#5CE1E6] text-xs font-black uppercase tracking-[0.25em] mb-2">Comunidade exclusiva</p>
+              <h3 className="text-2xl md:text-3xl font-black mb-3">Receba novos materiais e avisos no Telegram</h3>
+              <p className="text-blue-100 text-sm md:text-base max-w-xl leading-relaxed">
+                Junte-se à comunidade oficial de vestibulandos e estudantes de Medicina para não perder nenhum guia ou atualização de rotina.
+              </p>
+            </div>
+            <a
+              href="https://t.me/Euvouserdoutor"
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 bg-white text-[#0A192F] px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-50 transition-all shadow-lg inline-flex items-center gap-2"
+            >
+              Entrar no Telegram <ArrowRight size={16} strokeWidth={2.5} />
+            </a>
+          </div>
         </div>
 
         <div className="lg:col-span-4 xl:col-span-3">

@@ -539,10 +539,16 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
               {post.content}
             </div>
 
-            {/* Global CTA for Medicine (Simplified to just a button) */}
-            <div className="flex justify-end mt-12 mb-8">
-              <button onClick={() => setView('mentorship')} className="bg-[#2E70CE] text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-600 hover:-translate-y-1 transition-all shadow-[0_10px_30px_rgba(46,112,206,0.3)] hover:shadow-[0_15px_40px_rgba(46,112,206,0.5)] inline-flex items-center justify-center gap-3 w-full sm:w-auto">
-                CONHECER A MENTORIA <ArrowRight size={20} strokeWidth={2.5} />
+            {/* Conversion Banner (ToFu to BoFu Funnel) */}
+            <div className="my-12 bg-gradient-to-r from-[#0A192F] to-[#2E70CE] rounded-[32px] p-8 md:p-10 text-white shadow-xl relative overflow-hidden">
+              <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+              <p className="text-[#5CE1E6] text-xs font-black uppercase tracking-[0.25em] mb-3">Acelere sua preparação</p>
+              <h3 className="text-2xl md:text-3xl font-black mb-4 tracking-tight">Quer estudar com método, rotina e acompanhamento?</h3>
+              <p className="text-blue-100 text-sm md:text-base mb-8 max-w-xl leading-relaxed">
+                Conheça a <strong>Mentoria Aprovado</strong> e tenha direcionamento educacional para organizar seus estudos para Medicina sem depender de improviso.
+              </p>
+              <button onClick={() => setView('mentorship')} className="bg-white text-[#0A192F] px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-50 hover:-translate-y-0.5 transition-all shadow-lg inline-flex items-center justify-center gap-3">
+                CONHECER A MENTORIA <ArrowRight size={18} strokeWidth={2.5} />
               </button>
             </div>
 
