@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 
 export const Home = ({ setView }) => {
-  const profileImg = '/jeff-queiroz-eu-vou-ser-doutor.png';
+  const profileImg = '/jeff-queiroz-perfil.jpg';
 
   const featuredNews = {
     category: 'Ciência & Tecnologia',

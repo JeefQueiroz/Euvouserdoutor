@@ -2,7 +2,7 @@ import React from 'react';
 import { BookOpen, CheckCircle, Layers, MessageCircle } from 'lucide-react';
 
 export const Sidebar = ({ setView }) => {
-  const brandImg = "https://i.imgur.com/w9OO6uT.jpeg";
+  const brandImg = "/jeff-queiroz-perfil.jpg";
   return (
     <aside className="lg:sticky lg:top-24 space-y-4 text-left">
       <div className="bg-[#11141A] rounded-2xl p-5 md:p-6 border border-white/[0.05] shadow-2xl premium-border">

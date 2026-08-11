@@ -3,7 +3,7 @@ import { ArrowLeft, Award, BookOpen, GraduationCap, Instagram, Linkedin, Mail, S
 import { institutional } from '../institutional';
 
 export const Author = ({ setView }) => {
-  const profileImg = '/jeff-queiroz-eu-vou-ser-doutor.png';
+  const profileImg = '/jeff-queiroz-perfil.jpg';
 
   const publications = [
     {

@@ -26,7 +26,7 @@ export default function App() {
   const initialView = pathToView[window.location.pathname] || 'home';
   const [view, setView] = useState(initialView);
   const telegram = institutional.telegram;
-  const profileImg = "https://i.imgur.com/9QVE0X7.jpeg";
+  const profileImg = "/jeff-queiroz-perfil.jpg";
 
   const navigate = (nextView) => {
     setView(nextView);
