@@ -5,9 +5,6 @@ import { institutional } from '../institutional';
 const contacts = [
   { icon: Mail, label: 'E-mail oficial', value: institutional.legalEmail, href: `mailto:${institutional.legalEmail}` },
   { icon: Mail, label: 'E-mail alternativo', value: institutional.legalAlternateEmail, href: `mailto:${institutional.legalAlternateEmail}` },
-  { icon: Phone, label: 'Telefone principal', value: institutional.phone, href: 'tel:+5531991569089' },
-  { icon: Phone, label: 'Telefone alternativo', value: institutional.alternatePhone, href: 'tel:+5531982972421' },
-  { icon: MessageCircle, label: 'WhatsApp institucional', value: institutional.phone, href: institutional.whatsapp },
   { icon: ShieldCheck, label: 'Site oficial', value: institutional.siteLabel, href: institutional.site },
   { icon: Facebook, label: 'Facebook oficial', value: 'facebook.com/Euvouserdoutor', href: institutional.facebook },
 ];
