@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
@@ -19,15 +19,19 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   const postsData = {
     ebola_oxford_2026: {
       title: "Oxford Inicia Primeiro Ensaio Clínico Global de Vacina Contra o Vírus Ebola Bundibugyo",
-      subtitle: "Uma resposta rápida e tecnológica da Universidade de Oxford para conter um dos surtos mais letais da África Central.",
+      subtitle: "Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV, marcando resposta rápida a surto severo na África.",
       cat: "Saúde & Ciência",
       time: "7 min",
       date: "11 Ago 2026",
       img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1200",
       content: (
         <>
-          <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed font-medium mb-10 text-pretty">
-            A Universidade de Oxford, por meio do renomado <strong>Oxford Vaccine Group</strong> e do <i>Pandemic Sciences Institute</i> (PSI), deu início bem-sucedido ao primeiro ensaio clínico em humanos (Fase 1) da vacina <strong>ChAdOx1 BDBV</strong>, desenvolvida especificamente para combatê-la.
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A Universidade de Oxford, por meio do renomado <strong>Oxford Vaccine Group</strong> e do <i>Pandemic Sciences Institute</i> (PSI), anunciou o início do primeiro ensaio clínico em humanos (Fase 1) da vacina <strong>ChAdOx1 BDBV</strong>. O objetivo é conter o vírus Ebola Bundibugyo, uma variante altamente letal e para a qual ainda não existia imunizante específico.
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            O estudo, financiado pela CEPI (Coalition for Epidemic Preparedness Innovations), avalia a segurança e a capacidade de gerar resposta imune em 64 voluntários sadios no Reino Unido. Esta etapa é crucial para validar a eficácia da plataforma tecnológica antes da expansão para áreas afetadas na África Central.
           </p>
 
           <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
@@ -37,20 +41,20 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
                 <Target size={24} />
               </div>
               <div>
-                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Contexto Editorial</h2>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por que isso importa</h2>
                 <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
-                  "O surto atual causado pelo vírus Bundibugyo representa uma grave ameaça de saúde pública global devido à alta taxa de letalidade e à ausência anterior de uma vacina específica."
+                  "Diferente da variante Zaire, a variante Bundibugyo não possuía ferramentas preventivas aprovadas. O sucesso deste ensaio pode significar a diferença entre um surto controlado e uma crise humanitária global."
                 </p>
               </div>
             </div>
           </div>
 
           <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
-            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Tecnologia Confiável
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Metodologia e Segurança
           </h2>
           
-          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
-            O imunizante <strong>ChAdOx1 BDBV</strong> utiliza a mesma plataforma de vetor viral baseada em adenovírus de chimpanzé que deu origem à vacina Oxford/AstraZeneca contra a COVID-19. Esta plataforma é conhecida pela sua capacidade de gerar respostas imunológicas robustas, tanto de anticorpos quanto de células T.
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            O imunizante utiliza a plataforma <strong>ChAdOx1</strong>, a mesma tecnologia de vetor viral de adenovírus de chimpanzé que serviu de base para a vacina Oxford/AstraZeneca contra a Covid-19. Esta escolha estratégica permite uma produção em escala mais rápida e um perfil de segurança já amplamente documentado em bilhões de doses aplicadas mundialmente.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -58,18 +62,18 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
               <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
                 <Layers size={20} />
               </div>
-              <h3 className="text-base font-black text-[#F8FAFC]">Desenho do Estudo</h3>
+              <h3 className="text-base font-black text-[#F8FAFC]">Estrutura do Ensaio</h3>
               <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
-                O ensaio clínico de Fase 1 avalia a segurança e a imunogenicidade do candidato vacinal em voluntários sadios entre 18 e 55 anos.
+                Os participantes receberão diferentes dosagens para determinar o esquema vacinal ideal, com acompanhamento clínico rigoroso por 12 meses.
               </p>
             </div>
             <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
               <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
                 <Sparkles size={20} />
               </div>
-              <h3 className="text-base font-black text-[#F8FAFC]">Próximos Passos</h3>
+              <h3 className="text-base font-black text-[#F8FAFC]">Alcance Global</h3>
               <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
-                Consórcios internacionais planejam expandir os estudos clínicos para Uganda e RDC em parceria com instituições locais de pesquisa.
+                Após a Fase 1, o plano editorial e científico prevê a inclusão de centros de pesquisa em Uganda e na República Democrática do Congo.
               </p>
             </div>
           </div>
@@ -77,9 +81,21 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           <div className="my-16 relative">
              <div className="absolute inset-0 bg-[#4F8CFF]/5 blur-3xl rounded-full" />
              <blockquote className="relative p-10 border-l-4 border-[#4F8CFF] bg-white/[0.02] rounded-r-[32px] italic text-xl md:text-2xl font-medium text-[#F8FAFC] leading-relaxed">
-               "A rapidez com que esta vacina foi desenvolvida demonstra a maturidade da ciência moderna em responder a ameaças epidêmicas emergentes."
-               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Redação EuvouserDoutor</footer>
+               "Estamos utilizando lições aprendidas na pandemia para acelerar o desenvolvimento de vacinas contra patógenos que a Organização Mundial da Saúde (OMS) classifica como prioritários."
+               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Professor Sir Andrew Pollard, Diretor do Oxford Vaccine Group</footer>
              </blockquote>
+          </div>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            Os resultados preliminares são esperados para o final de 2026. Até lá, as autoridades de saúde reforçam a importância da vigilância epidemiológica e do suporte hospitalar nas regiões de risco.
+          </p>
+
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-4 mb-12">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-[#4F8CFF]">Leia Também</h4>
+            <button onClick={() => setView('news')} className="flex items-center justify-between w-full group text-left">
+              <span className="text-sm font-bold text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors underline decoration-[#4F8CFF]/30 underline-offset-4">Avanços na regeneração neural: O que esperar para 2027</span>
+              <ExternalLink size={14} className="text-[#98A2B3] group-hover:text-[#4F8CFF] shrink-0 ml-4" />
+            </button>
           </div>
 
           <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes</h2>
