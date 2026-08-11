@@ -111,6 +111,41 @@ export const routeMeta = {
       'Conheça a trajetória de Jefferson Viana Queiroz (Jeff Queiroz), acadêmico de Medicina na UFMG e fundador do portal EuVouSerDoutor.',
     path: '/autor/jeff-queiroz',
   },
+  'post_ebola_oxford_2026': {
+    title: 'Oxford Inicia Ensaio Clínico de Vacina Contra o Vírus Ebola | EuVouSerDoutor',
+    description: 'Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV.',
+    path: '/noticias/oxford-ensaio-clinico-vacina-ebola',
+  },
+  'post_polilaminina': {
+    title: 'Polilaminina e a Regeneração Neural | EuVouSerDoutor',
+    description: 'Descobertas recentes em neurologia avaliam o potencial da polilaminina.',
+    path: '/noticias/polilaminina-regeneracao-neural',
+  },
+  'post_pomodoro': {
+    title: 'Técnica Pomodoro para Blocos de Foco | EuVouSerDoutor',
+    description: 'Como usar ciclos curtos de estudo e pausa para manter atenção.',
+    path: '/estudos/tecnica-pomodoro-foco',
+  },
+  'post_spaced_repetition': {
+    title: 'Revisão Espaçada na Prática | EuVouSerDoutor',
+    description: 'Entenda como revisar em intervalos planejados para a memória de longo prazo.',
+    path: '/estudos/revisao-espacada-pratica',
+  },
+  'post_feynman': {
+    title: 'Método Feynman para Aprender Melhor | EuVouSerDoutor',
+    description: 'Como explicar conceitos com clareza para encontrar lacunas de aprendizado.',
+    path: '/estudos/metodo-feynman',
+  },
+  'post_mind_maps': {
+    title: 'Mapas Mentais e Resumos Ativos | EuVouSerDoutor',
+    description: 'Transforme leitura em recuperação ativa e conexões entre temas.',
+    path: '/estudos/mapas-mentais-resumos',
+  },
+  'post_self_evaluation': {
+    title: 'Autoavaliação Depois dos Simulados | EuVouSerDoutor',
+    description: 'Use erros e acertos para orientar a revisão seguinte.',
+    path: '/estudos/autoavaliacao-simulados',
+  },
 };
 
 export const pathToView = Object.fromEntries(
