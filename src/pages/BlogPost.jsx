@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, Ch
 import { Sidebar } from '../components/Sidebar';
 
 export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
-  console.log('Rendering BlogPost for postId:', postId);
+
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
