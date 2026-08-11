@@ -61,7 +61,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
               <div>
                 <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por que isso importa</h2>
                 <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
-                  \"A transição de terapias gênicas importadas de milhões de dólares para uma plataforma nacional viável no SUS não é apenas uma conquista científica; é uma questão de soberania sanitária e direito à vida para milhares de brasileiros.\"
+                  "A transição de terapias gênicas importadas de milhões de dólares para uma plataforma nacional viável no SUS não é apenas uma conquista científica; é uma questão de soberania sanitária e direito à vida para milhares de brasileiros."
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           <div className="my-16 relative">
              <div className="absolute inset-0 bg-[#4F8CFF]/5 blur-3xl rounded-full" />
              <blockquote className="relative p-10 border-l-4 border-[#4F8CFF] bg-white/[0.02] rounded-r-[32px] italic text-xl md:text-2xl font-medium text-[#F8FAFC] leading-relaxed">
-               \"Ver pacientes sem nenhuma outra expectativa de cura retornarem à vida normal após uma única infusão de células modificadas no Brasil é a coroação de anos de pesquisa pública e rigor científico.\"
+               "Ver pacientes sem nenhuma outra expectativa de cura retornarem à vida normal após uma única infusão de células modificadas no Brasil é a coroação de anos de pesquisa pública e rigor científico."
                <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Comitê Científico do Centro de Terapia Celular (CTC-USP)</footer>
              </blockquote>
           </div>
