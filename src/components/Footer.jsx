@@ -19,7 +19,7 @@ export const Footer = ({ setView, telegram }) => (
             className="flex items-center mb-6 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5CE1E6] focus-visible:ring-offset-4 focus-visible:ring-offset-[#071426]"
             aria-label="Ir para a página inicial do Eu vou ser Doutor"
           >
-            <img src="/logo-euvouserdoutor.png" alt="Eu vou ser Doutor" className="h-16 md:h-20 w-auto object-contain" />
+            <img src="/logo-euvouserdoutor.png" alt="Eu vou ser Doutor" loading="lazy" className="h-16 md:h-20 w-auto object-contain" />
           </button>
           <p className="text-gray-300 text-sm leading-relaxed max-w-lg mb-5">
             {institutional.description}

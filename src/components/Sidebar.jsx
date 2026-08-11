@@ -9,7 +9,7 @@ export const Sidebar = ({ setView }) => {
         <div className="flex items-center gap-4 mb-6">
           <div className="relative">
             <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-[#2E70CE] to-[#0A192F] p-1">
-               <img src={brandImg} alt="Jefferson Queiroz" className="w-full h-full rounded-full border-2 border-white object-cover" />
+               <img src={brandImg} alt="Jefferson Queiroz" loading="lazy" className="w-full h-full rounded-full border-2 border-white object-cover" />
             </div>
             <div className="absolute -bottom-1 -right-1 bg-green-500 w-4 h-4 rounded-full border-2 border-white"></div>
           </div>
