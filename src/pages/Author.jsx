@@ -112,7 +112,7 @@ export const Author = ({ setView }) => {
                 </span>
               </div>
               
-              <h1 className="text-3xl md:text-7xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
+              <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
                 Sobre o Projeto & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Jeff Queiroz</span>
               </h1>
               
