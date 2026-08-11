@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin, Mail, Send, Youtube, ShieldAlert } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Send, Youtube, ShieldAlert, FileText, Gavel, ShieldCheck, Lock } from 'lucide-react';
 import { institutional } from '../institutional';
 import { COOKIE_CONSENT_OPEN_EVENT } from './CookieConsent';
 
@@ -19,7 +19,7 @@ export const Footer = ({ setView, telegram }) => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
         
         {/* Brand & Authority Section */}
-        <div className="lg:col-span-5 space-y-8">
+        <div className="lg:col-span-4 space-y-8">
           <div className="space-y-6">
             <button
               type="button"
@@ -27,7 +27,7 @@ export const Footer = ({ setView, telegram }) => (
               className="flex items-center focus:outline-none group"
               aria-label="Início"
             >
-              <img src="/logo-euvouserdoutor.png" alt="Logo" loading="lazy" className="h-24 w-auto object-contain transition-opacity group-hover:opacity-80" />
+              <img src="/logo-euvouserdoutor.png" alt="Logo" loading="lazy" className="h-20 w-auto object-contain transition-opacity group-hover:opacity-80" />
             </button>
             <p className="text-[#98A2B3] text-sm leading-relaxed max-w-md font-medium">
               {institutional.description}
@@ -45,7 +45,7 @@ export const Footer = ({ setView, telegram }) => (
         </div>
 
         {/* Navigation Grid */}
-        <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+        <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
           {/* Editorial Column */}
           <div className="space-y-6">
             <h3 className="text-white font-black uppercase tracking-[0.2em] text-[10px]">Conteúdo</h3>
@@ -70,6 +70,7 @@ export const Footer = ({ setView, telegram }) => (
               {[
                 ['materials', 'Materiais'],
                 ['mentorship', 'Mentoria'],
+                ['flashcards', 'Flashcards'],
               ].map(([view, label]) => (
                 <li key={view}>
                   <button type="button" onClick={() => setView && setView(view)} className="text-[#98A2B3] hover:text-[#4F8CFF] transition-all text-xs font-bold tracking-tight">
@@ -80,7 +81,7 @@ export const Footer = ({ setView, telegram }) => (
             </ul>
           </div>
 
-          {/* Institutional & Social Column */}
+          {/* Institutional Column */}
           <div className="space-y-6">
             <h3 className="text-white font-black uppercase tracking-[0.2em] text-[10px]">Institucional</h3>
             <ul className="space-y-3">
@@ -95,6 +96,30 @@ export const Footer = ({ setView, telegram }) => (
                   </button>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Legal Column - RESTORED FOR LEGAL SECURITY */}
+          <div className="space-y-6">
+            <h3 className="text-white font-black uppercase tracking-[0.2em] text-[10px]">Jurídico</h3>
+            <ul className="space-y-3">
+              {[
+                ['terms', 'Termos de Uso'],
+                ['privacy', 'Privacidade'],
+                ['medicalDisclaimer', 'Aviso Médico'],
+                ['intellectualProperty', 'Propriedade'],
+              ].map(([view, label]) => (
+                <li key={view}>
+                  <button type="button" onClick={() => setView && setView(view)} className="text-[#98A2B3] hover:text-[#4F8CFF] transition-all text-xs font-bold tracking-tight">
+                    {label}
+                  </button>
+                </li>
+              ))}
+              <li>
+                <button type="button" onClick={openCookiePreferences} className="text-[#98A2B3] hover:text-[#4F8CFF] transition-all text-xs font-bold tracking-tight">
+                  Cookies
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -129,28 +154,55 @@ export const Footer = ({ setView, telegram }) => (
         </a>
       </div>
 
-      {/* Medical Disclaimer - Professional Treatment */}
-      <div className="mb-12 p-6 rounded-[24px] bg-[#4F8CFF]/5 border border-[#4F8CFF]/10 flex flex-col md:flex-row items-start gap-4">
-        <ShieldAlert size={24} className="text-[#4F8CFF] shrink-0 opacity-80" />
-        <div className="space-y-1">
-          <p className="text-[10px] font-black uppercase tracking-widest text-[#4F8CFF]">Aviso de Responsabilidade Médica</p>
-          <p className="text-[#98A2B3] text-xs leading-relaxed font-medium italic">
-            {institutional.medicalNotice} Marca registrada no INPI - Processo nº {institutional.trademarkProcess}.
-          </p>
+      {/* Medical Disclaimer - Professional Treatment (REINFORCED) */}
+      <div className="mb-12 p-8 rounded-[32px] bg-[#4F8CFF]/5 border border-[#4F8CFF]/10 space-y-6">
+        <div className="flex flex-col md:flex-row items-start gap-4">
+          <ShieldAlert size={28} className="text-[#4F8CFF] shrink-0 opacity-80" />
+          <div className="space-y-2">
+            <p className="text-[11px] font-black uppercase tracking-widest text-[#4F8CFF]">Aviso de Responsabilidade Médica & Jurídica</p>
+            <p className="text-[#F8FAFC] text-sm leading-relaxed font-bold italic">
+              {institutional.medicalNotice}
+            </p>
+            <p className="text-[#98A2B3] text-xs leading-relaxed font-medium">
+              O conteúdo deste portal é estritamente educacional e informativo. Não substitui, em hipótese alguma, a consulta médica, o diagnóstico ou o tratamento profissional.
+            </p>
+          </div>
+        </div>
+        
+        <div className="pt-6 border-t border-white/[0.05] grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="flex items-start gap-3">
+            <FileText size={16} className="text-[#4F8CFF] shrink-0 mt-0.5" />
+            <div>
+              <p className="text-[10px] font-black uppercase tracking-widest text-white/50 mb-1">Propriedade Intelectual</p>
+              <p className="text-[11px] text-[#98A2B3] font-medium leading-relaxed">
+                Marca registrada no INPI - Processo nº {institutional.trademarkProcess}. Todos os direitos reservados.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <Gavel size={16} className="text-[#4F8CFF] shrink-0 mt-0.5" />
+            <div>
+              <p className="text-[10px] font-black uppercase tracking-widest text-white/50 mb-1">Responsabilidade Institucional</p>
+              <p className="text-[11px] text-[#98A2B3] font-medium leading-relaxed">
+                {institutional.legalName} | Responsável: {institutional.owner}<br />
+                {institutional.address}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Bottom Legal Bar */}
       <div className="pt-8 border-t border-white/[0.03] flex flex-col md:flex-row justify-between items-center gap-6">
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-black uppercase tracking-widest text-[#98A2B3]/50">
-          <button type="button" onClick={() => setView && setView('terms')} className="hover:text-[#F8FAFC] transition-colors">Termos</button>
-          <button type="button" onClick={() => setView && setView('privacy')} className="hover:text-[#F8FAFC] transition-colors">Privacidade</button>
-          <button type="button" onClick={() => setView && setView('medicalDisclaimer')} className="hover:text-[#F8FAFC] transition-colors">Disclaimer</button>
-          <button type="button" onClick={() => setView && setView('intellectualProperty')} className="hover:text-[#F8FAFC] transition-colors">Direitos</button>
-          <button type="button" onClick={openCookiePreferences} className="hover:text-[#F8FAFC] transition-colors">Cookies</button>
+          <button type="button" onClick={() => setView && setView('terms')} className="hover:text-[#F8FAFC] transition-colors">Termos de Uso</button>
+          <button type="button" onClick={() => setView && setView('privacy')} className="hover:text-[#F8FAFC] transition-colors">Política de Privacidade</button>
+          <button type="button" onClick={() => setView && setView('medicalDisclaimer')} className="hover:text-[#F8FAFC] transition-colors">Aviso Médico</button>
+          <button type="button" onClick={() => setView && setView('intellectualProperty')} className="hover:text-[#F8FAFC] transition-colors">Propriedade Intelectual</button>
         </nav>
-        <p className="text-[10px] text-[#98A2B3]/30 font-bold uppercase tracking-tighter">
-          &copy; 2026 Eu Vou Ser Doutor. Todos os direitos reservados. Criado por Jefferson Queiroz.
+        <p className="text-[10px] text-[#98A2B3]/30 font-bold uppercase tracking-tighter text-center md:text-right">
+          &copy; 2026 {institutional.name}. Todos os direitos reservados.<br />
+          Conteúdo protegido por direitos autorais e leis de propriedade intelectual.
         </p>
       </div>
     </div>
