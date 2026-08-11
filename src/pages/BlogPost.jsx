@@ -18,6 +18,85 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    retina_chip_2026: {
+      title: "Chip de Retina Restaura Visão em Pacientes com Degeneração Macular Avançada",
+      subtitle: "Tecnologia da Science Corporation, baseada em implantes fotovoltaicos e óculos inteligentes, atinge 81% de sucesso em ensaio clínico publicado no NEJM.",
+      cat: "Tecnologia Médica",
+      time: "7 min",
+      date: "11 Ago 2026",
+      pubTime: "20:00",
+      updateTime: "23:15",
+      img: "/retina_chip_tech.jpg",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Uma fronteira histórica na oftalmologia foi rompida. Resultados de um ensaio clínico multicêntrico, publicados no prestigiado <strong>New England Journal of Medicine (NEJM)</strong>, revelam que um implante fotovoltaico sub-retiniano, conhecido como sistema PRIMA, foi capaz de restaurar a visão central funcional em pacientes com cegueira causada por degeneração macular relacionada à idade (DMRI) avançada.
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            A tecnologia, desenvolvida pela Science Corporation, combina um chip microscópico de 378 pixels implantado sob a retina com óculos inteligentes equipados com uma câmera e um projetor infravermelho. O sistema atua substituindo os fotorreceptores danificados, convertendo luz em sinais elétricos que estimulam diretamente as células nervosas do olho, permitindo que o cérebro processe imagens novamente.
+          </p>
+
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Impacto em Números</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "No estudo com 38 pacientes, 81% apresentaram uma melhora clinicamente significativa na acuidade visual após 12 meses. Muitos voltaram a ser capazes de ler letras grandes e reconhecer formas que antes eram apenas borrões escuros."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Como Funciona o "Olho Biônico"
+          </h2>
+          
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            Diferente de tecnologias anteriores que exigiam cabos externos, o chip PRIMA é totalmente sem fio e alimentado por luz. Os óculos capturam a cena visual e a projetam via infravermelho no chip. Os pixels fotovoltaicos transformam essa luz em pulsos elétricos, criando uma interface direta com o sistema visual do paciente.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Layers size={20} />
+              </div>
+              <h3 className="text-white font-black text-lg">Interface Fotovoltaica</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed">
+                Chip sem fios que converte luz em eletricidade para estimular as células da retina.
+              </p>
+            </div>
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Target size={20} />
+              </div>
+              <h3 className="text-white font-black text-lg">Foco na DMRI Seca</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed">
+                Primeiro tratamento eficaz para a atrofia geográfica, forma avançada e incurável de cegueira central.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes</h2>
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3">
+            {[
+              "Holz FG, et al. Subretinal Photovoltaic Implant to Restore Vision in Geographic Atrophy. New England Journal of Medicine. 2026.",
+              "Science Corporation. PRIMAvera Multicenter Clinical Trial Final Results. 2026.",
+              "Ophthalmology Times. PRIMA System: A major step in the battle against GA. 2026."
+            ].map((ref, i) => (
+              <div key={i} className="flex gap-3 text-xs text-[#98A2B3] font-medium leading-relaxed">
+                <span className="text-[#4F8CFF] font-black">[{i+1}]</span>
+                <span>{ref}</span>
+              </div>
+            ))}
+          </div>
+        </>
+      )
+    },
     estudar_medicina: {
       title: "Como Estudar para Medicina com Método, Rotina e Constância",
       subtitle: "Um guia editorial sobre organização acadêmica para transformar esforço em processo de aprovação.",

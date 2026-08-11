@@ -9,6 +9,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "retina_chip_2026",
+      title: "Chip de Retina Restaura Visão em Pacientes com Degeneração Macular Avançada",
+      subtitle: "Tecnologia da Science Corporation, baseada em implantes fotovoltaicos e óculos inteligentes, atinge 81% de sucesso em ensaio clínico publicado no NEJM.",
+      cat: "Tecnologia Médica",
+      date: "11 Ago 2026",
+      readTime: "7 min",
+      img: "/retina_chip_tech.jpg",
+      target: "post_retina_chip_2026",
+      featured: true,
+    },
+    {
       id: "cart_brasil_2026",
       title: "Terapia CAR-T 100% Nacional Atinge 72% de Remissão em Cânceres Avançados do Sangue",
       subtitle: "Desenvolvida por USP, Hemocentro de Ribeirão Preto e Instituto Butantan, inovação biotecnológica abre caminho para o acesso democrático a tratamentos genéticos avançados no SUS.",
