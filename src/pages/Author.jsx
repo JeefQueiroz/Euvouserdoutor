@@ -93,8 +93,8 @@ export const Author = ({ setView }) => {
                 </span>
               </div>
               
-              <h1 className="text-3xl md:text-6xl font-black tracking-tighter leading-[0.9] text-[#F8FAFC]">
-                Sobre o Projeto <br /> & Jeff Queiroz
+              <h1 className="text-3xl md:text-7xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
+                Sobre o Projeto & Jeff Queiroz
               </h1>
               
               <div className="flex flex-wrap justify-center md:justify-start gap-5 text-xs text-[#98A2B3] font-bold">
