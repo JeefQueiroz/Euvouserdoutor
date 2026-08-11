@@ -1,6 +1,6 @@
 export const institutional = {
-  name: 'Eu vou ser Doutor',
-  legalName: 'Eu vou ser Doutor',
+  name: 'Eu Vou Ser Doutor',
+  legalName: 'Eu Vou Ser Doutor',
   owner: 'Jefferson Viana Queiroz',
   address: 'Rua Ana Dias Duarte, 191, apto 902, Belo Horizonte/MG, CEP 31742-273, Brasil',
   alternatePhone: '+55 (31) 98297-2421',
