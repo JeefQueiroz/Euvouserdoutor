@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    background-color: #080A0F;
+    color: #F8FAFC;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -12,17 +20,17 @@
 }
 
 .dropcap::first-letter {
-  @apply text-5xl font-black mr-3 float-left text-[#2E70CE] mt-2;
+  @apply text-5xl font-black mr-3 float-left text-[#4F8CFF] mt-2;
 }
 
 .animate-in {
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;

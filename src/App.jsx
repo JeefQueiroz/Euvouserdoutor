@@ -20,6 +20,7 @@ const TermsOfUse = lazy(() => import('./pages/TermsOfUse').then(m => ({ default:
 const MedicalDisclaimer = lazy(() => import('./pages/MedicalDisclaimer').then(m => ({ default: m.MedicalDisclaimer })));
 const IntellectualProperty = lazy(() => import('./pages/IntellectualProperty').then(m => ({ default: m.IntellectualProperty })));
 const CookiePolicy = lazy(() => import('./pages/CookiePolicy').then(m => ({ default: m.CookiePolicy })));
+const Author = lazy(() => import('./pages/Author').then(m => ({ default: m.Author })));
 
 export default function App() {
   const initialView = pathToView[window.location.pathname] || 'home';
@@ -89,6 +90,7 @@ export default function App() {
           {view === 'mentorship' && <Mentorship setView={navigate} telegram={telegram} />}
           {view === 'flashcards' && <FlashcardsPage setView={navigate} />}
           {view === 'about' && <About />}
+          {view === 'author' && <Author setView={navigate} />}
           {view === 'contact' && <Contact />}
           {view === 'privacy' && <PrivacyPolicy />}
           {view === 'terms' && <TermsOfUse />}

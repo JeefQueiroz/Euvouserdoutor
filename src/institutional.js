@@ -105,6 +105,12 @@ export const routeMeta = {
     path: '/admin',
     requiresAuth: true,
   },
+  author: {
+    title: 'Jeff Queiroz · Criador e Editor Científico | EuVouSerDoutor',
+    description:
+      'Conheça a trajetória de Jefferson Viana Queiroz (Jeff Queiroz), acadêmico de Medicina na UFMG e fundador do portal EuVouSerDoutor.',
+    path: '/autor/jeff-queiroz',
+  },
 };
 
 export const pathToView = Object.fromEntries(
