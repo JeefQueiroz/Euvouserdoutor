@@ -15,6 +15,7 @@ export const Header = ({ setView, currentView, telegram }) => {
   }, []);
 
   const searchItems = [
+    { id: "post_retina_chip_2026", title: "Chip de Retina Restaura Visão", cat: "Tecnologia Médica", type: "noticia" },
     { title: 'Oxford Inicia Ensaio Clínico de Vacina Contra o Vírus Ebola', view: 'post_ebola_oxford_2026', cat: 'Saúde & Ciência' },
     { title: 'Como estudar para Medicina com método e constância', view: 'article', cat: 'Técnicas de Estudo' },
     { title: 'Flashcards Doutor: Estudo Ativo e Repetição Espaçada', view: 'flashcards', cat: 'Materiais' },
