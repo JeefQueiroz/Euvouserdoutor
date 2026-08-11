@@ -21,6 +21,7 @@ const MedicalDisclaimer = lazy(() => import('./pages/MedicalDisclaimer').then(m 
 const IntellectualProperty = lazy(() => import('./pages/IntellectualProperty').then(m => ({ default: m.IntellectualProperty })));
 const CookiePolicy = lazy(() => import('./pages/CookiePolicy').then(m => ({ default: m.CookiePolicy })));
 const Author = lazy(() => import('./pages/Author').then(m => ({ default: m.Author })));
+const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 export default function App() {
   const initialView = pathToView[window.location.pathname] || 'home';
@@ -110,6 +111,7 @@ export default function App() {
             </div>
           )}
           {view.startsWith('post_') && <BlogPost setView={navigate} postId={view.replace('post_', '')} profileImg={profileImg} telegram={telegram} />}
+          {view === 'notfound' && <NotFound setView={navigate} />}
         </Suspense>
       </main>
       <Footer setView={navigate} telegram={telegram} />

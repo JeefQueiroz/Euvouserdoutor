@@ -1,4 +1,4 @@
-import{c as l,j as e}from"./index-C4YuSzpq.js";import{L as c,S as n}from"./Sidebar-BUzHvSCw.js";import{C as r}from"./clock-DgwaSqrh.js";import{M as m}from"./message-circle-x0ZOqM6j.js";import{U as x}from"./users-AbMJkKWB.js";import{T as p}from"./target-V4WkOw2T.js";import{S as i}from"./shield-check-BEP6n8AY.js";import{C as h}from"./check-circle-2-DmNS4qos.js";import{C as b}from"./calendar-DAC2_iFx.js";import{P as u}from"./pen-tool-DfOKSeVl.js";import"./book-open-CN9U929m.js";/**
+import{c as l,j as e}from"./index-C_3FJbjO.js";import{L as c,S as n}from"./Sidebar-DLW0l0k7.js";import{C as r}from"./clock-BqCXlmRF.js";import{M as m}from"./message-circle-D0Q1GWTR.js";import{U as x}from"./users-Ltg9l0vy.js";import{T as p}from"./target-CjNm_WBa.js";import{S as i}from"./shield-check-C16P9i_G.js";import{C as h}from"./check-circle-2-_9ayccEE.js";import{C as b}from"./calendar-BVTBAgXf.js";import{P as u}from"./pen-tool-h4QA9_9t.js";import"./book-open-Ci7min13.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.

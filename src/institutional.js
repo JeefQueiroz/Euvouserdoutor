@@ -109,6 +109,11 @@ export const routeMeta = {
       'Conheça a trajetória de Jefferson Viana Queiroz (Jeff Queiroz), acadêmico de Medicina na UFMG e fundador do portal EuVouSerDoutor.',
     path: '/autor/jeff-queiroz',
   },
+  notfound: {
+    title: 'Página Não Encontrada | EuVouSerDoutor',
+    description: 'A página solicitada não foi encontrada ou foi movida.',
+    path: '/404',
+  },
   'post_ebola_oxford_2026': {
     title: 'Oxford Inicia Ensaio Clínico de Vacina Contra o Vírus Ebola | EuVouSerDoutor',
     description: 'Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV.',
