@@ -20,48 +20,48 @@ const intents = [
 
 export const Contact = () => (
   <section className="animate-in bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
-    <div className="bg-[#0A192F] border-b border-white/[0.08] py-20 md:py-24 px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.18),transparent_40%)]" />
+    <div className="bg-[#0A192F] border-b border-white/[0.05] py-12 md:py-16 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.12),transparent_40%)]" />
       <div className="max-w-7xl mx-auto relative z-10">
-        <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+        <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em] mb-6">
           Canal Direto
         </span>
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6 text-[#F8FAFC]">Contato</h1>
-        <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-tight mb-4 text-[#F8FAFC]">Contato</h1>
+        <p className="text-base md:text-lg text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
           Escolha o melhor canal para falar com o EuVouSerDoutor.
         </p>
       </div>
     </div>
 
-    <div className="max-w-7xl mx-auto px-6 py-16 md:py-20 space-y-10">
-      <div className="bg-[#11141A] rounded-[32px] border border-white/[0.08] shadow-2xl p-8 md:p-10">
-        <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] tracking-tight mb-4">Canais oficiais</h2>
-        <p className="text-[#98A2B3] leading-relaxed text-lg max-w-4xl">
+    <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 space-y-8">
+      <div className="bg-[#11141A] rounded-[24px] border border-white/[0.05] shadow-2xl p-6 md:p-8 premium-border">
+        <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] tracking-tighter mb-3">Canais oficiais</h2>
+        <p className="text-[#98A2B3] leading-relaxed text-sm md:text-base max-w-3xl font-medium">
           Para dúvidas institucionais, parcerias, solicitações relacionadas ao site, conteúdos, direitos autorais,
           proteção de dados ou assuntos comerciais, entre em contato pelos canais abaixo.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {intents.map((item) => (
-          <article key={item.title} className="bg-[#11141A] rounded-3xl border border-white/[0.08] shadow-2xl p-6 hover:border-[#4F8CFF]/40 transition-all">
-            <item.icon size={24} className="text-[#4F8CFF] mb-4" aria-hidden="true" />
-            <h2 className="text-lg font-black text-[#F8FAFC] mb-2">{item.title}</h2>
-            <p className="text-[#98A2B3] text-sm leading-relaxed">{item.text}</p>
+          <article key={item.title} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-5 hover:border-[#4F8CFF]/20 transition-all premium-border">
+            <item.icon size={20} className="text-[#4F8CFF] mb-3" aria-hidden="true" />
+            <h2 className="text-base font-black text-[#F8FAFC] mb-1.5">{item.title}</h2>
+            <p className="text-[#98A2B3] text-xs leading-relaxed font-medium">{item.text}</p>
           </article>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {contacts.map((item) => (
-          <div key={item.label} className="bg-[#11141A] rounded-3xl border border-white/[0.08] shadow-2xl p-6 hover:border-[#4F8CFF]/40 transition-all">
-            <item.icon size={22} className="text-[#4F8CFF] mb-4" aria-hidden="true" />
-            <p className="text-[10px] font-black uppercase tracking-widest text-[#98A2B3] mb-2">{item.label}</p>
+          <div key={item.label} className="bg-[#11141A] rounded-2xl border border-white/[0.05] p-5 hover:border-[#4F8CFF]/20 transition-all premium-border">
+            <item.icon size={18} className="text-[#4F8CFF] mb-3" aria-hidden="true" />
+            <p className="text-[9px] font-black uppercase tracking-widest text-[#98A2B3] mb-1.5">{item.label}</p>
             <a
               href={item.href}
               target={item.href.startsWith('http') ? '_blank' : undefined}
               rel="noreferrer"
-              className="text-[#F8FAFC] font-bold hover:text-[#4F8CFF] transition-colors break-words"
+              className="text-[#F8FAFC] text-xs font-bold hover:text-[#4F8CFF] transition-colors break-words"
             >
               {item.value}
             </a>
@@ -69,8 +69,8 @@ export const Contact = () => (
         ))}
       </div>
 
-      <div className="bg-[#11141A] border border-[#4F8CFF]/30 rounded-3xl p-6 md:p-8">
-        <p className="text-[#98A2B3] leading-relaxed font-medium">
+      <div className="bg-[#11141A] border border-[#4F8CFF]/20 rounded-2xl p-5 md:p-6">
+        <p className="text-[#98A2B3] text-xs leading-relaxed font-medium italic">
           Este canal é institucional e comercial. Ele não oferece orientação clínica individualizada. Em caso de sintomas,
           urgência ou emergência, procure um serviço de saúde habilitado.
         </p>
