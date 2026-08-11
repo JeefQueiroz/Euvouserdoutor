@@ -116,6 +116,16 @@ export const routeMeta = {
     description: 'A página solicitada não foi encontrada ou foi movida.',
     path: '/404',
   },
+  'post_estudar_medicina': {
+    title: 'Como Estudar para Medicina com Método e Constância | EuVouSerDoutor',
+    description: 'Um guia editorial sobre rotina, revisão e organização para transformar esforço em processo de estudo.',
+    path: '/noticias/como-estudar-medicina-metodo-constancia',
+  },
+  'post_cart_brasil_2026': {
+    title: 'Terapia CAR-T 100% Nacional Atinge 72% de Remissão | EuVouSerDoutor',
+    description: 'Inovação biotecnológica brasileira abre caminho para o acesso a tratamentos genéticos no SUS.',
+    path: '/noticias/terapia-cart-nacional-remissao-cancer',
+  },
   'post_ebola_oxford_2026': {
     title: 'Oxford Inicia Ensaio Clínico de Vacina Contra o Vírus Ebola | EuVouSerDoutor',
     description: 'Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV.',
@@ -129,27 +139,27 @@ export const routeMeta = {
   'post_pomodoro': {
     title: 'Técnica Pomodoro para Blocos de Foco | EuVouSerDoutor',
     description: 'Como usar ciclos curtos de estudo e pausa para manter atenção.',
-    path: '/estudos/tecnica-pomodoro-foco',
+    path: '/noticias/tecnica-pomodoro-foco-estudos',
   },
   'post_spaced_repetition': {
     title: 'Revisão Espaçada na Prática | EuVouSerDoutor',
     description: 'Entenda como revisar em intervalos planejados para a memória de longo prazo.',
-    path: '/estudos/revisao-espacada-pratica',
+    path: '/noticias/revisao-espacada-pratica-medicina',
   },
   'post_feynman': {
     title: 'Método Feynman para Aprender Melhor | EuVouSerDoutor',
     description: 'Como explicar conceitos com clareza para encontrar lacunas de aprendizado.',
-    path: '/estudos/metodo-feynman',
+    path: '/noticias/metodo-feynman-aprendizado-acelerado',
   },
   'post_mind_maps': {
     title: 'Mapas Mentais e Resumos Ativos | EuVouSerDoutor',
     description: 'Transforme leitura em recuperação ativa e conexões entre temas.',
-    path: '/estudos/mapas-mentais-resumos',
+    path: '/noticias/mapas-mentais-resumos-ativos',
   },
   'post_self_evaluation': {
     title: 'Autoavaliação Depois dos Simulados | EuVouSerDoutor',
     description: 'Use erros e acertos para orientar a revisão seguinte.',
-    path: '/estudos/autoavaliacao-simulados',
+    path: '/noticias/autoavaliacao-simulados-estrategia',
   },
 };
 

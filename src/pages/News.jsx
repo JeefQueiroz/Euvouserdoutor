@@ -37,8 +37,8 @@ export const News = ({ setView }) => {
       cat: 'Técnicas de estudo',
       date: '10 Ago 2026',
       readTime: '6 min',
-      img: 'https://i.imgur.com/9QVE0X7.jpeg',
-      target: 'article',
+      img: "https://i.imgur.com/9QVE0X7.jpeg",
+      target: "post_estudar_medicina",
       featured: false,
     },
     {

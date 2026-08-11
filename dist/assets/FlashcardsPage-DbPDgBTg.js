@@ -1,4 +1,4 @@
-import{c as s,j as e}from"./index-CNaMyIJ6.js";import{S as t}from"./Sidebar-Ce12dtt1.js";import{A as r}from"./arrow-left-aDIQndbC.js";import"./trending-up-CAiLn-zh.js";import"./book-open-DFduASAH.js";import"./message-circle-Exti0tu4.js";/**
+import{c as s,j as e}from"./index-DLGaogw8.js";import{S as t}from"./Sidebar-CJEY5tAT.js";import{A as r}from"./arrow-left-Bq31cj95.js";import"./trending-up-CSHd3ako.js";import"./book-open-COQ-R3nT.js";import"./message-circle-BbyuGekP.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.

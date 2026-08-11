@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink, GraduationCap } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
@@ -17,6 +17,24 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    estudar_medicina: {
+      title: "Como Estudar para Medicina com Método, Rotina e Constância",
+      subtitle: "Um guia editorial sobre organização acadêmica para transformar esforço em processo de aprovação.",
+      cat: "Técnicas de estudo",
+      time: "6 min",
+      date: "10 Ago 2026",
+      img: "https://i.imgur.com/9QVE0X7.jpeg",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Estudar para Medicina exige método, constância e capacidade de revisar o próprio processo sem depender de fórmulas prontas.
+          </p>
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            O EuVouSerDoutor reúne conteúdos educacionais, materiais de apoio e ideias de organização para estudantes e vestibulandos que querem mais clareza na rotina.
+          </p>
+        </>
+      )
+    },
     cart_brasil_2026: {
       title: "Terapia CAR-T 100% Nacional Atinge 72% de Remissão em Cânceres Avançados do Sangue",
       subtitle: "Desenvolvida por USP, Hemocentro de Ribeirão Preto e Instituto Butantan, inovação biotecnológica abre caminho para o acesso democrático a tratamentos genéticos avançados no SUS.",
@@ -197,7 +215,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           </div>
 
           <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
-            Os resultados preliminares são esperados para o final de 2026. Até lá, as autoridades de saúde reforçam a importância da vigilância epidemiológica e do suporte hospitalar nas regiões de risco.
+            Os resultados preliminares da Fase 1 são esperados para o final de 2026, com o início da Fase 2 previsto para o primeiro semestre de 2027 em regiões endêmicas.
           </p>
 
           <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-4 mb-12">
@@ -221,6 +239,102 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
               </div>
             ))}
           </div>
+        </>
+      )
+    },
+    polilaminina: {
+      title: "Polilaminina: A Nova Fronteira da Regeneração Neural em 2026",
+      subtitle: "Pesquisas avançadas demonstram que a polilaminina pode atuar como um andaime molecular para a recuperação de lesões na medula espinhal.",
+      cat: "Neurologia",
+      time: "6 min",
+      date: "09 Ago 2026",
+      img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A regeneração do sistema nervoso central, um dos maiores desafios da medicina moderna, acaba de ganhar um aliado promissor: a <strong>polilaminina</strong>. Novos estudos publicados em 2026 indicam que este polímero sintético, que mimetiza a matriz extracelular, é capaz de guiar o crescimento de axônios em áreas de lesão severa.
+          </p>
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            Diferente de abordagens anteriores, a polilaminina cria um ambiente bioativo que impede a formação da cicatriz glial, permitindo que as conexões neurais sejam restabelecidas de forma funcional.
+          </p>
+        </>
+      )
+    },
+    pomodoro: {
+      title: "Técnica Pomodoro: Ciência do Foco para Estudantes de Medicina",
+      subtitle: "Como ciclos de 25 minutos de concentração total podem prevenir a fadiga cognitiva e aumentar a retenção de conteúdo denso.",
+      cat: "Rotina",
+      time: "4 min",
+      date: "08 Ago 2026",
+      img: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Para o estudante de Medicina, o volume de informações é o maior inimigo. A <strong>Técnica Pomodoro</strong> não é apenas um timer; é uma estratégia de gerenciamento de carga cognitiva baseada na neurociência da atenção.
+          </p>
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            Ao fragmentar o estudo em blocos de foco intenso seguidos de pausas estratégicas, o cérebro consegue consolidar informações na memória de curto prazo antes de entrar em exaustão.
+          </p>
+        </>
+      )
+    },
+    spaced_repetition: {
+      title: "Revisão Espaçada: O Fim do Esquecimento na Preparação Médica",
+      subtitle: "Entenda a curva do esquecimento e como algoritmos de repetição espaçada garantem que você nunca mais esqueça o que estudou.",
+      cat: "Revisão",
+      time: "5 min",
+      date: "07 Ago 2026",
+      img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O segredo da aprovação não está no quanto você lê, mas no quanto você retém. A <strong>revisão espaçada</strong> (SRS) utiliza o efeito de espaçamento para desafiar o cérebro no momento exato em que ele começaria a esquecer um conceito.
+          </p>
+        </>
+      )
+    },
+    feynman: {
+      title: "Método Feynman: Se Você Não Sabe Explicar, Você Não Entendeu",
+      subtitle: "A técnica do Nobel de Física que ajuda estudantes de medicina a dominar temas complexos através da simplificação radical.",
+      cat: "Técnicas de estudo",
+      time: "4 min",
+      date: "06 Ago 2026",
+      img: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Richard Feynman acreditava que a verdadeira maestria vem da simplicidade. O <strong>Método Feynman</strong> consiste em quatro passos para transformar temas densos em conhecimento intuitivo.
+          </p>
+        </>
+      )
+    },
+    mind_maps: {
+      title: "Mapas Mentais: Conectando os Pontos da Anatomia e Fisiologia",
+      subtitle: "Como o pensamento radiante e a organização visual podem substituir resumos lineares e ineficientes.",
+      cat: "Técnicas de estudo",
+      time: "5 min",
+      date: "05 Ago 2026",
+      img: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Mapas mentais mimetizam a forma como os neurônios se conectam. Ao usar cores, imagens e ramificações, você ativa o hemisfério direito do cérebro, facilitando a memorização de sistemas complexos.
+          </p>
+        </>
+      )
+    },
+    self_evaluation: {
+      title: "Autoavaliação: Transformando Erros em Pontos de Aprovação",
+      subtitle: "O guia definitivo para analisar simulados e criar um plano de estudo baseado em dados reais de desempenho.",
+      cat: "Rotina",
+      time: "5 min",
+      date: "04 Ago 2026",
+      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Errar um simulado é uma oportunidade de ouro. A <strong>autoavaliação crítica</strong> permite identificar se o erro foi por falta de base, falta de atenção ou má gestão de tempo.
+          </p>
         </>
       )
     }
