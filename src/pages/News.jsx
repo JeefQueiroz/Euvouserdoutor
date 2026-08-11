@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowLeft, ArrowRight, BookOpen, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, Clock, Sparkles } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 
 export const News = ({ setView }) => {
@@ -72,107 +71,74 @@ export const News = ({ setView }) => {
       img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
       target: 'post_self_evaluation',
     },
-    {
-      title: 'Grupos de estudo com propósito',
-      subtitle: 'O que observar para participar de trocas produtivas sem transformar rotina em dispersão.',
-      cat: 'Vida acadêmica',
-      readTime: '4 min',
-      img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800',
-      target: 'post_study_groups',
-    },
-    {
-      title: 'Memorização, descanso e ansiedade',
-      subtitle: 'Estratégias gerais para estudar com mais regularidade e cuidar do ritmo antes de provas.',
-      cat: 'Rotina',
-      readTime: '4 min',
-      img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800',
-      target: 'post_relaxation',
-    },
   ];
 
-  const featuredPost = posts[0];
-  const regularPosts = posts.slice(1);
-
-  const PostMeta = ({ post }) => (
-    <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-500 mb-4">
-      <span className="bg-[#2E70CE]/10 text-[#2E70CE] px-3 py-1 rounded-full">{post.cat}</span>
-      {post.date && <span>{post.date}</span>}
-      {post.readTime && <span>{post.readTime} de leitura</span>}
-    </div>
-  );
-
   return (
-    <div className="animate-in pb-20 text-left bg-[#F4F7FB] min-h-screen">
-      <div className="bg-[#0A192F] text-white pt-14 pb-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(46,112,206,0.28),transparent_35%)]" />
+    <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
+      {/* Editorial Header */}
+      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.18),transparent_40%)]" />
         <div className="max-w-7xl mx-auto relative z-10">
           <button
             type="button"
             onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[10px] font-black text-blue-200 uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-all mb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="inline-flex items-center gap-2 text-[10px] font-black text-[#4F8CFF] uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-all mb-8"
           >
-            <ArrowLeft size={14} aria-hidden="true" /> Voltar
+            <ArrowLeft size={14} aria-hidden="true" /> Voltar ao Início
           </button>
+          
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-              <Sparkles size={14} className="text-[#5CE1E6]" aria-hidden="true" />
-              Blog e estratégias
-            </div>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight">
-              Estratégias de estudo para futuros médicos
+            <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+              Redação & Pesquisa
+            </span>
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight text-[#F8FAFC] mb-6">
+              Notícias, Ciência & Estratégias
             </h1>
-            <p className="text-lg md:text-xl text-blue-100/85 leading-relaxed max-w-3xl font-medium mt-5">
-              Artigos, notícias e conteúdos educacionais sobre rotina, revisão, simulados, redação, Medicina e vida acadêmica.
+            <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-3xl font-normal">
+              Acompanhe coberturas jornalísticas, pesquisas médicas e métodos de estudo para futuros médicos, vestibulandos e acadêmicos.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 -mt-16 relative z-20">
-        <div className="lg:col-span-8 xl:col-span-9 space-y-9">
-          <article onClick={() => setView(featuredPost.target)} className="bg-white rounded-3xl p-3 shadow-[0_24px_60px_rgba(10,25,47,0.10)] border border-[#DDE6F2] cursor-pointer group transition-all duration-300 hover:-translate-y-1 hover:border-[#A02070]/30">
-            <div className="w-full aspect-[16/8] overflow-hidden rounded-[22px] relative mb-7">
-              <img src={featuredPost.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Ilustração do artigo em destaque sobre estudo para Medicina" />
-              <div className="absolute top-4 left-4 bg-[#A02070] text-white px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg">
-                Destaque
-              </div>
-            </div>
-            <div className="px-5 pb-7 md:px-8 md:pb-8 text-left">
-              <PostMeta post={featuredPost} />
-              <h2 className="text-3xl md:text-4xl font-black text-[#0A192F] mb-4 group-hover:text-[#A02070] transition-colors leading-tight">{featuredPost.title}</h2>
-              <p className="text-base text-gray-600 leading-relaxed mb-7">{featuredPost.subtitle}</p>
-              <span className="inline-flex items-center justify-center gap-2 bg-[#A02070] text-white px-6 py-3 rounded-full font-black text-xs uppercase tracking-widest group-hover:bg-[#801a5a] transition-colors">
-                Ler artigo <ArrowRight size={16} aria-hidden="true" />
-              </span>
-            </div>
-          </article>
-
-          <div className="flex items-center gap-4 pt-2">
-            <div className="w-10 h-10 bg-[#A02070]/10 rounded-2xl flex items-center justify-center text-[#A02070]">
-              <BookOpen size={20} aria-hidden="true" />
-            </div>
-            <h2 className="text-2xl font-black text-[#0A192F]">Mais conteúdos</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {regularPosts.map((post) => (
-              <article key={post.title} onClick={() => setView(post.target)} className="bg-white rounded-3xl p-3 shadow-sm border border-[#DDE6F2] flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_20px_42px_rgba(10,25,47,0.08)] hover:border-[#A02070]/30">
-                <div className="w-full aspect-video overflow-hidden rounded-[22px] relative mb-5">
-                  <img src={post.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={`Imagem do artigo: ${post.title}`} />
-                </div>
-                <div className="px-4 pb-5 text-left flex flex-col flex-grow">
-                  <PostMeta post={post} />
-                  <h3 className="text-xl font-black text-[#0A192F] mb-3 group-hover:text-[#A02070] transition-colors leading-snug">{post.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">{post.subtitle}</p>
-                  <span className="mt-auto flex items-center justify-between border-t border-gray-100 pt-4 text-[#A02070] font-black text-[10px] uppercase tracking-widest">
-                    Ler artigo <ArrowRight size={14} aria-hidden="true" />
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 -mt-12 relative z-20">
+        <div className="lg:col-span-8 xl:col-span-9 space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {posts.map((post, idx) => (
+              <article
+                key={idx}
+                onClick={() => setView(post.target)}
+                className="bg-[#11141A] border border-white/[0.08] rounded-[32px] overflow-hidden shadow-2xl cursor-pointer group hover:border-[#4F8CFF]/40 transition-all flex flex-col justify-between"
+              >
+                <div className="aspect-[16/9] overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] to-transparent z-10 opacity-40"></div>
+                  <img src={post.img} alt={post.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <span className="absolute top-4 left-4 z-20 bg-[#080A0F]/80 backdrop-blur border border-white/[0.08] text-[#4F8CFF] px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
+                    {post.cat}
                   </span>
+                </div>
+                <div className="p-8 flex flex-col justify-between flex-grow">
+                  <div>
+                    <div className="flex items-center gap-2 text-xs text-[#98A2B3] mb-3">
+                      <Clock size={14} /> {post.readTime} de leitura
+                    </div>
+                    <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors mb-3 leading-snug">
+                      {post.title}
+                    </h2>
+                    <p className="text-[#98A2B3] text-sm leading-relaxed mb-6 line-clamp-3">
+                      {post.subtitle}
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-bold text-[#4F8CFF] uppercase tracking-wider">
+                    <span>Ler reportagem</span>
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </article>
             ))}
           </div>
         </div>
-        
+
         <div className="lg:col-span-4 xl:col-span-3">
           <Sidebar setView={setView} />
         </div>
