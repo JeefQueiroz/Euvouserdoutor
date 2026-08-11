@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Mail, Send, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Send, Youtube } from 'lucide-react';
 import { institutional } from '../institutional';
 import { COOKIE_CONSENT_OPEN_EVENT } from './CookieConsent';
 
@@ -65,6 +65,7 @@ export const Footer = ({ setView, telegram }) => (
               {[
                 { icon: Instagram, href: institutional.instagram, label: 'Instagram' },
                 { icon: Youtube, href: institutional.youtube, label: 'YouTube' },
+                { icon: Linkedin, href: institutional.linkedin, label: 'LinkedIn' },
                 { icon: Facebook, href: institutional.facebook, label: 'Facebook' },
                 { icon: Send, href: telegram, label: 'Telegram' },
               ].map((social, i) => (

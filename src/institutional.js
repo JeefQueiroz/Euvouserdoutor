@@ -14,6 +14,7 @@ export const institutional = {
   youtube: 'https://youtube.com/@Euvouserdoutor',
   instagram: 'https://instagram.com/euvouserdoutor',
   telegram: 'https://t.me/Euvouserdoutor',
+  linkedin: 'https://www.linkedin.com/in/jeffqueiroz-med/',
   metaBusinessPortfolioId: '637476149251537',
   metaPage: 'Eu Vou Ser Doutor Curiosidades Médicas',
   trademarkProcess: '921406193',

@@ -121,6 +121,9 @@ export const Author = ({ setView }) => {
               <a href={institutional.youtube} target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-[#F8FAFC] hover:border-[#4F8CFF]/40 transition-all text-xs font-bold">
                 <Youtube size={16} className="text-[#4F8CFF]" /> YouTube Oficial
               </a>
+              <a href={institutional.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-[#F8FAFC] hover:border-[#4F8CFF]/40 transition-all text-xs font-bold">
+                <Linkedin size={16} className="text-[#4F8CFF]" /> LinkedIn Pessoal
+              </a>
               <a href={`mailto:${institutional.email}`} className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-[#F8FAFC] hover:border-[#4F8CFF]/40 transition-all text-xs font-bold">
                 <Mail size={16} className="text-[#4F8CFF]" /> {institutional.email}
               </a>

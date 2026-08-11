@@ -1,11 +1,11 @@
 import React from 'react';
-import { BookOpen, Facebook, FileText, Mail, MessageCircle, Phone, ShieldCheck, Users } from 'lucide-react';
+import { BookOpen, Facebook, FileText, Linkedin, Mail, MessageCircle, Phone, ShieldCheck, Users } from 'lucide-react';
 import { institutional } from '../institutional';
 
 const contacts = [
   { icon: Mail, label: 'E-mail oficial', value: institutional.legalEmail, href: `mailto:${institutional.legalEmail}` },
-  { icon: Mail, label: 'E-mail alternativo', value: institutional.legalAlternateEmail, href: `mailto:${institutional.legalAlternateEmail}` },
   { icon: ShieldCheck, label: 'Site oficial', value: institutional.siteLabel, href: institutional.site },
+  { icon: Linkedin, label: 'LinkedIn Pessoal', value: 'jeffqueiroz-med', href: institutional.linkedin },
   { icon: Facebook, label: 'Facebook oficial', value: 'facebook.com/Euvouserdoutor', href: institutional.facebook },
 ];
 
