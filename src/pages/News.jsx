@@ -11,7 +11,6 @@ export const News = ({ setView }) => {
       readTime: '7 min',
       img: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=800',
       target: 'post_ebola_oxford_2026',
-      featured: true,
     },
     {
       title: 'Como estudar para Medicina com método e constância',
@@ -21,7 +20,6 @@ export const News = ({ setView }) => {
       readTime: '6 min',
       img: 'https://i.imgur.com/9QVE0X7.jpeg',
       target: 'article',
-      featured: true,
     },
     {
       title: 'Polilaminina e os Avanços na Regeneração Neural',
@@ -75,63 +73,63 @@ export const News = ({ setView }) => {
 
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
-      {/* Editorial Header */}
-      <div className="bg-[#0A192F] border-b border-white/[0.08] pt-14 pb-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.18),transparent_40%)]" />
+      {/* Refined Header */}
+      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-12 pb-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.12),transparent_40%)]" />
         <div className="max-w-7xl mx-auto relative z-10">
           <button
             type="button"
             onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[10px] font-black text-[#4F8CFF] uppercase bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-all mb-8"
+            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-10"
           >
-            <ArrowLeft size={14} aria-hidden="true" /> Voltar ao Início
+            <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
           </button>
           
-          <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+          <div className="max-w-4xl space-y-6">
+            <span className="inline-flex items-center gap-2 bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
               Redação & Pesquisa
             </span>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight text-[#F8FAFC] mb-6">
+            <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-tight text-[#F8FAFC]">
               Notícias, Ciência & Estratégias
             </h1>
-            <p className="text-lg md:text-xl text-[#98A2B3] leading-relaxed max-w-3xl font-normal">
-              Acompanhe coberturas jornalísticas, pesquisas médicas e métodos de estudo para futuros médicos, vestibulandos e acadêmicos.
+            <p className="text-base md:text-lg text-[#98A2B3] leading-relaxed max-w-2xl font-medium">
+              Coberturas jornalísticas e pesquisas médicas explicadas com rigor editorial para o ecossistema da Medicina.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 -mt-12 relative z-20">
-        <div className="lg:col-span-8 xl:col-span-9 space-y-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 -mt-10 relative z-20">
+        <div className="lg:col-span-8 xl:col-span-9">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {posts.map((post, idx) => (
               <article
                 key={idx}
                 onClick={() => setView(post.target)}
-                className="bg-[#11141A] border border-white/[0.08] rounded-[32px] overflow-hidden shadow-2xl cursor-pointer group hover:border-[#4F8CFF]/40 transition-all flex flex-col justify-between"
+                className="bg-[#11141A] border border-white/[0.05] rounded-[28px] overflow-hidden shadow-2xl cursor-pointer group hover:border-[#4F8CFF]/30 transition-all flex flex-col premium-border"
               >
-                <div className="aspect-[16/9] overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] to-transparent z-10 opacity-40"></div>
-                  <img src={post.img} alt={post.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <span className="absolute top-4 left-4 z-20 bg-[#080A0F]/80 backdrop-blur border border-white/[0.08] text-[#4F8CFF] px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
+                <div className="aspect-[16/10] overflow-hidden relative">
+                  <img src={post.img} alt={post.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-60"></div>
+                  <span className="absolute top-4 left-4 z-20 bg-[#080A0F]/60 backdrop-blur-md border border-white/[0.08] text-[#4F8CFF] px-2.5 py-1 rounded-md text-[8px] font-black uppercase tracking-widest">
                     {post.cat}
                   </span>
                 </div>
-                <div className="p-8 flex flex-col justify-between flex-grow">
+                <div className="p-7 flex flex-col justify-between flex-grow space-y-4">
                   <div>
-                    <div className="flex items-center gap-2 text-xs text-[#98A2B3] mb-3">
-                      <Clock size={14} /> {post.readTime} de leitura
+                    <div className="flex items-center gap-2 text-[10px] text-[#98A2B3] font-bold mb-2">
+                      <Clock size={12} /> {post.readTime} de leitura
                     </div>
-                    <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors mb-3 leading-snug">
+                    <h2 className="text-lg md:text-xl font-black text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors leading-snug">
                       {post.title}
                     </h2>
-                    <p className="text-[#98A2B3] text-sm leading-relaxed mb-6 line-clamp-3">
+                    <p className="text-xs text-[#98A2B3] leading-relaxed line-clamp-3 font-medium">
                       {post.subtitle}
                     </p>
                   </div>
-                  <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-bold text-[#4F8CFF] uppercase tracking-wider">
+                  <div className="pt-4 border-t border-white/[0.03] flex items-center justify-between text-[9px] font-black text-[#4F8CFF] uppercase tracking-[0.15em]">
                     <span>Ler reportagem</span>
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </article>

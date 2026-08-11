@@ -7,7 +7,35 @@
     background-color: #080A0F;
     color: #F8FAFC;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tighter;
+  }
+}
+
+/* Premium Glassmorphism & Borders */
+.glass {
+  @apply bg-white/[0.02] backdrop-blur-md border border-white/[0.08] shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+}
+
+.premium-border {
+  @apply border border-white/[0.06] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#080A0F];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
 }
 
 .no-scrollbar::-webkit-scrollbar {
