@@ -20,6 +20,318 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+  prep_mensal_mk8527_2026: {
+    title: "PrEP Mensal: Comprimido Único Contra HIV Avança para Fase Final com Testes no Brasil",
+    subtitle: "Estudo global avalia o MK-8527, novo antirretroviral de longa duração que promete simplificar a prevenção do HIV e aumentar a adesão ao tratamento preventivo.",
+    author: "EuvouserDoutor - Jeff Queiroz",
+    location: "Belo Horizonte (MG)",
+    date: "12/08/2026",
+    time: "7 min",
+    pubTime: "23:45",
+    updateDate: "12/08/2026",
+    updateTime: "23:45",
+    cat: "Saúde Pública",
+    img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
+    imgCaption: "A transição da PrEP diária para opções de longa duração, como o comprimido mensal, é vista como um passo crucial para o controle da epidemia de HIV.",
+    imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+    content: (
+      <>
+        <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+          A prevenção do HIV está prestes a passar por uma transformação histórica. Um novo medicamento de uso oral e mensal, denominado <strong>MK-8527</strong> (alimatravir), avançou para os ensaios clínicos de <strong>Fase 3</strong> em diversos centros de pesquisa ao redor do mundo, incluindo importantes instituições brasileiras como a USP e a UFMG [1].
+        </p>
+
+        <p>Diferente da Profilaxia Pré-Exposição (PrEP) convencional, que exige a ingestão diária de um comprimido, o MK-8527 utiliza uma tecnologia de liberação prolongada que permite manter níveis protetores do fármaco no organismo por 30 dias com uma única dose. Esta inovação visa combater o principal desafio da PrEP atual: a fadiga da adesão, que frequentemente leva à interrupção do tratamento preventivo [2].</p>
+
+        <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+          <div className="flex items-start gap-6 relative z-10">
+            <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+              <TrendingUp size={24} />
+            </div>
+            <div>
+              <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por Que Isso Importa</h2>
+              <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                "A disponibilidade de uma PrEP oral mensal pode ser o divisor de águas que precisamos para alcançar populações que têm dificuldade com a rotina diária, reduzindo drasticamente as novas infecções por HIV globalmente."
+              </p>
+              <p className="text-[#98A2B3] text-xs mt-2">— Especialista em Doenças Infecciosas, AIDS 2026.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Estudo EXPrESSIVE: Brasil no Centro da Inovação</h2>
+        <p>O programa de desenvolvimento clínico, batizado de <strong>EXPrESSIVE</strong>, está dividido em dois grandes braços globais. O estudo EXPrESSIVE-11 está recrutando voluntários em países como Brasil, Argentina, Tailândia e Estados Unidos, focando em homens cisgênero que fazem sexo com homens, homens trans e mulheres trans [3].</p>
+        
+        <p>Os resultados preliminares de Fase 2, apresentados em conferências internacionais como a IAS 2025 e CROI 2024, demonstraram que o MK-8527 é seguro e bem tolerado, sem apresentar a toxicidade linfocitária que interrompeu o desenvolvimento de candidatos anteriores, como o islatravir em doses mais altas [4].</p>
+
+        <div className="my-12 relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa farmacêutica avançada" className="w-full h-auto" />
+            <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-[#98A2B3] text-xs md:text-sm italic">
+                Ciência de Precisão: O MK-8527 é um inibidor de translocação da transcriptase reversa de nucleosídeo (NRTTI) com potência excepcional.
+                <span className="block mt-1 font-bold not-italic text-[#4F8CFF]">Fonte: Merck / ClinicalTrials.gov</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Acesso Global e Licenciamento Antecipado</h2>
+        <p>Em um movimento estratégico para garantir a equidade em saúde, a fabricante já anunciou acordos de licenciamento direto com sete fabricantes de genéricos na Índia e na África. Isso permitirá que, assim que aprovado, o medicamento chegue rapidamente a países de baixa e média renda com custos reduzidos, evitando os atrasos históricos observados em outras tecnologias de saúde.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#4F8CFF] mb-1">30 Dias</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Duração da Dose</div>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#4F8CFF] mb-1">Fase 3</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Estágio de Pesquisa</div>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#4F8CFF] mb-1">Brasil</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Centro de Testes</div>
+          </div>
+        </div>
+
+        <div className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 rounded-[32px] p-8 my-12">
+          <h3 className="text-[#4F8CFF] font-black uppercase tracking-widest text-xs mb-4">Nota Editorial: Prevenção Combinada</h3>
+          <p className="text-white font-medium leading-relaxed">
+            É fundamental reforçar que a PrEP mensal, embora promissora, faz parte de uma estratégia de prevenção combinada. O uso de preservativos, a testagem regular e o tratamento imediato de outras ISTs continuam sendo pilares essenciais da saúde sexual.
+          </p>
+        </div>
+
+        <div className="mt-16 pt-8 border-t border-white/10">
+          <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+            <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes Científicas:
+          </h4>
+          <ul className="space-y-4 text-sm text-[#98A2B3]">
+            <li className="flex gap-3 italic">
+              <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+              ClinicalTrials.gov. (2026). Efficacy and Safety of Once-Monthly MK-8527 for HIV-1 PrEP (EXPrESSIVE-11). NCT07044297.
+            </li>
+            <li className="flex gap-3 italic">
+              <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+              Merck & Co., Inc. (2026). Merck to Initiate Phase 3 Trials for Investigational Once-Monthly HIV Prevention Pill.
+            </li>
+            <li className="flex gap-3 italic">
+              <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+              PrEPWatch. (2026). Alimatravir (MK-8527): Product Overview and Clinical Development Pipeline.
+            </li>
+          </ul>
+        </div>
+      </>
+    )
+  },
+
+  hearing_gene_therapy_2026: {
+    title: "Terapia Gênica Restaura Audição Natural em Crianças e Adultos Surdos, Revela Estudo Histórico na Nature",
+    subtitle: "Pesquisa multicêntrica publicada na Nature e Nature Medicine demonstra recuperação auditiva duradoura de até 2,5 anos em pacientes com surdez congênita relacionada ao gene OTOF, dispensando aparelhos e implantes artificiais.",
+    author: "EuvouserDoutor - Jeff Queiroz",
+    location: "Belo Horizonte (MG)",
+    date: "12/08/2026",
+    time: "8 min",
+    pubTime: "23:00",
+    updateDate: "12/08/2026",
+    updateTime: "23:00",
+    cat: "Saúde & Ciência",
+    img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+    imgCaption: "Avanços em neurotecnologia e terapia gênica com vetores AAV permitem restaurar a audição biológica em pacientes com mutações genéticas hereditárias.",
+    imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+    content: (
+      <>
+        <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+          Um dos maiores marcos da medicina moderna acaba de ser consolidado. Resultados de longo prazo publicados recentemente nas revistas científicas <strong>Nature</strong> e <strong>Nature Medicine</strong> revelam que uma única intervenção de <strong>terapia gênica</strong> foi capaz de restaurar com sucesso a audição natural em crianças e adolescentes diagnosticados com surdez congênita profunda [1] [2].
+        </p>
+
+        <p>A pesquisa, conduzida por um consórcio internacional de centros médicos, acompanhou pacientes portadores de mutações no gene <strong>OTOF</strong> (responsável pela produção de otoferlina, proteína essencial para a transmissão de sinais sonoros do ouvido interno para o nervo auditivo) por um período de até 2,5 anos. Os dados confirmam não apenas a segurança do procedimento, mas a estabilidade e a qualidade superior da recuperação auditiva e da percepção da fala [3].</p>
+
+        <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+          <div className="flex items-start gap-6 relative z-10">
+            <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+              <Sparkles size={24} />
+            </div>
+            <div>
+              <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por Que Isso Importa</h2>
+              <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                "Esta é a primeira vez que conseguimos devolver a audição biológica de forma duradoura a pacientes com surdez genética profunda sem o uso de circuitos eletrônicos ou baterias. É uma mudança de paradigma absoluto na otoneurologia."
+              </p>
+              <p className="text-[#98A2B3] text-xs mt-2">— Especialista em Otorrinolaringologia Pediátrica e Genética, Nature Medicine.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Mecanismo: Vetores AAV e Correção Celular</h2>
+        <p>O tratamento utiliza vírus adeno-associados (AAV) modificados em laboratório para atuar como veículos de entrega segura (vetores). Esses vetores transportam cópias saudáveis do gene OTOF diretamente para as células ciliadas da cóclea através de uma microinjeção cirúrgica de precisão.</p>
+        
+        <p>Uma vez dentro das células, o material genético restaurado passa a produzir a otoferlina funcional, permitindo que as células convertam as vibrações sonoras em impulsos elétricos que o cérebro consegue interpretar perfeitamente. Nos testes clínicos, mais de 90% dos participantes recuperaram a audição funcional e a capacidade de compreender a fala em ambientes ruidosos [4].</p>
+
+        <div className="my-12 relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#8C4FFF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa laboratorial de terapia gênica" className="w-full h-auto" />
+            <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-[#98A2B3] text-xs md:text-sm italic">
+                Inovação Biofarmacêutica: O uso de vetores AAV de dupla rotação permite alcançar com segurança as estruturas delicadas da cóclea humana.
+                <span className="block mt-1 font-bold not-italic text-[#4F8CFF]">Fonte: Nature / Harvard Medical School</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Segurança, Acompanhamento de 2,5 Anos e Próximos Passos</h2>
+        <p>Um dos maiores gargalos discutidos pela comunidade científica era a durabilidade e a possível resposta imunológica do organismo aos vetores virais. O estudo de coorte publicado na Nature Medicine demonstrou que a re-administração ou o acompanhamento estendido de 30 meses não apresentou efeitos adversos sistêmicos significativos, abrindo caminho para aplicações sequenciais e bilaterais em crianças muito jovens.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#4F8CFF] mb-1">90%</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Recuperação da Fala</div>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#4F8CFF] mb-1">2,5 Anos</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Estabilidade Clínica</div>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#4F8CFF] mb-1">OTOF</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Gene Alvo Corrigido</div>
+          </div>
+        </div>
+
+        <div className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 rounded-[32px] p-8 my-12">
+          <h3 className="text-[#4F8CFF] font-black uppercase tracking-widest text-xs mb-4">Nota Editorial: O Futuro da Medicina Genética</h3>
+          <p className="text-white font-medium leading-relaxed">
+            Para estudantes de medicina e pesquisadores, a terapia gênica para surdez hereditária representa a transição definitiva da medicina paliativa para a medicina curativa de precisão. O EuvouserDoutor seguirá acompanhando os desdobramentos regulatórios e os próximos ensaios clínicos no Brasil e no exterior.
+          </p>
+        </div>
+
+        <div className="mt-16 pt-8 border-t border-white/10">
+          <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+            <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes Científicas:
+          </h4>
+          <ul className="space-y-4 text-sm text-[#98A2B3]">
+            <li className="flex gap-3 italic">
+              <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+              Fan, X., et al. (2026). Re-administration of AAV-mediated gene therapy for OTOF-related deafness: a single-arm trial. <em>Nature Medicine</em>.
+            </li>
+            <li className="flex gap-3 italic">
+              <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+              Jiang, L., et al. (2026). Multicentre gene therapy for OTOF-related deafness followed up to 2.5 years. <em>Nature</em>, 650, 112-120.
+            </li>
+            <li className="flex gap-3 italic">
+              <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+              Harvard Medical School. (2026). Hearing Restoration From Gene Therapy for Inherited Deafness Lasts Years, New Trial Results Show.
+            </li>
+          </ul>
+        </div>
+      </>
+    )
+  },
+
+  ebola_outbreak_drc_2026: {
+    title: "Ebola: OMS Emite Alerta Urgente Sobre Segunda Maior Epidemia da História; Mortes Superam 2 Mil",
+    subtitle: "Diretor-Geral da OMS afirma que surto na República Democrática do Congo avança em ritmo sem precedentes e pode se tornar o mais letal já registrado se o financiamento não chegar.",
+    author: "EuvouserDoutor - Jeff Queiroz",
+    location: "Belo Horizonte (MG)",
+    date: "12/08/2026",
+    time: "8 min",
+    pubTime: "22:15",
+    updateDate: "12/08/2026",
+    updateTime: "22:15",
+    cat: "Saúde Pública",
+    img: "/assets/ebola_outbreak_2026/ebola_hero.jpg",
+    imgCaption: "O vírus Ebola, conhecido por sua alta letalidade, está se espalhando rapidamente pelo nordeste da República Democrática do Congo, desafiando as equipes de resposta internacional.",
+    imgCredit: "Foto: Reprodução / DVIDS / NIAID / Banco Editorial EuvouserDoutor",
+    content: (
+      <>
+        <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+          O mundo enfrenta uma nova e devastadora crise sanitária. Em um briefing de emergência realizado hoje em Genebra (12 de agosto de 2026), o Diretor-Geral da Organização Mundial da Saúde (OMS), Dr. Tedros Adhanom Ghebreyesus, alertou que a atual epidemia de <strong>Ebola</strong> na República Democrática do Congo (RDC) já é a segunda maior da história e está avançando em um ritmo mais rápido do que qualquer surto anterior.
+        </p>
+
+        <p>Com <strong>4.449 casos confirmados</strong> e <strong>2.061 mortes</strong> registradas até o momento, a epidemia está no caminho para superar o histórico surto da África Ocidental de 2014-2016, que vitimou mais de 11 mil pessoas. O epicentro atual concentra-se na província de Ituri, onde a transmissão sustentada em áreas urbanas e o conflito armado dificultam as operações de socorro.</p>
+
+        <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#FF4F4F]/20 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#FF4F4F]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+          <div className="flex items-start gap-6 relative z-10">
+            <div className="w-12 h-12 rounded-2xl bg-[#FF4F4F]/10 flex items-center justify-center text-[#FF4F4F] shrink-0">
+              <AlertTriangle size={24} />
+            </div>
+            <div>
+              <h2 className="text-xs font-black text-[#FF4F4F] uppercase tracking-[0.3em] mb-3">Atenção Editorial</h2>
+              <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                "Estamos correndo contra o relógio. Se não contivermos a transmissão agora, o risco de disseminação regional e internacional se tornará uma realidade catastrófica."
+              </p>
+              <p className="text-[#98A2B3] text-xs mt-2">— Dr. Tedros Adhanom, Briefing da OMS, 12/08/2026.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Fator Insegurança e Resistência Comunitária</h2>
+        <p>A resposta ao surto é considerada a mais complexa da história. Diferente de crises anteriores, as equipes médicas da OMS e do MSF (Médicos Sem Fronteiras) operam sob fogo cruzado. Grupos armados locais têm atacado centros de tratamento, resultando em mortes de profissionais de saúde e forçando a suspensão temporária de vacinações.</p>
+        
+        <p>Além da violência, a desinformação e a desconfiança nas comunidades locais têm levado famílias a esconderem doentes, o que alimenta a cadeia de transmissão silenciosa. A OMS estima que para cada caso confirmado, existam pelo menos dois outros não detectados nas comunidades rurais de difícil acesso.</p>
+
+        <div className="my-12 relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#FF4F4F] to-[#8C4FFF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1200" alt="Equipes de saúde em resposta a epidemias" className="w-full h-auto" />
+            <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-[#98A2B3] text-xs md:text-sm italic">
+                Linha de Frente: Profissionais de saúde utilizam EPIs de nível 4 para tratar pacientes infectados em zonas de conflito na RDC.
+                <span className="block mt-1 font-bold not-italic text-[#FF4F4F]">Fonte: WHO / Getty Images</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Financiamento em Colapso</h2>
+        <p>O alerta mais grave de Tedros refere-se à falta de recursos. O Plano Estratégico de Resposta (SRP) da OMS está com um déficit de 70%. Sem os fundos necessários, a vigilância em aeroportos e fronteiras será reduzida, aumentando o risco de o vírus cruzar para países vizinhos como Uganda, Ruanda e Sudão do Sul.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#FF4F4F] mb-1">4.449</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Casos Confirmados</div>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#FF4F4F] mb-1">2.061</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Mortes Registradas</div>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-6 rounded-[24px] text-center">
+            <div className="text-3xl font-black text-[#FF4F4F] mb-1">46%</div>
+            <div className="text-[10px] font-black text-[#98A2B3] uppercase tracking-widest">Taxa de Letalidade</div>
+          </div>
+        </div>
+
+        <div className="bg-[#FF4F4F]/10 border border-[#FF4F4F]/20 rounded-[32px] p-8 my-12">
+          <h3 className="text-[#FF4F4F] font-black uppercase tracking-widest text-xs mb-4">O Que Vem Agora: Resposta Global</h3>
+          <p className="text-white font-medium leading-relaxed">
+            A OMS convocou uma reunião do Comitê de Emergência para avaliar se o surto deve ser declarado uma Emergência de Saúde Pública de Importância Internacional (ESPII). O EuvouserDoutor continuará monitorando os dados oficiais em tempo real.
+          </p>
+        </div>
+
+        <div className="mt-16 pt-8 border-t border-white/10">
+          <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+            <BookOpen size={16} className="text-[#FF4F4F]" /> Referências & Fontes Científicas:
+          </h4>
+          <ul className="space-y-4 text-sm text-[#98A2B3]">
+            <li className="flex gap-3 italic">
+              <span className="text-[#FF4F4F] font-black not-italic">[1]</span>
+              World Health Organization. Ebola Outbreak in the Democratic Republic of the Congo: External Situation Report 92. 2026.
+            </li>
+            <li className="flex gap-3 italic">
+              <span className="text-[#FF4F4F] font-black not-italic">[2]</span>
+              Médecins Sans Frontières. Crisis in North Kivu: Security and Ebola response. Aug 2026.
+            </li>
+            <li className="flex gap-3 italic">
+              <span className="text-[#FF4F4F] font-black not-italic">[3]</span>
+              The Lancet. The complex dynamics of the 2026 Ebola outbreak. DOI: 10.1016/S0140-6736(26)31245-2.
+            </li>
+          </ul>
+        </div>
+      </>
+    )
+  },
+
     gene_fnip1_2026: {
       title: "Variante Genética Rara em 1 Milhão de Pessoas Revela 'Escudo' Contra Obesidade e Diabetes",
       subtitle: "Estudo publicado na Nature identifica gene FNIP1 como regulador mestre do metabolismo; mutação reduz em 60% o risco de doenças cardiovasculares e gordura no fígado.",

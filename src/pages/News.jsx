@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_prep_mensal_mk8527_2026",
+      title: "PrEP Mensal: Comprimido Único Contra HIV Avança para Fase Final com Testes no Brasil",
+      subtitle: "Estudo global avalia o MK-8527, novo antirretroviral de longa duração que promete simplificar a prevenção do HIV e aumentar a adesão ao tratamento preventivo.",
+      cat: "Saúde Pública",
+      date: "12 Ago 2026",
+      readTime: "7 min",
+      img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
+      target: "post_prep_mensal_mk8527_2026",
+      featured: true,
+    },
+    {
       id: "sensor_levitante_cerebral_2026",
       title: "Sensor Quântico Levitante Consegue Detectar Atividade Cerebral Ultra-Fraca",
       subtitle: "Estudo publicado na Nature revela magnetômetro de ímã levitado à temperatura ambiente que atinge sensibilidade sem precedentes, rivalizando com criogenia avançada.",
@@ -18,7 +29,7 @@ export const News = ({ setView }) => {
       readTime: "6 min",
       img: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=1200",
       target: "post_sensor_levitante_cerebral_2026",
-      featured: true,
+      featured: false,
     },
     {
       id: "gene_fnip1_2026",
