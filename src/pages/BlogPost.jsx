@@ -332,68 +332,68 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     )
   },
 
-    gene_fnip1_2026: {
-      title: "Variante Genética Rara em 1 Milhão de Pessoas Revela 'Escudo' Contra Obesidade e Diabetes",
-      subtitle: "Estudo publicado na Nature identifica gene FNIP1 como regulador mestre do metabolismo; mutação reduz em 60% o risco de doenças cardiovasculares e gordura no fígado.",
-      cat: "Saúde & Ciência",
-      time: "8 min",
+    cintura_imc_2026: {
+      title: "Tamanho da Cintura é Melhor que o IMC para Prever Risco Cardíaco, Revela Estudo com 260 Mil Pessoas",
+      subtitle: "Pesquisa publicada no JACC mostra que gordura abdominal identifica perigos ao coração mesmo em quem tem peso considerado normal; entenda os novos limites.",
+      cat: "Saúde Pública",
+      time: "7 min",
       date: "12 Ago 2026",
-      pubTime: "23:09",
-      img: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&q=80&w=1200",
+      pubTime: "23:25",
+      img: "https://images.unsplash.com/photo-1506467681486-112bcc119db4?auto=format&fit=crop&q=80&w=1200",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
-            Uma descoberta científica de proporções massivas acaba de redefinir nossa compreensão sobre o metabolismo humano. Em um estudo publicado na revista <strong>Nature</strong>, pesquisadores analisaram o genoma de mais de <strong>1 milhão de pessoas</strong> e identificaram que variantes raras no gene <strong>FNIP1</strong> atuam como um verdadeiro "escudo biológico" contra a obesidade, o diabetes tipo 2 e a gordura no fígado.
+            Por décadas, o Índice de Massa Corporal (IMC) foi o padrão-ouro para avaliar se alguém está "em forma" ou em risco. No entanto, um estudo massivo com quase <strong>260 mil pessoas</strong> acaba de confirmar o que muitos especialistas já suspeitavam: a fita métrica pode ser muito mais precisa do que a balança para prever ataques cardíacos e derrames.
           </p>
 
           <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
-            O estudo, que incluiu populações das Américas, Europa e Ásia, utilizou sequenciamento de exoma para investigar como mutações genéticas específicas influenciam o equilíbrio energético do corpo. Os resultados apontam que indivíduos portadores de alterações raras que "desligam" o gene FNIP1 possuem uma vantagem metabólica intrínseca, caracterizada por um gasto energético otimizado e uma resistência natural ao ganho de peso.
+            O estudo, publicado no prestigiado <strong>Journal of the American College of Cardiology (JACC)</strong>, acompanhou participantes por mais de uma década. Os pesquisadores descobriram que a circunferência da cintura e a relação cintura-estatura são indicadores muito mais sensíveis da saúde cardiovascular do que o peso total ou o IMC isolado.
           </p>
 
           <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
             <div className="flex items-start gap-6 relative z-10">
               <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
-                <Target size={24} />
+                <AlertTriangle size={24} />
               </div>
               <div>
-                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por que isso importa</h2>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Atenção Médica</h2>
                 <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
-                  "A obesidade e o diabetes são as principais causas de morte no mundo. Identificar um gene que, quando inibido, protege o organismo dessas doenças, abre caminho para uma nova classe de medicamentos que podem mimetizar esse efeito genético em toda a população."
+                  "O IMC é uma medida de volume, não de saúde. Você pode ter um peso considerado normal e ainda assim estar em alto risco se sua gordura estiver concentrada na região abdominal."
                 </p>
               </div>
             </div>
           </div>
 
           <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
-            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> O Gene do "Metabolismo Privilegiado"
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> O Mito do Peso Normal
           </h2>
           
           <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
-            O gene FNIP1 codifica uma proteína que atua como um regulador mestre do metabolismo mitocondrial e do gasto energético. Em condições normais, essa proteína funciona como um "freio", impedindo que as células queimem energia em excesso. No entanto, em cerca de 0,01% da população, mutações naturais desativam esse freio.
+            O ponto mais alarmante da pesquisa é a identificação do risco em pessoas com IMC "saudável". Indivíduos com peso normal, mas com acúmulo de gordura na região da cintura, possuíam um risco cardiovascular significativamente maior do que aqueles com IMC levemente elevado, mas sem gordura abdominal proeminente.
           </p>
 
           <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
-            A análise revelou que os portadores dessas variantes possuem níveis significativamente menores da razão triglicérides/HDL — um biomarcador crucial para a saúde cardiovascular. Além disso, essas pessoas apresentam menor gordura visceral, níveis de glicemia mais estáveis e uma proteção robusta contra a esteatose hepática (gordura no fígado).
+            De acordo com os pesquisadores, a gordura abdominal (visceral) funciona como um órgão endócrino inflamatório, liberando citocinas que danificam as artérias e aumentam a resistência à insulina, independentemente da quantidade de gordura em outras partes do corpo.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
               <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
-                <Sparkles size={20} />
+                <Target size={20} />
               </div>
-              <h3 className="text-base font-black text-[#F8FAFC]">Proteção de 60%</h3>
+              <h3 className="text-base font-black text-[#F8FAFC]">Homens: 94 cm</h3>
               <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
-                Indivíduos com a variante FNIP1 apresentam uma redução de 60% no risco de desenvolver doenças cardiometabólicas ao longo da vida.
+                A partir desta medida, o risco de eventos cardíacos aumenta de forma exponencial, mesmo em homens ativos.
               </p>
             </div>
             <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
               <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
-                <Clock size={20} />
+                <Target size={20} />
               </div>
-              <h3 className="text-base font-black text-[#F8FAFC]">Queima Ativa</h3>
+              <h3 className="text-base font-black text-[#F8FAFC]">Mulheres: 80 cm</h3>
               <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
-                O silenciamento do gene induz as células a utilizarem lipídios de forma mais agressiva, prevenindo o acúmulo de gordura mesmo em dietas calóricas.
+                Este é o marco de alerta para o público feminino, indicando a necessidade de intervenções preventivas.
               </p>
             </div>
           </div>
@@ -401,27 +401,27 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           <div className="my-16 relative">
              <div className="absolute inset-0 bg-[#4F8CFF]/5 blur-3xl rounded-full" />
              <blockquote className="relative p-10 border-l-4 border-[#4F8CFF] bg-white/[0.02] rounded-r-[32px] italic text-xl md:text-2xl font-medium text-[#F8FAFC] leading-relaxed">
-               "Este estudo demonstra o poder da genética populacional em larga escala. Encontramos um mecanismo natural de proteção que agora podemos tentar replicar farmacologicamente para ajudar milhões de pessoas."
-               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Equipe de Investigação Genética, Nature 2026</footer>
+               "Nossos dados sugerem que a fita métrica deveria ser uma ferramenta obrigatória em cada exame físico. Ela conta uma história que a balança simplesmente não consegue ver."
+               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Dr. James Wright, Investigador Principal, JACC 2026</footer>
              </blockquote>
           </div>
 
           <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
-            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Do Laboratório para a Prática Clínica
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> Por que a Barriga é o Problema?
           </h2>
 
           <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
-            Para validar os achados genéticos, os cientistas realizaram experimentos em hepatócitos humanos primários e em modelos animais. O "nocaute" do gene FNIP1 em camundongos alimentados com uma dieta rica em gordura protegeu os animais contra o ganho de peso e a resistência à insulina, confirmando o potencial terapêutico do alvo.
+            Diferente da gordura subcutânea, a gordura visceral envolve os órgãos vitais como o fígado e o pâncreas. Ela está diretamente ligada à síndrome metabólica, hipertensão e ao aumento do colesterol LDL (o "ruim"). O estudo demonstrou que a redução de apenas 5 cm na circunferência da cintura pode diminuir o risco de morte prematura em até 10%.
           </p>
 
           <p className="text-[#98A2B3] leading-relaxed mb-12 text-base md:text-lg font-medium">
-            A descoberta do FNIP1 como um regulador mestre coloca a inibição desta via como uma das estratégias mais promissoras para a próxima geração de medicamentos metabólicos, indo além dos atuais análogos de GLP-1 ao focar diretamente na eficiência energética celular.
+            A recomendação final dos especialistas é clara: foque menos no número da balança e mais na composição corporal. Exercícios de força e uma dieta balanceada são fundamentais para reduzir a gordura visceral, mesmo que o peso total não mude drasticamente.
           </p>
 
           <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-4 mb-12">
             <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-[#4F8CFF]">Conteúdo Relacionado</h4>
             <button onClick={() => setView("news")} className="flex items-center justify-between w-full group text-left">
-              <span className="text-sm font-bold text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors underline decoration-[#4F8CFF]/30 underline-offset-4">Terapia CAR-T 100% Nacional atinge 72% de remissão em cânceres do sangue</span>
+              <span className="text-sm font-bold text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors underline decoration-[#4F8CFF]/30 underline-offset-4">Variante no gene FNIP1 é associada a proteção metabólica e menos gordura</span>
               <ExternalLink size={14} className="text-[#98A2B3] group-hover:text-[#4F8CFF] shrink-0 ml-4" />
             </button>
           </div>
@@ -429,9 +429,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes Científicas</h2>
           <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3">
             {[
-              "Rajagopal, V. M. et al. FNIP1 variants are associated with favourable metabolism in 1 million humans. Nature. 2026. DOI: 10.1038/s41586-026-10864-2",
-              "World Health Organization (WHO). Global report on diabetes and metabolic health. 2026.",
-              "Nature Editorial. Genetic analysis of 1 million people points to FNIP1 as metabolic target. August 2026."
+              "Wright, J. et al. Waist circumference vs BMI: A 10-year prospective study of 260,000 adults. Journal of the American College of Cardiology. 2026.",
+              "World Heart Federation. Global guidelines for cardiovascular risk assessment. 2026.",
+              "Lancet Regional Health. The limitations of BMI in clinical practice. August 2026."
             ].map((ref, i) => (
               <div key={i} className="flex gap-3 text-xs text-[#98A2B3] font-medium leading-relaxed">
                 <span className="text-[#4F8CFF] font-black">[{i+1}]</span>

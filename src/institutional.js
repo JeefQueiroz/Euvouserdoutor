@@ -292,10 +292,10 @@ export const routeMeta = {
     description: 'Use erros e acertos para orientar a revisão seguinte.',
     path: '/noticias/autoavaliacao-simulados-estrategia',
   },
-  'post_gene_fnip1_2026': {
-    title: 'Gene FNIP1: O Escudo Genético Contra Obesidade e Diabetes | EuVouSerDoutor',
-    description: 'Estudo com 1 milhão de pessoas identifica variante genética que reduz em 60% o risco de doenças metabólicas.',
-    path: '/noticias/gene-fnip1-escudo-obesidade-diabetes',
+  'post_cintura_imc_2026': {
+    title: 'Cintura vs IMC: O Novo Marcador de Risco Cardíaco | EuVouSerDoutor',
+    description: 'Estudo com 260 mil pessoas revela que a circunferência abdominal é mais precisa que o IMC para prever doenças do coração.',
+    path: '/noticias/cintura-imc-risco-cardiovascular-2026',
   },
 };
 
