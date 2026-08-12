@@ -26,6 +26,102 @@ export const institutional = {
 };
 
 export const routeMeta = {
+  post_hearing_gene_therapy_2026: {
+    title: 'Terapia Gênica Restaura Audição Natural em Estudo Histórico na Nature | EuvouserDoutor',
+    description: 'Pesquisa publicada na Nature e Nature Medicine revela que a terapia gênica baseada em vetores AAV restaura a audição natural em pacientes com surdez congênita por até 2,5 anos.',
+    path: '/noticias/tererapia-genetica-restaura-audicao-nature-2026',
+  },
+  post_ebola_outbreak_drc_2026: {
+    title: 'Ebola: OMS Alerta para Segunda Maior Epidemia da História | EuvouserDoutor',
+    description: 'Surto na República Democrática do Congo avança rapidamente com mais de 2 mil mortes; OMS pede financiamento urgente para conter o vírus.',
+    path: '/noticias/ebola-alerta-oms-segunda-maior-epidemia-2026',
+  },
+  post_ai_oncology_lymphoma_2026: {
+    title: 'IA na Oncologia: Machine Learning Personaliza Tratamento | EuvouserDoutor',
+    description: 'Estudo na Science Partner Journals apresenta modelo de IA que identifica pacientes que realmente precisam de terapia de manutenção, evitando superdosagem.',
+    path: '/noticias/ia-oncologia-personaliza-tratamento-linfoma-2026',
+  },
+  post_silicosis_engineered_stone_2026: {
+    title: 'Alerta de Saúde: Bancadas de Quartzo e Silicose Fatal | EuvouserDoutor',
+    description: 'Estudo no NEJM revela surto de silicose grave em trabalhadores de pedras artificiais; material pode conter até 90% de sílica letal.',
+    path: '/noticias/alerta-silicose-bancadas-quartzo-2026',
+  },
+  post_ai_knee_mri_2026: {
+    title: 'IA reduz tempo de ressonância do joelho em 55% | EuvouserDoutor',
+    description: 'Estudo na Scientific Reports demonstra como a IA acelera exames de ressonância magnética sem perda de qualidade diagnóstica.',
+    image: '/knee_mri_ai_2026.jpg',
+    path: '/noticias/ia-ressonancia-joelho-acelerada-2026',
+  },
+  post_hiv_vaccine_breakthrough_2026: {
+    title: 'Vacina contra HIV: Estudo na Nature revela avanço histórico | EuvouserDoutor',
+    description: 'Pesquisa em primatas demonstra que nova estratégia consegue treinar o sistema imune para produzir anticorpos neutralizantes de amplo espectro.',
+    path: '/noticias/vacina-hiv-anticorpos-potentes-nature-2026',
+  },
+  post_huntington_msh3_study_2026: {
+    title: 'Bloqueio Genético: Cientistas Interrompem Avanço da Doença de Huntington | EuvouserDoutor',
+    description: 'Estudo histórico na Science revela que o silenciamento do gene MSH3 impede a expansão de mutações tóxicas no cérebro, abrindo caminho para novos tratamentos.',
+    path: '/noticias/bloqueio-genetico-doenca-huntington-msh3-2026',
+  },
+  post_promote_polipilula_avc_2026: {
+    title: 'Brasil testa polipílula para prevenir AVC | EuvouserDoutor',
+    description: 'Ensaio clínico brasileiro avalia se cápsula com três medicamentos pode reduzir risco de AVC e declínio cognitivo.',
+    path: '/noticias/brasil-testa-polipilula-avc-2026',
+  },
+  post_broccoli_ataxia_study_2026: {
+    title: 'Brócolis contra Ataxia: Composto Natural Pode Tratar Doença Neurológica Rara | EuvouserDoutor',
+    description: 'Pesquisadores da Universidade Swinburne descobrem que o sulforafano, presente no brócolis, aumenta níveis de proteína essencial e protege neurônios na Ataxia de Friedreich.',
+    path: '/noticias/brocolis-composto-natural-ataxia-friedreich-2026',
+  },
+  post_anemia_eye_ai_2026: {
+    title: 'IA analisa vasos do olho e estima anemia sem coleta de sangue | EuvouserDoutor',
+    description: 'Estudo na npj Digital Medicine testa uma IA que estima sinais de anemia a partir de vídeos da conjuntiva; tecnologia ainda é experimental.',
+    path: '/noticias/ia-vasos-olho-estima-anemia-2026',
+  },
+  post_brain_stimulation_genes_2026: {
+    title: "Marca-passo Cerebral e Programas Genéticos: Estudo na Nature | EuvouserDoutor",
+    description: "Pesquisa histórica revela como a estimulação cerebral profunda ativa programas genéticos específicos em neurônios e astrócitos.",
+    path: "/noticias/marca-passo-cerebral-programas-geneticos-nature-2026",
+  },
+  post_ringconn_nature_study_2026: {
+    title: "Anéis Inteligentes e Saúde Cardiovascular: Estudo na Nature | EuvouserDoutor",
+    description: "Pesquisa na npj Digital Medicine valida o uso de anéis inteligentes para monitoramento cardiovascular bilateral com precisão inédita.",
+    path: "/noticias/aneis-inteligentes-estudo-nature-saude-cardiovascular-2026",
+  },
+  post_neo_brain_implant_2026: {
+    title: "Implante Cerebral 'NEO' Recebe Aprovação Comercial | EuvouserDoutor",
+    description: "Conheça o NEO, o primeiro implante de interface cérebro-computador comercial do mundo para tratar tetraplegia, desenvolvido pela Universidade Tsinghua.",
+    path: "/noticias/implante-cerebral-neo-comercial-2026",
+  },
+  post_pfas_microplastics_removal_2026: {
+    title: "'Limpeza' de Sangue: Remoção de Microplásticos e PFAS | EuvouserDoutor",
+    description: "Estudo publicado no Journal of Clinical Apheresis revela que a aférese terapêutica pode reduzir em 60% a presença de contaminantes ambientais no sangue humano.",
+    path: "/noticias/limpeza-sangue-pfas-microplasticos-2026",
+  },
+  post_microbiota_psicopatia_2026: {
+    title: "As Bactérias da 'Maldade'? Estudo Liga Microbiota a Traços de Psicopatia | EuvouserDoutor",
+    description: "Pesquisa publicada na Translational Psychiatry revela como micróbios no intestino e na boca podem influenciar comportamentos como impulsividade e falta de empatia.",
+    path: "/noticias/microbiota-psicopatia-estudo-2026",
+  },
+  post_chip_eny_unb_2026: {
+    title: "Tecnologia Brasileira de 'Órgão em Chip' Promete Fim dos Testes em Animais | EuvouserDoutor",
+    description: "Conheça o Chip-Eny, a plataforma da UnB que cultiva células em 3D para simular o organismo humano e acelerar a descoberta de medicamentos.",
+    path: "/noticias/chip-eny-orgao-em-chip-unb-2026",
+  },
+  post_ozempic_brain_addiction_2026: {
+    title: "Além do Peso: Ozempic 'Desliga' o Centro de Vício no Cérebro | EuvouserDoutor",
+    description: "Pesquisadores identificam o septo lateral como o ponto de controle onde medicamentos para emagrecer atuam para reduzir o desejo por álcool e drogas.",
+    path: "/noticias/ozempic-vicio-septo-lateral-2026",
+  },
+  post_ucla_blood_test_2026: {
+    title: "Teste de Sangue UCLA: Rastreamento de Múltiplos Cânceres | EuvouserDoutor",
+    description: "Conheça o MethylScan, o novo teste de sangue de baixo custo da UCLA que detecta câncer e doenças orgânicas precocemente.",
+    path: "/noticias/teste-sangue-ucla-rastreamento-cancer-2026",
+  },
+  post_parkinson_brain_rhythm_dbs_2026: {
+    title: "Ritmo Cerebral e Parkinson: Descoberta na Revista Brain | EuvouserDoutor",
+    description: "Estudo identifica a frequência exata que coordena a melhora dos sintomas de Parkinson com o marca-passo cerebral.",
+    path: "/noticias/parkinson-ritmo-cerebral-dbs-2026",
+  },
   home: {
     title: 'Eu Vou Ser Doutor | Jeff Queiroz',
     description:
@@ -75,6 +171,31 @@ export const routeMeta = {
       'Artigos, notícias e estratégias de estudo para futuros médicos, vestibulandos e estudantes de Medicina.',
     path: '/noticias',
   },
+  post_in_vivo_car_t_mrna_2026: {
+    title: 'Nanopartícula de mRNA cria células CAR-T dentro do corpo | EuvouserDoutor',
+    description: 'Pesquisa publicada na Nature Materials testa uma nanopartícula de mRNA para gerar células CAR-T em modelos pré-clínicos de câncer e fibrose.',
+    path: '/noticias/nanoparticula-mrna-car-t-in-vivo-2026',
+  },
+  post_omega3_cancer_nk_2026: {
+    title: "Omega-3 e Câncer: Estudo na Science Revela Risco | EuvouserDoutor",
+    description: "Pesquisa na Science Signaling mostra que Omega-3 pode inibir células de defesa e reduzir eficácia da imunoterapia.",
+    path: "/noticias/omega3-cancer-imunoterapia-risco-2026",
+  },
+  post_alzheimer_surgery_dcLVA_2026: {
+    title: 'Cirurgia Controversa de Alzheimer: Reversão de Sintomas | EuvouserDoutor',
+    description: 'Técnica de limpeza cerebral através de microcirurgia no pescoço gera debate após vídeos de recuperações surpreendentes.',
+    path: '/noticias/cirurgia-controversa-alzheimer-reversao-sintomas-2026',
+  },
+  post_fit_cancer_colorretal_sus_2026: {
+    title: 'SUS passa a usar teste de fezes para rastrear câncer colorretal | EuvouserDoutor',
+    description: 'O teste imunoquímico fecal será referência no SUS para rastrear câncer colorretal em pessoas assintomáticas de 50 a 75 anos.',
+    path: '/noticias/teste-fezes-rastreamento-cancer-colorretal-sus-2026',
+  },
+  post_anvisa_plataformas_medicamentos_regulacao_2026: {
+    title: 'Anvisa revoga bloqueios a apps de remédios, mas venda ainda depende de novas regras | EuvouserDoutor',
+    description: 'A Anvisa retirou medidas contra plataformas digitais, mas esclarece que a comercialização de medicamentos ainda depende de regulamentação sanitária.',
+    path: '/noticias/anvisa-revoga-bloqueios-apps-medicamentos-regulamentacao-2026',
+  },
   materials: {
     title: 'Materiais | Eu Vou Ser Doutor',
     description:
@@ -111,27 +232,42 @@ export const routeMeta = {
     description: 'A página solicitada não foi encontrada ou foi movida.',
     path: '/404',
   },
-  'post_estudar_medicina': {
+  post_measles_americas_2026: {
+    title: 'Sarampo dispara nas Américas e Brasil reforça vacinação | EuvouserDoutor',
+    description: 'A OPAS registrou 47.459 casos de sarampo nas Américas em 2026 e classificou o risco regional como muito alto; veja as orientações de vacinação no Brasil.',
+    path: '/noticias/sarampo-americas-vacinacao-2026',
+  },
+  post_daraxonrasib_2026: {
+    title: 'Pílula Inovadora Câncer Pâncreas | Eu Vou Ser Doutor',
+    description: 'Daraxonrasibe duplica sobrevida em câncer de pâncreas metastático em estudo histórico da ASCO 2026.',
+    path: '/noticias/daraxonrasib-2026',
+  },
+  post_retina_chip_2026: {
+    title: 'Chip de Retina Restaura Visão | Eu Vou Ser Doutor',
+    description: 'Estudo no NEJM mostra sucesso de 81% em implante de retina para degeneração macular.',
+    path: '/noticias/retina-chip-2026',
+  },
+  post_estudar_medicina: {
     title: 'Como Estudar para Medicina com Método e Constância | EuVouSerDoutor',
     description: 'Um guia editorial sobre rotina, revisão e organização para transformar esforço em processo de estudo.',
     path: '/noticias/como-estudar-medicina-metodo-constancia',
   },
-  'post_cart_brasil_2026': {
+  post_cart_brasil_2026: {
     title: 'Terapia CAR-T 100% Nacional Atinge 72% de Remissão | EuVouSerDoutor',
     description: 'Inovação biotecnológica brasileira abre caminho para o acesso a tratamentos genéticos no SUS.',
     path: '/noticias/terapia-cart-nacional-remissao-cancer',
   },
-  'post_ebola_oxford_2026': {
+  post_ebola_oxford_2026: {
     title: 'Oxford Inicia Ensaio Clínico de Vacina Contra o Vírus Ebola | EuVouSerDoutor',
     description: 'Estudo de Fase 1 avalia segurança e resposta imune do imunizante ChAdOx1 BDBV.',
     path: '/noticias/oxford-ensaio-clinico-vacina-ebola',
   },
-  'post_polilaminina': {
+  post_polilaminina: {
     title: 'Polilaminina e a Regeneração Neural | EuVouSerDoutor',
     description: 'Descobertas recentes em neurologia avaliam o potencial da polilaminina.',
     path: '/noticias/polilaminina-regeneracao-neural',
   },
-  'post_pomodoro': {
+  post_pomodoro: {
     title: 'Técnica Pomodoro para Blocos de Foco | EuVouSerDoutor',
     description: 'Como usar ciclos curtos de estudo e pausa para manter atenção.',
     path: '/noticias/tecnica-pomodoro-foco-estudos',
@@ -162,6 +298,22 @@ export const routeMeta = {
     path: '/noticias/gene-fnip1-escudo-obesidade-diabetes',
   },
 };
+
+Object.assign(routeMeta, {
+  post_amiloride_wfdc2_2026: { title: 'Medicamento comum para pressão pode tratar doença respiratória fatal | EuvouserDoutor', description: 'Estudo na Nature Communications investiga a relação entre WFDC2, insuficiência respiratória e o potencial terapêutico da amilorida.', path: '/noticias/amilorida-doenca-respiratoria-wfdc2-2026' },
+  post_angiotomografia_coronariana_sus_2026: { title: 'SUS avalia inclusão de exame que identifica risco de infarto | EuvouserDoutor', description: 'Consulta pública avalia a incorporação da angiotomografia coronariana no Sistema Único de Saúde.', path: '/noticias/angiotomografia-coronariana-sus-2026' },
+  post_coffee_brain_2026: { title: 'Café sem açúcar e conexões neurais: o que mostra o estudo | EuvouserDoutor', description: 'Estudo de longo prazo e análises de neuroimagem investigam associações entre consumo de café e saúde cerebral.', path: '/noticias/cafe-conexoes-neurais-cerebro-2026' },
+  post_fibromyalgia_genetics_2026: { title: 'Fibromialgia: estudo investiga a arquitetura genética da doença | EuvouserDoutor', description: 'Pesquisa em larga escala analisa variantes genéticas associadas à fibromialgia e suas limitações interpretativas.', path: '/noticias/fibromialgia-arquitetura-genetica-2026' },
+  post_fnip1_gene_metabolism_2026: { title: 'Variante no FNIP1 é associada a proteção metabólica | EuvouserDoutor', description: 'Estudo genético investiga a relação entre uma variante no FNIP1, metabolismo e risco de doenças metabólicas.', path: '/noticias/fnip1-gene-metabolismo-2026' },
+  post_gel_unicamp_chica_2026: { title: 'Gel de planta brasileira é estudado para cicatrização de feridas | EuvouserDoutor', description: 'Pesquisa da Unicamp avalia um gel derivado da planta chica em modelos de cicatrização e mucosite.', path: '/noticias/gel-planta-chica-unicamp-feridas-2026' },
+  post_lens_3d_waterloo_2026: { title: 'Universidade de Waterloo testa lentes de contato impressas em 3D | EuvouserDoutor', description: 'Nova plataforma combina manufatura digital e materiais hidrofílicos para personalizar lentes de contato.', path: '/noticias/lentes-contato-3d-waterloo-2026' },
+  post_leukemia_gene_therapy_2026: { title: 'Terapia genética experimental é estudada contra leucemia resistente | EuvouserDoutor', description: 'Estudo clínico avalia células imunes geneticamente modificadas para tratar leucemia de alto risco.', path: '/noticias/terapia-genetica-leucemia-2026' },
+  post_oral_glp1_pill_2026: { title: 'Pílula oral de GLP-1 é avaliada em ensaio clínico de fase 2 | EuvouserDoutor', description: 'Ensaio clínico avalia a eficácia e a segurança de um agonista oral de GLP-1 para perda de peso.', path: '/noticias/pilula-oral-glp1-fase-2-2026' },
+  post_origins_life_double_2026: { title: 'Estudo questiona como bactérias e arqueias chegaram à vida independente | EuvouserDoutor', description: 'Pesquisa na Science Advances propõe um novo cenário para a origem do metabolismo e do último ancestral comum universal.', path: '/noticias/origem-da-vida-dupla-2026' },
+  post_paternal_diet_usp_2026: { title: 'Dieta paterna antes da concepção é estudada por possíveis efeitos epigenéticos | EuvouserDoutor', description: 'Estudo brasileiro investiga associações entre consumo paterno de ultraprocessados e medidas corporais neonatais.', path: '/noticias/dieta-paterna-ultraprocessados-epigenetica-2026' },
+  post_transplante_fecal_amendoim_2026: { title: 'Transplante fecal é estudado para reduzir reações ao amendoim | EuvouserDoutor', description: 'Estudo clínico experimental avalia se a transferência de microbiota pode aumentar a tolerância ao amendoim.', path: '/noticias/transplante-fecal-alergia-amendoim-2026' },
+  post_wool_bone_regeneration_2026: { title: 'Queratina de lã é estudada na regeneração de tecido ósseo | EuvouserDoutor', description: 'Pesquisa investiga biomateriais derivados de queratina para regeneração óssea e engenharia de tecidos.', path: '/noticias/queratina-la-regeneracao-ossea-2026' },
+});
 
 export const pathToView = {
   ...Object.fromEntries(
