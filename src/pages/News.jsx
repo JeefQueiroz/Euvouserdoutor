@@ -9,6 +9,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "gene_fnip1_2026",
+      title: "Variante Genética Rara em 1 Milhão de Pessoas Revela 'Escudo' Contra Obesidade e Diabetes",
+      subtitle: "Estudo publicado na Nature identifica gene FNIP1 como regulador mestre do metabolismo; mutação reduz em 60% o risco de doenças cardiovasculares e gordura no fígado.",
+      cat: "Saúde & Ciência",
+      date: "12 Ago 2026",
+      readTime: "8 min",
+      img: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&q=80&w=1200",
+      target: "post_gene_fnip1_2026",
+      featured: true,
+    },
+    {
       id: "retina_chip_2026",
       title: "Chip de Retina Restaura Visão em Pacientes com Degeneração Macular Avançada",
       subtitle: "Tecnologia da Science Corporation, baseada em implantes fotovoltaicos e óculos inteligentes, atinge 81% de sucesso em ensaio clínico publicado no NEJM.",
@@ -17,7 +28,7 @@ export const News = ({ setView }) => {
       readTime: "7 min",
       img: "/retina_chip_tech.jpg",
       target: "post_retina_chip_2026",
-      featured: true,
+      featured: false,
     },
     {
       id: "cart_brasil_2026",
