@@ -297,6 +297,11 @@ export const routeMeta = {
     description: 'Estudo com 260 mil pessoas revela que a circunferência abdominal é mais precisa que o IMC para prever doenças do coração.',
     path: '/noticias/cintura-imc-risco-cardiovascular-2026',
   },
+  'post_mapa_nervo_vago_2026': {
+    title: 'Mapa Inédito do Nervo Vago: O "Santo Graal" da Medicina Bioeletrônica | EuVouSerDoutor',
+    description: 'Estudo histórico na Science mapeia 200 mil fibras nervosas e abre caminho para tratamentos ultraprecisos sem medicamentos.',
+    path: '/noticias/mapa-nervo-vago-medicina-bioeletronica-2026',
+  },
 };
 
 Object.assign(routeMeta, {

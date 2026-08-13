@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_mapa_nervo_vago_2026",
+      title: "Mapa Inédito do Nervo Vago: O 'Santo Graal' da Medicina Bioeletrônica é Revelado na Science",
+      subtitle: "Estudo histórico mapeia 200 mil fibras nervosas e abre caminho para tratamentos ultraprecisos de doenças inflamatórias e neurológicas sem o uso de medicamentos.",
+      cat: "Tecnologia Médica",
+      date: "13 Ago 2026",
+      readTime: "8 min",
+      img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200",
+      target: "post_mapa_nervo_vago_2026",
+      featured: true,
+    },
+    {
       id: "post_prep_mensal_mk8527_2026",
       title: "PrEP Mensal: Comprimido Único Contra HIV Avança para Fase Final com Testes no Brasil",
       subtitle: "Estudo global avalia o MK-8527, novo antirretroviral de longa duração que promete simplificar a prevenção do HIV e aumentar a adesão ao tratamento preventivo.",
@@ -18,7 +29,7 @@ export const News = ({ setView }) => {
       readTime: "7 min",
       img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
       target: "post_prep_mensal_mk8527_2026",
-      featured: true,
+      featured: false,
     },
     {
       id: "sensor_levitante_cerebral_2026",

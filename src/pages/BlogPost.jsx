@@ -20,6 +20,123 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    post_mapa_nervo_vago_2026: {
+      title: "Mapa Inédito do Nervo Vago: O 'Santo Graal' da Medicina Bioeletrônica é Revelado na Science",
+      subtitle: "Estudo histórico mapeia 200 mil fibras nervosas e abre caminho para tratamentos ultraprecisos de doenças inflamatórias e neurológicas sem o uso de medicamentos.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "13/08/2026",
+      time: "8 min",
+      pubTime: "20:00",
+      updateDate: "13/08/2026",
+      updateTime: "20:00",
+      cat: "Tecnologia Médica",
+      img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "O nervo vago atua como a principal 'rodovia' de comunicação entre o cérebro e os órgãos vitais, regulando funções críticas do sistema imunológico e metabólico.",
+      imgCredit: "Foto: Reprodução / Science / Feinstein Institutes / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A medicina bioeletrônica acaba de alcançar seu marco mais significativo até hoje. Em um estudo publicado nesta quinta-feira (13 de agosto de 2026) na revista <strong>Science</strong>, pesquisadores do <strong>Feinstein Institutes for Medical Research</strong> revelaram o primeiro mapa anatômico de alta resolução do nervo vago humano, um avanço que promete transformar o tratamento de doenças crônicas sem a necessidade de fármacos [1].
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            O nervo vago é o mais longo e complexo dos nervos cranianos, estendendo-se do tronco cerebral até o abdômen, conectando-se ao coração, pulmões e trato digestivo. Por décadas, ele foi considerado a "caixa-preta" do sistema nervoso autônomo. Embora a estimulação do nervo vago (VNS) já seja utilizada para tratar epilepsia e depressão resistente, a falta de um mapa detalhado limitava a precisão das terapias, frequentemente causando efeitos colaterais indesejados devido à ativação de fibras não relacionadas ao alvo terapêutico.
+          </p>
+
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Target size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Por que isso importa</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Decodificar a linguagem intrincada do nervo vago é o passo final para a medicina de precisão bioeletrônica. Agora podemos projetar dispositivos que estimulam apenas as fibras necessárias para curar um órgão específico, eliminando a dependência de medicamentos sistêmicos."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dr. Kevin J. Tracey, CEO do Feinstein Institutes.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> A Engenharia do Mapa: 200 Mil Fibras
+          </h2>
+          
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            Para criar este atlas sem precedentes, a equipe de cientistas utilizou técnicas avançadas de micro-CT e histologia computacional para analisar o nervo vago de 30 doadores humanos. O resultado foi o mapeamento individual de mais de <strong>200.000 fibras nervosas</strong>, revelando como elas se organizam em feixes (fascículos) que se dirigem a órgãos específicos [2].
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            A descoberta mais surpreendente foi a organização "organotópica" do nervo. Ao contrário do que se pensava, as fibras que controlam o coração, por exemplo, estão localizadas em setores específicos e previsíveis do nervo, e não misturadas aleatoriamente. Isso permite que futuros implantes bioeletrônicos — do tamanho de um grão de arroz — sejam posicionados com precisão micrométrica para tratar condições como insuficiência cardíaca ou hipertensão.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Layers size={20} />
+              </div>
+              <h3 className="text-base font-black text-[#F8FAFC]">Precisão Cirúrgica</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                O mapa permite identificar quais fascículos regulam a inflamação, permitindo o tratamento de Artrite Reumatoide e Doença de Crohn.
+              </p>
+            </div>
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-white/[0.03] flex items-center justify-center text-[#4F8CFF]">
+                <Sparkles size={20} />
+              </div>
+              <h3 className="text-base font-black text-[#F8FAFC]">Fim dos Efeitos Colaterais</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed font-medium">
+                Ao evitar a estimulação de fibras que controlam a laringe, os novos tratamentos não causarão rouquidão ou falta de ar.
+              </p>
+            </div>
+          </div>
+
+          <div className="my-16 relative">
+             <div className="absolute inset-0 bg-[#4F8CFF]/5 blur-3xl rounded-full" />
+             <blockquote className="relative p-10 border-l-4 border-[#4F8CFF] bg-white/[0.02] rounded-r-[32px] italic text-xl md:text-2xl font-medium text-[#F8FAFC] leading-relaxed">
+               "Este dataset representa o maior avanço na anatomia funcional do sistema nervoso periférico do século XXI. É o roteiro que a indústria de dispositivos médicos esperava para iniciar a era da substituição de pílulas por impulsos elétricos."
+               <footer className="mt-4 text-sm font-black uppercase tracking-widest text-[#4F8CFF] not-italic">— Editorial da Science, Agosto de 2026</footer>
+             </blockquote>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> O Futuro: Medicina Sem Comprimidos?
+          </h2>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            A disponibilização pública deste atlas (disponível no SPARC Portal) acelera o desenvolvimento de uma nova classe de terapias. Empresas de biotecnologia já estão testando "pacemakers" para o sistema imunológico que utilizam este mapa para interromper tempestades de citocinas em pacientes com doenças autoimunes graves.
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-12 text-base md:text-lg font-medium">
+            Para o <strong>EuvouserDoutor</strong>, este avanço reforça a tendência de que a medicina do futuro será cada vez mais uma convergência entre biologia, engenharia elétrica e ciência de dados, onde o software do corpo humano poderá ser "atualizado" através de interfaces neurais de alta precisão.
+          </p>
+
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-4 mb-12">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-[#4F8CFF]">Conteúdo Relacionado</h4>
+            <button onClick={() => setView("news")} className="flex items-center justify-between w-full group text-left">
+              <span className="text-sm font-bold text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors underline decoration-[#4F8CFF]/30 underline-offset-4">Sensor Quântico Levitante Detecta Atividade Cerebral Ultra-Fraca</span>
+              <ExternalLink size={14} className="text-[#98A2B3] group-hover:text-[#4F8CFF] shrink-0 ml-4" />
+            </button>
+          </div>
+
+          <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes Científicas</h2>
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3">
+            {[
+              "Tracey, K. J. et al. A comprehensive high-resolution atlas of the human vagus nerve. Science. 2026. DOI: 10.1126/science.adh8287",
+              "Feinstein Institutes for Medical Research. World's First Comprehensive Vagus Nerve Map Unveiled. August 2026.",
+              "NIH SPARC Program. Mapping the human visceral nervous system. 2026."
+            ].map((ref, i) => (
+              <div key={i} className="flex gap-3 text-xs text-[#98A2B3] font-medium leading-relaxed">
+                <span className="text-[#4F8CFF] font-black">[{i+1}]</span>
+                <span>{ref}</span>
+              </div>
+            ))}
+          </div>
+        </>
+      )
+    },
   prep_mensal_mk8527_2026: {
     title: "PrEP Mensal: Comprimido Único Contra HIV Avança para Fase Final com Testes no Brasil",
     subtitle: "Estudo global avalia o MK-8527, novo antirretroviral de longa duração que promete simplificar a prevenção do HIV e aumentar a adesão ao tratamento preventivo.",
