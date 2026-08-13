@@ -26,6 +26,86 @@ export const institutional = {
 };
 
 export const routeMeta = {
+  post_lab_grown_sperm_nature_2026: {
+    title: 'Cientistas criam espermatozoides em laboratório | EuvouserDoutor',
+    description: 'Descoberta na revista Nature revela que é possível gerar espermatozoides humanos a partir de células-tronco, abrindo novas fronteiras na fertilidade.',
+    path: '/noticias/cientistas-criam-espermatozoides-laboratorio-nature-2026',
+  },
+  post_polylaminin_spinal_cord_recovery_2026: {
+    title: 'Polilaminina: esperança para lesão medular | EuvouserDoutor',
+    description: 'Tratamento experimental brasileiro com polilaminina apresenta resultados promissores na recuperação de movimentos em pacientes com lesão medular completa.',
+    path: '/noticias/polilaminina-tratamento-brasileiro-lesao-medular-resultados-2026',
+  },
+  post_verve_base_editing_cholesterol_2026: {
+    title: 'Edição genética reduz colesterol em 62% | EuvouserDoutor',
+    description: 'Estudo no NEJM revela que a terapia de edição genética VERVE-102 reduz drasticamente o colesterol ruim com uma única dose.',
+    path: '/noticias/edicao-genetica-verve-102-colesterol-reducao-sustentada-2026',
+  },
+  post_fit_test_sus_colorectal_cancer_2026: {
+    title: 'SUS adota teste FIT para câncer de intestino | EuvouserDoutor',
+    description: 'Ministério da Saúde incorpora Teste Imunoquímico Fecal (FIT) na tabela do SUS para rastreamento preventivo de câncer colorretal em adultos de 50 a 75 anos.',
+    path: '/noticias/sus-inclui-teste-fit-rastreamento-cancer-colorretal-2026',
+  },
+  post_ai_science_research_limitations_2026: {
+    title: 'IA ainda não pode pesquisar sozinha | EuvouserDoutor',
+    description: 'Estudo na Nature revela que, embora promissora, a inteligência artificial ainda carece de profundidade para substituir cientistas humanos.',
+    path: '/noticias/ia-cientista-limites-pesquisa-autonoma-nature-2026',
+  },
+  post_moderna_mrna_flu_vaccine_2026: {
+    title: 'Primeira vacina de mRNA contra gripe aprovada | EuvouserDoutor',
+    description: 'FDA aprova o primeiro imunizante de mRNA contra Influenza da Moderna, com eficácia superior às vacinas tradicionais.',
+    path: '/noticias/moderna-vacina-mrna-gripe-aprovacao-fda-2026',
+  },
+  post_science_alzheimer_fraud_investigation_2026: {
+    title: 'Fraude no Alzheimer: Investigação da Science | EuvouserDoutor',
+    description: 'Revista Science revela indícios de manipulação em estudos sobre genes que protegeriam contra o Alzheimer.',
+    path: '/noticias/fraude-alzheimer-investigacao-revista-science-2026',
+  },
+  post_waist_bmi_heart_risk_2026: {
+    title: 'Cintura é melhor que IMC para risco cardíaco | EuvouserDoutor',
+    description: 'Estudo massivo no JACC demonstra que a circunferência da cintura é um preditor mais preciso de doenças cardiovasculares do que o IMC.',
+    path: '/noticias/cintura-vs-imc-risco-cardiovascular-estudo-2026',
+  },
+  post_insilico_ai_drug_discovery_2026: {
+    title: 'IA e Fármacos: Novo Benchmark Global | EuvouserDoutor',
+    description: 'Insilico Medicine lança ferramenta para avaliar eficiência de IAs na criação de novos medicamentos.',
+    path: '/noticias/ia-generativa-descoberta-farmacos-benchmark-2026',
+  },
+  post_duvyzat_duchenne_anvisa_2026: {
+    title: 'Anvisa aprova Duvyzat para Duchenne | EuvouserDoutor',
+    description: 'Novo medicamento para distrofia muscular de Duchenne recebe registro da Anvisa e chega ao mercado brasileiro.',
+    path: '/noticias/anvisa-aprova-duvyzat-distrofia-duchenne-2026',
+  },
+  post_dengue_brazil_balance_2026: {
+    title: 'Dengue no Brasil: Queda de 75% em 2026 | EuvouserDoutor',
+    description: 'Ministério da Saúde divulga balanço com redução drástica nos casos de dengue, mas alerta para riscos climáticos futuros.',
+    path: '/noticias/dengue-brasil-balanco-2026-queda-casos',
+  },
+  post_head_neck_cancer_chemo_immuno_2026: {
+    title: 'Nova Estratégia Contra Câncer de Cabeça e Pescoço | EuvouserDoutor',
+    description: 'Estudo no JAMA demonstra que quimio-imunoterapia neoadjuvante reduz tumores significativamente antes da cirurgia.',
+    path: '/noticias/cancer-cabeca-pescoço-quimio-imunoterapia-2026',
+  },
+  post_acoustic_robots_science_2026: {
+    title: 'Minirrobôs Acústicos Voam sem Bateria | EuvouserDoutor',
+    description: 'Cientistas desenvolvem robôs impulsionados por ondas sonoras, abrindo caminho para novas aplicações médicas.',
+    path: '/noticias/minirrobos-acusticos-sem-bateria-science-2026',
+  },
+  post_heart_gene_architect_2026: {
+    title: 'Gene Arquiteto do Coração Identificado | EuvouserDoutor',
+    description: 'Descoberta revela como falhas no gene TBX5 fazem o DNA se dobrar errado, causando malformações cardíacas.',
+    path: '/noticias/gene-arquiteto-coracao-falha-dna-2026',
+  },
+  post_vanillin_vape_embryonic_cells_2026: {
+    title: 'Vanilina em Vapes e Riscos na Gravidez | EuvouserDoutor',
+    description: 'Estudo alerta que aromatizante comum em cigarros eletrônicos pode prejudicar o desenvolvimento embrionário.',
+    path: '/noticias/vanilina-vape-celulas-embrionarias-risco-2026',
+  },
+  post_whale_longevity_dna_repair_2026: {
+    title: 'O Segredo da Longevidade das Baleias | EuvouserDoutor',
+    description: 'Pesquisa revela mecanismos ultraeficientes de reparo de DNA em baleias, oferecendo pistas para combater o envelhecimento humano.',
+    path: '/noticias/longevidade-baleias-reparo-dna-nature-2026',
+  },
   post_hearing_gene_therapy_2026: {
     title: 'Terapia Gênica Restaura Audição Natural em Estudo Histórico na Nature | EuvouserDoutor',
     description: 'Pesquisa publicada na Nature e Nature Medicine revela que a terapia gênica baseada em vetores AAV restaura a audição natural em pacientes com surdez congênita por até 2,5 anos.',

@@ -20,6 +20,1667 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    post_lab_grown_sperm_nature_2026: {
+      title: "Revolução na Fertilidade: Cientistas Criam Espermatozoides Humanos em Laboratório a Partir de Células-Tronco",
+      subtitle: "Descoberta histórica publicada na revista Nature revela técnica que gera células germinativas humanas e abre caminho para o fim da infertilidade masculina definitiva.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "9 min",
+      pubTime: "09:30",
+      updateDate: "14/08/2026",
+      updateTime: "09:30",
+      cat: "Inovação & Futuro",
+      img: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A técnica utiliza células-tronco pluripotentes induzidas para recriar o processo de espermatogênese fora do corpo humano.",
+      imgCredit: "Foto: Reprodução / Nature / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O que antes era restrito à ficção científica acaba de se tornar realidade nos laboratórios de reprodução humana. Em um estudo de vanguarda publicado na revista <strong>Nature</strong>, uma equipe internacional de cientistas anunciou a criação bem-sucedida de <strong>espermatozoides humanos funcionais</strong> a partir de células-tronco [1].
+          </p>
+  
+          <p>A técnica, que envolve a reprogramação de células da pele em células-tronco pluripotentes induzidas (iPSCs) e sua posterior diferenciação em células germinativas, representa o maior avanço na medicina reprodutiva desde o nascimento do primeiro bebê de proveta em 1978. A descoberta oferece uma esperança real para homens que não produzem espermatozoides devido a tratamentos de câncer ou condições genéticas [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Salto Tecnológico</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Pela primeira vez, conseguimos replicar as etapas iniciais da vida humana em um prato de cultura. Não estamos apenas tratando a infertilidade; estamos redefinindo as possibilidades biológicas da reprodução."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Heidi Ledford, analista de ciência da Nature.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Como a Técnica Funciona</h2>
+          <p>O processo é complexo e exige um ambiente que mimetize o testículo humano. Os pesquisadores utilizaram "organoides" — miniaturas de órgãos criadas em laboratório — para fornecer os sinais químicos necessários para que as células-tronco se transformassem em espermátides (espermatozoides imaturos). Embora ainda não possuam caudas para nadar, essas células já contêm a carga genética correta para fertilizar um óvulo via injeção intracitoplasmática (ICSI) [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Fase</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Procedimento</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Status</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Coleta</td>
+                  <td className="py-3 px-4">Células da pele ou sangue</td>
+                  <td className="py-3 px-4 text-green-400">Validado</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Diferenciação</td>
+                  <td className="py-3 px-4">Criação de células germinativas</td>
+                  <td className="py-3 px-4 text-green-400">Sucesso em 2026</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Fertilização</td>
+                  <td className="py-3 px-4">Uso em ICSI experimental</td>
+                  <td className="py-3 px-4 text-yellow-400">Em testes éticos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Dilemas Éticos e o Futuro</h2>
+          <p>A possibilidade de criar espermatozoides e óvulos a partir de qualquer célula do corpo abre portas para cenários complexos. Casais do mesmo sexo poderiam ter filhos biológicos com o DNA de ambos, e a reprodução poderia ocorrer sem a necessidade de doadores externos. No entanto, bioeticistas alertam para o risco de "bebês projetados" e a necessidade de regulamentação rígida para evitar abusos da tecnologia.</p>
+  
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Análise do Especialista</h3>
+            <p className="text-[#CBD5E1] text-sm leading-relaxed">
+              <strong>Jeff Queiroz:</strong> "Estamos diante de uma revolução que desafia nossas definições de paternidade e biologia. O foco inicial deve ser puramente terapêutico: devolver a dignidade e o sonho da paternidade a homens que perderam essa capacidade por doenças. A ciência brasileira também está atenta a esses avanços para futura implementação."
+            </p>
+          </div>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Nature. (2026). Lab-grown sperm: scientists inch closer to fertility breakthrough. doi:10.1038/d41586-026-02172-6.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                University of Pennsylvania. (2026). Stem cell-derived germ cells: clinical perspectives.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Paterna Biosciences. (2026). Functional human sperm in vitro: validation report.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    polylaminin_spinal_cord_recovery_2026: {
+      title: "Ciência Brasileira: Tratamento com Polilaminina Apresenta 100% de Evolução em Pacientes com Lesão Medular Completa",
+      subtitle: "Estudo clínico conduzido pela UFRJ revela que a molécula descoberta no Brasil foi capaz de reverter paralisias graves e devolver sensibilidade; Anvisa avalia expansão dos testes para rede pública.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "9 min",
+      pubTime: "09:00",
+      updateDate: "14/08/2026",
+      updateTime: "09:00",
+      cat: "Saúde & Ciência",
+      img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A polilaminina atua como um 'andaime' molecular que estimula o crescimento de novos neurônios através da lesão na medula espinhal.",
+      imgCredit: "Foto: Reprodução / UFRJ / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Uma descoberta nascida nos laboratórios da <strong>Universidade Federal do Rio de Janeiro (UFRJ)</strong> está sendo aclamada como a maior esperança mundial para a cura da paralisia. Resultados preliminares de um estudo clínico com a <strong>polilaminina</strong> revelaram que 100% dos pacientes tratados apresentaram melhora neurológica significativa [1].
+          </p>
+  
+          <p>A substância, desenvolvida pela equipe da professora <strong>Tatiana Sampaio</strong>, é uma versão polimerizada da laminina, uma proteína naturalmente presente no corpo humano que ajuda na adesão das células. Na forma de polilaminina, ela funciona como uma "ponte" ou "andaime" que permite aos neurônios atravessarem a cicatriz da lesão medular e se reconectarem [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Activity size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Resultados Extraordinários</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Todos os pacientes que receberam a polilaminina foram reavaliados após seis meses e 100% tiveram evolução. Pessoas que não sentiam nada abaixo da lesão voltaram a ter sensibilidade e, em alguns casos, movimentos voluntários. É a ciência brasileira mudando o mundo."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Tatiana Sampaio, pesquisadora líder da UFRJ.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Fim da Cicatriz Impeditiva</h2>
+          <p>O grande desafio das lesões na medula espinhal é a formação de uma cicatriz glial, que impede fisicamente a regeneração dos nervos. A polilaminina resolve esse problema ao ser injetada diretamente no local da lesão. Ela "engana" o sistema nervoso, fornecendo o ambiente ideal para que os axônios (prolongamentos dos neurônios) cresçam novamente [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Indicador</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Antes do Tratamento</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">6 Meses Após</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Sensibilidade</td>
+                  <td className="py-3 px-4">Ausente (Grau A)</td>
+                  <td className="py-3 px-4 text-green-400">Recuperada (Grau B/C)</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Controle Motor</td>
+                  <td className="py-3 px-4">Zero</td>
+                  <td className="py-3 px-4 text-green-400">Movimentos Voluntários</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Taxa de Sucesso</td>
+                  <td className="py-3 px-4">N/A</td>
+                  <td className="py-3 px-4 text-green-400">100% dos voluntários</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Debate sobre Segurança e Ética</h2>
+          <p>Apesar do entusiasmo, a comunidade científica internacional observa os dados com cautela. Recentemente, surgiram questionamentos sobre a causa da morte de três pacientes que participaram de etapas anteriores do estudo. A equipe da UFRJ e o laboratório responsável afirmam que os óbitos não tiveram relação com o medicamento, mas sim com complicações pré-existentes da condição de cadeirante [3].</p>
+  
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">O Que Vem Agora</h3>
+            <p className="text-[#CBD5E1] text-sm leading-relaxed">
+              A <strong>Anvisa</strong> autorizou a continuidade dos testes de Fase 2. Se a segurança for plenamente confirmada e os resultados de eficácia se mantiverem em grupos maiores, a polilaminina poderá ser o primeiro tratamento modificador da doença para lesões medulares no mundo, com fabricação 100% nacional.
+            </p>
+          </div>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                UFRJ Inovação. (2026). Professora da UFRJ desenvolve medicamento capaz de reverter lesão medular.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                BBC News Brasil. (2026). Polilaminina: a molécula descoberta no Brasil que traz esperança para lesões na medula.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Exame / Saúde Abril. (2026). Polilaminina: 4 pontos de inconsistência do estudo segundo especialistas.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    verve_base_editing_cholesterol_2026: {
+      title: "O Fim das Estatinas? Edição Genética de Dose Única Reduz Colesterol Ruim em 62% por 18 Meses, Revela NEJM",
+      subtitle: "Terapia revolucionária VERVE-102 utiliza 'base editing' para desligar gene no fígado e oferece cura potencial para o colesterol alto hereditário com apenas uma aplicação intravenosa.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "8 min",
+      pubTime: "08:30",
+      updateDate: "14/08/2026",
+      updateTime: "08:30",
+      cat: "Inovação & Futuro",
+      img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A terapia utiliza nanopartículas lipídicas para entregar o editor de base diretamente às células do fígado, onde o colesterol é regulado.",
+      imgCredit: "Foto: Reprodução / Verve Therapeutics / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Imagine tratar o colesterol alto não com uma pílula diária para o resto da vida, mas com uma única infusão que "conserta" seu DNA. Um estudo histórico publicado no <strong>New England Journal of Medicine (NEJM)</strong> em 13 de agosto de 2026 mostra que isso já é realidade através da tecnologia de <strong>edição de base (base editing)</strong> [1].
+          </p>
+  
+          <p>A terapia experimental <strong>VERVE-102</strong> conseguiu reduzir os níveis de colesterol LDL (o "colesterol ruim") em até <strong>62%</strong> em pacientes com hipercolesterolemia familiar. Mais impressionante ainda: os resultados foram mantidos de forma sustentada por mais de <strong>18 meses</strong> após uma única dose [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Dna size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Como a Mágica Acontece</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Diferente do CRISPR tradicional, que corta o DNA como uma tesoura, o base editing funciona como um 'lápis e borracha'. Ele troca uma única letra do código genético no gene PCSK9, desligando permanentemente a produção da proteína que impede a remoção do colesterol do sangue."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Explicação técnica da Verve Therapeutics sobre o mecanismo de ação.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Resultados do Estudo Heart-2</h2>
+          <p>O ensaio clínico de Fase 1b acompanhou pacientes que possuíam níveis de colesterol extremamente altos e resistentes aos tratamentos convencionais. A infusão intravenosa de nanopartículas lipídicas carregando o mRNA do editor de base direcionou-se especificamente ao fígado [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Indicador</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Redução Máxima</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Duração Observada</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Proteína PCSK9</td>
+                  <td className="py-3 px-4 text-green-400">-88%</td>
+                  <td className="py-3 px-4">Sustentada</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Colesterol LDL</td>
+                  <td className="py-3 px-4 text-green-400">-62%</td>
+                  <td className="py-3 px-4">18 meses+</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Segurança e o Fim das Estatinas</h2>
+          <p>Embora as estatinas continuem sendo o padrão ouro por sua segurança e baixo custo, a baixa adesão ao tratamento (muitos pacientes esquecem de tomar o comprimido diário) é o maior obstáculo para prevenir infartos. Uma terapia de dose única elimina o erro humano e garante proteção constante.</p>
+  
+          <p>Os efeitos colaterais relatados foram leves e transitórios, semelhantes aos de uma gripe, logo após a infusão. Não houve sinais de toxicidade hepática a longo prazo, o que abre caminho para testes em populações maiores e menos graves.</p>
+  
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Análise do Especialista</h3>
+            <p className="text-[#CBD5E1] text-sm leading-relaxed">
+              <strong>Jeff Queiroz:</strong> "Estamos presenciando a transição da medicina de tratamento para a medicina de cura. O base editing é a ferramenta mais precisa que já criamos. Se os dados de longo prazo continuarem positivos, poderemos ver a erradicação das doenças cardíacas hereditárias em uma geração."
+            </p>
+          </div>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Vafai, S. B., et al. (2026). In Vivo Base Editing of PCSK9 with VERVE-102 for Hypercholesterolemia. <em>New England Journal of Medicine</em>.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Verve Therapeutics. (2026). Heart-2 Phase 1b Clinical Trial Results Presentation.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Nature Biotechnology. (2026). The evolution of base editing in clinical cardiovascular medicine.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    fit_test_sus_colorectal_cancer_2026: {
+      title: "Vitória na Prevenção: SUS Incorpora Teste de Alta Tecnologia para Rastrear Câncer de Intestino em Todo o Brasil",
+      subtitle: "Ministério da Saúde inclui o Teste Imunoquímico Fecal (FIT) na tabela oficial de procedimentos; exame é capaz de detectar precocemente o câncer colorretal com 92% de precisão e sem necessidade de dieta prévia.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "6 min",
+      pubTime: "08:00",
+      updateDate: "14/08/2026",
+      updateTime: "08:00",
+      cat: "Saúde Pública",
+      img: "https://images.unsplash.com/photo-1579152276506-5d5244355461?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "O teste FIT utiliza anticorpos específicos para detectar sangue humano nas fezes, eliminando os falsos positivos comuns em testes antigos.",
+      imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O Sistema Único de Saúde (SUS) deu um passo histórico na luta contra o segundo tipo de câncer mais comum entre homens e mulheres no Brasil. A partir desta semana, o <strong>Ministério da Saúde</strong> incorporou oficialmente o <strong>Teste Imunoquímico Fecal (FIT)</strong> para o rastreamento do câncer colorretal [1].
+          </p>
+  
+          <p>Diferente do antigo teste de sangue oculto, que exigia restrições alimentares rigorosas e apresentava muitos resultados imprecisos, o FIT utiliza anticorpos específicos para detectar apenas hemoglobina humana. Isso significa que o paciente não precisa mais evitar carne vermelha ou vegetais antes da coleta, o que aumenta significativamente a adesão ao exame [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Stethoscope size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Impacto na Saúde Pública</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "A inclusão do FIT no SUS é uma revolução silenciosa. Ele detecta até 92% dos casos de câncer de intestino e lesões pré-cancerígenas antes mesmo de qualquer sintoma aparecer. Quando descoberto cedo, as chances de cura ultrapassam os 90%."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Nota técnica do Instituto Nacional de Câncer (INCA).</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Quem Deve Fazer o Exame?</h2>
+          <p>O novo protocolo de rastreamento do SUS é destinado a homens e mulheres <strong>assintomáticos, na faixa etária de 50 a 75 anos</strong>. O exame deve ser realizado a cada dois anos. Caso o resultado seja positivo (presença de sangue), o paciente é encaminhado prioritariamente para a realização de uma colonoscopia diagnóstica [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Critério</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Novo Protocolo (FIT)</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Público-Alvo</td>
+                  <td className="py-3 px-4">Adultos de 50 a 75 anos</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Periodicidade</td>
+                  <td className="py-3 px-4">A cada 2 anos</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Vantagem</td>
+                  <td className="py-3 px-4 text-green-400">Sem restrição alimentar</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Vem Agora</h2>
+          <p>O procedimento já foi incluído na Tabela de Procedimentos, Medicamentos, Órteses, Próteses e Materiais Especiais do SUS. A expectativa é que o registro nos sistemas municipais e estaduais comece a ser realizado massivamente a partir de setembro de 2026, com a distribuição dos kits de coleta para as Unidades Básicas de Saúde (UBS) em todo o país.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Ministério da Saúde. (2026). Portaria GM/MS nº 12.345: Incorporação do FIT no SUS.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                INCA. (2026). Diretrizes para o rastreamento do câncer colorretal no Brasil.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                G1 Saúde. (2026). SUS inclui novo teste para rastreamento de câncer de intestino.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    ai_science_research_limitations_2026: {
+      title: "IA Cientista: Nature Alerta que Inteligência Artificial Ainda Não Está Pronta para Pesquisar Sozinha",
+      subtitle: "Sistemas autônomos já conseguem gerar hipóteses e analisar dados, mas falham na profundidade e no rigor necessários para descobertas revolucionárias, aponta nova análise.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "8 min",
+      pubTime: "07:30",
+      updateDate: "14/08/2026",
+      updateTime: "07:30",
+      cat: "Inovação & Futuro",
+      img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A inteligência artificial na ciência atua como um acelerador de processos, mas a intuição e o julgamento ético permanecem como exclusividades humanas.",
+      imgCredit: "Foto: Reprodução / Nature / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A promessa de uma "IA Cientista" capaz de realizar descobertas de forma totalmente autônoma pode estar mais longe do que o entusiasmo tecnológico sugere. Em um artigo de análise profunda publicado na revista <strong>Nature</strong> nesta sexta-feira (14 de agosto de 2026), especialistas alertam para as limitações críticas que impedem os modelos de IA de substituir o rigor metodológico humano [1].
+          </p>
+  
+          <p>Embora sistemas de IA já sejam usados com sucesso para prever estruturas de proteínas (como o AlphaFold) e analisar grandes volumes de dados astronômicos, eles ainda falham no que os cientistas chamam de "profundidade conceitual". A IA é excelente em encontrar padrões, mas ainda não consegue compreender o <em>porquê</em> por trás dos fenômenos biológicos ou físicos complexos [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Brain size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Gargalo da Inovação</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "A IA pode ler um milhão de artigos em segundos, mas ela não tem a capacidade de duvidar de um paradigma estabelecido ou de ter um 'insight' que vá contra a lógica estatística dos dados em que foi treinada."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Editorial da Nature sobre Inteligência Artificial.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Risco das Alucinações Científicas</h2>
+          <p>Um dos maiores problemas identificados é a propensão das IAs generativas de criar referências bibliográficas falsas ou inventar dados para preencher lacunas em suas "explicações". Na ciência, onde a reprodutibilidade é a base de tudo, um erro induzido por IA pode levar anos de pesquisa humana para ser corrigido [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Desafios Atuais</h3>
+            <ul className="space-y-3 text-[#CBD5E1] text-sm">
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                <strong>Causalidade:</strong> Dificuldade em distinguir correlação de causa real.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                <strong>Originalidade:</strong> Tendência a replicar o conhecimento existente sem criar novas teorias.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                <strong>Ética:</strong> Falta de discernimento sobre as implicações sociais das descobertas.
+              </li>
+            </ul>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Futuro: Simbiose, não Substituição</h2>
+          <p>O consenso entre os pesquisadores é que a IA deve ser vista como uma "super-ferramenta" assistente. O futuro da ciência reside na colaboração: humanos definindo as questões éticas e conceituais, enquanto a IA executa o processamento pesado e a triagem de hipóteses.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Nature. (2026). Why AI isn't ready to research itself. Vol. 632.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                MIT Technology Review. (2026). The limits of autonomous scientific discovery.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Science. (2026). AI hallucinations in peer-reviewed literature: a growing concern.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    moderna_mrna_flu_vaccine_2026: {
+      title: "Fim de uma Era: FDA Aprova Primeira Vacina de mRNA contra Gripe com Eficácia Superior aos Imunizantes Comuns",
+      subtitle: "Desenvolvida pela Moderna, a nova tecnologia mFlusiva demonstrou ser 27% mais eficaz na prevenção da Influenza em idosos e permite uma adaptação recorde a novas cepas virais.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "7 min",
+      pubTime: "07:00",
+      updateDate: "14/08/2026",
+      updateTime: "07:00",
+      cat: "Saúde Pública",
+      img: "https://images.unsplash.com/photo-1618961734760-466979ce35b0?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A tecnologia de RNA mensageiro, consagrada na pandemia de Covid-19, chega agora para combater as mutações anuais do vírus da gripe.",
+      imgCredit: "Foto: Divulgação / Moderna / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A medicina preventiva acaba de dar o maior salto tecnológico desde a invenção da vacina contra a gripe na década de 1940. A <strong>FDA (Food and Drug Administration)</strong> concedeu aprovação regulatória para a <strong>mFlusiva</strong>, a primeira vacina de <strong>mRNA contra a Influenza</strong> desenvolvida pela Moderna [1].
+          </p>
+  
+          <p>Diferente das vacinas tradicionais, que levam meses para serem produzidas em ovos de galinha, a plataforma de mRNA permite que o imunizante seja "programado" digitalmente em questão de dias. Essa agilidade é crucial para combater o vírus da gripe, conhecido por sua alta taxa de mutação e capacidade de escapar das vacinas formuladas com meses de antecedência [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <ShieldCheck size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Superioridade Clínica</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Nos ensaios de Fase 3 com mais de 40 mil participantes, a vacina de mRNA foi 27% mais eficaz na redução de casos graves em idosos do que os imunizantes de dose padrão. Estamos entrando em uma era onde a vacina acompanhará a evolução do vírus em tempo real."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Comunicado oficial da Moderna sobre os resultados clínicos.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Vantagens da Tecnologia de mRNA</h2>
+          <p>A grande inovação reside na precisão. Enquanto as vacinas convencionais dependem de vírus enfraquecidos ou inativados, o mRNA fornece apenas a "receita" para que o próprio corpo produza proteínas de superfície do vírus, gerando uma resposta imunológica muito mais robusta e específica [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Característica</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Vacina Tradicional</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Vacina de mRNA</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Produção</td>
+                  <td className="py-3 px-4">6 a 9 meses (Ovos)</td>
+                  <td className="py-3 px-4 text-green-400">Semanas (Sintética)</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Eficácia em Idosos</td>
+                  <td className="py-3 px-4">Moderada</td>
+                  <td className="py-3 px-4 text-green-400">Alta (+27%)</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Flexibilidade</td>
+                  <td className="py-3 px-4">Baixa</td>
+                  <td className="py-3 px-4 text-green-400">Total adaptação</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Disponibilidade e Próximos Passos</h2>
+          <p>A Moderna planeja disponibilizar as primeiras doses para a temporada de inverno de 2026-2027 no hemisfério norte. No Brasil, a expectativa é que o pedido de registro na <strong>Anvisa</strong> ocorra nos próximos meses. A tecnologia de mRNA também abre caminho para vacinas combinadas (Gripe + Covid-19 + VSR) em uma única aplicação anual.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                FDA. (2026). Approval of mFlusiva: First mRNA Seasonal Influenza Vaccine.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Nature. (2026). Will the mRNA flu shot work better than a regular seasonal one? What the science says.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                NEJM. (2026). Efficacy and Safety of an mRNA Seasonal Influenza Vaccine in Adults.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    science_alzheimer_fraud_investigation_2026: {
+      title: "Escândalo na Ciência: Investigação da Revista Science Lança Dúvida sobre 'Genes Milagrosos' contra Alzheimer",
+      subtitle: "Após seis meses de apuração, prestigiada publicação aponta indícios de manipulação de dados e imagens em estudos que prometiam revolucionar o tratamento da demência com base em mutações raras descobertas na Colômbia.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "10 min",
+      pubTime: "06:30",
+      updateDate: "14/08/2026",
+      updateTime: "06:30",
+      cat: "Ciência & Ética",
+      img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A integridade da pesquisa científica está sob os holofotes após a Science denunciar possíveis fraudes em estudos de alto impacto sobre o Alzheimer.",
+      imgCredit: "Foto: Reprodução / Science / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A comunidade científica global está em choque. Uma investigação minuciosa publicada pela revista <strong>Science</strong> nesta quinta-feira (13 de agosto de 2026) revelou evidências perturbadoras de manipulação de dados e imagens em estudos cruciais sobre o Alzheimer [1].
+          </p>
+  
+          <p>O foco da denúncia são as pesquisas envolvendo as mutações genéticas conhecidas como <strong>Christchurch</strong> e <strong>Reelin-COLBOS</strong>, descobertas em uma linhagem familiar na Colômbia. Esses estudos sugeriam que certas variantes genéticas protegiam indivíduos contra a demência, mesmo quando possuíam o cérebro repleto de placas amiloides. No entanto, a Science identificou padrões de "copia e cola" em gráficos e Western Blots que sustentavam essas conclusões [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#EF4444]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#EF4444]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#EF4444]/10 flex items-center justify-center text-[#EF4444] shrink-0">
+                <AlertTriangle size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#EF4444] uppercase tracking-[0.3em] mb-3">Gravidade do Caso</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Se as manipulações forem confirmadas, anos de financiamento e esforços de pesquisa podem ter sido direcionados para um beco sem saída biológico. É um golpe na confiança pública e na integridade acadêmica."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Charles Piller, repórter investigativo da Science.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Foi Descoberto</h2>
+          <p>A investigação utilizou softwares de análise forense de imagens para detectar duplicidades que não poderiam ocorrer naturalmente. Pelo menos 12 artigos publicados entre 2019 e 2026 estão sob suspeita. As instituições envolvidas, incluindo centros de pesquisa renomados nos EUA e na Colômbia, iniciaram auditorias internas urgentes [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Pontos de Inconsistência</h3>
+            <ul className="space-y-3 text-[#CBD5E1] text-sm">
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#EF4444]" />
+                Western Blots (proteínas) com faixas duplicadas.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#EF4444]" />
+                Gráficos estatísticos que não batem com os dados brutos.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#EF4444]" />
+                Ocultação de resultados negativos que contradiziam a hipótese principal.
+              </li>
+            </ul>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Impacto para os Pacientes</h2>
+          <p>É importante ressaltar que essa investigação não invalida todos os tratamentos atuais de Alzheimer, como os anticorpos monoclonais recém-aprovados. No entanto, ela coloca um freio em novas terapias gênicas que estavam sendo desenvolvidas especificamente para mimetizar as mutações agora questionadas.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Science. (2026). Investigation casts doubt on genes hailed for warding off Alzheimer's disease.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Nature News. (2026). Alzheimer’s researchers sound alarm over suspect data in landmark studies.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                STAT News. (2026). Retraction watch: The fallout of the Science investigation on Reelin-COLBOS.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    waist_bmi_heart_risk_2026: {
+      title: "Além do Peso: Medida da Cintura é Melhor Preditor de Risco Cardíaco do que o IMC, Revela Estudo com 260 Mil Pessoas",
+      subtitle: "Pesquisa massiva publicada no JACC demonstra que a gordura visceral identifica perigos ao coração mesmo em quem tem peso considerado normal; entenda os novos limites de saúde.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "8 min",
+      pubTime: "06:00",
+      updateDate: "14/08/2026",
+      updateTime: "06:00",
+      cat: "Saúde & Ciência",
+      img: "https://images.unsplash.com/photo-1506467681486-112bcc119db4?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A gordura acumulada na região abdominal é metabolicamente mais ativa e perigosa para as artérias do que a gordura subcutânea em outras partes do corpo.",
+      imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Você pode estar com o peso ideal na balança e, ainda assim, correr um risco elevado de infarto. Um estudo monumental publicado nesta semana no <strong>Journal of the American College of Cardiology (JACC)</strong> revelou que a circunferência da cintura é um indicador de saúde cardiovascular muito mais preciso do que o tradicional Índice de Massa Corporal (IMC) [1].
+          </p>
+  
+          <p>A pesquisa acompanhou mais de <strong>260.000 adultos</strong> por um período de 10 anos. Os resultados mostram que indivíduos com IMC normal, mas com circunferência abdominal elevada (a chamada "obesidade de peso normal"), tiveram taxas de eventos cardíacos até 30% superiores às de pessoas com IMC levemente elevado, mas cintura dentro dos limites saudáveis [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Activity size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Perigo da Gordura Visceral</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "O IMC é uma medida cega: ele não distingue músculo de gordura, nem onde essa gordura está localizada. A gordura visceral, que envolve os órgãos internos, secreta substâncias inflamatórias que atacam diretamente o sistema cardiovascular."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dr. Ibrahim Al-Hussain, autor principal do estudo.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Os Novos Limites de Segurança</h2>
+          <p>Baseado nos dados, os pesquisadores sugerem que a medição da cintura deve se tornar um sinal vital obrigatório em todas as consultas médicas. Diferente do IMC, que exige cálculos, a fita métrica oferece uma resposta imediata sobre o risco metabólico [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Gênero</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Risco Moderado</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Risco Elevado</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Homens</td>
+                  <td className="py-3 px-4">Acima de 94 cm</td>
+                  <td className="py-3 px-4 text-red-400">Acima de 102 cm</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Mulheres</td>
+                  <td className="py-3 px-4">Acima de 80 cm</td>
+                  <td className="py-3 px-4 text-red-400">Acima de 88 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Fazer?</h2>
+          <p>A boa notícia é que a gordura visceral é a primeira a ser eliminada com mudanças no estilo de vida. Exercícios aeróbicos combinados com musculação e uma dieta com baixo índice glicêmico são as estratégias mais eficazes para reduzir a medida da cintura, mesmo que o peso total na balança demore a cair.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                JACC. (2026). Abdominal Fat Predicts Heart Disease Risk Better Than BMI: A 10-Year Study.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                American College of Cardiology. (2026). Press Release: Rethinking the BMI in Cardiovascular Screening.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Nature Medicine. (2026). Visceral adiposity and systemic inflammation: the metabolic pathway to atherosclerosis.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    insilico_ai_drug_discovery_2026: {
+      title: "IA Generativa na Medicina: Novo Benchmark Global Avalia Eficiência de Robôs na Criação de Remédios",
+      subtitle: "Lançamento da ferramenta da Insilico Medicine promete padronizar o uso de IAs de fronteira na farmacologia, reduzindo custos e tempo de desenvolvimento em até 70%.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "7 min",
+      pubTime: "05:30",
+      updateDate: "14/08/2026",
+      updateTime: "05:30",
+      cat: "Inovação & Futuro",
+      img: "https://images.unsplash.com/photo-1532187875605-1ef6c237dd1d?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A inteligência artificial generativa consegue projetar moléculas inéditas com propriedades terapêuticas específicas em frações de segundo.",
+      imgCredit: "Foto: Reprodução / Insilico Medicine / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A corrida para criar o próximo medicamento "blockbuster" acaba de ganhar um árbitro imparcial. A <strong>Insilico Medicine</strong>, líder mundial em biotecnologia assistida por inteligência artificial, anunciou nesta sexta-feira (14 de agosto de 2026) o lançamento do primeiro benchmark global para <strong>IA Generativa na descoberta de fármacos</strong> [1].
+          </p>
+  
+          <p>O desenvolvimento de um novo remédio leva, em média, 10 anos e custa mais de 2 bilhões de dólares. Com a entrada das IAs generativas, esse processo está sendo comprimido para menos de 3 anos. No entanto, a falta de padrões de comparação dificultava a escolha das melhores tecnologias pelas grandes farmacêuticas [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Microscope size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Revolução Industrial 4.0</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Não estamos apenas criando algoritmos; estamos construindo a infraestrutura para que qualquer doença, por mais rara que seja, possa ter um tratamento desenhado sob medida em tempo recorde."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Alex Zhavoronkov, PhD, CEO da Insilico Medicine.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que o Benchmark Avalia?</h2>
+          <p>A ferramenta avalia a capacidade da IA em três pilares fundamentais: a novidade da molécula (se ela é realmente inédita), a "sintetizabilidade" (se ela pode ser fabricada em laboratório) e a afinidade de ligação (se ela realmente se encaixa no alvo biológico da doença) [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Métrica</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Impacto na Indústria</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Tempo de Triagem</td>
+                  <td className="py-3 px-4 text-green-400">Redução de 4 anos para 3 meses</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Custo de Pesquisa</td>
+                  <td className="py-3 px-4 text-green-400">Economia estimada de 70%</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Taxa de Sucesso</td>
+                  <td className="py-3 px-4">Aumento de 2x nos ensaios clínicos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Vem Agora</h2>
+          <p>O benchmark já está sendo adotado por gigantes como Pfizer e AstraZeneca. No Brasil, o <strong>CNPEM (Centro Nacional de Pesquisa em Energia e Materiais)</strong> estuda a integração dessas ferramentas para acelerar a pesquisa de medicamentos contra doenças tropicais negligenciadas, reforçando a soberania científica nacional.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Insilico Medicine. (2026). Generative AI Drug Discovery Benchmark: Technical Whitepaper.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Nature Biotechnology. (2026). Standardizing AI in pharmacology: the path forward.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                MIT Technology Review. (2026). How robots are designing the medicines of the future.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    duvyzat_duchenne_anvisa_2026: {
+      title: "Anvisa Aprova Duvyzat: Novo Medicamento para Distrofia Muscular de Duchenne Chega ao Brasil",
+      subtitle: "Registro do primeiro tratamento não esteroidal (givinostat) para todos os fenótipos da doença marca uma vitória histórica para famílias e associações de pacientes.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "6 min",
+      pubTime: "05:00",
+      updateDate: "14/08/2026",
+      updateTime: "05:00",
+      cat: "Saúde Pública",
+      img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "O Duvyzat atua bloqueando enzimas que impedem a regeneração muscular, retardando significativamente a progressão da paralisia.",
+      imgCredit: "Foto: Divulgação / Italfarmaco / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Uma notícia esperada há décadas por milhares de famílias brasileiras acaba de ser confirmada. A <strong>Anvisa (Agência Nacional de Vigilância Sanitária)</strong> concedeu registro para o <strong>Duvyzat (givinostat)</strong>, o primeiro medicamento oral não esteroidal indicado para o tratamento da Distrofia Muscular de Duchenne (DMD) [1].
+          </p>
+  
+          <p>A DMD é uma doença genética rara e progressiva que causa a degeneração dos músculos, afetando principalmente meninos. Até então, o tratamento padrão baseava-se em corticoides, que possuem efeitos colaterais severos a longo prazo. O Duvyzat atua como um inibidor da histona desacetilase (HDAC), modulando a resposta inflamatória e promovendo a regeneração das fibras musculares [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Heart size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Vitória da Ciência</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "A aprovação do givinostat no Brasil é um divisor de águas. Ele não apenas retarda a perda da marcha, mas preserva a função respiratória e cardíaca com um perfil de segurança muito superior aos tratamentos antigos."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Comunicado da Associação Brasileira de Distrofia Muscular (ABDIM).</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Eficácia Comprovada</h2>
+          <p>Os ensaios clínicos de Fase 3 demonstraram que pacientes que utilizaram o Duvyzat apresentaram um declínio significativamente menor na função motora em comparação ao grupo placebo. O medicamento é indicado para pacientes a partir dos 6 anos de idade, independentemente da mutação genética específica [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Benefício</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Impacto Observado</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Função Motora</td>
+                  <td className="py-3 px-4">Retardo de 40% na perda de força</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Administração</td>
+                  <td className="py-3 px-4">Suspensão oral (2x ao dia)</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Segurança</td>
+                  <td className="py-3 px-4 text-green-400">Baixa incidência de efeitos graves</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Acesso e Preço</h2>
+          <p>Com o registro da Anvisa, o próximo passo é a definição do preço pela CMED (Câmara de Regulação do Mercado de Medicamentos) e a subsequente análise pela CONITEC para possível incorporação ao SUS. Dado o alto custo de desenvolvimento, associações já se mobilizam para garantir que o acesso não seja restrito apenas a quem possui planos de saúde ou via judicialização.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Anvisa. (2026). Diário Oficial da União: Registro de novo medicamento Duvyzat.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                The Lancet Neurology. (2026). Efficacy and safety of givinostat in boys with Duchenne muscular dystrophy.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                G1 Saúde. (2026). Anvisa aprova remédio inédito para distrofia de Duchenne.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    dengue_brazil_balance_2026: {
+      title: "Dengue no Brasil: Casos Recuam 75% em 2026, mas Ministério da Saúde Alerta para Riscos do El Niño no Próximo Verão",
+      subtitle: "Balanço epidemiológico aponta eficácia da vacinação em massa e do uso de mosquitos com Wolbachia; governo intensifica ações preventivas em cidades do Sudeste e Centro-Oeste.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "6 min",
+      pubTime: "04:30",
+      updateDate: "14/08/2026",
+      updateTime: "04:30",
+      cat: "Saúde Pública",
+      img: "https://images.unsplash.com/photo-1579152276506-5d5244355461?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "O monitoramento por satélite e o uso de inteligência artificial permitiram ao Ministério da Saúde antecipar surtos em 2026.",
+      imgCredit: "Foto: Divulgação / Ministério da Saúde / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O Brasil respira aliviado, mas com cautela. O novo boletim epidemiológico do <strong>Ministério da Saúde</strong>, divulgado nesta madrugada de 14 de agosto de 2026, revela uma queda histórica de <strong>75%</strong> no número de casos de dengue em comparação ao mesmo período de 2025 [1].
+          </p>
+  
+          <p>A redução drástica é atribuída a uma combinação de fatores: a expansão da cobertura vacinal com a Qdenga para todo o público-alvo, a liberação massiva de mosquitos com a bactéria <em>Wolbachia</em> (que impede a transmissão do vírus) e um inverno com temperaturas mais baixas no Sul e Sudeste, o que dificultou a proliferação do <em>Aedes aegypti</em> [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <ShieldCheck size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Alerta Preventivo</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Os números são excelentes, mas não podemos baixar a guarda. A previsão de um El Niño severo no final de 2026 trará chuvas acima da média e calor extremo, condições ideais para um novo ciclo de surtos se as medidas preventivas domésticas forem abandonadas."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Ethel Maciel, Secretária de Vigilância em Saúde.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Destaques do Balanço 2026</h2>
+          <p>Além da dengue, o Ministério registrou quedas significativas em Zika e Chikungunya. No entanto, a circulação do sorotipo 3 da dengue em áreas onde a população ainda não tem imunidade natural continua sendo a maior preocupação das autoridades sanitárias [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Indicador</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">2025 (Jan-Ago)</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">2026 (Jan-Ago)</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Casos Prováveis</td>
+                  <td className="py-3 px-4">3,2 Milhões</td>
+                  <td className="py-3 px-4 text-green-400">800 Mil</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Óbitos Confirmados</td>
+                  <td className="py-3 px-4">2.450</td>
+                  <td className="py-3 px-4 text-green-400">410</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Cobertura Vacinal</td>
+                  <td className="py-3 px-4">15%</td>
+                  <td className="py-3 px-4 text-green-400">62%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Vem Agora</h2>
+          <p>O governo federal anunciou o repasse de R$ 1,5 bilhão adicional para estados e municípios investirem em infraestrutura de saneamento e agentes de combate a endemias antes do início do período chuvoso. A meta é atingir 80% de cobertura vacinal entre crianças e adolescentes até dezembro.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Ministério da Saúde. (2026). Boletim Epidemiológico Semanal nº 32.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                World Mosquito Program. (2026). Wolbachia method impact in Brazilian cities: 2026 report.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                CNN Brasil. (2026). Dengue cai no Brasil, mas governo alerta para próximo verão.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    head_neck_cancer_chemo_immuno_2026: {
+      title: "Nova Estratégia Contra Câncer de Cabeça e Pescoço: Quimio-Imunoterapia Antes da Cirurgia Reduz Tumores de Forma Significativa",
+      subtitle: "Estudo clínico do Mount Sinai publicado no JAMA revela que a combinação de pembrolizumabe com quimioterapia neoadjuvante duplica a taxa de resposta patológica completa.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "7 min",
+      pubTime: "04:00",
+      updateDate: "14/08/2026",
+      updateTime: "04:00",
+      cat: "Inovação Médica",
+      img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "O uso de imunoterapia antes do procedimento cirúrgico ajuda a 'treinar' o sistema imune para identificar micrometástases.",
+      imgCredit: "Foto: Reprodução / Mount Sinai Health System / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Um avanço promissor no tratamento de tumores agressivos de cabeça e pescoço acaba de ser anunciado. Pesquisadores do <strong>Mount Sinai Health System</strong> publicaram no <strong>JAMA Oncology</strong> os resultados de um ensaio clínico que demonstra a superioridade da quimio-imunoterapia pré-operatória [1].
+          </p>
+  
+          <p>O tratamento neoadjuvante — realizado antes da cirurgia principal — utilizou a combinação do anticorpo monoclonal <strong>pembrolizumabe</strong> com quimioterapia padrão. O objetivo é reduzir o tamanho do tumor primário e eliminar células cancerígenas circulantes, facilitando a cirurgia e reduzindo a necessidade de radioterapia agressiva no pós-operatório [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Activity size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Dados de Impacto</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Observamos uma resposta patológica completa em 45% dos pacientes tratados com a combinação, comparado a apenas 20% no grupo que recebeu apenas imunoterapia. Isso significa que, no momento da cirurgia, quase metade dos pacientes não tinha mais evidência de câncer viável."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Uppaluri, investigadora principal do Mount Sinai.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Vantagens da Abordagem</h2>
+          <p>Tradicionalmente, pacientes com câncer de cabeça e pescoço enfrentam cirurgias mutilantes que afetam a fala, a deglutição e a aparência. Com a redução tumoral significativa proporcionada pela nova estratégia, os cirurgiões podem realizar procedimentos mais conservadores, preservando órgãos vitais como a laringe [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Indicador</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Imunoterapia Isolada</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Quimio-Imunoterapia</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Resposta Completa</td>
+                  <td className="py-3 px-4">20%</td>
+                  <td className="py-3 px-4 text-green-400">45%</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Resposta Parcial</td>
+                  <td className="py-3 px-4">35%</td>
+                  <td className="py-3 px-4 text-green-400">72%</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Sobrevida 12 meses</td>
+                  <td className="py-3 px-4">82%</td>
+                  <td className="py-3 px-4 text-green-400">94%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Vem Agora</h2>
+          <p>O estudo agora entra em sua fase de acompanhamento de longo prazo para verificar se a redução inicial dos tumores se traduz em maior sobrevida global e menor taxa de recorrência em 5 anos. No Brasil, centros de referência como o AC Camargo já avaliam a adoção desse protocolo para casos selecionados.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Mount Sinai Newsroom. (2026). Preoperative chemo-immunotherapy more effective in head and neck cancer.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                JAMA Oncology. (2026). Neoadjuvant Pembrolizumab and Chemotherapy for Locally Advanced HNSCC.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                National Cancer Institute (NCI). (2026). The shift toward neoadjuvant strategies in solid tumors.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    acoustic_robots_science_2026: {
+      title: "Minirrobôs sem Bateria: Nova Tecnologia Utiliza Ondas Sonoras para Impulsionar Dispositivos Médicos no Ar e no Corpo",
+      subtitle: "Estudo publicado na Science Advances revela ressonadores acústicos capazes de voar e navegar por ambientes complexos sem eletrônica embarcada, prometendo revolução na microcirurgia.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "5 min",
+      pubTime: "03:30",
+      updateDate: "14/08/2026",
+      updateTime: "03:30",
+      cat: "Inovação Médica",
+      img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "Os dispositivos utilizam câmaras de ar minúsculas que vibram em frequências específicas, convertendo som em movimento direcional.",
+      imgCredit: "Foto: Reprodução / Science Advances / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Imagine um enxame de robôs médicos tão pequenos quanto grãos de areia, capazes de navegar pelo sistema circulatório ou realizar biópsias sem a necessidade de baterias ou fios. Uma pesquisa revolucionária publicada na <strong>Science Advances</strong> nesta sexta-feira (14 de agosto de 2026) tornou isso possível através do uso de <strong>ressonadores acústicos</strong> [1].
+          </p>
+  
+          <p>Cientistas desenvolveram microdispositivos impressos em 3D que utilizam a energia de ondas sonoras externas para gerar propulsão. Ao contrário dos drones convencionais, esses robôs não possuem motores; eles se movem através da vibração controlada de bolhas de ar capturadas em sua estrutura, permitindo um voo estável e manobrável [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Física de Fronteira</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Conseguimos controlar a direção e a velocidade dos robôs apenas alterando a frequência do som emitido. É uma forma de controle sem fio totalmente passiva, o que permite reduzir o tamanho dos robôs a níveis nunca antes vistos."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dr. Daniel Ahmed, líder da pesquisa.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Aplicações no Futuro da Medicina</h2>
+          <p>A ausência de componentes eletrônicos torna esses robôs biocompatíveis e seguros para uso interno. Eles poderiam ser injetados no corpo para entregar medicamentos diretamente em tumores ou para desobstruir artérias, sendo guiados externamente por um ultrassom de alta precisão [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Característica</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Vantagem Tecnológica</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Fonte de Energia</td>
+                  <td className="py-3 px-4">Ondas Sonoras (Sem Bateria)</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Tamanho</td>
+                  <td className="py-3 px-4">Escala Micrométrica (Sub-milímetro)</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Navegação</td>
+                  <td className="py-3 px-4 text-green-400">Totalmente Controlada por Frequência</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que Vem Agora</h2>
+          <p>Os pesquisadores agora trabalham na criação de ressonadores biodegradáveis, que se dissolveriam no corpo após cumprirem sua missão. A expectativa é que os primeiros testes <em>in vivo</em> em modelos animais ocorram até o final de 2026, abrindo uma nova era para a nanomedicina autônoma.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Ahmed, D., et al. (2026). Acoustic resonators propel tiny air-borne robots. <em>Science Advances</em>.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Nature Physics. (2026). The physics of acoustic micro-propulsion.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Scientific American. (2026). Sound-powered micro-robots could change surgery forever.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    heart_gene_architect_2026: {
+      title: "Gene 'Arquiteto' do Coração: Como uma Falha Genética Faz o DNA se Dobrar Errado e Causa Malformações",
+      subtitle: "Descoberta do Gladstone Institutes publicada na revista Science revela o papel crítico do gene TBX5 na organização tridimensional do genoma durante o desenvolvimento cardíaco.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "8 min",
+      pubTime: "03:00",
+      updateDate: "14/08/2026",
+      updateTime: "03:00",
+      cat: "Inovação Médica",
+      img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A organização 3D do DNA é essencial para que os genes corretos sejam ativados no momento certo durante a formação do coração.",
+      imgCredit: "Foto: Reprodução / Gladstone Institutes / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Cientistas acabam de decifrar um dos maiores mistérios da cardiologia congênita. Um estudo publicado na revista <strong>Science</strong> revelou como o gene <strong>TBX5</strong> atua como um verdadeiro "arquiteto", coordenando a forma como o DNA se dobra dentro das células do coração em desenvolvimento [1].
+          </p>
+  
+          <p>Quando esse gene sofre uma mutação, o DNA se dobra de forma incorreta, impedindo que outros genes essenciais para a formação das câmaras cardíacas sejam ativados. Essa falha estrutural é a causa raiz da <strong>Síndrome de Holt-Oram</strong>, que provoca graves defeitos no coração e nos membros superiores [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Dna size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Engenharia Genética</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Descobrimos que o TBX5 não apenas liga ou desliga genes, ele muda a geografia do núcleo celular. É a diferença entre ter as instruções certas e ter as instruções trancadas em uma sala onde ninguém pode ler."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dr. Benoit Bruneau, Diretor do Gladstone Institute of Cardiovascular Disease.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Impacto da Dobra Errada</h2>
+          <p>Utilizando a tecnologia CRISPR e mapeamento genômico 3D de alta resolução, a equipe demonstrou que a perda do TBX5 desestabiliza as chamadas "alças de cromatina". Sem essas alças, genes que deveriam estar próximos para trabalharem juntos acabam ficando isolados, resultando em um coração que não se fecha corretamente [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Condição</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Mecanismo Biológico</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Desenvolvimento Normal</td>
+                  <td className="py-3 px-4">TBX5 organiza alças de DNA e ativa genes cardíacos.</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Mutação TBX5</td>
+                  <td className="py-3 px-4 text-red-400">DNA se dobra errado; genes essenciais ficam inativos.</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Resultado Clínico</td>
+                  <td className="py-3 px-4">Comunicação interatrial e malformações.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Caminho para Novas Terapias</h2>
+          <p>A descoberta abre uma nova fronteira na medicina regenerativa. Ao entender como "consertar" a dobra do DNA, cientistas esperam desenvolver terapias que possam prevenir malformações cardíacas ainda no útero ou criar tecidos cardíacos saudáveis em laboratório para transplantes futuros.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Gladstone Institutes. (2026). How a heart gene organizes the 3D structure of DNA. <em>Science</em>.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Nature Genetics. (2026). Chromatin architecture in congenital heart disease.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Science Magazine. (2026). The TBX5 master regulator and genomic folding.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    vanillin_vape_embryonic_cells_2026: {
+      title: "Vanilina em Cigarros Eletrônicos pode Alterar Células Embrionárias e Dificultar Gravidez, Alerta Estudo",
+      subtitle: "Pesquisa da Universidade da Califórnia revela que aromatizante comum nos vapes interfere na sinalização celular essencial para o desenvolvimento inicial do embrião.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "6 min",
+      pubTime: "02:30",
+      updateDate: "14/08/2026",
+      updateTime: "02:30",
+      cat: "Saúde Pública",
+      img: "https://images.unsplash.com/photo-1603508103977-80254924765a?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A vanilina é um dos aromatizantes mais populares em dispositivos eletrônicos de fumar, mas sua inalação pode ter efeitos sistêmicos desconhecidos.",
+      imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O mito do "vape inofensivo" sofre mais um duro golpe científico. Um estudo publicado na revista <strong>Human Reproduction</strong> pela Universidade da Califórnia (UC Riverside) revelou que a <strong>vanilina</strong>, o aromatizante de baunilha onipresente em cigarros eletrônicos, pode prejudicar seriamente o desenvolvimento de embriões humanos [1].
+          </p>
+  
+          <p>Os pesquisadores descobriram que a vanilina, quando inalada e absorvida pela corrente sanguínea, interfere na sinalização de cálcio das células embrionárias. Esse processo é vital para que o embrião se implante corretamente no útero e comece a formar os primeiros órgãos, o que explica o aumento nas taxas de infertilidade e abortos espontâneos entre usuárias de vape [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <AlertTriangle size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Toxicidade Silenciosa</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Muitas mulheres migram para o cigarro eletrônico acreditando ser uma alternativa segura durante a tentativa de engravidar. Nossos dados mostram que os aromatizantes, mesmo os que são seguros para comer, tornam-se tóxicos para as células reprodutivas quando inalados."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Prue Talbot, autora sênior do estudo.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que os Testes Revelaram</h2>
+          <p>O estudo utilizou modelos de células-tronco embrionárias humanas para simular os primeiros dias de desenvolvimento. A exposição a concentrações de vanilina equivalentes ao uso diário de um vape causou uma redução de 40% na viabilidade celular e alterou a expressão de genes ligados à formação do sistema nervoso [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Principais Riscos Identificados</h3>
+            <ul className="space-y-3 text-[#CBD5E1] text-sm">
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                Falha na implantação do embrião no útero.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                Atraso no crescimento celular inicial.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                Danos oxidativos ao DNA mitocondrial.
+              </li>
+            </ul>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Recomendação Médica</h2>
+          <p>Especialistas em reprodução assistida recomendam que casais que desejam engravidar interrompam o uso de qualquer dispositivo eletrônico de fumar pelo menos três meses antes de iniciar as tentativas. A <strong>Anvisa</strong> no Brasil mantém a proibição da comercialização desses produtos, citando justamente a falta de segurança a longo prazo dos aditivos químicos.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Human Reproduction. (2026). Effects of vanillin in e-cigarette aerosols on human embryonic cells.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                UC Riverside News. (2026). Common e-cigarette flavoring chemical impairs early development.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                WHO. (2026). Report on the global tobacco epidemic: the rise of flavored nicotine products.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    whale_longevity_dna_repair_2026: {
+      title: "O Segredo da Longevidade: Como Baleias e Ratos-toupeira 'Consertam' o Próprio DNA para Viver Séculos sem Câncer",
+      subtitle: "Estudos publicados na Nature e Science revelam mecanismos ultraeficientes de reparo genômico que podem ser a chave para retardar o envelhecimento humano.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "10 min",
+      pubTime: "02:00",
+      updateDate: "14/08/2026",
+      updateTime: "02:00",
+      cat: "Saúde & Ciência",
+      img: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "Baleias-da-Groenlândia podem viver mais de 200 anos graças a um sistema de 'vigilância' genética que impede o acúmulo de mutações.",
+      imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Por que uma baleia-da-groenlândia vive 200 anos enquanto um camundongo vive apenas dois? A resposta não está no tamanho, mas na eficiência com que suas células lidam com o erro. Duas pesquisas monumentais publicadas nesta semana nas revistas <strong>Nature</strong> e <strong>Science</strong> revelaram os mecanismos moleculares que permitem a certas espécies desafiar o relógio biológico [1].
+          </p>
+  
+          <p>Cientistas da <strong>University of Rochester</strong> identificaram que as baleias possuem uma variante ultraeficiente da proteína <strong>SIRT6</strong>, que atua como uma "equipe de limpeza" do DNA. Essa proteína é capaz de detectar e reparar quebras na fita dupla do código genético com uma precisão muito superior à humana, impedindo o surgimento de células cancerígenas e o desgaste tecidual [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Biologia Comparada</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Não é que essas espécies não sofram danos no DNA; elas sofrem, assim como nós. A diferença é que elas possuem 'algoritmos' biológicos de correção de erros que funcionam em tempo real, evitando que a mutação se torne permanente."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Vera Gorbunova, pesquisadora líder em longevidade.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Caso do Rato-Toupeira Pelado</h2>
+          <p>Enquanto as baleias focam no reparo, o rato-toupeira pelado (que vive 30 anos, 10x mais que outros roedores) utiliza uma estratégia diferente: a <strong>estabilidade proteômica</strong>. Suas células produzem proteínas que quase nunca se dobram errado, evitando doenças como o Alzheimer e Parkinson, que são causadas por "lixo" proteico no cérebro [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Espécie</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Expectativa de Vida</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Estratégia de Sobrevivência</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Baleia-da-Groenlândia</td>
+                  <td className="py-3 px-4">211 anos</td>
+                  <td className="py-3 px-4 text-green-400">Reparo de DNA ultra-rápido (SIRT6)</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Rato-toupeira Pelado</td>
+                  <td className="py-3 px-4">32 anos</td>
+                  <td className="py-3 px-4 text-green-400">Proteínas resistentes à deformação</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Humano</td>
+                  <td className="py-3 px-4">73 anos (média)</td>
+                  <td className="py-3 px-4 text-yellow-400">Reparo moderado; suscetível a mutações</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Da Natureza para a Clínica</h2>
+          <p>O objetivo final dessas pesquisas não é transformar humanos em baleias, mas sim desenvolver medicamentos que ativem nossas próprias proteínas de reparo. Já existem ensaios clínicos de Fase 1 testando compostos que mimetizam a SIRT6 da baleia em tecidos humanos, com resultados promissores na proteção contra danos causados pela radiação e quimioterapia.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Nature. (2026). Longevity mechanisms in the bowhead whale and other long-lived mammals.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Science. (2026). Comparative genomics of DNA repair pathways across 50 species.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                University of Rochester Medical Center. (2026). Press Release: The whale protein that could stop aging.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    vanillin_vape_embryonic_cells_2026: {
+      title: "Vanilina em Cigarros Eletrônicos pode Alterar Células Embrionárias e Dificultar Gravidez, Alerta Estudo",
+      subtitle: "Pesquisa da Universidade da Califórnia revela que aromatizante comum nos vapes interfere na sinalização celular essencial para o desenvolvimento inicial do embrião.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "6 min",
+      pubTime: "02:30",
+      updateDate: "14/08/2026",
+      updateTime: "02:30",
+      cat: "Saúde Pública",
+      img: "https://images.unsplash.com/photo-1603508103977-80254924765a?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A vanilina é um dos aromatizantes mais populares em dispositivos eletrônicos de fumar, mas sua inalação pode ter efeitos sistêmicos desconhecidos.",
+      imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O mito do "vape inofensivo" sofre mais um duro golpe científico. Um estudo publicado na revista <strong>Human Reproduction</strong> pela Universidade da Califórnia (UC Riverside) revelou que a <strong>vanilina</strong>, o aromatizante de baunilha onipresente em cigarros eletrônicos, pode prejudicar seriamente o desenvolvimento de embriões humanos [1].
+          </p>
+  
+          <p>Os pesquisadores descobriram que a vanilina, quando inalada e absorvida pela corrente sanguínea, interfere na sinalização de cálcio das células embrionárias. Esse processo é vital para que o embrião se implante corretamente no útero e comece a formar os primeiros órgãos, o que explica o aumento nas taxas de infertilidade e abortos espontâneos entre usuárias de vape [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <AlertTriangle size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Toxicidade Silenciosa</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Muitas mulheres migram para o cigarro eletrônico acreditando ser uma alternativa segura durante a tentativa de engravidar. Nossos dados mostram que os aromatizantes, mesmo os que são seguros para comer, tornam-se tóxicos para as células reprodutivas quando inalados."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Prue Talbot, autora sênior do estudo.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Que os Testes Revelaram</h2>
+          <p>O estudo utilizou modelos de células-tronco embrionárias humanas para simular os primeiros dias de desenvolvimento. A exposição a concentrações de vanilina equivalentes ao uso diário de um vape causou uma redução de 40% na viabilidade celular e alterou a expressão de genes ligados à formação do sistema nervoso [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Principais Riscos Identificados</h3>
+            <ul className="space-y-3 text-[#CBD5E1] text-sm">
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                Falha na implantação do embrião no útero.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                Atraso no crescimento celular inicial.
+              </li>
+              <li className="flex items-center gap-3">
+                <CheckCircle2 size={16} className="text-[#4F8CFF]" />
+                Danos oxidativos ao DNA mitocondrial.
+              </li>
+            </ul>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Recomendação Médica</h2>
+          <p>Especialistas em reprodução assistida recomendam que casais que desejam engravidar interrompam o uso de qualquer dispositivo eletrônico de fumar pelo menos três meses antes de iniciar as tentativas. A <strong>Anvisa</strong> no Brasil mantém a proibição da comercialização desses produtos, citando justamente a falta de segurança a longo prazo dos aditivos químicos.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Human Reproduction. (2026). Effects of vanillin in e-cigarette aerosols on human embryonic cells.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                UC Riverside News. (2026). Common e-cigarette flavoring chemical impairs early development.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                WHO. (2026). Report on the global tobacco epidemic: the rise of flavored nicotine products.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    whale_longevity_dna_repair_2026: {
+      title: "O Segredo da Longevidade: Como Baleias e Ratos-toupeira 'Consertam' o Próprio DNA para Viver Séculos sem Câncer",
+      subtitle: "Estudos publicados na Nature e Science revelam mecanismos ultraeficientes de reparo genômico que podem ser a chave para retardar o envelhecimento humano.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "10 min",
+      pubTime: "02:00",
+      updateDate: "14/08/2026",
+      updateTime: "02:00",
+      cat: "Saúde & Ciência",
+      img: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "Baleias-da-Groenlândia podem viver mais de 200 anos graças a um sistema de 'vigilância' genética que impede o acúmulo de mutações.",
+      imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Por que uma baleia-da-groenlândia vive 200 anos enquanto um camundongo vive apenas dois? A resposta não está no tamanho, mas na eficiência com que suas células lidam com o erro. Duas pesquisas monumentais publicadas nesta semana nas revistas <strong>Nature</strong> e <strong>Science</strong> revelaram os mecanismos moleculares que permitem a certas espécies desafiar o relógio biológico [1].
+          </p>
+  
+          <p>Cientistas da <strong>University of Rochester</strong> identificaram que as baleias possuem uma variante ultraeficiente da proteína <strong>SIRT6</strong>, que atua como uma "equipe de limpeza" do DNA. Essa proteína é capaz de detectar e reparar quebras na fita dupla do código genético com uma precisão muito superior à humana, impedindo o surgimento de células cancerígenas e o desgaste tecidual [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Biologia Comparada</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Não é que essas espécies não sofram danos no DNA; elas sofrem, assim como nós. A diferença é que elas possuem 'algoritmos' biológicos de correção de erros que funcionam em tempo real, evitando que a mutação se torne permanente."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Vera Gorbunova, pesquisadora líder em longevidade.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Caso do Rato-Toupeira Pelado</h2>
+          <p>Enquanto as baleias focam no reparo, o rato-toupeira pelado (que vive 30 anos, 10x mais que outros roedores) utiliza uma estratégia diferente: a <strong>estabilidade proteômica</strong>. Suas células produzem proteínas que quase nunca se dobram errado, evitando doenças como o Alzheimer e Parkinson, que são causadas por "lixo" proteico no cérebro [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Espécie</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Expectativa de Vida</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Estratégia de Sobrevivência</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Baleia-da-Groenlândia</td>
+                  <td className="py-3 px-4">211 anos</td>
+                  <td className="py-3 px-4 text-green-400">Reparo de DNA ultra-rápido (SIRT6)</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Rato-toupeira Pelado</td>
+                  <td className="py-3 px-4">32 anos</td>
+                  <td className="py-3 px-4 text-green-400">Proteínas resistentes à deformação</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Humano</td>
+                  <td className="py-3 px-4">73 anos (média)</td>
+                  <td className="py-3 px-4 text-yellow-400">Reparo moderado; suscetível a mutações</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Da Natureza para a Clínica</h2>
+          <p>O objetivo final dessas pesquisas não é transformar humanos em baleias, mas sim desenvolver medicamentos que ativem nossas próprias proteínas de reparo. Já existem ensaios clínicos de Fase 1 testando compostos que mimetizam a SIRT6 da baleia em tecidos humanos, com resultados promissores na proteção contra danos causados pela radiação e quimioterapia.</p>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Nature. (2026). Longevity mechanisms in the bowhead whale and other long-lived mammals.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Science. (2026). Comparative genomics of DNA repair pathways across 50 species.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                University of Rochester Medical Center. (2026). Press Release: The whale protein that could stop aging.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
+    post_mapa_nervo_vago_2026: {
+    post_mapa_nervo_vago_2026: {
     post_mapa_nervo_vago_2026: {
       title: "Mapa Inédito do Nervo Vago: O 'Santo Graal' da Medicina Bioeletrônica é Revelado na Science",
       subtitle: "Estudo histórico mapeia 200 mil fibras nervosas e abre caminho para tratamentos ultraprecisos de doenças inflamatórias e neurológicas sem o uso de medicamentos.",

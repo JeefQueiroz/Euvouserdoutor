@@ -10,6 +10,7 @@ O ciclo editorial de 14 de agosto de 2026 inicia-se com uma descoberta fundament
 
 | Horário | Título da Matéria | Categoria | Fonte Primária |
 | :--- | :--- | :--- | :--- |
+| 09:30 | Cientistas Criam Espermatozoides em Laboratório | Inovação & Futuro | Nature |
 | 09:00 | Ciência Brasileira: Tratamento com Polilaminina em Lesão Medular | Saúde & Ciência | UFRJ / BBC |
 | 08:30 | Edição Genética de Dose Única Reduz Colesterol em 62% | Inovação & Futuro | NEJM / Verve |
 | 08:00 | SUS Adota Teste FIT para Rastrear Câncer de Intestino | Saúde Pública | Ministério da Saúde / INCA |
@@ -35,7 +36,7 @@ O ciclo editorial de 14 de agosto de 2026 inicia-se com uma descoberta fundament
 - **Saúde Pública:** Atualização sobre a cobertura vacinal de mRNA no Brasil.
 
 ## 4. Métricas e SEO
-- **Volume Inicial:** 18 publicações originais.
+- **Volume Inicial:** 19 publicações originais.
 - **Assinatura:** 100% das matérias assinadas por **EuvouserDoutor - Jeff Queiroz**.
 - **SEO:** Artigo Schema e Person Schema validados.
 - **Infraestrutura:** Build de produção estável e deploy concluído no GitHub.
