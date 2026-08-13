@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Reject unresolved merge markers
+        shell: bash
+        run: |
+          if grep -RIn --exclude-dir=node_modules --exclude-dir=dist -E '^(<<<<<<<|=======|>>>>>>>)' src; then
+            echo 'Unresolved Git merge markers found in src/.'
+            exit 1
+          fi
+
+      - name: Check whitespace errors
+        run: git diff --check
+
+      - name: Build production bundle
+        run: pnpm run build
