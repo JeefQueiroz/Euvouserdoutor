@@ -10,6 +10,7 @@ O ciclo editorial de 14 de agosto de 2026 inicia-se com uma descoberta fundament
 
 | Horário | Título da Matéria | Categoria | Fonte Primária |
 | :--- | :--- | :--- | :--- |
+| 11:00 | Ciência Nacional: Tecnologia Brasileira de Células 3D | Inovação Médica | CNPEM / FAPESP |
 | 10:30 | Mutação no Gene FNIP1 Reduz Gordura e Risco Cardíaco | Saúde & Ciência | Nature / Regeneron |
 | 10:00 | Fim do Comprimido Diário? Pílula Semanal Contra HIV | Inovação Médica | The Lancet / Gilead |
 | 09:30 | Cientistas Criam Espermatozoides em Laboratório | Inovação & Futuro | Nature |
@@ -38,7 +39,7 @@ O ciclo editorial de 14 de agosto de 2026 inicia-se com uma descoberta fundament
 - **Saúde Pública:** Atualização sobre a cobertura vacinal de mRNA no Brasil.
 
 ## 4. Métricas e SEO
-- **Volume Inicial:** 21 publicações originais.
+- **Volume Inicial:** 22 publicações originais.
 - **Assinatura:** 100% das matérias assinadas por **EuvouserDoutor - Jeff Queiroz**.
 - **SEO:** Artigo Schema e Person Schema validados.
 - **Infraestrutura:** Build de produção estável e deploy concluído no GitHub.

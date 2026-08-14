@@ -26,6 +26,11 @@ export const institutional = {
 };
 
 export const routeMeta = {
+  post_cnpem_3d_cells_microfluidics_2026: {
+    title: 'Tecnologia brasileira de células 3D revoluciona testes | EuvouserDoutor',
+    description: 'Pesquisadores do CNPEM desenvolvem plataforma microfluídica reversível para cultivo de células em 3D, oferecendo alternativa precisa ao uso de animais em testes de fármacos.',
+    path: '/noticias/tecnologia-brasileira-celulas-3d-cnpem-testes-medicamentos-2026',
+  },
   post_fnip1_gene_metabolism_2026: {
     title: 'Gene FNIP1: vantagem genética contra obesidade | EuvouserDoutor',
     description: 'Estudo na Nature com 1 milhão de pessoas revela que mutações no gene FNIP1 protegem contra gordura no fígado e diabetes.',
