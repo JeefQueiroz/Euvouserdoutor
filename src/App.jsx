@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { GoogleAnalytics } from './components/analytics/GoogleAnalytics';
 import { CookieConsent } from './components/CookieConsent';
 import { institutional, pathToView, routeMeta } from './institutional';
+import { BlogPost } from './pages/BlogPost';
 
 // Load page modules on demand so the news database and secondary pages do not enter the initial bundle.
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
@@ -12,7 +13,6 @@ const Materials = lazy(() => import('./pages/Materials').then(m => ({ default: m
 const Mentorship = lazy(() => import('./pages/Mentorship').then(m => ({ default: m.Mentorship })));
 const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage').then(m => ({ default: m.FlashcardsPage })));
 const Article = lazy(() => import('./pages/Article').then(m => ({ default: m.Article })));
-const BlogPost = lazy(() => import('./pages/BlogPost').then(m => ({ default: m.BlogPost })));
 const About = lazy(() => import('./pages/About').then(m => ({ default: m.About })));
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ default: m.PrivacyPolicy })));
