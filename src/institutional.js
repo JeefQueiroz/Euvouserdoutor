@@ -395,6 +395,7 @@ export const routeMeta = {
 };
 
 Object.assign(routeMeta, {
+  post_plcg2_alzheimer_synapses_2026: { title: 'Gene ligado ao Alzheimer afeta sinapses em neurônios humanos, mostra estudo | EuvouserDoutor', description: 'Pesquisa na Nature Genetics relaciona a redução de PLCG2 a alterações sinápticas e marcadores celulares do Alzheimer em culturas neuronais.', path: '/noticias/plcg2-sinapses-alzheimer-culturas-neuronais-2026' },
   post_amiloride_wfdc2_2026: { title: 'Medicamento comum para pressão pode tratar doença respiratória fatal | EuvouserDoutor', description: 'Estudo na Nature Communications investiga a relação entre WFDC2, insuficiência respiratória e o potencial terapêutico da amilorida.', path: '/noticias/amilorida-doenca-respiratoria-wfdc2-2026' },
   post_angiotomografia_coronariana_sus_2026: { title: 'SUS avalia inclusão de exame que identifica risco de infarto | EuvouserDoutor', description: 'Consulta pública avalia a incorporação da angiotomografia coronariana no Sistema Único de Saúde.', path: '/noticias/angiotomografia-coronariana-sus-2026' },
   post_coffee_brain_2026: { title: 'Café sem açúcar e conexões neurais: o que mostra o estudo | EuvouserDoutor', description: 'Estudo de longo prazo e análises de neuroimagem investigam associações entre consumo de café e saúde cerebral.', path: '/noticias/cafe-conexoes-neurais-cerebro-2026' },

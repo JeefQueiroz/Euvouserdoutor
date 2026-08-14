@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_plcg2_alzheimer_synapses_2026",
+      title: "Gene ligado ao Alzheimer afeta sinapses em neurônios humanos, mostra estudo",
+      subtitle: "Pesquisa na Nature Genetics relaciona a redução de PLCG2 a alterações sinápticas e a marcadores celulares da doença, mas ainda não testa tratamento em pessoas.",
+      cat: "Neurociência",
+      date: "14 Ago 2026",
+      readTime: "8 min",
+      img: "/plcg2_sinapses_alzheimer_2026.jpg",
+      target: "post_plcg2_alzheimer_synapses_2026",
+      featured: true,
+    },
+    {
       id: "post_fnip1_gene_metabolism_2026",
       title: "Vantagem Genética: Mutação no Gene FNIP1 Reduz Gordura e Risco Cardíaco",
       subtitle: "Estudo massivo na Nature identifica 'freio biológico' que protege contra obesidade e diabetes em 1 milhão de pessoas.",
