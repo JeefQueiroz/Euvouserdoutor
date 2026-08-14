@@ -5938,7 +5938,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       </div>
     )
   },
-  post_plcg2_alzheimer_synapses_2026: {
+  plcg2_alzheimer_synapses_2026: {
     title: "Gene ligado ao Alzheimer afeta sinapses em neurônios humanos, mostra estudo",
     subtitle: "Pesquisa publicada na Nature Genetics relaciona a redução de PLCG2 a falhas na comunicação entre neurônios e ao aumento de beta-amiloide e Tau em culturas celulares; resultado ainda não equivale a tratamento ou teste diagnóstico.",
     author: "EuvouserDoutor - Jeff Queiroz",
