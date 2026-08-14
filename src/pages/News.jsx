@@ -182,6 +182,17 @@ export const News = ({ setView }) => {
       target: "post_whale_longevity_dna_repair_2026",
     },
     {
+      id: "tbx5_gene_heart_2026",
+      title: "Gene 'Arquiteto' do Coração: Descoberta Revela Como Falha no DNA Causa Malformações Congênitas",
+      subtitle: "Pesquisa histórica publicada na Science demonstra que o gene TBX5 organiza o dobramento tridimensional do genoma nas células cardíacas; perda de apenas uma cópia provoca colapso estrutural e defeitos estruturais.",
+      cat: "Saúde & Ciência",
+      date: "13 Ago 2026",
+      readTime: "8 min",
+      img: "/tbx5_dna_heart_2026.jpg",
+      target: "post_tbx5_gene_heart_2026",
+      featured: true,
+    },
+    {
       id: "post_mapa_nervo_vago_2026",
       title: "Mapa Inédito do Nervo Vago: O 'Santo Graal' da Medicina Bioeletrônica é Revelado na Science",
       subtitle: "Estudo histórico mapeia 200 mil fibras nervosas e abre caminho para tratamentos ultraprecisos de doenças inflamatórias e neurológicas sem o uso de medicamentos.",
