@@ -26,6 +26,11 @@ export const institutional = {
 };
 
 export const routeMeta = {
+  post_fnip1_gene_metabolism_2026: {
+    title: 'Gene FNIP1: vantagem genética contra obesidade | EuvouserDoutor',
+    description: 'Estudo na Nature com 1 milhão de pessoas revela que mutações no gene FNIP1 protegem contra gordura no fígado e diabetes.',
+    path: '/noticias/gene-fnip1-protecao-obesidade-gordura-figado-2026',
+  },
   post_once_weekly_hiv_pill_2026: {
     title: 'Pílula semanal para HIV: avanço histórico | EuvouserDoutor',
     description: 'Estudo no The Lancet revela que a combinação de islatravir e lenacapavir mantém a supressão viral do HIV com apenas uma dose semanal.',
