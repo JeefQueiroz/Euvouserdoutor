@@ -20,6 +20,108 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    tbx5_gene_heart_2026: {
+      title: "Gene 'Arquiteto' do Coração: Descoberta Revela Como Falha no DNA Causa Malformações Congênitas",
+      subtitle: "Pesquisa histórica publicada na Science demonstra que o gene TBX5 organiza o dobramento tridimensional do genoma nas células cardíacas; perda de apenas uma cópia provoca colapso estrutural e defeitos estruturais.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "San Francisco / Belo Horizonte (MG)",
+      cat: "Saúde & Ciência",
+      time: "8 min",
+      date: "13/08/2026",
+      pubTime: "11:30",
+      updateDate: "13/08/2026",
+      updateTime: "11:30",
+      img: "/tbx5_dna_heart_2026.jpg",
+      imgCaption: "Visualização tridimensional conceitual do dobramento do DNA e das alças de cromatina dentro do núcleo de células musculares cardíacas em desenvolvimento.",
+      imgCredit: "Ilustração Editorial / EuvouserDoutor - Jeff Queiroz",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            As cardiopatias congênitas — defeitos cardíacos presentes desde o nascimento — afetam aproximadamente <strong>1 em cada 100 recém-nascidos</strong> em todo o mundo [1]. Agora, um estudo monumental publicado na prestigiada revista científica <em>Science</em> desvenda um dos mistérios mais duradouros da genética médica: como a perda de apenas uma cópia de um único gene pode desorganizar completamente a construção do órgão mais vital do corpo humano [2].
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-8 text-base md:text-lg font-medium">
+            Pesquisadores dos renomados <strong>Gladstone Institutes</strong> descobriram que o gene <strong>TBX5</strong> desempenha um papel muito além de simplesmente ditar a produção de proteínas. Ele atua como um verdadeiro <strong>arquiteto tridimensional</strong> do genoma, guiando o dobramento físico do DNA dentro das células cardíacas em desenvolvimento [3].
+          </p>
+
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <TrendingUp size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Mecanismo do Colapso 3D</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "O que descobrimos é que muitos defeitos congênitos podem acontecer não por uma mutação que altera a instrução de um único gene, mas porque o manual de instruções tridimensional da célula simplesmente se dobra da maneira errada. A perda de uma única cópia de TBX5 provoca o colapso das alças de cromatina em todos os níveis."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dr. Benoit Bruneau, Diretor do Gladstone Institute of Cardiovascular Disease.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter flex items-center gap-4">
+            <span className="w-2 h-8 bg-[#4F8CFF] rounded-full" /> O GPS Molecular: Como o TBX5 Organiza o Genoma
+          </h2>
+          
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            Durante o processo em que as células-tronco embrionárias se diferenciam em células do músculo cardíaco (cardiomiócitos), o genoma sofre reorganizações estruturais massivas. Regiões inteiras do DNA alternam entre estados ativos e inativos. A equipe liderada por Bruneau e pela bioestatística Dra. Katie Pollard revelou que o TBX5 funciona como um sistema de posicionamento global (GPS) para um motor molecular chamado <strong>coesina</strong> [4].
+          </p>
+
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            O TBX5 direciona a coesina para locais específicos no DNA, onde ela forma alças de cromatina que aproximam fisicamente os genes de seus elementos reguladores (os chamados <em>enhancers</em>). Quando a quantidade de TBX5 cai pela metade — uma condição genética conhecida como <strong>haploinsuficiência</strong> —, essas alças deixam de se formar adequadamente. O resultado é a desorganização espacial do genoma, impedindo que genes essenciais para o coração sejam ativados no momento certo [5].
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="text-[#4F8CFF] font-black text-4xl">50%</div>
+              <h3 className="text-white font-black text-lg">Déficit de Proteína</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed">
+                A perda de apenas uma cópia funcional do gene TBX5 reduz a proteína à metade, gerando falhas em cascata no dobramento celular.
+              </p>
+            </div>
+            <div className="bg-[#11141A] p-8 rounded-[32px] border border-white/[0.05] premium-border space-y-4">
+              <div className="text-[#4F8CFF] font-black text-4xl">3D</div>
+              <h3 className="text-white font-black text-lg">Colapso Estrutural</h3>
+              <p className="text-[#98A2B3] text-sm leading-relaxed">
+                A desestruturação atinge todos os níveis da arquitetura genômica: compartimentos, domínios topológicos e alças de cromatina.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Por Que Pacientes com a Mesma Mutação Apresentam Sintomas Diferentes?</h2>
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            Um dos grandes enigmas da genética clínica sempre foi a expressividade variável: por que dois membros da mesma família com exatamente a mesma mutação genética podem apresentar malformações cardíacas completamente diferentes — ou nenhuma anomalia? 
+          </p>
+          
+          <p className="text-[#98A2B3] leading-relaxed mb-6 text-base md:text-lg font-medium">
+            Utilizando modelos computacionais de célula única (single-cell), os pesquisadores descobriram que as células cardíacas individuais não respondem de forma idêntica à deficiência de TBX5. Foram observadas discrepâncias marcantes entre células atriais e ventriculares, além de variações sutis entre células individuais do mesmo tecido. Essa heterogeneidade celular explica a diversidade de fenótipos clínicos observados em pacientes [6].
+          </p>
+
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3 mb-12">
+            <h3 className="text-[#F8FAFC] font-bold text-lg mb-2">Por Que Isso Importa</h3>
+            <p className="text-[#98A2B3] text-sm leading-relaxed italic">
+              Ao provar que o dobramento incorreto do DNA é um mecanismo central em defeitos congênitos, o estudo abre portas para futuras terapias epigenéticas e de engenharia cromossômica, mudando o foco da correção estrita de sequências genéticas para a restauração da arquitetura tridimensional do núcleo celular.
+            </p>
+          </div>
+
+          <h2 className="text-xl md:text-2xl font-black text-[#F8FAFC] mb-6 tracking-tighter">Referências & Fontes Científicas</h2>
+          <div className="bg-white/[0.02] border border-white/[0.05] rounded-[24px] p-6 space-y-3">
+            {[
+              "World Health Organization (WHO) & Centers for Disease Control and Prevention (CDC). Global Epidemiology of Congenital Heart Defects. 2026.",
+              "Kuang, S., Grant, Z., Pollard, K. S., & Bruneau, B. G. TBX5 organizes 3D genome architecture during cardiomyocyte differentiation. Science. August, 2026.",
+              "Gladstone Institutes. Researchers say a faulty gene copy can make the heart's DNA fold wrong way. News Release / ANI. August 13, 2026.",
+              "Bruneau, B. G. Transcriptional networks and the 3D genome in cardiac development. Nature Reviews Cardiology. 2026."
+            ].map((ref, i) => (
+              <div key={i} className="flex gap-3 text-xs text-[#98A2B3] font-medium leading-relaxed">
+                <span className="text-[#4F8CFF] font-black">[{i+1}]</span>
+                <span>{ref}</span>
+              </div>
+            ))}
+          </div>
+        </>
+      )
+    },
     post_mapa_nervo_vago_2026: {
       title: "Mapa Inédito do Nervo Vago: O 'Santo Graal' da Medicina Bioeletrônica é Revelado na Science",
       subtitle: "Estudo histórico mapeia 200 mil fibras nervosas e abre caminho para tratamentos ultraprecisos de doenças inflamatórias e neurológicas sem o uso de medicamentos.",

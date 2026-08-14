@@ -26,7 +26,13 @@ export const institutional = {
 };
 
 export const routeMeta = {
-  post_hearing_gene_therapy_2026: {
+  post_tbx5_gene_heart_2026: {
+    title: 'Gene "Arquiteto" do Coração Explica Origem de Malformações Congênitas | EuvouserDoutor',
+    description: 'Estudo publicado na Science revela que o gene TBX5 organiza o dobramento tridimensional do DNA nas células cardíacas; perda de uma cópia causa o colapso genômico.',
+    image: '/tbx5_dna_heart_2026.jpg',
+    path: '/noticias/gene-arquiteto-coracao-malformacoes-congenitas-2026',
+  },
+  post_mounjaro_apneia_sono_2026: {
     title: 'Terapia Gênica Restaura Audição Natural em Estudo Histórico na Nature | EuvouserDoutor',
     description: 'Pesquisa publicada na Nature e Nature Medicine revela que a terapia gênica baseada em vetores AAV restaura a audição natural em pacientes com surdez congênita por até 2,5 anos.',
     path: '/noticias/tererapia-genetica-restaura-audicao-nature-2026',
