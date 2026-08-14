@@ -119,7 +119,7 @@ export const routeMeta = {
   post_hearing_gene_therapy_2026: {
     title: 'Terapia Gênica Restaura Audição Natural em Estudo Histórico na Nature | EuvouserDoutor',
     description: 'Pesquisa publicada na Nature e Nature Medicine revela que a terapia gênica baseada em vetores AAV restaura a audição natural em pacientes com surdez congênita por até 2,5 anos.',
-    path: '/noticias/tererapia-genetica-restaura-audicao-nature-2026',
+    path: '/noticias/terapia-genetica-restaura-audicao-nature-2026',
   },
   post_ebola_outbreak_drc_2026: {
     title: 'Ebola: OMS Alerta para Segunda Maior Epidemia da História | EuvouserDoutor',

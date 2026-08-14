@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink, GraduationCap, Layers, TrendingUp, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, ChevronRight, CheckCircle2, Quote, Sparkles, Target, Bookmark, MessageSquare, ExternalLink, GraduationCap, Layers, TrendingUp, AlertTriangle, Dna, Activity, Stethoscope, Brain, ShieldCheck, Microscope, Heart } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 import { SafeImage } from '../components/SafeImage';
 import { institutional } from '../institutional';
