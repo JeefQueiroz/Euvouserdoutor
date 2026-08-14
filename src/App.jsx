@@ -24,21 +24,31 @@ const Author = lazy(() => import('./pages/Author').then(m => ({ default: m.Autho
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 export default function App() {
-  const initialView = pathToView[window.location.pathname] || 'home';
+  const resolveView = (pathname) => pathToView[pathname] ?? 'notfound';
+  const initialView = resolveView(window.location.pathname);
   const [view, setView] = useState(initialView);
   const telegram = institutional.telegram;
   const profileImg = "/jeff-queiroz-perfil.jpg";
 
   const navigate = (nextView) => {
+    if (typeof nextView !== 'string' || !routeMeta[nextView]) {
+      console.error('Invalid view:', nextView);
+      setView('notfound');
+      if (window.location.pathname !== routeMeta.notfound.path) {
+        window.history.pushState({}, '', routeMeta.notfound.path);
+      }
+      return;
+    }
+
     setView(nextView);
-    const path = routeMeta[nextView]?.path;
-    if (path && window.location.pathname !== path) {
+    const path = routeMeta[nextView].path;
+    if (window.location.pathname !== path) {
       window.history.pushState({}, '', path);
     }
   };
 
   useEffect(() => {
-    const onPopState = () => setView(pathToView[window.location.pathname] || 'home');
+    const onPopState = () => setView(resolveView(window.location.pathname));
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
@@ -62,17 +72,69 @@ export default function App() {
     setMeta('meta[name="twitter:title"]', 'content', meta.title);
     setMeta('meta[name="twitter:description"]', 'content', meta.description);
     setMeta('link[rel="canonical"]', 'href', canonicalUrl);
+
+    const imageUrl = `${institutional.site}${meta.image || '/logo-euvouserdoutor.png'}`;
+    const isArticle = typeof view === 'string' && view.startsWith('post_');
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': `${institutional.site}/#organization`,
+          name: 'EuvouserDoutor',
+          url: institutional.site,
+          logo: `${institutional.site}/logo-euvouserdoutor.png`,
+          founder: { '@id': `${institutional.site}/autor/jeff-queiroz#person` },
+        },
+        {
+          '@type': 'Person',
+          '@id': `${institutional.site}/autor/jeff-queiroz#person`,
+          name: 'Jeff Queiroz',
+          url: `${institutional.site}/autor/jeff-queiroz`,
+          image: `${institutional.site}/jeff-queiroz-perfil.jpg`,
+          worksFor: { '@id': `${institutional.site}/#organization` },
+        },
+        {
+          '@type': isArticle ? 'NewsArticle' : 'WebPage',
+          '@id': `${canonicalUrl}#${isArticle ? 'article' : 'webpage'}`,
+          url: canonicalUrl,
+          headline: meta.title,
+          name: meta.title,
+          description: meta.description,
+          image: imageUrl,
+          inLanguage: 'pt-BR',
+          author: { '@id': `${institutional.site}/autor/jeff-queiroz#person` },
+          creator: { '@id': `${institutional.site}/autor/jeff-queiroz#person` },
+          publisher: { '@id': `${institutional.site}/#organization` },
+          ...(isArticle ? {
+            ...(meta.datePublished ? { datePublished: meta.datePublished } : {}),
+            ...(meta.dateModified ? { dateModified: meta.dateModified } : {}),
+            mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+          } : {}),
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Início', item: `${institutional.site}/` },
+            ...(isArticle || view === 'news' ? [{ '@type': 'ListItem', position: 2, name: 'Notícias', item: `${institutional.site}/noticias` }] : []),
+            ...(isArticle ? [{ '@type': 'ListItem', position: 3, name: meta.title, item: canonicalUrl }] : []),
+          ],
+        },
+      ],
+    };
+    let jsonLdScript = document.head.querySelector('#evd-jsonld');
+    if (!jsonLdScript) {
+      jsonLdScript = document.createElement('script');
+      jsonLdScript.id = 'evd-jsonld';
+      jsonLdScript.type = 'application/ld+json';
+      document.head.appendChild(jsonLdScript);
+    }
+    jsonLdScript.textContent = JSON.stringify(jsonLd);
   }, [view]);
 
-  // Protected route check simulation
-  const meta = routeMeta[view] || routeMeta.home;
-  if (meta?.requiresAuth) {
-    const isAuthenticated = localStorage.getItem('evd_auth_token');
-    if (!isAuthenticated) {
-      // If not authenticated, fallback or redirect to home / login
-      // For demonstration, we can redirect or show a notice
-    }
-  }
+  // Não há autenticação server-side disponível neste frontend estático.
+  // A rota administrativa não pode expor uma área que pareça protegida apenas por React.
+  const meta = routeMeta[view] || routeMeta.notfound;
 
   return (
     <div className="min-h-screen bg-[#080A0F] font-sans selection:bg-[#4F8CFF] selection:text-white text-left">
@@ -98,19 +160,8 @@ export default function App() {
           {view === 'medicalDisclaimer' && <MedicalDisclaimer />}
           {view === 'intellectualProperty' && <IntellectualProperty />}
           {view === 'cookies' && <CookiePolicy />}
-          {view === 'admin' && (
-            <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-              <h1 className="text-3xl font-bold text-[#0A192F] mb-4">Painel Administrativo Restrito</h1>
-              <p className="text-gray-600 mb-6">Esta área é restrita para gestão editorial do portal EuvouserDoutor.</p>
-              <button 
-                onClick={() => navigate('home')}
-                className="bg-[#2E70CE] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
-              >
-                Voltar ao Início
-              </button>
-            </div>
-          )}
-          {view.startsWith('post_') && <BlogPost setView={navigate} postId={view.replace('post_', '')} profileImg={profileImg} telegram={telegram} />}
+          {view === 'admin' && <NotFound setView={navigate} />}
+          {typeof view === 'string' && view.startsWith('post_') && <BlogPost setView={navigate} postId={view.replace('post_', '')} profileImg={profileImg} telegram={telegram} />}
           {view === 'notfound' && <NotFound setView={navigate} />}
         </Suspense>
       </main>

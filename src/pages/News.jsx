@@ -204,28 +204,6 @@ export const News = ({ setView }) => {
       featured: true,
     },
     {
-      id: "post_prep_mensal_mk8527_2026",
-      title: "PrEP Mensal: Comprimido Único Contra HIV Avança para Fase Final com Testes no Brasil",
-      subtitle: "Estudo global avalia o MK-8527, novo antirretroviral de longa duração que promete simplificar a prevenção do HIV e aumentar a adesão ao tratamento preventivo.",
-      cat: "Saúde Pública",
-      date: "12 Ago 2026",
-      readTime: "7 min",
-      img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
-      target: "post_prep_mensal_mk8527_2026",
-      featured: false,
-    },
-    {
-      id: "sensor_levitante_cerebral_2026",
-      title: "Sensor Quântico Levitante Consegue Detectar Atividade Cerebral Ultra-Fraca",
-      subtitle: "Estudo publicado na Nature revela magnetômetro de ímã levitado à temperatura ambiente que atinge sensibilidade sem precedentes, rivalizando com criogenia avançada.",
-      cat: "Tecnologia Médica",
-      date: "12 Ago 2026",
-      readTime: "6 min",
-      img: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=1200",
-      target: "post_sensor_levitante_cerebral_2026",
-      featured: false,
-    },
-    {
       id: "cintura_imc_2026",
       title: "Tamanho da Cintura é Melhor que o IMC para Prever Risco Cardíaco, Revela Estudo com 260 Mil Pessoas",
       subtitle: "Pesquisa publicada no JACC mostra que gordura abdominal identifica perigos ao coração mesmo em quem tem peso considerado normal; entenda os novos limites.",
@@ -816,9 +794,10 @@ export const News = ({ setView }) => {
           <div className="lg:col-span-8 xl:col-span-9 space-y-12">
             {/* Featured Post */}
             {featuredPost && selectedCategory === 'Todas' && (
-              <div 
+              <button
+                type="button"
                 onClick={() => setView(featuredPost.target)}
-                className="group cursor-pointer relative rounded-[48px] overflow-hidden border border-white/[0.05] bg-[#11141A] hover-lift transition-all duration-500"
+                className="w-full text-left group cursor-pointer relative rounded-[48px] overflow-hidden border border-white/[0.05] bg-[#11141A] hover-lift transition-all duration-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4F8CFF]"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <div className="aspect-[4/3] md:aspect-auto overflow-hidden relative">
@@ -855,16 +834,17 @@ export const News = ({ setView }) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </button>
             )}
 
             {/* Post Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               {(selectedCategory === 'Todas' ? [...recentPosts, ...otherPosts] : filteredPosts).map((post, idx) => (
-                <div 
+                <button
+                  type="button"
                   key={post.id}
                   onClick={() => setView(post.target)}
-                  className="group cursor-pointer bg-[#11141A] rounded-[40px] border border-white/[0.05] overflow-hidden hover-lift transition-all duration-500 flex flex-col h-full"
+                  className="w-full text-left group cursor-pointer bg-[#11141A] rounded-[40px] border border-white/[0.05] overflow-hidden hover-lift transition-all duration-500 flex flex-col h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4F8CFF]"
                 >
                   <div className="aspect-[16/10] overflow-hidden relative">
                     <SafeImage 
@@ -895,7 +875,7 @@ export const News = ({ setView }) => {
                       Ler Matéria Completa <ArrowRight size={14} strokeWidth={3} />
                     </div>
                   </div>
-                </div>
+                </button>
               ))}
             </div>
           </div>

@@ -2,5 +2,333 @@
   "buildCommand": "vite build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "redirects": [
+    {
+      "source": "/noticias/tererapia-genetica-restaura-audicao-nature-2026",
+      "destination": "/noticias/terapia-genetica-restaura-audicao-nature-2026",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/autor/jeff-queiroz",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/fnip1-gene-metabolismo-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/pilula-semanal-hiv-islatravir-lenacapavir-lancet-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/cientistas-criam-espermatozoides-laboratorio-nature-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/polilaminina-tratamento-brasileiro-lesao-medular-resultados-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/edicao-genetica-verve-102-colesterol-reducao-sustentada-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/sus-inclui-teste-fit-rastreamento-cancer-colorretal-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ia-cientista-limites-pesquisa-autonoma-nature-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/moderna-vacina-mrna-gripe-aprovacao-fda-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/fraude-alzheimer-investigacao-revista-science-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/cintura-vs-imc-risco-cardiovascular-estudo-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ia-generativa-descoberta-farmacos-benchmark-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/anvisa-aprova-duvyzat-distrofia-duchenne-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/dengue-brasil-balanco-2026-queda-casos",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/cancer-cabeca-pescoço-quimio-imunoterapia-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/minirrobos-acusticos-sem-bateria-science-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/gene-arquiteto-coracao-falha-dna-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/vanilina-vape-celulas-embrionarias-risco-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/longevidade-baleias-reparo-dna-nature-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ebola-alerta-oms-segunda-maior-epidemia-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ia-oncologia-personaliza-tratamento-linfoma-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/alerta-silicose-bancadas-quartzo-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ia-ressonancia-joelho-acelerada-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/vacina-hiv-anticorpos-potentes-nature-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/bloqueio-genetico-doenca-huntington-msh3-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/brasil-testa-polipilula-avc-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/brocolis-composto-natural-ataxia-friedreich-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ia-vasos-olho-estima-anemia-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/marca-passo-cerebral-programas-geneticos-nature-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/aneis-inteligentes-estudo-nature-saude-cardiovascular-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/implante-cerebral-neo-comercial-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/limpeza-sangue-pfas-microplasticos-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/microbiota-psicopatia-estudo-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/chip-eny-orgao-em-chip-unb-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/ozempic-vicio-septo-lateral-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/teste-sangue-ucla-rastreamento-cancer-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/parkinson-ritmo-cerebral-dbs-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/",
+      "destination": "/"
+    },
+    {
+      "source": "/contato",
+      "destination": "/"
+    },
+    {
+      "source": "/politica-de-privacidade",
+      "destination": "/"
+    },
+    {
+      "source": "/termos-de-uso",
+      "destination": "/"
+    },
+    {
+      "source": "/aviso-de-responsabilidade-medica",
+      "destination": "/"
+    },
+    {
+      "source": "/propriedade-intelectual",
+      "destination": "/"
+    },
+    {
+      "source": "/politica-de-cookies",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/nanoparticula-mrna-car-t-in-vivo-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/omega3-cancer-imunoterapia-risco-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/cirurgia-controversa-alzheimer-reversao-sintomas-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/teste-fezes-rastreamento-cancer-colorretal-sus-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/anvisa-revoga-bloqueios-apps-medicamentos-regulamentacao-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/materiais",
+      "destination": "/"
+    },
+    {
+      "source": "/mentoria",
+      "destination": "/"
+    },
+    {
+      "source": "/flashcards",
+      "destination": "/"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/sarampo-americas-vacinacao-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/daraxonrasib-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/retina-chip-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/como-estudar-medicina-metodo-constancia",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/terapia-cart-nacional-remissao-cancer",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/oxford-ensaio-clinico-vacina-ebola",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/polilaminina-regeneracao-neural",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/tecnica-pomodoro-foco-estudos",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/revisao-espacada-pratica-medicina",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/metodo-feynman-aprendizado-acelerado",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/mapas-mentais-resumos-ativos",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/autoavaliacao-simulados-estrategia",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/cintura-imc-risco-cardiovascular-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/mapa-nervo-vago-medicina-bioeletronica-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/amilorida-doenca-respiratoria-wfdc2-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/angiotomografia-coronariana-sus-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/cafe-conexoes-neurais-cerebro-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/fibromialgia-arquitetura-genetica-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/gel-planta-chica-unicamp-feridas-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/lentes-contato-3d-waterloo-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/terapia-genetica-leucemia-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/pilula-oral-glp1-fase-2-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/origem-da-vida-dupla-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/dieta-paterna-ultraprocessados-epigenetica-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/transplante-fecal-alergia-amendoim-2026",
+      "destination": "/"
+    },
+    {
+      "source": "/noticias/queratina-la-regeneracao-ossea-2026",
+      "destination": "/"
+    }
+  ]
 }
