@@ -28,7 +28,7 @@ if post_id not in n:
     n = n.replace('  const posts = [\n', '  const posts = [\n' + card, 1)
     news.write_text(n)
 
-article = f'''  {post_id}: {{
+article = f'''  plcg2_alzheimer_synapses_2026: {{
     title: "Gene ligado ao Alzheimer afeta sinapses em neurônios humanos, mostra estudo",
     subtitle: "Pesquisa publicada na Nature Genetics relaciona a redução de PLCG2 a falhas na comunicação entre neurônios e ao aumento de beta-amiloide e Tau em culturas celulares; resultado ainda não equivale a tratamento ou teste diagnóstico.",
     author: "EuvouserDoutor - Jeff Queiroz",
@@ -99,7 +99,7 @@ article = f'''  {post_id}: {{
 '''
 
 b = blog.read_text()
-if post_id not in b:
+if '  plcg2_alzheimer_synapses_2026:' not in b:
     marker = '  };\n\n  const post = postsData[postId]'
     if marker not in b:
         raise SystemExit('marcador de postsData não encontrado')
