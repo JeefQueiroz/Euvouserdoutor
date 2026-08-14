@@ -20,6 +20,108 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    post_once_weekly_hiv_pill_2026: {
+      title: "Fim do Comprimido Diário? Pílula Semanal Contra HIV Apresenta Resultados Históricos no The Lancet",
+      subtitle: "Estudo de Fase 3 revela que a combinação de islatravir e lenacapavir mantém a supressão viral com apenas uma dose por semana, abrindo caminho para uma nova era no tratamento da Aids.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "8 min",
+      pubTime: "10:00",
+      updateDate: "14/08/2026",
+      updateTime: "10:00",
+      cat: "Inovação Médica",
+      img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A nova pílula semanal combina dois antirretrovirais de longa duração, simplificando drasticamente a rotina de quem vive com HIV.",
+      imgCredit: "Foto: Reprodução / Gilead Sciences / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            A medicina acaba de quebrar uma das maiores barreiras psicológicas e logísticas do tratamento do HIV: a necessidade de tomar remédios todos os dias. Em um estudo de Fase 3 publicado na prestigiada revista <strong>The Lancet</strong>, pesquisadores confirmaram que uma única pílula semanal é tão eficaz quanto o regime diário padrão [1].
+          </p>
+  
+          <p>A combinação experimental utiliza dois fármacos de última geração: o <strong>islatravir</strong> (um inibidor de translocação da transcriptase reversa análogo de nucleosídeo) e o <strong>lenacapavir</strong> (um inibidor do capsídeo do HIV). Ambos possuem uma meia-vida longa, o que permite que a concentração terapêutica permaneça estável no sangue por sete dias inteiros [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Salto na Adesão</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Reduzir a carga de 365 comprimidos por ano para apenas 52 é uma revolução na qualidade de vida. Isso diminui o estigma, o 'lembrete diário' da doença e aumenta drasticamente as chances de o paciente nunca falhar no tratamento."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dra. Chloe Orkin, pesquisadora líder do estudo ARTISTRY-1.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Resultados do Estudo ISLEND-2</h2>
+          <p>O ensaio clínico de Fase 3 acompanhou adultos com HIV que já estavam com carga viral indetectável e decidiram trocar o regime diário pela nova pílula semanal. Após 48 semanas, os resultados foram impressionantes: <strong>94,2%</strong> dos participantes mantiveram a supressão viral, um índice idêntico ao grupo que continuou com a terapia diária [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Indicador</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Terapia Diária (B/F/TAF)</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Terapia Semanal (ISL/LEN)</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Supressão Viral (Semana 48)</td>
+                  <td className="py-3 px-4">94,3%</td>
+                  <td className="py-3 px-4 text-green-400">94,2%</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Falha Virológica</td>
+                  <td className="py-3 px-4">&lt; 1%</td>
+                  <td className="py-3 px-4 text-green-400">&lt; 1%</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Efeitos Colaterais</td>
+                  <td className="py-3 px-4">Mínimos</td>
+                  <td className="py-3 px-4 text-green-400">Mínimos (Leves)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Por que Isso Importa?</h2>
+          <p>A "fadiga do tratamento" é um dos maiores vilões no combate ao HIV. Muitos pacientes abandonam a medicação devido à rotina exaustiva ou para evitar serem descobertos por amigos e familiares. Uma dose única semanal, que pode ser tomada discretamente no domingo, por exemplo, resolve grande parte desse problema social e clínico.</p>
+  
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">O que vem agora</h3>
+            <p className="text-[#CBD5E1] text-sm leading-relaxed">
+              As fabricantes Merck e Gilead já submeteram os dados à FDA (EUA) e à EMA (Europa) para aprovação emergencial. No Brasil, a expectativa é que o dossiê chegue à <strong>Anvisa</strong> no primeiro semestre de 2027. Se aprovado, o medicamento poderá ser uma ferramenta poderosa para o Ministério da Saúde atingir as metas da ONU de erradicação da Aids como ameaça à saúde pública.
+            </p>
+          </div>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                The Lancet. (2026). Switch to once-weekly islatravir–lenacapavir for HIV-1 suppression: week 48 results of a phase 3 trial.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Gilead Sciences & Merck. (2026). Positive Topline Results from ISLEND-2 Study.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                AIDS 2026 Conference. (2026). Long-acting oral therapies: the new frontier in HIV management.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
     post_lab_grown_sperm_nature_2026: {
       title: "Revolução na Fertilidade: Cientistas Criam Espermatozoides Humanos em Laboratório a Partir de Células-Tronco",
       subtitle: "Descoberta histórica publicada na revista Nature revela técnica que gera células germinativas humanas e abre caminho para o fim da infertilidade masculina definitiva.",

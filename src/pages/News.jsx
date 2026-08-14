@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_once_weekly_hiv_pill_2026",
+      title: "Fim do Comprimido Diário? Pílula Semanal Contra HIV Apresenta Resultados Históricos",
+      subtitle: "Estudo de Fase 3 no The Lancet revela que a combinação de islatravir e lenacapavir mantém a supressão viral com apenas uma dose por semana.",
+      cat: "Inovação Médica",
+      date: "14 Ago 2026",
+      readTime: "8 min",
+      img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1200",
+      target: "post_once_weekly_hiv_pill_2026",
+      featured: true,
+    },
+    {
       id: "post_lab_grown_sperm_nature_2026",
       title: "Revolução na Fertilidade: Cientistas Criam Espermatozoides em Laboratório",
       subtitle: "Descoberta histórica na Nature revela técnica que gera células germinativas humanas a partir de células-tronco.",

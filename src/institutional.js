@@ -26,6 +26,11 @@ export const institutional = {
 };
 
 export const routeMeta = {
+  post_once_weekly_hiv_pill_2026: {
+    title: 'Pílula semanal para HIV: avanço histórico | EuvouserDoutor',
+    description: 'Estudo no The Lancet revela que a combinação de islatravir e lenacapavir mantém a supressão viral do HIV com apenas uma dose semanal.',
+    path: '/noticias/pilula-semanal-hiv-islatravir-lenacapavir-lancet-2026',
+  },
   post_lab_grown_sperm_nature_2026: {
     title: 'Cientistas criam espermatozoides em laboratório | EuvouserDoutor',
     description: 'Descoberta na revista Nature revela que é possível gerar espermatozoides humanos a partir de células-tronco, abrindo novas fronteiras na fertilidade.',
