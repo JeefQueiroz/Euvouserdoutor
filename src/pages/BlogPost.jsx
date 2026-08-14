@@ -20,6 +20,108 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    post_cnpem_3d_cells_microfluidics_2026: {
+      title: "Ciência Nacional: Tecnologia Brasileira de Células 3D Revoluciona Testes de Remédios e Reduz Uso de Animais",
+      subtitle: "Desenvolvida no CNPEM, plataforma microfluídica inédita simula tecidos humanos com alta precisão, permitindo avaliar toxicidade de fármacos e poluentes em tempo real.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "7 min",
+      pubTime: "11:00",
+      updateDate: "14/08/2026",
+      updateTime: "11:00",
+      cat: "Inovação Médica",
+      img: "https://images.unsplash.com/photo-1579152276506-5d5244355461?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A nova plataforma permite que as células cresçam em ambientes que mimetizam a arquitetura real dos órgãos humanos, aumentando a fidelidade dos testes.",
+      imgCredit: "Foto: Divulgação / CNPEM / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            O Brasil acaba de dar um passo decisivo rumo à liderança na biotecnologia mundial. Pesquisadores do <strong>Centro Nacional de Pesquisa em Energia e Materiais (CNPEM)</strong>, em Campinas, desenvolveram uma plataforma microfluídica reversível que permite o cultivo de células em estruturas <strong>tridimensionais (3D)</strong> de alta fidelidade [1].
+          </p>
+  
+          <p>A inovação brasileira resolve um dos maiores gargalos da indústria farmacêutica: a baixa precisão dos testes em 2D (células cultivadas em placas planas), que muitas vezes não refletem como o corpo humano reagirá a uma substância. Além disso, a tecnologia surge como uma alternativa ética e eficiente ao uso de animais em laboratórios, acelerando a aprovação de novos tratamentos [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Microscope size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">Soberania Científica</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "Essa plataforma não apenas melhora a qualidade dos dados científicos, mas também democratiza o acesso a tecnologias de ponta para pesquisadores brasileiros, reduzindo a dependência de importações caras."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Comunicado oficial do CNPEM sobre a nova plataforma.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Como Funciona a Microfluídica 3D</h2>
+          <p>O dispositivo consiste em canais microscópicos onde fluidos circulam simulando o fluxo sanguíneo e a entrega de nutrientes. Dentro desses canais, as células se organizam em camadas sobrepostas, criando um microambiente que mimetiza tecidos reais. A grande vantagem da plataforma do CNPEM é ser <strong>reversível</strong>, permitindo que os pesquisadores abram o dispositivo para coletar e analisar as células após o experimento sem destruí-las [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Característica</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Cultura 2D Tradicional</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Plataforma CNPEM (3D)</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Estrutura</td>
+                  <td className="py-3 px-4">Camada plana e artificial</td>
+                  <td className="py-3 px-4 text-green-400">Arquitetura de tecido real</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Fidelidade Biológica</td>
+                  <td className="py-3 px-4">Baixa</td>
+                  <td className="py-3 px-4 text-green-400">Alta</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Previsão de Toxicidade</td>
+                  <td className="py-3 px-4">Limitada</td>
+                  <td className="py-3 px-4 text-green-400">Superior (até 30% mais precisa)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Aplicações e Impacto Social</h2>
+          <p>A tecnologia será disponibilizada para usuários externos, permitindo que universidades e empresas testem a toxicidade de nanomateriais, novos fármacos e até o impacto de poluentes ambientais na saúde humana. No futuro, a integração com o acelerador de partículas <strong>Sirius</strong> permitirá observar, em nível atômico, como as moléculas interagem com esses tecidos artificiais.</p>
+  
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Análise do Especialista</h3>
+            <p className="text-[#CBD5E1] text-sm leading-relaxed">
+              <strong>Jeff Queiroz:</strong> "O CNPEM reafirma o papel do Brasil como exportador de inteligência. Ao criar métodos que reduzem o sofrimento animal e aumentam a segurança para humanos, estamos desenhando o futuro da medicina personalizada e sustentável."
+            </p>
+          </div>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                CNPEM. (2026). Testes de toxicidade mais próximos da realidade: nova plataforma microfluídica.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Agência FAPESP. (2026). Dispositivo brasileiro simula tecidos humanos e oferece alternativa à experimentação animal.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Metrópoles Saúde. (2026). Tecnologia brasileira cultiva células em 3D e avalia medicamentos.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
     post_fnip1_gene_metabolism_2026: {
       title: "Vantagem Genética: Mutação Rara no Gene FNIP1 Reduz Gordura no Fígado e Risco Cardíaco em 60%",
       subtitle: "Estudo massivo com 1 milhão de pessoas publicado na Nature identifica 'freio biológico' que protege contra obesidade e diabetes; descoberta abre caminho para novos tratamentos metabólicos.",

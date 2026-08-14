@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_cnpem_3d_cells_microfluidics_2026",
+      title: "Ciência Nacional: Tecnologia Brasileira de Células 3D Revoluciona Testes de Remédios",
+      subtitle: "Desenvolvida no CNPEM, plataforma inédita simula tecidos humanos e reduz a necessidade de testes em animais.",
+      cat: "Inovação Médica",
+      date: "14 Ago 2026",
+      readTime: "7 min",
+      img: "https://images.unsplash.com/photo-1579152276506-5d5244355461?auto=format&fit=crop&q=80&w=1200",
+      target: "post_cnpem_3d_cells_microfluidics_2026",
+      featured: true,
+    },
+    {
       id: "post_fnip1_gene_metabolism_2026",
       title: "Vantagem Genética: Mutação no Gene FNIP1 Reduz Gordura e Risco Cardíaco",
       subtitle: "Estudo massivo na Nature identifica 'freio biológico' que protege contra obesidade e diabetes em 1 milhão de pessoas.",
