@@ -329,6 +329,10 @@
     {
       "source": "/noticias/queratina-la-regeneracao-ossea-2026",
       "destination": "/"
+    },
+    {
+      "source": "/noticias/plcg2-sinapses-alzheimer-culturas-neuronais-2026",
+      "destination": "/"
     }
   ]
 }
