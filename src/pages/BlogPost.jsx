@@ -534,7 +534,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       updateDate: "14/08/2026",
       updateTime: "08:00",
       cat: "Saúde Pública",
-      img: "https://images.unsplash.com/photo-1579152276506-5d5244355461?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
       imgCaption: "O teste FIT utiliza anticorpos específicos para detectar sangue humano nas fezes, eliminando os falsos positivos comuns em testes antigos.",
       imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
       content: (
@@ -888,7 +888,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       updateDate: "14/08/2026",
       updateTime: "06:00",
       cat: "Saúde & Ciência",
-      img: "https://images.unsplash.com/photo-1506467681486-112bcc119db4?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&q=80&w=1200",
       imgCaption: "A gordura acumulada na região abdominal é metabolicamente mais ativa e perigosa para as artérias do que a gordura subcutânea em outras partes do corpo.",
       imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
       content: (
@@ -978,7 +978,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       updateDate: "14/08/2026",
       updateTime: "05:30",
       cat: "Inovação & Futuro",
-      img: "https://images.unsplash.com/photo-1532187875605-1ef6c237dd1d?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
       imgCaption: "A inteligência artificial generativa consegue projetar moléculas inéditas com propriedades terapêuticas específicas em frações de segundo.",
       imgCredit: "Foto: Reprodução / Insilico Medicine / Banco Editorial EuvouserDoutor",
       content: (
@@ -1160,7 +1160,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       updateDate: "14/08/2026",
       updateTime: "04:30",
       cat: "Saúde Pública",
-      img: "https://images.unsplash.com/photo-1579152276506-5d5244355461?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
       imgCaption: "O monitoramento por satélite e o uso de inteligência artificial permitiram ao Ministério da Saúde antecipar surtos em 2026.",
       imgCredit: "Foto: Divulgação / Ministério da Saúde / Banco Editorial EuvouserDoutor",
       content: (
@@ -1532,7 +1532,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       updateDate: "14/08/2026",
       updateTime: "02:30",
       cat: "Saúde Pública",
-      img: "https://images.unsplash.com/photo-1603508103977-80254924765a?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200",
       imgCaption: "A vanilina é um dos aromatizantes mais populares em dispositivos eletrônicos de fumar, mas sua inalação pode ter efeitos sistêmicos desconhecidos.",
       imgCredit: "Foto: Reprodução / Unsplash / Banco Editorial EuvouserDoutor",
       content: (
@@ -2036,7 +2036,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "22:15",
     cat: "Saúde Pública",
-    img: "/editorial/ebola_congo_2026.png",
+    img: "/editorial/ebola_congo_2026.webp",
     imgCaption: "Ilustração editorial de uma equipe de resposta em saúde pública durante um surto de Ebola na República Democrática do Congo.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -2136,7 +2136,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       time: "7 min",
       date: "12 Ago 2026",
       pubTime: "23:25",
-      img: "https://images.unsplash.com/photo-1506467681486-112bcc119db4?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&q=80&w=1200",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -2448,7 +2448,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "19:15",
     cat: "Saúde & Ciência",
-    img: "/editorial/ia_oncologia_linfoma_2026.png",
+    img: "/editorial/ia_oncologia_linfoma_2026.webp",
     imgCaption: "Ilustração editorial sobre o uso de inteligência artificial para analisar células tumorais e apoiar decisões no tratamento de linfoma.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -2483,7 +2483,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/assets/ai_oncology_2026/rituximab_mechanism.png" alt="Mecanismo de ação do rituximabe" className="w-full h-auto" />
+            <img src="/editorial/ia_oncologia_linfoma_2026.webp" alt="Mecanismo de ação do rituximabe" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Medicina de Precisão: O rituximabe ataca células B específicas, mas sua eficácia depende do perfil imunológico individual, agora mapeável por IA.
@@ -2551,7 +2551,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "18:45",
     cat: "Saúde Pública",
-    img: "/knee_mri_ai_2026.jpg",
+    img: "/editorial/angiotomografia_coronariana_2026.webp",
     imgCaption: "As bancadas de quartzo, populares pelo design moderno, contêm altos níveis de sílica cristalina que se torna pó letal durante o corte e instalação.",
     imgCredit: "Foto: Reprodução / Artistic Stone / Banco Editorial EuvouserDoutor",
     content: (
@@ -2586,7 +2586,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/knee_mri_ai_2026.jpg" alt="Risco de silicose em marmorarias" className="w-full h-auto" />
+            <SafeImage src="/editorial/angiotomografia_coronariana_2026.webp" alt="Risco de silicose em marmorarias" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Perigo Invisível: O corte de pedras de quartzo gera poeira de sílica altamente concentrada. Especialistas recomendam apenas o corte úmido e ventilação industrial pesada.
@@ -2654,7 +2654,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "18:35",
     cat: "Tecnologia Médica",
-    img: "/knee_mri_ai_2026.jpg",
+    img: "/editorial/angiotomografia_coronariana_2026.webp",
     imgCaption: "Imagem ilustrativa de uma ressonância magnética do joelho; o exame não corresponde necessariamente às imagens analisadas no estudo.",
     imgCredit: "Ptrump16 / Wikimedia Commons, CC BY-SA 4.0; adaptada para uso editorial.",
     content: (
@@ -2774,7 +2774,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "18:15",
     cat: "Saúde & Ciência",
-    img: "/editorial/vacina_hiv_2026.png",
+    img: "/editorial/vacina_hiv_2026.webp",
     imgCaption: "Ilustração editorial de um ensaio de vacina contra HIV em um laboratório de pesquisa.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -2809,7 +2809,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/assets/hiv_vaccine_2026/hiv_mechanism.png" alt="Mecanismo de ação da vacina HIV" className="w-full h-auto" />
+            <img src="/editorial/vacina_hiv_2026.webp" alt="Mecanismo de ação da vacina HIV" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Treinamento Imunológico: A sequência de vacinas "molda" a resposta das células B, forçando-as a evoluir para produzir anticorpos capazes de neutralizar diversas cepas do vírus.
@@ -2876,7 +2876,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "17:45",
     cat: "Saúde & Ciência",
-    img: "/assets/huntington_study_2026/huntington_hero.jpg",
+    img: "/editorial/fibromialgia_genetica_2026.webp",
     imgCaption: "Ilustração da Doença de Huntington: a mutação genética causa a degeneração progressiva de neurônios no estriado, afetando movimentos e cognição.",
     imgCredit: "Foto: Reprodução / Huntington's Disease Association / Banco Editorial EuvouserDoutor",
     content: (
@@ -2911,7 +2911,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/assets/huntington_study_2026/huntington_genetics.png" alt="Mecanismo genético da Doença de Huntington" className="w-full h-auto" />
+            <SafeImage src="/editorial/fibromialgia_genetica_2026.webp" alt="Mecanismo genético da Doença de Huntington" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Escala de risco: O número de repetições CAG determina a penetrância e a idade de início da doença. O novo tratamento impede que esse número aumente ao longo da vida.
@@ -2978,7 +2978,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "17:15",
     cat: "Saúde Pública",
-    img: "/promote_avc_wikimedia_ccby.png",
+    img: "/editorial/dbs_parkinson_2026.webp",
     imgCaption: "Ilustração de um acidente vascular cerebral; a imagem é usada apenas para contextualizar a doença, não para representar a polipílula em teste.",
     imgCredit: "Imagem: Blausen Medical Communications, Inc. / Wikimedia Commons, CC BY 3.0; adaptada para uso editorial.",
     content: (
@@ -3029,7 +3029,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "20:15",
     cat: "Saúde & Ciência",
-    img: "/assets/broccoli_study_2026/broccoli_hero.jpg",
+    img: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=1200",
     imgCaption: "O sulforafano, composto bioativo encontrado no brócolis, demonstrou capacidade de restaurar a função celular em modelos de doenças neurodegenerativas raras.",
     imgCredit: "Foto: Divulgação / Unsplash / Banco Editorial EuvouserDoutor",
     content: (
@@ -3064,7 +3064,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/assets/broccoli_study_2026/ataxia_diagram.png" alt="Diagrama da Ataxia de Friedreich" className="w-full h-auto" />
+            <SafeImage src="/editorial/fibromialgia_genetica_2026.webp" alt="Diagrama da Ataxia de Friedreich" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Entenda a doença: A deficiência de frataxina causa disfunção mitocondrial, levando à falha energética das células nervosas e cardíacas.
@@ -3131,7 +3131,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "20:00",
     cat: "Neurociência",
-    img: "/assets/dbs_study_2026/dbs_hero.jpg",
+    img: "/editorial/dbs_parkinson_2026.webp",
     imgCaption: "A estimulação elétrica do cérebro não apenas altera sinais elétricos, mas reprograma a expressão genética celular para promover a recuperação neural.",
     imgCredit: "Foto: Reprodução / UCLA Health / Banco Editorial EuvouserDoutor",
     content: (
@@ -3166,7 +3166,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/assets/dbs_study_2026/dbs_technical.png" alt="Mapeamento genético da estimulação cerebral" className="w-full h-auto" />
+            <img src="/editorial/dbs_parkinson_2026.webp" alt="Mapeamento genético da estimulação cerebral" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Mapeamento da resposta celular: O estudo identificou 611 genes cuja expressão foi alterada pela estimulação elétrica, muitos dos quais são essenciais para a conectividade neural.
@@ -3233,7 +3233,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "19:15",
     cat: "Tecnologia Médica",
-    img: "/assets/ringconn_study_2026/ringconn_gen3_main.webp",
+    img: "https://images.unsplash.com/photo-1618961734760-466979ce35b0?auto=format&fit=crop&q=80&w=1200",
     imgCaption: "Anéis inteligentes como o RingConn Gen 3 estão no centro de um novo estudo que redefine a precisão dos wearables.",
     imgCredit: "Foto: Divulgação / RingConn / Banco Editorial EuvouserDoutor",
     content: (
@@ -3263,7 +3263,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/assets/ringconn_study_2026/ppg_monitoring_diagram.png" alt="Diagrama de monitoramento PPG" className="w-full h-auto" />
+            <SafeImage src="https://images.unsplash.com/photo-1618961734760-466979ce35b0?auto=format&fit=crop&q=80&w=1200" alt="Diagrama de monitoramento PPG" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Diagrama técnico mostrando a captura de sinais PPG multicanais e a análise de consistência bilateral.
@@ -3330,7 +3330,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "18:30",
     cat: "Tecnologia Médica",
-    img: "/neo_device_schematic_2026.png",
+    img: "/editorial/dbs_parkinson_2026.webp",
     imgCaption: "Esquema do dispositivo NEO mostrando sua posição sobre a dura-máter e o tamanho comparável a uma moeda.",
     imgCredit: "Foto: Reprodução / Tsinghua University / Banco Editorial EuvouserDoutor",
     content: (
@@ -3367,7 +3367,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/neo_patient_movement_2026.jpg" alt="Paciente usando BCI" className="w-full h-auto" />
+            <img src="/editorial/dbs_parkinson_2026.webp" alt="Paciente usando BCI" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Paciente tetraplégico utilizando o sistema NEO para controlar uma luva robótica e segurar uma garrafa de água.
@@ -3419,7 +3419,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "15:05",
     cat: "Saúde Pública",
-    img: "/medicamentos_plataformas_regulacao_2026.png",
+    img: "/editorial/ia_oncologia_linfoma_2026.webp",
     imgCaption: "Ilustração editorial sobre a interseção entre farmácias, plataformas digitais e regulação sanitária.",
     imgCredit: "Ilustração original criada para o EuvouserDoutor; sem uso de logotipos ou imagens de terceiros.",
     content: (
@@ -3479,7 +3479,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "15:15",
     cat: "Inovação Médica",
-    img: "/pfas_microplastics_blood_2026.jpg",
+    img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
     imgCaption: "Ilustração conceitual: a presença de microplásticos no sangue humano é uma preocupação crescente para a saúde global, ligada a distúrbios endócrinos e inflamação sistêmica.",
     imgCredit: "Reprodução / ScienceAlert / Banco Editorial EuvouserDoutor",
     content: (
@@ -3578,7 +3578,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "17:45",
     cat: "Saúde & Ciência",
-    img: "/editorial/microbiota_transplante_amendoim_2026.png",
+    img: "/editorial/microbiota_transplante_amendoim_2026.webp",
     imgCaption: "Ilustração editorial sobre a microbiota intestinal e a comunicação entre bactérias, sistema imune e cérebro.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -3669,7 +3669,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "17:15",
     cat: "Tecnologia Médica",
-    img: "/chip_eny_unb_2026.png",
+    img: "/retina_chip_tech.jpg",
     imgCaption: "Ilustração técnica de um dispositivo 'Organ-on-a-chip': canais microfluídicos permitem o cultivo de células 3D que simulam a resposta do corpo humano a novos medicamentos.",
     imgCredit: "Reprodução / NIST / Banco Editorial EuvouserDoutor",
     content: (
@@ -3760,7 +3760,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "16:45",
     cat: "Saúde & Ciência",
-    img: "/ozempic_brain_lateral_septum.jpg",
+    img: "/editorial/glp1_oral_2026.webp",
     imgCaption: "Ilustração editorial destaca a atuação dos análogos de GLP-1 no septo lateral, região cerebral que integra memória e motivação por recompensas.",
     imgCredit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -3826,7 +3826,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "16:15",
     cat: "Tecnologia Médica",
-    img: "/editorial/anemia_retina_ia_2026.png",
+    img: "/editorial/anemia_retina_ia_2026.webp",
     imgCaption: "Ilustração editorial mostra a análise de imagens da retina por inteligência artificial para estimar sinais associados à anemia.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -3859,7 +3859,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "16:15",
     cat: "Saúde & Ciência",
-    img: "/methylscan_blood_test_2026.png",
+    img: "/editorial/anemia_retina_ia_2026.webp",
     imgCaption: "Ilustração editorial: fragmentos de DNA livre circulante no sangue podem carregar sinais moleculares associados a diferentes tecidos e doenças.",
     imgCredit: "Ilustração original / EuvouserDoutor",
     content: (
@@ -3935,7 +3935,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "15:45",
     cat: "Neurologia",
-    img: "/editorial/dbs_parkinson_2026.png",
+    img: "/editorial/dbs_parkinson_2026.webp",
     imgCaption: "Ilustração editorial de estimulação cerebral profunda e ritmos neurais relacionados ao Parkinson.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -4019,7 +4019,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "15:15",
     cat: "Saúde & Ciência",
-    img: "/omega3_cancer_nk_cells.jpg",
+    img: "/editorial/ia_oncologia_linfoma_2026.webp",
     imgCaption: "Ilustração editorial detalha a interação entre moléculas de ômega-3 e as células Natural Killer (NK) no microambiente tumoral.",
     imgCredit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -4110,7 +4110,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "14:40",
     cat: "Saúde & Ciência",
-    img: "/assets/dbs_study_2026/dbs_hero.jpg",
+    img: "/editorial/dbs_parkinson_2026.webp",
     imgCaption: "Ilustração editorial 3D detalha a conexão entre o cérebro e o sistema de drenagem linfática no pescoço, alvo da cirurgia dcLVA.",
     imgCredit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -4194,7 +4194,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateTime: "11:05",
     cat: "Saúde Pública",
     time: "7 min",
-    img: "/fit_rastreamento_cancer_colorretal_2026.png",
+    img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
     imgCaption: "Ilustração editorial mostra um kit de coleta e a investigação de sinais microscópicos no intestino.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -4255,7 +4255,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "14:15",
     cat: "Saúde & Ciência",
-    img: "/fnip1_gene_metabolism.jpg",
+    img: "/editorial/glp1_oral_2026.webp",
     imgCaption: "Ilustração editorial 3D mostra a interação entre o código genético e a ativação do metabolismo mitocondrial.",
     imgCredit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -4341,7 +4341,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "11:15",
     cat: "Tecnologia Médica",
-    img: "/in_vivo_car_t_mrna_2026.jpg",
+    img: "/editorial/leucemia_celulas_car_t_2026.webp",
     imgCaption: "Ilustração editorial mostra uma nanopartícula de mRNA em direção a uma célula T; a pesquisa ainda está na fase pré-clínica.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -4411,7 +4411,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "04:15",
     cat: "Tecnologia Médica",
-    img: "/editorial/la_regeneracao_ossea_2026.png",
+    img: "/editorial/la_regeneracao_ossea_2026.webp",
     imgCaption: "Ilustração editorial mostra fibras de lã transformadas em uma estrutura porosa para regeneração óssea.",
     imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
@@ -4478,7 +4478,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "09:11",
       updateTime: "09:11",
-      img: "/editorial/sarampo_vacinacao_americas_2026.png",
+      img: "/editorial/sarampo_vacinacao_americas_2026.webp",
       imgCaption: "Ilustração editorial mostra a vacinação infantil em um cenário de vigilância epidemiológica nas Américas.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -4560,7 +4560,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "09:15",
       updateTime: "09:15",
-      img: "/editorial/glp1_oral_2026.png",
+      img: "/editorial/glp1_oral_2026.webp",
       imgCaption: "Ilustração editorial de uma pílula oral de GLP-1 e das vias metabólicas relacionadas ao trato gastrointestinal.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -4646,7 +4646,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "01:45",
       updateTime: "01:45",
-      img: "/editorial/angiotomografia_coronariana_2026.png",
+      img: "/editorial/angiotomografia_coronariana_2026.webp",
       imgCaption: "Ilustração editorial de uma angiotomografia coronariana não invasiva para visualizar artérias do coração.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -4736,7 +4736,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "00:45",
       updateTime: "00:45",
-      img: "/editorial/gel_crajiru_unicamp_2026.png",
+      img: "/editorial/gel_crajiru_unicamp_2026.webp",
       imgCaption: "Ilustração editorial do gel de Fridericia chica, o crajiru, em contexto de pesquisa sobre cicatrização.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -4826,7 +4826,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "11 Ago 2026",
       pubTime: "22:10",
       updateTime: "22:10",
-      img: "/editorial/leucemia_celulas_car_t_2026.png",
+      img: "/editorial/leucemia_celulas_car_t_2026.webp",
       imgCaption: "Ilustração editorial mostra células imunes CAR-T modificadas reconhecendo células tumorais em um ambiente microscópico.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -4916,7 +4916,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "08:30",
       updateTime: "08:30",
-      img: "/editorial/lente_contato_3d_2026.png",
+      img: "/editorial/lente_contato_3d_2026.webp",
       imgCaption: "Ilustração editorial de uma lente de contato personalizada produzida por impressão 3D.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -5006,7 +5006,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "11 Ago 2026",
       pubTime: "23:45",
       updateTime: "23:45",
-      img: "/parkinson_brain_rhythm_dbs.jpg",
+      img: "/editorial/dbs_parkinson_2026.webp",
       imgCaption: "Neuroimagem funcional revela que o café puro aumenta a conectividade em áreas do cérebro ligadas à memória de trabalho e controle executivo.",
       imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
       content: (
@@ -5096,7 +5096,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "08:30",
       updateTime: "08:30",
-      img: "/editorial/microbiota_transplante_amendoim_2026.png",
+      img: "/editorial/microbiota_transplante_amendoim_2026.webp",
       imgCaption: "Ilustração editorial de uma cápsula de microbiota, bactérias intestinais e barreira imune no estudo experimental sobre alergia ao amendoim.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -5186,7 +5186,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "11 Ago 2026",
       pubTime: "23:30",
       updateTime: "23:30",
-      img: "/editorial/daraxonrasib_pancreas_2026.png",
+      img: "/editorial/daraxonrasib_pancreas_2026.webp",
       imgCaption: "Ilustração editorial do daraxonrasib e da interação entre uma terapia oral, a proteína KRAS e o câncer de pâncreas.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -5371,7 +5371,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Saúde & Ciência",
       time: "8 min",
       date: "11 Ago 2026",
-      img: "/chip_eny_unb_2026.png",
+      img: "/retina_chip_tech.jpg",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5481,7 +5481,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Saúde & Ciência",
       time: "7 min",
       date: "11 Ago 2026",
-      img: "/editorial/ebola_congo_2026.png",
+      img: "/editorial/ebola_congo_2026.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5578,7 +5578,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Neurologia",
       time: "6 min",
       date: "09 Ago 2026",
-      img: "/fibromyalgia_genetics_brain.jpg",
+      img: "/editorial/fibromialgia_genetica_2026.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5596,7 +5596,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Rotina",
       time: "4 min",
       date: "08 Ago 2026",
-      img: "/paternal_diet_epigenetics.jpg",
+      img: "/editorial/microbiota_transplante_amendoim_2026.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5629,7 +5629,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Técnicas de estudo",
       time: "4 min",
       date: "06 Ago 2026",
-      img: "/chip_eny_unb_2026.png",
+      img: "/retina_chip_tech.jpg",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5678,7 +5678,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "02:50",
     cat: "Saúde & Ciência",
-    img: "/amiloride_lung_breakthrough.jpg",
+    img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
     caption: "Ilustração editorial mostra a interação entre o gene WFDC2 mutado e o mecanismo de ação da Amilorida nos pulmões.",
     credit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -5743,7 +5743,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "03:55",
     cat: "Saúde & Ciência",
-    img: "/editorial/fibromialgia_genetica_2026.png",
+    img: "/editorial/fibromialgia_genetica_2026.webp",
     caption: "Ilustração editorial mostra a rede neural e os loci genéticos associados à fibromialgia no cérebro humano.",
     credit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -5810,7 +5810,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "03:25",
     cat: "Saúde & Ciência",
-    img: "/origin_of_life_double.jpg",
+    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
     caption: "Ilustração editorial mostra a divergência evolutiva entre bactérias e arqueias a partir de fontes hidrotermais primitivas.",
     credit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -5874,7 +5874,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     time: "02:15",
     updateTime: "02:15",
     category: "Saúde & Ciência",
-    image: "/paternal_diet_epigenetics.jpg",
+    image: "/editorial/microbiota_transplante_amendoim_2026.webp",
     imageCaption: "Estudo da USP aponta que a qualidade da dieta paterna antes da concepção é determinante para a saúde metabólica do bebê.",
     imageCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
     content: (
@@ -6045,7 +6045,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
           <article className="glass-premium rounded-[48px] overflow-hidden p-1 shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
             <div className="bg-[#11141A] rounded-[47px] overflow-hidden">
               <div className="aspect-[21/9] w-full overflow-hidden relative">
-                <SafeImage src={post.img} alt={post.title} className="w-full h-full object-cover" />
+                <SafeImage src={post.img} alt={post.title} priority width={1600} height={686} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-40" />
               </div>
               <div className="px-6 py-3 bg-[#11141A] border-t border-white/[0.05] flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-[#98A2B3] gap-2">
