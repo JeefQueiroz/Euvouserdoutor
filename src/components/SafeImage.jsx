@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const FALLBACK_IMAGE =
   'data:image/svg+xml;charset=UTF-8,' +
@@ -12,13 +12,26 @@ const FALLBACK_IMAGE =
     </svg>
   `);
 
-export function SafeImage({ src, alt = '', ...props }) {
+export function SafeImage({
+  src,
+  alt = '',
+  priority = false,
+  width,
+  height,
+  onError,
+  ...props
+}) {
   const [imageSrc, setImageSrc] = useState(src || FALLBACK_IMAGE);
 
-  function handleError() {
+  useEffect(() => {
+    setImageSrc(src || FALLBACK_IMAGE);
+  }, [src]);
+
+  function handleError(event) {
     if (imageSrc !== FALLBACK_IMAGE) {
       setImageSrc(FALLBACK_IMAGE);
     }
+    onError?.(event);
   }
 
   return (
@@ -26,6 +39,12 @@ export function SafeImage({ src, alt = '', ...props }) {
       {...props}
       src={imageSrc}
       alt={alt}
+      width={width}
+      height={height}
+      loading={priority ? 'eager' : 'lazy'}
+      fetchPriority={priority ? 'high' : 'auto'}
+      decoding="async"
+      referrerPolicy="no-referrer"
       onError={handleError}
     />
   );
