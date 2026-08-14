@@ -2036,9 +2036,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "22:15",
     cat: "Saúde Pública",
-    img: "/assets/ebola_outbreak_2026/ebola_hero.jpg",
-    imgCaption: "O vírus Ebola, conhecido por sua alta letalidade, está se espalhando rapidamente pelo nordeste da República Democrática do Congo, desafiando as equipes de resposta internacional.",
-    imgCredit: "Foto: Reprodução / DVIDS / NIAID / Banco Editorial EuvouserDoutor",
+    img: "/editorial/ebola_congo_2026.png",
+    imgCaption: "Ilustração editorial de uma equipe de resposta em saúde pública durante um surto de Ebola na República Democrática do Congo.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -2448,9 +2448,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "19:15",
     cat: "Saúde & Ciência",
-    img: "/assets/ai_oncology_2026/ai_oncology_hero.png",
-    imgCaption: "A integração da Inteligência Artificial na oncologia permite uma medicina de precisão, adaptando o uso de anticorpos monoclonais às necessidades reais de cada paciente.",
-    imgCredit: "Foto: Reprodução / npj Precision Oncology / Nature Portfolio / Banco Editorial EuvouserDoutor",
+    img: "/editorial/ia_oncologia_linfoma_2026.png",
+    imgCaption: "Ilustração editorial sobre o uso de inteligência artificial para analisar células tumorais e apoiar decisões no tratamento de linfoma.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -2774,9 +2774,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "18:15",
     cat: "Saúde & Ciência",
-    img: "/assets/hiv_vaccine_2026/hiv_hero.jpg",
-    imgCaption: "Estudo realizado em macacos rhesus demonstrou que a vacina de 'direcionamento de linhagem germinativa' induz a produção de anticorpos neutralizantes de amplo espectro.",
-    imgCredit: "Foto: Reprodução / Scripps Research / Nature Portfolio / Banco Editorial EuvouserDoutor",
+    img: "/editorial/vacina_hiv_2026.png",
+    imgCaption: "Ilustração editorial de um ensaio de vacina contra HIV em um laboratório de pesquisa.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -3578,9 +3578,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "17:45",
     cat: "Saúde & Ciência",
-    img: "/microbiota_psicopatia_2026.webp",
-    imgCaption: "Ilustração editorial: o eixo intestino-cérebro revela como comunidades bacterianas podem modular neurotransmissores e influenciar traços de personalidade complexos.",
-    imgCredit: "Reprodução / InnerBuddies / Banco Editorial EuvouserDoutor",
+    img: "/editorial/microbiota_transplante_amendoim_2026.png",
+    imgCaption: "Ilustração editorial sobre a microbiota intestinal e a comunicação entre bactérias, sistema imune e cérebro.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -3826,9 +3826,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "16:15",
     cat: "Tecnologia Médica",
-    img: "/anemia_eye_ai_2026.png",
-    imgCaption: "Ilustração editorial sobre o uso de imagens dos vasos da conjuntiva para estimar marcadores do sangue por inteligência artificial.",
-    imgCredit: "Ilustração original / EuvouserDoutor",
+    img: "/editorial/anemia_retina_ia_2026.png",
+    imgCaption: "Ilustração editorial mostra a análise de imagens da retina por inteligência artificial para estimar sinais associados à anemia.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">Uma câmera de alta magnificação e um sistema de inteligência artificial conseguiram estimar sinais associados à anemia a partir do fluxo do sangue em pequenos vasos da parte branca do olho. O resultado vem de um estudo de prova de conceito publicado na <strong>npj Digital Medicine</strong>, mas não significa que o hemograma possa ser dispensado.</p>
@@ -3935,9 +3935,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "15:45",
     cat: "Neurologia",
-    img: "/parkinson_brain_rhythm_dbs.jpg",
-    imgCaption: "Ilustração editorial detalha as ondas cerebrais e a rede neural ativada pela Estimulação Cerebral Profunda (DBS) no tratamento do Parkinson.",
-    imgCredit: "Reprodução / Banco Editorial EuvouserDoutor",
+    img: "/editorial/dbs_parkinson_2026.png",
+    imgCaption: "Ilustração editorial de estimulação cerebral profunda e ritmos neurais relacionados ao Parkinson.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -4411,9 +4411,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "04:15",
     cat: "Tecnologia Médica",
-    img: "/wool_bone_regeneration.jpg",
-    imgCaption: "Ilustração editorial 3D mostra a transição biotecnológica da lã de ovelha para uma estrutura microscópica de regeneração óssea.",
-    imgCredit: "Reprodução / Banco Editorial EuvouserDoutor",
+    img: "/editorial/la_regeneracao_ossea_2026.png",
+    imgCaption: "Ilustração editorial mostra fibras de lã transformadas em uma estrutura porosa para regeneração óssea.",
+    imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
     content: (
       <>
         <p>Um subproduto abundante da agricultura pode ser a chave para uma nova era na medicina regenerativa. Pesquisadores do <strong>King's College London</strong> demonstraram, em um estudo publicado nesta quarta-feira (12), que a <strong>queratina extraída da lã de ovelha</strong> é capaz de regenerar ossos danificados com uma eficácia que desafia o atual padrão-ouro da indústria: o colágeno.</p>
@@ -4478,7 +4478,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "09:11",
       updateTime: "09:11",
-      img: "/sarampo_vacinacao_americas_2026.jpg",
+      img: "/editorial/sarampo_vacinacao_americas_2026.png",
       imgCaption: "Ilustração editorial mostra a vacinação infantil em um cenário de vigilância epidemiológica nas Américas.",
       imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
@@ -4560,9 +4560,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "09:15",
       updateTime: "09:15",
-      img: "/oral_glp1_pill_tech.jpg",
-      imgCaption: "Pílula oral de pequenas moléculas imita o hormônio GLP-1, abrindo uma nova era no tratamento da obesidade sem a necessidade de injeções.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/glp1_oral_2026.png",
+      imgCaption: "Ilustração editorial de uma pílula oral de GLP-1 e das vias metabólicas relacionadas ao trato gastrointestinal.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -4646,9 +4646,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "01:45",
       updateTime: "01:45",
-      img: "/angiotomografia_coronariana_sus.jpg",
-      imgCaption: "Angiotomografia coronariana permite visualização detalhada das artérias do coração sem necessidade de cateterismo em casos de risco baixo e intermediário.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/angiotomografia_coronariana_2026.png",
+      imgCaption: "Ilustração editorial de uma angiotomografia coronariana não invasiva para visualizar artérias do coração.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -4736,9 +4736,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "00:45",
       updateTime: "00:45",
-      img: "/gel_unicamp_chica.jpg",
-      imgCaption: "Gel à base de Fridericia chica (crajiru) desenvolvido pela Unicamp reduz tempo de cicatrização pela metade em testes clínicos.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/gel_crajiru_unicamp_2026.png",
+      imgCaption: "Ilustração editorial do gel de Fridericia chica, o crajiru, em contexto de pesquisa sobre cicatrização.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -4826,9 +4826,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "11 Ago 2026",
       pubTime: "22:10",
       updateTime: "22:10",
-      img: "/gene_therapy_leukemia_2026.jpg",
-      imgCaption: "Terapia BE-CAR7 utiliza edição de base para criar células imunes 'prontas para uso' que eliminam a leucemia incurável.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/leucemia_celulas_car_t_2026.png",
+      imgCaption: "Ilustração editorial mostra células imunes CAR-T modificadas reconhecendo células tumorais em um ambiente microscópico.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -4916,9 +4916,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "08:30",
       updateTime: "08:30",
-      img: "/3d_printed_lens_tech.jpg",
-      imgCaption: "Plataforma digital traduz a topografia da córnea em mapas de espessura para impressão imediata de lentes rígidas personalizadas.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/lente_contato_3d_2026.png",
+      imgCaption: "Ilustração editorial de uma lente de contato personalizada produzida por impressão 3D.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5096,9 +5096,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "12 Ago 2026",
       pubTime: "08:30",
       updateTime: "08:30",
-      img: "/gene_therapy_leukemia_2026.jpg",
-      imgCaption: "Ilustração conceitual de cápsulas de microbiota intestinal utilizadas em ensaios clínicos de transplante fecal.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/microbiota_transplante_amendoim_2026.png",
+      imgCaption: "Ilustração editorial de uma cápsula de microbiota, bactérias intestinais e barreira imune no estudo experimental sobre alergia ao amendoim.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5186,9 +5186,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "11 Ago 2026",
       pubTime: "23:30",
       updateTime: "23:30",
-      img: "/daraxonrasib_pill_tech.jpg",
-      imgCaption: "Ilustração do mecanismo de ação do daraxonrasibe: pílula oral que inibe a proteína KRAS, motor do câncer de pâncreas.",
-      imgCredit: "Foto: Reprodução / Banco Editorial EuvouserDoutor",
+      img: "/editorial/daraxonrasib_pancreas_2026.png",
+      imgCaption: "Ilustração editorial do daraxonrasib e da interação entre uma terapia oral, a proteína KRAS e o câncer de pâncreas.",
+      imgCredit: "Ilustração original gerada para o EuvouserDoutor; uso editorial autorizado.",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5481,7 +5481,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Saúde & Ciência",
       time: "7 min",
       date: "11 Ago 2026",
-      img: "/gene_therapy_leukemia_2026.jpg",
+      img: "/editorial/ebola_congo_2026.png",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5743,7 +5743,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "03:55",
     cat: "Saúde & Ciência",
-    img: "/fibromyalgia_genetics_brain.jpg",
+    img: "/editorial/fibromialgia_genetica_2026.png",
     caption: "Ilustração editorial mostra a rede neural e os loci genéticos associados à fibromialgia no cérebro humano.",
     credit: "Reprodução / Banco Editorial EuvouserDoutor",
     content: (
