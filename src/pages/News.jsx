@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_fnip1_gene_metabolism_2026",
+      title: "Vantagem Genética: Mutação no Gene FNIP1 Reduz Gordura e Risco Cardíaco",
+      subtitle: "Estudo massivo na Nature identifica 'freio biológico' que protege contra obesidade e diabetes em 1 milhão de pessoas.",
+      cat: "Saúde & Ciência",
+      date: "14 Ago 2026",
+      readTime: "8 min",
+      img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
+      target: "post_fnip1_gene_metabolism_2026",
+      featured: true,
+    },
+    {
       id: "post_once_weekly_hiv_pill_2026",
       title: "Fim do Comprimido Diário? Pílula Semanal Contra HIV Apresenta Resultados Históricos",
       subtitle: "Estudo de Fase 3 no The Lancet revela que a combinação de islatravir e lenacapavir mantém a supressão viral com apenas uma dose por semana.",

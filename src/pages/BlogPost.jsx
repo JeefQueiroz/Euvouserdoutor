@@ -20,6 +20,104 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   }, []);
 
   const postsData = {
+    post_fnip1_gene_metabolism_2026: {
+      title: "Vantagem Genética: Mutação Rara no Gene FNIP1 Reduz Gordura no Fígado e Risco Cardíaco em 60%",
+      subtitle: "Estudo massivo com 1 milhão de pessoas publicado na Nature identifica 'freio biológico' que protege contra obesidade e diabetes; descoberta abre caminho para novos tratamentos metabólicos.",
+      author: "EuvouserDoutor - Jeff Queiroz",
+      location: "Belo Horizonte (MG)",
+      date: "14/08/2026",
+      time: "8 min",
+      pubTime: "10:30",
+      updateDate: "14/08/2026",
+      updateTime: "10:30",
+      cat: "Saúde & Ciência",
+      img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200",
+      imgCaption: "A mutação no gene FNIP1 simula os efeitos de uma dieta restritiva, ativando vias de queima de gordura mesmo em condições normais.",
+      imgCredit: "Foto: Reprodução / Nature / Banco Editorial EuvouserDoutor",
+      content: (
+        <>
+          <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
+            Cientistas acabam de identificar um "bilhete premiado" na loteria genética humana. Um estudo monumental publicado na revista <strong>Nature</strong>, que analisou o genoma de mais de <strong>1 milhão de pessoas</strong>, revelou que variantes raras no gene <strong>FNIP1</strong> conferem uma proteção extraordinária contra a obesidade e doenças metabólicas [1].
+          </p>
+  
+          <p>Os portadores dessa mutação específica apresentam, de forma natural, um Índice de Massa Corporal (IMC) mais baixo, menor percentual de gordura corporal (especialmente na região abdominal) e níveis reduzidos de gordura no fígado. Mais impressionante ainda: o risco de desenvolver diabetes tipo 2 e doenças cardiovasculares é cerca de <strong>60% menor</strong> nesses indivíduos em comparação à população geral [2].</p>
+  
+          <div className="glass-premium rounded-[32px] p-8 mb-12 border border-[#4F8CFF]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F8CFF]/5 rounded-full blur-2xl -mr-16 -mt-16" />
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] shrink-0">
+                <Dna size={24} />
+              </div>
+              <div>
+                <h2 className="text-xs font-black text-[#4F8CFF] uppercase tracking-[0.3em] mb-3">O Mecanismo da Proteção</h2>
+                <p className="text-[#F8FAFC] text-sm md:text-base leading-relaxed font-bold italic">
+                  "O gene FNIP1 atua como um regulador da via AMPK, o sensor de energia das nossas células. Quando a atividade deste gene é reduzida, o corpo 'pensa' que está em jejum e ativa mecanismos intensos de queima de gordura e melhoria da sensibilidade à insulina."
+                </p>
+                <p className="text-[#98A2B3] text-xs mt-2">— Dr. George Hindy, pesquisador líder do Regeneron Genetics Center.</p>
+              </div>
+            </div>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">Dados do Estudo de 1 Milhão de Genomas</h2>
+          <p>A pesquisa utilizou dados de biobancos globais para cruzar informações genéticas com históricos de saúde. A equipe descobriu que a perda de função de apenas uma das cópias do gene FNIP1 já é suficiente para gerar o benefício metabólico, sem causar efeitos colaterais aparentes [3].</p>
+          
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12 overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Indicador</th>
+                  <th className="py-3 px-4 font-black text-[#4F8CFF] uppercase tracking-widest text-[10px]">Impacto nos Portadores</th>
+                </tr>
+              </thead>
+              <tbody className="text-[#CBD5E1]">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Gordura no Fígado</td>
+                  <td className="py-3 px-4 text-green-400">Redução significativa</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 px-4 font-bold">Risco de Diabetes Tipo 2</td>
+                  <td className="py-3 px-4 text-green-400">60% menor</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold">Massa Muscular</td>
+                  <td className="py-3 px-4 text-green-400">Preservada ou aumentada</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <h2 className="text-2xl font-bold text-white mt-10 mb-6 text-pretty tracking-tight">O Futuro dos Tratamentos para Obesidade</h2>
+          <p>A descoberta do FNIP1 como um alvo terapêutico é promissora porque oferece uma via diferente dos medicamentos atuais, como o Ozempic (que foca no controle do apetite via GLP-1). Um fármaco que consiga mimetizar a inibição do FNIP1 poderia tratar diretamente a resistência à insulina e a esteatose hepática (gordura no fígado) de forma mais eficaz.</p>
+  
+          <div className="bg-[#11141A] border border-white/[0.05] rounded-[24px] p-6 mb-12">
+            <h3 className="text-white font-black uppercase tracking-widest text-[10px] mb-4">Análise do Especialista</h3>
+            <p className="text-[#CBD5E1] text-sm leading-relaxed">
+              <strong>Jeff Queiroz:</strong> "Estamos saindo da era da medicina de 'tentativa e erro' para a medicina de precisão baseada em grandes dados. Identificar mutações protetoras em humanos é o caminho mais seguro para desenvolver novos remédios, pois a própria natureza já nos deu a prova de conceito de que desligar esse gene é seguro e benéfico."
+            </p>
+          </div>
+  
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 flex items-center gap-2">
+              <BookOpen size={16} className="text-[#4F8CFF]" /> Referências & Fontes:
+            </h4>
+            <ul className="space-y-4 text-sm text-[#98A2B3]">
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[1]</span>
+                Hindy, G., et al. (2026). FNIP1 variants are associated with favourable metabolism in 1 million humans. <em>Nature</em>. doi:10.1038/s41586-026-10864-2.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[2]</span>
+                Nature Research Briefing. (2026). Switching off the FNIP1 gene protects against metabolic disease.
+              </li>
+              <li className="flex gap-3 italic">
+                <span className="text-[#4F8CFF] font-black not-italic">[3]</span>
+                Regeneron Genetics Center. (2026). Global Genomic Analysis: The FNIP1 Breakthrough Report.
+              </li>
+            </ul>
+          </div>
+        </>
+      )
+    },
     post_once_weekly_hiv_pill_2026: {
       title: "Fim do Comprimido Diário? Pílula Semanal Contra HIV Apresenta Resultados Históricos no The Lancet",
       subtitle: "Estudo de Fase 3 revela que a combinação de islatravir e lenacapavir mantém a supressão viral com apenas uma dose por semana, abrindo caminho para uma nova era no tratamento da Aids.",
