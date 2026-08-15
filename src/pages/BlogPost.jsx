@@ -6006,7 +6006,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       </>
     )
   },
-  post_tilapia_factory_ceara_2026: {
+  tilapia_factory_ceara_2026: {
     title: "Ceará terá fábrica de curativos feitos com pele de tilápia em escala industrial",
     subtitle: "Projeto em Jaguaribara pretende transformar uma tecnologia desenvolvida no Ceará em produto farmacêutico; estudos clínicos anteriores apontaram menos trocas de curativo e menor custo em queimaduras.",
     author: "EuvouserDoutor - Jeff Queiroz",

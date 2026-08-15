@@ -31,7 +31,7 @@ if post_id not in n:
     n = n.replace(marker, marker + card, 1)
     news.write_text(n)
 
-article = f'''  post_tilapia_factory_ceara_2026: {{
+article = f'''  tilapia_factory_ceara_2026: {{
     title: "Ceará terá fábrica de curativos feitos com pele de tilápia em escala industrial",
     subtitle: "Projeto em Jaguaribara pretende transformar uma tecnologia desenvolvida no Ceará em produto farmacêutico; estudos clínicos anteriores apontaram menos trocas de curativo e menor custo em queimaduras.",
     author: "EuvouserDoutor - Jeff Queiroz",
