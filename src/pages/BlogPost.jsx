@@ -6016,12 +6016,12 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     pubTime: "11:07",
     updateDate: "15/08/2026",
     updateTime: "11:07",
-    category: "Inovação Médica",
+    cat: "Inovação Médica",
     img: "/curativo_pele_tilapia_ceara_2026.jpg",
     imageAlt: "Ilustração de pele de tilápia sendo transformada em curativo biológico sobre uma representação de pele humana, com equipamentos de processamento ao fundo",
-    imageCaption: "Ilustração editorial mostra as etapas de processamento da pele de tilápia para produção de um curativo biológico; a fábrica prevista para Jaguaribara ainda está em implantação.",
-    imageCredit: "Ilustração original produzida para o EuvouserDoutor.",
-    content: () => (
+    imgCaption: "Ilustração editorial mostra as etapas de processamento da pele de tilápia para produção de um curativo biológico; a fábrica prevista para Jaguaribara ainda está em implantação.",
+    imgCredit: "Ilustração original produzida para o EuvouserDoutor.",
+    content: (
       <>
         <p>O Ceará se prepara para transformar uma pesquisa desenvolvida no estado em uma cadeia industrial de produtos para feridas. Uma fábrica prevista para Jaguaribara, no Vale do Jaguaribe, deverá processar pele de tilápia para produzir curativos biológicos em escala farmacêutica, segundo informações divulgadas pelo Instituto de Pesquisas Energéticas e Nucleares (IPEN) [1].</p>
         <p>O projeto é uma parceria entre o Governo do Ceará, a empresa BIOTEC Medical Xenograft Engineering, a Universidade Federal do Ceará (UFC), o Instituto José Frota, o Instituto de Apoio ao Queimado, o IPEN, a SDE e a ADECE. A iniciativa representa uma etapa de industrialização; não significa que o produto já esteja disponível em todas as unidades de saúde ou incorporado automaticamente ao SUS.</p>
@@ -6091,6 +6091,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       document.head.appendChild(script);
     }
     const dateMap = {
+      '15/08/2026': '2026-08-15',
       '14/08/2026': '2026-08-14',
       '14 Ago 2026': '2026-08-14',
       '13/08/2026': '2026-08-13',
