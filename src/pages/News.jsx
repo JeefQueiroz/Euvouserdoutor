@@ -10,6 +10,17 @@ export const News = ({ setView }) => {
 
   const posts = [
     {
+      id: "post_tilapia_factory_ceara_2026",
+      title: "Ceará terá fábrica de curativos feitos com pele de tilápia em escala industrial",
+      subtitle: "Projeto em Jaguaribara pretende transformar uma tecnologia desenvolvida no Ceará em produto farmacêutico; estudos clínicos anteriores apontaram menos trocas de curativo e menor custo em queimaduras.",
+      cat: "Inovação Médica",
+      date: "15 Ago 2026",
+      readTime: "8 min",
+      img: "/curativo_pele_tilapia_ceara_2026.jpg",
+      target: "post_tilapia_factory_ceara_2026",
+      featured: true,
+    },
+    {
       id: "post_plcg2_alzheimer_synapses_2026",
       title: "Gene ligado ao Alzheimer afeta sinapses em neurônios humanos, mostra estudo",
       subtitle: "Pesquisa na Nature Genetics relaciona a redução de PLCG2 a alterações sinápticas e a marcadores celulares da doença, mas ainda não testa tratamento em pessoas.",
