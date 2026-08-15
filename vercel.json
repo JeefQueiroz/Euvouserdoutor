@@ -333,6 +333,10 @@
     {
       "source": "/noticias/plcg2-sinapses-alzheimer-culturas-neuronais-2026",
       "destination": "/"
+    },
+    {
+      "source": "/noticias/fabrica-curativos-pele-tilapia-ceara-2026",
+      "destination": "/"
     }
   ]
 }
