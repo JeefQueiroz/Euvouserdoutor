@@ -79,10 +79,10 @@ A pesquisa é um estudo de desenvolvimento e avaliação diagnóstica baseado em
 
 ## Fontes e transparência
 
-A pauta foi identificada em reportagem do Metrópoles sobre o exame desenvolvido na UCLA. Para esta reportagem, o EuvouserDoutor conferiu os resultados, a amostra e o desenho da pesquisa no artigo publicado pela PNAS e consultou o material institucional da UCLA Health Sciences.
+A reportagem foi produzida de forma original pelo EuvouserDoutor. Os resultados, a amostra e o desenho da pesquisa foram conferidos no artigo publicado pela PNAS e no material institucional da UCLA Health Sciences.
 
 O MethylScan representa uma possibilidade relevante para o futuro dos exames de sangue, mas a evidência atual ainda pede validação em pessoas acompanhadas desde antes do diagnóstico. É essa etapa que dirá se a promessa observada no laboratório poderá se transformar em uma ferramenta segura e útil na prática médica.
 
-**EuvouserDoutor - Jeff Queiroz**
+**EuvouserDoutor - Jeff Queiroz**`,
   },
 ];
