@@ -1863,7 +1863,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa farmacêutica avançada" className="w-full h-auto" />
+            <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa farmacêutica avançada" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Ciência de Precisão: O MK-8527 é um inibidor de translocação da transcriptase reversa de nucleosídeo (NRTTI) com potência excepcional.
@@ -1967,7 +1967,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#8C4FFF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa laboratorial de terapia gênica" className="w-full h-auto" />
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa laboratorial de terapia gênica" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Inovação Biofarmacêutica: O uso de vetores AAV de dupla rotação permite alcançar com segurança as estruturas delicadas da cóclea humana.
@@ -2071,7 +2071,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#FF4F4F] to-[#8C4FFF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1200" alt="Equipes de saúde em resposta a epidemias" className="w-full h-auto" />
+            <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1200" alt="Equipes de saúde em resposta a epidemias" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Linha de Frente: Profissionais de saúde utilizam EPIs de nível 4 para tratar pacientes infectados em zonas de conflito na RDC.
@@ -2285,7 +2285,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#8C4FFF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa laboratorial de terapia gênica" className="w-full h-auto" />
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200" alt="Pesquisa laboratorial de terapia gênica" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Inovação Biofarmacêutica: O uso de vetores AAV de dupla rotação permite alcançar com segurança as estruturas delicadas da cóclea humana.
@@ -2483,7 +2483,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/editorial/ia_oncologia_linfoma_2026.webp" alt="Mecanismo de ação do rituximabe" className="w-full h-auto" />
+            <img src="/editorial/ia_oncologia_linfoma_2026.webp" alt="Mecanismo de ação do rituximabe" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Medicina de Precisão: O rituximabe ataca células B específicas, mas sua eficácia depende do perfil imunológico individual, agora mapeável por IA.
@@ -2586,7 +2586,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <SafeImage src="/editorial/angiotomografia_coronariana_2026.webp" alt="Risco de silicose em marmorarias" className="w-full h-auto" />
+            <SafeImage src="/editorial/angiotomografia_coronariana_2026.webp" alt="Risco de silicose em marmorarias" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Perigo Invisível: O corte de pedras de quartzo gera poeira de sílica altamente concentrada. Especialistas recomendam apenas o corte úmido e ventilação industrial pesada.
@@ -2809,7 +2809,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/editorial/vacina_hiv_2026.webp" alt="Mecanismo de ação da vacina HIV" className="w-full h-auto" />
+            <img src="/editorial/vacina_hiv_2026.webp" alt="Mecanismo de ação da vacina HIV" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Treinamento Imunológico: A sequência de vacinas "molda" a resposta das células B, forçando-as a evoluir para produzir anticorpos capazes de neutralizar diversas cepas do vírus.
@@ -2911,7 +2911,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <SafeImage src="/editorial/fibromialgia_genetica_2026.webp" alt="Mecanismo genético da Doença de Huntington" className="w-full h-auto" />
+            <SafeImage src="/editorial/fibromialgia_genetica_2026.webp" alt="Mecanismo genético da Doença de Huntington" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Escala de risco: O número de repetições CAG determina a penetrância e a idade de início da doença. O novo tratamento impede que esse número aumente ao longo da vida.
@@ -3064,7 +3064,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <SafeImage src="/editorial/fibromialgia_genetica_2026.webp" alt="Diagrama da Ataxia de Friedreich" className="w-full h-auto" />
+            <SafeImage src="/editorial/fibromialgia_genetica_2026.webp" alt="Diagrama da Ataxia de Friedreich" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Entenda a doença: A deficiência de frataxina causa disfunção mitocondrial, levando à falha energética das células nervosas e cardíacas.
@@ -3166,7 +3166,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/editorial/dbs_parkinson_2026.webp" alt="Mapeamento genético da estimulação cerebral" className="w-full h-auto" />
+            <img src="/editorial/dbs_parkinson_2026.webp" alt="Mapeamento genético da estimulação cerebral" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Mapeamento da resposta celular: O estudo identificou 611 genes cuja expressão foi alterada pela estimulação elétrica, muitos dos quais são essenciais para a conectividade neural.
@@ -3263,7 +3263,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <SafeImage src="https://images.unsplash.com/photo-1618961734760-466979ce35b0?auto=format&fit=crop&q=80&w=1200" alt="Diagrama de monitoramento PPG" className="w-full h-auto" />
+            <SafeImage src="https://images.unsplash.com/photo-1618961734760-466979ce35b0?auto=format&fit=crop&q=80&w=1200" alt="Diagrama de monitoramento PPG" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Diagrama técnico mostrando a captura de sinais PPG multicanais e a análise de consistência bilateral.
@@ -3367,7 +3367,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         <div className="my-12 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#4F8CFF] to-[#00D1FF] rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative bg-black rounded-[32px] overflow-hidden border border-white/10">
-            <img src="/editorial/dbs_parkinson_2026.webp" alt="Paciente usando BCI" className="w-full h-auto" />
+            <img src="/editorial/dbs_parkinson_2026.webp" alt="Paciente usando BCI" width="1200" height="800" loading="lazy" decoding="async" className="w-full h-auto" />
             <div className="p-6 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-[#98A2B3] text-xs md:text-sm italic">
                 Paciente tetraplégico utilizando o sistema NEO para controlar uma luva robótica e segurar uma garrafa de água.
@@ -6126,7 +6126,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         "name": "EuvouserDoutor",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.euvouserdoutor.com/logo-euvouserdoutor.png"
+          "url": "https://www.euvouserdoutor.com/logo-euvouserdoutor.webp"
         }
       },
       "mainEntityOfPage": {
@@ -6233,7 +6233,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
 
                     <div className="md:w-2/5 relative flex justify-center">
                       <div className="w-48 h-48 md:w-64 md:h-64 rounded-[40px] bg-[#080A0F] rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-2xl flex items-center justify-center p-8">
-                        <img src="/logo-euvouserdoutor.png" alt="Logo" className="w-full h-auto brightness-0 invert opacity-20" />
+                        <img src="/logo-euvouserdoutor.webp" alt="Logo EuvouserDoutor" width="600" height="250" loading="lazy" decoding="async" className="w-full h-auto brightness-0 invert opacity-20" />
                         <GraduationCap size={80} className="absolute text-white/10" />
                       </div>
                     </div>

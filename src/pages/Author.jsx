@@ -9,7 +9,7 @@ const PinterestIcon = ({ size = 18, className = "" }) => (
 );
 
 export const Author = ({ setView }) => {
-  const profileImg = '/jeff-queiroz-perfil.jpg';
+  const profileImg = '/jeff-queiroz-perfil.webp';
 
   const publications = [
     {
@@ -82,7 +82,7 @@ export const Author = ({ setView }) => {
                 <div className="bg-[#11141A] rounded-[30px] overflow-hidden">
                   <div className="aspect-[4/5] w-full overflow-hidden relative">
                     {/* COLOR IMAGE - NO GRAYSCALE */}
-                    <img src={profileImg} alt="Jefferson Queiroz" className="w-full h-full object-cover transition-all duration-700" />
+                    <img src={profileImg} alt="Jeff Queiroz" width="320" height="400" decoding="async" className="w-full h-full object-cover transition-all duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#11141A] via-transparent to-transparent opacity-40" />
                     <div className="absolute bottom-5 left-5 right-5 z-10">
                       <p className="text-[9px] font-black uppercase tracking-[0.3em] text-[#4F8CFF] mb-0.5">Fundador & Editor</p>

@@ -20,7 +20,7 @@ const Sidebar = ({ setView, profileImg, telegram }) => (
       <div className="flex items-center gap-4 mb-6">
         <div className="relative">
           <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-[#2E70CE] to-[#0A192F] p-1">
-             <img src={profileImg || "https://i.imgur.com/9QVE0X7.jpeg"} alt="Jeff Queiroz" className="w-full h-full rounded-full border-2 border-white object-cover object-top" />
+             <img src={profileImg || "/jeff-queiroz-perfil.webp"} alt="Jeff Queiroz" width="64" height="64" loading="lazy" decoding="async" className="w-full h-full rounded-full border-2 border-white object-cover object-top" />
           </div>
           <div className="absolute -bottom-1 -right-1 bg-green-500 w-4 h-4 rounded-full border-2 border-white"></div>
         </div>

@@ -22,7 +22,7 @@ const isoDateFor = (meta) => meta.datePublished || '2026-08-14T09:00:00-03:00';
 
 function buildJsonLd(routePath, meta, isArticle) {
   const canonical = absoluteUrl(routePath);
-  const image = absoluteUrl(meta.image || '/logo-euvouserdoutor.png');
+  const image = absoluteUrl(meta.image || '/logo-euvouserdoutor.webp');
   const authorId = `${institutional.site}/autor/jeff-queiroz#person`;
   const organizationId = `${institutional.site}/#organization`;
   const graph = [
@@ -32,7 +32,7 @@ function buildJsonLd(routePath, meta, isArticle) {
       name: 'EuvouserDoutor',
       legalName: 'EuvouserDoutor',
       url: institutional.site,
-      logo: `${institutional.site}/logo-euvouserdoutor.png`,
+      logo: `${institutional.site}/logo-euvouserdoutor.webp`,
       founder: { '@id': authorId },
       sameAs: [institutional.instagram, institutional.facebook, institutional.youtube, institutional.telegram, institutional.linkedin, institutional.pinterest].filter(Boolean),
     },
@@ -42,7 +42,7 @@ function buildJsonLd(routePath, meta, isArticle) {
       name: 'Jeff Queiroz',
       alternateName: 'Jefferson Viana Queiroz',
       url: `${institutional.site}/autor/jeff-queiroz`,
-      image: `${institutional.site}/jeff-queiroz-perfil.jpg`,
+      image: `${institutional.site}/jeff-queiroz-perfil.webp`,
       worksFor: { '@id': organizationId },
       sameAs: [institutional.instagram, institutional.linkedin].filter(Boolean),
     },
@@ -76,7 +76,8 @@ function buildJsonLd(routePath, meta, isArticle) {
 
 function buildHead(routePath, meta, isArticle) {
   const canonical = absoluteUrl(routePath);
-  const image = absoluteUrl(meta.image || '/logo-euvouserdoutor.png');
+  const image = absoluteUrl(meta.image || '/logo-euvouserdoutor.webp');
+  const lcpImage = routePath === '/' ? `${institutional.site}/jeff-queiroz-perfil.webp` : null;
   const type = isArticle ? 'article' : 'website';
   const published = isArticle ? isoDateFor(meta) : '';
   const jsonLd = buildJsonLd(routePath, meta, isArticle);
@@ -95,7 +96,7 @@ function buildHead(routePath, meta, isArticle) {
     <meta name="twitter:title" content="${escapeHtml(meta.title)}" />
     <meta name="twitter:description" content="${escapeHtml(meta.description)}" />
     <meta name="twitter:image" content="${escapeHtml(image)}" />
-    ${published ? `<meta property="article:published_time" content="${published}" />` : ''}
+    ${lcpImage ? `<link rel="preload" as="image" href="${escapeHtml(lcpImage)}" fetchpriority="high" />` : ''}${published ? `<meta property="article:published_time" content="${published}" />` : ''}
     <title>${escapeHtml(meta.title)}</title>
     <script id="evd-jsonld" type="application/ld+json">${jsonForHtml(jsonLd)}</script>`;
 }
@@ -111,7 +112,7 @@ for (const routePath of [...new Set(paths)]) {
   const body = render(routePath);
   const head = buildHead(routePath, meta, isArticle);
   const html = shell
-    .replace(/<head>[\s\S]*?<\/head>/, `<head>${head}<link rel="icon" href="/favicon.png" sizes="32x32" /><link rel="icon" href="/favicon.png" sizes="16x16" /><link rel="apple-touch-icon" href="/favicon.png" /><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" /></head>`)
+    .replace(/<head>[\s\S]*?<\/head>/, `<head>${head}<link rel="icon" href="/favicon.png" sizes="32x32" /><link rel="icon" href="/favicon.png" sizes="16x16" /><link rel="apple-touch-icon" href="/favicon.png" /></head>`)
     .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
   const outputPath = routePath === '/' ? path.join(distDir, 'index.html') : path.join(distDir, routePath.replace(/^\//, ''), 'index.html');
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
