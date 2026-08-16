@@ -85,7 +85,7 @@ export const Header = ({ setView, currentView, telegram }) => {
                 className="flex items-center group shrink-0 focus:outline-none transition-transform hover:scale-[1.02]"
                 aria-label="Ir para a página inicial"
               >
-                <img src="/logo-euvouserdoutor.webp" alt="Logo EuvouserDoutor" width="600" height="250" fetchpriority="high" decoding="async" className="h-10 md:h-14 w-auto object-contain transition-opacity group-hover:opacity-90" />
+                <span className="relative flex h-10 w-[126px] items-center overflow-hidden md:h-12 md:w-[154px]" aria-hidden="true"><img src="/logocomp.png" alt="EuvouserDoutor" width="1672" height="941" fetchpriority="high" decoding="async" className="absolute left-0 top-1/2 w-full max-w-none -translate-y-1/2 object-contain transition-opacity group-hover:opacity-90" /></span>
               </button>
             
               <nav className="hidden lg:flex items-center gap-1 text-[11px] font-black uppercase tracking-[0.15em] text-[#98A2B3]" aria-label="Navegação principal">
