@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { render, institutional, routeMeta, pathToView } from '../dist-server/entry-server.js';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
@@ -82,6 +82,7 @@ function buildHead(routePath, meta, isArticle) {
   const published = isArticle ? isoDateFor(meta) : '';
   const jsonLd = buildJsonLd(routePath, meta, isArticle);
   return `
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${escapeHtml(meta.description)}" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
@@ -102,6 +103,7 @@ function buildHead(routePath, meta, isArticle) {
 }
 
 const shell = await fs.readFile(path.join(distDir, 'index.html'), 'utf8');
+const stylesheetLinks = [...shell.matchAll(/<link rel="stylesheet"[^>]*>/g)].map((match) => match[0]).join('');
 const sitemap = await fs.readFile(path.join(distDir, 'sitemap.xml'), 'utf8');
 const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]).pathname || '/');
 
@@ -112,7 +114,7 @@ for (const routePath of [...new Set(paths)]) {
   const body = render(routePath);
   const head = buildHead(routePath, meta, isArticle);
   const html = shell
-    .replace(/<head>[\s\S]*?<\/head>/, `<head>${head}<link rel="icon" href="/favicon.png" sizes="32x32" /><link rel="icon" href="/favicon.png" sizes="16x16" /><link rel="apple-touch-icon" href="/favicon.png" /></head>`)
+    .replace(/<head>[\s\S]*?<\/head>/, `<head>${head}${stylesheetLinks}<link rel="icon" href="/favicon-optimized.png" sizes="32x32" /><link rel="icon" href="/favicon-optimized.png" sizes="16x16" /><link rel="apple-touch-icon" href="/favicon-optimized.png" /></head>`)
     .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
   const outputPath = routePath === '/' ? path.join(distDir, 'index.html') : path.join(distDir, routePath.replace(/^\//, ''), 'index.html');
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
