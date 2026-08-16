@@ -1,7 +1,8 @@
 name: Monitoramento editorial EuvouserDoutor
 
 on:
-  # O monitor automático externo foi pausado; a publicação volta a ser executada pela tarefa editorial interna.
+  schedule:
+    - cron: '0 6,12,15,18,21 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -10,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   monitor-and-publish:
@@ -26,11 +28,8 @@ jobs:
         with:
           node-version: 22
 
-      - name: Executar monitor editorial
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
-        run: node scripts/editorial-monitor.mjs
+      - name: Monitorar fila editorial
+        run: node scripts/editorial-queue.mjs
 
       - name: Validar build do site
         run: |
@@ -38,14 +37,22 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm run build
 
-      - name: Publicar automaticamente no repositório
+      - name: Abrir ou atualizar PR da fila editorial
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet -- src/autoPosts.jsx; then
-            echo 'Nenhuma pauta nova elegível.'
+          if git diff --quiet -- src/editorialQueue.json reports/editorial-queue-latest.md; then
+            echo 'Nenhuma pauta nova encontrada.'
             exit 0
           fi
           git config user.name 'EuvouserDoutor Editorial Bot'
           git config user.email 'editorial-bot@euvouserdoutor.com'
-          git add src/autoPosts.jsx
-          git commit -m "feat(editorial): publicar nova pauta verificada"
-          git push origin HEAD:main
+          git checkout -B bot/editorial-queue
+          git add src/editorialQueue.json reports/editorial-queue-latest.md
+          git commit -m 'chore(editorial): atualizar fila de pautas'
+          git push --force origin bot/editorial-queue
+          PR_URL=$(gh pr list --head bot/editorial-queue --base main --json url --jq '.[0].url')
+          if [ -z "$PR_URL" ]; then
+            PR_URL=$(gh pr create --base main --head bot/editorial-queue --title 'Fila editorial automática' --body 'Fila de pautas descobertas automaticamente. Cada item permanece pendente de apuração primária e não é publicado como notícia sem verificação editorial.')
+          fi
+          gh pr merge "$PR_URL" --auto --squash --delete-branch=false || echo 'Auto-merge aguardando checks obrigatórios.'
