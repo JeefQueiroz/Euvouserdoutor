@@ -132,7 +132,7 @@ export const Home = ({ setView }) => {
                   </p>
                   <div className="pt-6 border-t border-white/[0.05] flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <img src={profileImg} alt="Jeff Queiroz" className="w-10 h-10 rounded-full object-cover border border-[#4F8CFF]/30" />
+                      <img src={profileImg} alt="Jeff Queiroz" width="40" height="40" fetchpriority="high" decoding="async" className="w-10 h-10 rounded-full object-cover border border-[#4F8CFF]/30" />
                       <div>
                         <p className="text-[11px] font-bold text-white">Jeff Queiroz</p>
                         <p className="text-[9px] text-[#98A2B3]">Editor-Chefe</p>
@@ -178,6 +178,10 @@ export const Home = ({ setView }) => {
                 <img 
                   src={item.img} 
                   alt={item.title} 
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#080A0F] via-transparent to-transparent opacity-60" />
@@ -209,7 +213,7 @@ export const Home = ({ setView }) => {
             
             <div className="relative shrink-0">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-[40px] overflow-hidden border-2 border-[#4F8CFF]/20 shadow-2xl rotate-3 group-hover:rotate-0 transition-transform duration-500">
-                <img src={profileImg} alt="Jeff Queiroz" className="w-full h-full object-cover scale-110" />
+                <img src={profileImg} alt="Jeff Queiroz" width="160" height="160" loading="lazy" decoding="async" className="w-full h-full object-cover scale-110" />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-[#4F8CFF] text-[#080A0F] p-3 rounded-2xl shadow-xl">
                 <Sparkles size={20} />

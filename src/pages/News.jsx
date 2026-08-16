@@ -801,7 +801,7 @@ export const News = ({ setView }) => {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-6 py-2.5 rounded-[22px] text-[10px] font-black uppercase tracking-widest transition-all ${
+              className={`px-6 py-3 rounded-[22px] text-[10px] font-black uppercase tracking-widest transition-all ${
                 selectedCategory === cat 
                 ? 'bg-[#4F8CFF] text-white shadow-[0_0_20px_rgba(79,140,255,0.4)]' 
                 : 'text-[#98A2B3] hover:text-white hover:bg-white/5'
@@ -812,6 +812,7 @@ export const News = ({ setView }) => {
           ))}
         </div>
 
+        <h2 className="sr-only">Lista de notícias</h2>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8 xl:col-span-9 space-y-12">
             {/* Featured Post */}

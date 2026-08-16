@@ -27,7 +27,7 @@ export const Footer = ({ setView, telegram }) => (
               className="flex items-center focus:outline-none group"
               aria-label="Início"
             >
-              <img src="/logo-euvouserdoutor.webp" alt="Logo" width="600" height="250" loading="lazy" decoding="async" className="h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
+              <img src="/logo-euvouserdoutor.webp" alt="Logo EuvouserDoutor" width="600" height="250" loading="lazy" decoding="async" className="h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
             </button>
             <p className="text-[#98A2B3] text-sm leading-relaxed max-w-md font-medium">
               {institutional.description}

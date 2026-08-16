@@ -42,7 +42,7 @@ export const Article = ({ setView, profileImg }) => (
         <div className="bg-[#11141A] rounded-[28px] p-6 md:p-10 shadow-2xl border border-white/[0.05] premium-border">
           <section className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
             <div className="md:col-span-4">
-              <img src={profileImg} alt="Jeff Queiroz" className="w-full h-auto rounded-2xl shadow-sm object-cover aspect-[4/5] border border-white/[0.05]" />
+              <img src={profileImg.replace('.jpg', '.webp')} alt="Jeff Queiroz" width="320" height="400" decoding="async" className="w-full h-auto rounded-2xl shadow-sm object-cover aspect-[4/5] border border-white/[0.05]" />
             </div>
             <div className="md:col-span-8 space-y-5 text-[#98A2B3] leading-relaxed text-sm md:text-base font-medium">
               <p className="text-lg md:text-xl text-[#F8FAFC] font-bold leading-relaxed border-l-4 border-[#4F8CFF] pl-6">
