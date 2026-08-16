@@ -1,139 +1,248 @@
 import {
   ArrowRight,
   BookOpen,
-  Clock3,
-  FlaskConical,
+  Clock,
+  Download,
   GraduationCap,
-  ShieldCheck,
+  Layers,
   Sparkles,
   TrendingUp,
+  Zap
 } from 'lucide-react';
-import { autoPosts } from '../autoPosts';
-import { SafeImage } from '../components/SafeImage';
 
-const categories = ['Saúde', 'Ciência', 'Tecnologia', 'Educação'];
+export const Home = ({ setView }) => {
+  const profileImg = '/jeff-queiroz-perfil.webp';
 
-function ArticleCard({ post, onOpen, featured = false }) {
-  return (
-    <article
-      className={`group cursor-pointer ${featured ? 'lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:gap-8' : ''}`}
-      onClick={() => onOpen(post.id)}
-      onKeyDown={(event) => {
-        if (event.key === 'Enter' || event.key === ' ') onOpen(post.id);
-      }}
-      role="link"
-      tabIndex={0}
-    >
-      <div className={`relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-[#111820] ${featured ? 'aspect-[16/10] lg:aspect-auto lg:min-h-[360px]' : 'aspect-[16/10]'}`}>
-        <SafeImage
-          src={post.img}
-          alt={post.title}
-          width={featured ? 1200 : 800}
-          height={featured ? 750 : 500}
-          priority={featured}
-          className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#071018] via-[#071018]/10 to-transparent" />
-        <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full border border-white/10 bg-[#071018]/75 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-[#8EB3FF] backdrop-blur-md">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#6B9BFF]" />
-          {post.cat}
-        </div>
-        {featured && (
-          <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-[11px] font-bold text-white/75">
-            <span className="flex items-center gap-2"><Clock3 size={13} className="text-[#8EB3FF]" /> {post.date}</span>
-            <span>{post.readTime} de leitura</span>
-          </div>
-        )}
-      </div>
-      <div className={`${featured ? 'mt-6 lg:mt-0 lg:flex lg:flex-col lg:justify-center' : 'mt-5'} space-y-3`}>
-        {!featured && <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#8290A5]"><Clock3 size={12} className="text-[#6B9BFF]" /> {post.date} · {post.readTime}</div>}
-        <h3 className={`${featured ? 'text-2xl md:text-4xl' : 'text-xl'} font-black leading-[1.05] tracking-tight text-[#F7FAFC] transition-colors group-hover:text-[#9AB8FF]`}>
-          {post.title}
-        </h3>
-        <p className={`${featured ? 'text-sm md:text-base' : 'text-sm'} line-clamp-3 leading-relaxed text-[#98A6B8]`}>
-          {post.subtitle}
-        </p>
-        {featured && <span className="inline-flex items-center gap-2 pt-2 text-[11px] font-black uppercase tracking-[0.18em] text-[#8EB3FF]">Ler análise completa <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" /></span>}
-      </div>
-    </article>
-  );
-}
+  const featuredNews = {
+    category: 'Ciência & Tecnologia',
+    title: 'Nova pesquisa em neurociência revela avanços na compreensão de circuitos de memória em estudantes',
+    excerpt: 'Estudo publicado recentemente aponta como a revisão espaçada e o estudo ativo alteram a retenção sináptica a longo prazo.',
+    time: 'Há 2 horas',
+    img: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200'
+  };
 
-export const Home = ({ setView, profileImg = '/jeff-queiroz-perfil.webp' }) => {
-  const featuredPost = autoPosts[0];
-  const latestPosts = autoPosts.slice(1, 4);
+  const latestNews = [
+    {
+      category: 'Vestibular & ENEM',
+      title: 'Cronograma Sisu e notas de corte: O que esperar do próximo ciclo',
+      excerpt: 'Análise detalhada das tendências de pontuação nas principais universidades federais.',
+      time: 'Há 4 horas',
+      img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800'
+    },
+    {
+      category: 'Vida Acadêmica',
+      title: 'A rotina no ciclo básico de Medicina: Como organizar plantões e teoria',
+      excerpt: 'Dicas práticas de acadêmicos da UFMG para equilibrar o volume de conteúdo denso.',
+      time: 'Há 6 horas',
+      img: 'https://i.imgur.com/9QVE0X7.jpeg'
+    },
+    {
+      category: 'Inovação Médica',
+      title: 'Inteligência artificial no diagnóstico precoce: O impacto na prática clínica',
+      excerpt: 'Como ferramentas de apoio computacional estão transformando a precisão diagnóstica.',
+      time: 'Há 8 horas',
+      img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800'
+    },
+  ];
 
   return (
-    <div className="min-h-screen bg-[#071018] pb-24 text-[#F7FAFC]">
-      <section className="relative isolate min-h-[690px] overflow-hidden border-b border-white/[0.08] md:min-h-[760px]">
-        <div className="absolute inset-0">
-          <SafeImage src={featuredPost.img} alt="" width={1600} height={1000} priority className="h-full w-full object-cover opacity-35 grayscale-[20%]" aria-hidden="true" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,#071018_0%,#071018e8_38%,#0710188c_67%,#071018d9_100%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(0deg,#071018_0%,transparent_42%,#07101880_100%)]" />
-        </div>
-        <div className="absolute -right-32 top-24 h-[480px] w-[480px] rounded-full border border-[#B8FF4A]/20 bg-[#B8FF4A]/10 blur-3xl" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#B8FF4A] to-transparent opacity-70" />
-        <div className="container relative z-10 flex min-h-[690px] items-end py-14 md:min-h-[760px] md:py-20">
-          <div className="grid w-full items-end gap-12 lg:grid-cols-[1fr_0.72fr] lg:gap-24">
-            <div className="max-w-4xl">
-              <div className="mb-8 flex flex-wrap items-center gap-3">
-                <span className="inline-flex items-center gap-2 rounded-full bg-[#B8FF4A] px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-[#071018]"><span className="h-2 w-2 animate-pulse rounded-full bg-[#071018]" /> Descoberta em foco</span>
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">Saúde & Ciência · 16 Ago 2026</span>
+    <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
+      {/* Mega Premium Hero Section */}
+      <section className="relative w-full overflow-hidden pt-16 pb-32 border-b border-white/[0.03]">
+        {/* Premium Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_10%,rgba(79,140,255,0.1),transparent_45%)]" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#4F8CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        <div className="absolute left-0 top-0 w-1/4 h-full bg-gradient-to-r from-[#4F8CFF]/5 to-transparent pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            {/* Left: Main Editorial Intro */}
+            <div className="lg:col-span-7 space-y-10">
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2.5 bg-[#4F8CFF]/5 border border-[#4F8CFF]/20 text-[#4F8CFF] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.25em] animate-blur-reveal">
+                  <Zap size={12} className="fill-[#4F8CFF]" />
+                  Portal Editorial & Pesquisa
+                </div>
+                
+                <h1 className="text-4xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#F8FAFC] text-balance">
+                  Informação de <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Elite</span> para Medicina.
+                </h1>
+                
+                <p className="text-base md:text-xl text-[#98A2B3] leading-relaxed max-w-xl font-medium text-pretty">
+                  Notícias de impacto, pesquisas científicas de ponta e estratégias acadêmicas com o mais alto rigor editorial e científico.
+                </p>
               </div>
-              <p className="mb-5 text-sm font-black uppercase tracking-[0.3em] text-[#B8FF4A]">MethylScan · PNAS</p>
-              <h1 className="max-w-5xl text-5xl font-black leading-[0.88] tracking-[-0.065em] text-white md:text-7xl lg:text-[7.25rem]">
-                Um exame.<br /><span className="text-[#B8FF4A]">Quatro cânceres.</span><br />O que muda?
-              </h1>
-              <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/75 md:text-xl">
-                A UCLA testou um método que procura sinais moleculares no sangue. A descoberta é promissora — mas a ciência ainda está medindo o que ela realmente pode fazer.
+
+              <div className="flex flex-wrap gap-5">
+                <button
+                  type="button"
+                  onClick={() => setView('news')}
+                  className="bg-[#4F8CFF] text-[#080A0F] px-10 py-5 rounded-[24px] font-black text-xs uppercase tracking-widest hover:bg-[#7EA6FF] hover-lift transition-all flex items-center gap-3 shadow-[0_20px_40px_rgba(79,140,255,0.2)]"
+                >
+                  Explorar Notícias <ArrowRight size={16} strokeWidth={3} />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setView('mentorship')}
+                  className="bg-white/[0.03] text-white border border-white/[0.08] px-10 py-5 rounded-[24px] font-black text-xs uppercase tracking-widest hover:bg-white/[0.06] hover-lift transition-all flex items-center gap-3"
+                >
+                  Mentoria Premium
+                </button>
+              </div>
+
+              {/* Authority Block to fill space and add value */}
+              <div className="hidden md:flex items-center gap-8 pt-6 opacity-60">
+                <div className="flex flex-col gap-1">
+                  <p className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF]">Verificação</p>
+                  <p className="text-white text-xs font-bold">Rigor Científico</p>
+                </div>
+                <div className="h-8 w-px bg-white/10" />
+                <div className="flex flex-col gap-1">
+                  <p className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF]">Atualização</p>
+                  <p className="text-white text-xs font-bold">Plantão 24h</p>
+                </div>
+                <div className="h-8 w-px bg-white/10" />
+                <div className="flex flex-col gap-1">
+                  <p className="text-[9px] font-black uppercase tracking-widest text-[#4F8CFF]">Origem</p>
+                  <p className="text-white text-xs font-bold">Medicina UFMG</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Featured Story Card - High End */}
+            <div className="lg:col-span-5">
+              <div 
+                onClick={() => setView('news')}
+                className="glass-premium rounded-[40px] p-1 cursor-pointer group transition-all duration-500 hover:scale-[1.02]"
+              >
+                <div className="bg-[#11141A] rounded-[39px] overflow-hidden p-8 space-y-6">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-[#4F8CFF] bg-[#4F8CFF]/10 px-3 py-1 rounded-lg">
+                      {featuredNews.category}
+                    </span>
+                    <span className="text-[10px] text-[#98A2B3] font-bold flex items-center gap-1.5">
+                      <Clock size={12} className="text-[#4F8CFF]" /> {featuredNews.time}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-black text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors leading-tight tracking-tight">
+                    {featuredNews.title}
+                  </h3>
+                  <p className="text-[#98A2B3] text-sm leading-relaxed font-medium line-clamp-3">
+                    {featuredNews.excerpt}
+                  </p>
+                  <div className="pt-6 border-t border-white/[0.05] flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <img src={profileImg} alt="Jeff Queiroz" width="40" height="40" fetchpriority="high" decoding="async" className="w-10 h-10 rounded-full object-cover border border-[#4F8CFF]/30" />
+                      <div>
+                        <p className="text-[11px] font-bold text-white">Jeff Queiroz</p>
+                        <p className="text-[9px] text-[#98A2B3]">Editor-Chefe</p>
+                      </div>
+                    </div>
+                    <span className="w-10 h-10 rounded-2xl bg-[#4F8CFF]/10 flex items-center justify-center text-[#4F8CFF] group-hover:bg-[#4F8CFF] group-hover:text-[#080A0F] transition-all">
+                      <ArrowRight size={18} />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Editorial Grid - Sophisticated Composition */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <TrendingUp size={16} className="text-[#4F8CFF]" />
+              <p className="text-[#4F8CFF] font-black uppercase text-[10px] tracking-[0.3em]">Editoria em Foco</p>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#F8FAFC] tracking-tighter">Últimas Atualizações</h2>
+          </div>
+          <button 
+            onClick={() => setView('news')} 
+            className="group text-[11px] font-black text-[#98A2B3] hover:text-white uppercase tracking-widest flex items-center gap-3 transition-all bg-white/[0.03] border border-white/[0.08] px-6 py-3 rounded-2xl"
+          >
+            Ver Redação Completa <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {latestNews.map((item, idx) => (
+            <article
+              key={idx}
+              onClick={() => setView('news')}
+              className="group cursor-pointer space-y-6"
+            >
+              <div className="aspect-[16/10] rounded-[32px] overflow-hidden border border-white/[0.05] premium-border relative">
+                <img 
+                  src={item.img} 
+                  alt={item.title} 
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080A0F] via-transparent to-transparent opacity-60" />
+                <span className="absolute top-4 left-4 z-20 bg-[#080A0F]/60 backdrop-blur-md border border-white/[0.1] text-[#4F8CFF] px-3 py-1 rounded-lg text-[9px] font-black uppercase tracking-widest">
+                  {item.category}
+                </span>
+              </div>
+              <div className="space-y-3 px-2">
+                <div className="flex items-center gap-2 text-[10px] text-[#98A2B3] font-bold">
+                  <Clock size={12} className="text-[#4F8CFF]" /> {item.time}
+                </div>
+                <h3 className="text-xl font-black text-[#F8FAFC] group-hover:text-[#4F8CFF] transition-colors leading-tight tracking-tight">
+                  {item.title}
+                </h3>
+                <p className="text-xs text-[#98A2B3] leading-relaxed font-medium line-clamp-2">
+                  {item.excerpt}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Author Brand Section - High Authority */}
+      <section className="max-w-7xl mx-auto px-6">
+        <div className="glass-premium rounded-[48px] p-1 overflow-hidden">
+          <div className="bg-[#11141A] rounded-[47px] p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#4F8CFF]/5 rounded-full blur-3xl -mr-32 -mt-32" />
+            
+            <div className="relative shrink-0">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-[40px] overflow-hidden border-2 border-[#4F8CFF]/20 shadow-2xl rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                <img src={profileImg} alt="Jeff Queiroz" width="160" height="160" loading="lazy" decoding="async" className="w-full h-full object-cover scale-110" />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-[#4F8CFF] text-[#080A0F] p-3 rounded-2xl shadow-xl">
+                <Sparkles size={20} />
+              </div>
+            </div>
+
+            <div className="space-y-6 text-center md:text-left relative z-10">
+              <div className="space-y-2">
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#4F8CFF]">The Visionary Behind</span>
+                <h3 className="text-3xl md:text-5xl font-black text-[#F8FAFC] tracking-tighter">Jeff Queiroz <span className="text-[#98A2B3]/30">·</span> Medicina UFMG</h3>
+              </div>
+              <p className="text-[#98A2B3] text-sm md:text-base leading-relaxed max-w-2xl font-medium">
+                Pesquisador e estrategista acadêmico, Jeff Queiroz fundou o <strong>EuVouSerDoutor</strong> para elevar o padrão da comunicação científica e preparação médica no Brasil, unindo rigor editorial e inovação tecnológica.
               </p>
-              <div className="mt-9 flex flex-wrap items-center gap-3">
-                <button type="button" onClick={() => setView(featuredPost.id)} className="group inline-flex items-center gap-3 rounded-2xl bg-[#B8FF4A] px-6 py-4 text-[11px] font-black uppercase tracking-[0.17em] text-[#071018] shadow-[0_15px_45px_rgba(184,255,74,.2)] transition hover:-translate-y-1 hover:bg-white">Ler a análise <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" /></button>
-                <button type="button" onClick={() => setView('news')} className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-white/[0.06] px-6 py-4 text-[11px] font-black uppercase tracking-[0.17em] text-white backdrop-blur-md transition hover:-translate-y-1 hover:bg-white/10">Ver todas as notícias</button>
+              <div className="flex flex-wrap justify-center md:justify-start gap-6 pt-2">
+                <button
+                  onClick={() => setView('author')}
+                  className="group text-[11px] font-black text-[#F8FAFC] uppercase tracking-[0.2em] flex items-center gap-3 transition-all"
+                >
+                  Perfil Completo <ArrowRight size={16} className="text-[#4F8CFF] group-hover:translate-x-1 transition-transform" />
+                </button>
+                <div className="h-4 w-px bg-white/10 hidden md:block" />
+                <div className="flex items-center gap-2 text-[10px] font-bold text-[#98A2B3]">
+                  <Layers size={14} className="text-[#4F8CFF]" />
+                  <span>Conteúdo Editorial Científico</span>
+                </div>
               </div>
             </div>
-            <div className="hidden space-y-4 lg:block">
-              <div className="border-l-2 border-[#B8FF4A] pl-5"><p className="text-4xl font-black tracking-tight text-white">1.061</p><p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/55">amostras analisadas</p></div>
-              <div className="border-l-2 border-white/25 pl-5"><p className="text-4xl font-black tracking-tight text-white">55,3%</p><p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/55">sensibilidade em tumores iniciais</p></div>
-              <div className="border-l-2 border-white/25 pl-5"><p className="text-sm font-bold leading-relaxed text-white/70">Um resultado promissor não é o mesmo que um exame pronto para uso clínico.</p></div>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="container py-16 md:py-24">
-        <div className="mb-9 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-          <div>
-            <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-[#8EB3FF]"><TrendingUp size={14} /> Curadoria da redação</div>
-            <h2 className="text-3xl font-black tracking-tight md:text-4xl">O que está movimentando a ciência</h2>
-            <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#8290A5]">Descobertas, tratamentos e tecnologias explicados sem exagero e com contexto.</p>
-          </div>
-          <button type="button" onClick={() => setView('news')} className="group inline-flex items-center gap-3 self-start rounded-xl border border-white/10 px-4 py-3 text-[10px] font-black uppercase tracking-[0.16em] text-[#A8B4C4] transition hover:border-[#6B9BFF]/40 hover:text-white md:self-auto">Ver toda a redação <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" /></button>
-        </div>
-        <div className="grid gap-9 md:grid-cols-3">
-          {latestPosts.map((post) => <ArticleCard key={post.id} post={post} onOpen={setView} />)}
-        </div>
-      </section>
-
-      <section className="container">
-        <div className="relative overflow-hidden rounded-[34px] border border-[#6B9BFF]/20 bg-[linear-gradient(115deg,rgba(24,40,65,.94),rgba(12,22,34,.96))] p-8 md:p-12">
-          <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#6B9BFF]/15 blur-3xl" />
-          <div className="relative grid items-center gap-8 md:grid-cols-[auto_1fr_auto]">
-            <SafeImage src={profileImg} alt="Jeff Queiroz" width={112} height={112} className="h-24 w-24 rounded-3xl border border-[#8EB3FF]/30 object-cover md:h-28 md:w-28" />
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.24em] text-[#8EB3FF]">Criado por Jeff Queiroz</p>
-              <h2 className="mt-2 text-2xl font-black tracking-tight md:text-3xl">EuvouserDoutor para quem leva a formação a sério.</h2>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#A8B4C4]">Um espaço que conecta comunicação científica, preparação médica e tecnologia educacional em uma experiência editorial única.</p>
-            </div>
-            <button type="button" onClick={() => setView('author')} className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 px-5 py-3 text-[10px] font-black uppercase tracking-[0.16em] text-white transition hover:border-[#8EB3FF]/60 hover:bg-white/[0.06]">Conhecer Jeff <ArrowRight size={15} /></button>
-          </div>
-        </div>
-      </section>
-
-      <section className="container pt-16">
-        <div className="flex flex-wrap items-center gap-3 border-t border-white/10 pt-8">
-          <span className="mr-2 text-[10px] font-black uppercase tracking-[0.22em] text-[#8290A5]">Explorar por tema</span>
-          {categories.map((category) => <button key={category} type="button" onClick={() => setView('news')} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-xs font-bold text-[#B9C4D2] transition hover:border-[#6B9BFF]/45 hover:text-white">{category}</button>)}
         </div>
       </section>
     </div>
