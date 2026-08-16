@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 import { render, institutional, routeMeta, pathToView } from '../dist-server/entry-server.js';
 
 const root = path.dirname(fileURLToPath(import.meta.url));

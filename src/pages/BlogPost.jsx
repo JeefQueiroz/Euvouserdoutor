@@ -3750,7 +3750,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     )
   },
   ozempic_brain_addiction_2026: {
-    title: "Além do Peso: Ozempic 'Desliga' o Centro de Vício no Cérebro, Revela Estudo",
+    title: "Ozempic e compulsão: estudo investiga a atuação de agonistas de GLP-1 no cérebro",
     subtitle: "Pesquisadores identificam o septo lateral como o ponto de controle onde medicamentos para emagrecer atuam para reduzir o desejo por álcool e drogas; descoberta pode revolucionar o tratamento de vícios.",
     author: "EuvouserDoutor - Jeff Queiroz",
     location: "Belo Horizonte (MG)",
@@ -4009,7 +4009,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     )
   },
   omega3_cancer_nk_2026: {
-    title: "Omega-3 Pode 'Sabotar' Tratamento de Câncer, Revela Estudo na Science",
+    title: "Omega-3 e imunoterapia: estudo investiga possível efeito sobre células de defesa",
     subtitle: "Pesquisa inédita mostra que certos ácidos graxos inibem a ação de células de defesa e reduzem a eficácia da imunoterapia em tumores de cólon; entenda o mecanismo.",
     author: "EuvouserDoutor - Jeff Queiroz",
     location: "Belo Horizonte (MG)",
@@ -4100,7 +4100,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     )
   },
   alzheimer_surgery_dcLVA_2026: {
-    title: "Cirurgia Controversa de Alzheimer: Ciência Investiga Procedimento que Promete Reverter Sintomas",
+    title: "Cirurgia controversa para Alzheimer: o que a evidência permite afirmar",
     subtitle: "Técnica de 'limpeza cerebral' através de microcirurgia no pescoço gera debate na comunidade médica após vídeos de recuperações surpreendentes; Nature detalha o que se sabe até agora.",
     author: "EuvouserDoutor - Jeff Queiroz",
     location: "Belo Horizonte (MG)",
@@ -4729,8 +4729,8 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       )
     },
     gel_unicamp_chica_2026: {
-      title: "Gel de Planta Brasileira Cicatriza Feridas 2x Mais Rápido, Revela Estudo da Unicamp",
-      subtitle: "Desenvolvido a partir da 'chica', fitoterápico inovador acelera a cura de feridas graves e mucosite oral em pacientes com câncer, superando a eficácia do laser.",
+      title: "Gel de planta brasileira é estudado para cicatrização de feridas",
+      subtitle: "Pesquisa da Unicamp avalia um gel derivado da planta chica em modelos de cicatrização e mucosite; os resultados ainda não equivalem a um tratamento disponível.",
       cat: "Saúde & Ciência",
       time: "7 min",
       date: "12 Ago 2026",
@@ -4819,8 +4819,8 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       )
     },
     leukemia_gene_therapy_2026: {
-      title: "Terapia Genética 'Pronta para Uso' Elimina Leucemia Incurável em 64% dos Pacientes",
-      subtitle: "Estudo clínico do Great Ormond Street Hospital, publicado no NEJM, utiliza edição de base para criar células imunes universais que superam o câncer resistente.",
+      title: "Terapia genética experimental é avaliada contra leucemia resistente",
+      subtitle: "Ensaio clínico inicial avalia células imunes geneticamente modificadas; a taxa observada no estudo não significa cura nem disponibilidade clínica ampla.",
       cat: "Saúde & Ciência",
       time: "7 min",
       date: "11 Ago 2026",
@@ -4999,8 +4999,8 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       )
     },
     coffee_brain_2026: {
-      title: "Café sem Açúcar: Estudo Revela Como a Bebida Fortalece Conexões Neurais e Protege o Cérebro",
-      subtitle: "Pesquisa de longo prazo com 130 mil pessoas e análises de neuroimagem da Johns Hopkins confirmam que o café puro atua como um 'escudo' para o cérebro, reorganizando redes neurais para maior eficiência.",
+      title: "Café e conexões neurais: o que mostram os dados de longo prazo",
+      subtitle: "Estudo observacional e análises de neuroimagem investigam associações entre consumo de café e atividade cerebral; os resultados não provam proteção ou causalidade.",
       cat: "Saúde & Ciência",
       time: "7 min",
       date: "11 Ago 2026",
