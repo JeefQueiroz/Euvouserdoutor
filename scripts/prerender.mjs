@@ -104,6 +104,8 @@ function buildHead(routePath, meta, isArticle) {
 
 const shell = await fs.readFile(path.join(distDir, 'index.html'), 'utf8');
 const stylesheetLinks = [...shell.matchAll(/<link rel="stylesheet"[^>]*>/g)].map((match) => match[0]).join('');
+const modulePreloadLinks = [...shell.matchAll(/<link rel="modulepreload"[^>]*>/g)].map((match) => match[0]).join('');
+const scriptTags = [...shell.matchAll(/<script[^>]*src="[^"]+"[^>]*><\/script>/g)].map((match) => match[0]).join('');
 const sitemap = await fs.readFile(path.join(distDir, 'sitemap.xml'), 'utf8');
 const paths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]).pathname || '/');
 
@@ -114,7 +116,7 @@ for (const routePath of [...new Set(paths)]) {
   const body = render(routePath);
   const head = buildHead(routePath, meta, isArticle);
   const html = shell
-    .replace(/<head>[\s\S]*?<\/head>/, `<head>${head}${stylesheetLinks}<link rel="icon" href="/favicon-optimized.png" sizes="32x32" /><link rel="icon" href="/favicon-optimized.png" sizes="16x16" /><link rel="apple-touch-icon" href="/favicon-optimized.png" /></head>`)
+    .replace(/<head>[\s\S]*?<\/head>/, `<head>${head}${modulePreloadLinks}${stylesheetLinks}<link rel="icon" href="/favicon-optimized.png" sizes="32x32" /><link rel="icon" href="/favicon-optimized.png" sizes="16x16" /><link rel="apple-touch-icon" href="/favicon-optimized.png" sizes="16x16" />${scriptTags}</head>`)
     .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
   const outputPath = routePath === '/' ? path.join(distDir, 'index.html') : path.join(distDir, routePath.replace(/^\//, ''), 'index.html');
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
