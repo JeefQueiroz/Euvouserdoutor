@@ -77,12 +77,12 @@ Por enquanto, a descoberta deve ser interpretada como uma demonstração de viab
 
 A pesquisa é um estudo de desenvolvimento e avaliação diagnóstica baseado em amostras humanas de plasma e tecido, com modelos computacionais de classificação. Não é um ensaio clínico randomizado e não avaliou um tratamento. O artigo foi publicado em 2026 na PNAS, volume 123, edição 15, com DOI 10.1073/pnas.2518347123. A publicação informa apoio parcial do National Cancer Institute; o leitor deve consultar a declaração completa de interesses concorrentes no artigo e nos materiais suplementares.
 
-## Fonte jornalística
+## Fontes e transparência
 
-A pauta foi descoberta a partir de reportagem do Metrópoles sobre o exame desenvolvido na UCLA. A matéria do EuvouserDoutor foi produzida de forma original, com conferência dos números e do desenho do estudo na publicação primária da PNAS e em material institucional da UCLA Health Sciences.
+A reportagem foi produzida de forma original pelo EuvouserDoutor. Os resultados, a amostra e o desenho da pesquisa foram conferidos no artigo publicado pela PNAS e no material institucional da UCLA Health Sciences.
 
-**EuvouserDoutor - Jeff Queiroz**
+O MethylScan representa uma possibilidade relevante para o futuro dos exames de sangue, mas a evidência atual ainda pede validação em pessoas acompanhadas desde antes do diagnóstico. É essa etapa que dirá se a promessa observada no laboratório poderá se transformar em uma ferramenta segura e útil na prática médica.
 
-**Publicado em: 16/08/2026 às 11:30**`,
+**EuvouserDoutor - Jeff Queiroz**`,
   },
 ];
