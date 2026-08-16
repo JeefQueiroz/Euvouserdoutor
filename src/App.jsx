@@ -5,27 +5,26 @@ import { GoogleAnalytics } from './components/analytics/GoogleAnalytics';
 import { CookieConsent } from './components/CookieConsent';
 import { institutional, pathToView, routeMeta } from './institutional';
 import { BlogPost } from './pages/BlogPost';
+import { Home } from './pages/Home';
+import { News } from './pages/News';
+import { Materials } from './pages/Materials';
+import { Mentorship } from './pages/Mentorship';
+import { FlashcardsPage } from './pages/FlashcardsPage';
+import { Article } from './pages/Article';
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfUse } from './pages/TermsOfUse';
+import { MedicalDisclaimer } from './pages/MedicalDisclaimer';
+import { IntellectualProperty } from './pages/IntellectualProperty';
+import { CookiePolicy } from './pages/CookiePolicy';
+import { Author } from './pages/Author';
+import { NotFound } from './pages/NotFound';
 
-// Load page modules on demand so the news database and secondary pages do not enter the initial bundle.
-const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
-const News = lazy(() => import('./pages/News').then(m => ({ default: m.News })));
-const Materials = lazy(() => import('./pages/Materials').then(m => ({ default: m.Materials })));
-const Mentorship = lazy(() => import('./pages/Mentorship').then(m => ({ default: m.Mentorship })));
-const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage').then(m => ({ default: m.FlashcardsPage })));
-const Article = lazy(() => import('./pages/Article').then(m => ({ default: m.Article })));
-const About = lazy(() => import('./pages/About').then(m => ({ default: m.About })));
-const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
-const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then(m => ({ default: m.PrivacyPolicy })));
-const TermsOfUse = lazy(() => import('./pages/TermsOfUse').then(m => ({ default: m.TermsOfUse })));
-const MedicalDisclaimer = lazy(() => import('./pages/MedicalDisclaimer').then(m => ({ default: m.MedicalDisclaimer })));
-const IntellectualProperty = lazy(() => import('./pages/IntellectualProperty').then(m => ({ default: m.IntellectualProperty })));
-const CookiePolicy = lazy(() => import('./pages/CookiePolicy').then(m => ({ default: m.CookiePolicy })));
-const Author = lazy(() => import('./pages/Author').then(m => ({ default: m.Author })));
-const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
-
-export default function App() {
+export default function App({ initialPath }) {
   const resolveView = (pathname) => pathToView[pathname] ?? 'notfound';
-  const initialView = resolveView(window.location.pathname);
+  const currentPath = initialPath || (typeof window !== 'undefined' ? window.location.pathname : '/');
+  const initialView = resolveView(currentPath);
   const [view, setView] = useState(initialView);
   const telegram = institutional.telegram;
   const profileImg = "/jeff-queiroz-perfil.jpg";
