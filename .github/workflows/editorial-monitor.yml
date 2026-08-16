@@ -1,8 +1,7 @@
 name: Monitoramento editorial EuvouserDoutor
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
+  # O monitor automático externo foi pausado; a publicação volta a ser executada pela tarefa editorial interna.
   workflow_dispatch:
 
 concurrency:
