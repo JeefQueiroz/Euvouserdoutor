@@ -3670,7 +3670,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "12/08/2026",
     updateTime: "17:15",
     cat: "Tecnologia Médica",
-    img: "/retina_chip_tech.jpg",
+    img: "/retina_chip_tech.webp",
     imgCaption: "Ilustração técnica de um dispositivo 'Organ-on-a-chip': canais microfluídicos permitem o cultivo de células 3D que simulam a resposta do corpo humano a novos medicamentos.",
     imgCredit: "Reprodução / NIST / Banco Editorial EuvouserDoutor",
     content: (
@@ -5277,7 +5277,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       date: "11 Ago 2026",
       pubTime: "20:00",
       updateTime: "23:15",
-      img: "/retina_chip_tech.jpg",
+      img: "/retina_chip_tech.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5354,7 +5354,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Técnicas de estudo",
       time: "6 min",
       date: "10 Ago 2026",
-      img: "/jeff-queiroz-eu-vou-ser-doutor.png",
+      img: "/jeff-queiroz-eu-vou-ser-doutor.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5372,7 +5372,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Saúde & Ciência",
       time: "8 min",
       date: "11 Ago 2026",
-      img: "/retina_chip_tech.jpg",
+      img: "/retina_chip_tech.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5615,7 +5615,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Revisão",
       time: "5 min",
       date: "07 Ago 2026",
-      img: "/jeff-queiroz-eu-vou-ser-doutor.png",
+      img: "/jeff-queiroz-eu-vou-ser-doutor.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5630,7 +5630,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Técnicas de estudo",
       time: "4 min",
       date: "06 Ago 2026",
-      img: "/retina_chip_tech.jpg",
+      img: "/retina_chip_tech.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5645,7 +5645,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Técnicas de estudo",
       time: "5 min",
       date: "05 Ago 2026",
-      img: "/jeff-queiroz-eu-vou-ser-doutor.png",
+      img: "/jeff-queiroz-eu-vou-ser-doutor.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5660,7 +5660,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       cat: "Rotina",
       time: "5 min",
       date: "04 Ago 2026",
-      img: "/jeff-queiroz-eu-vou-ser-doutor.png",
+      img: "/jeff-queiroz-eu-vou-ser-doutor.webp",
       content: (
         <>
           <p className="text-lg md:text-xl text-[#F8FAFC] leading-relaxed font-bold mb-8 text-pretty">
@@ -5950,7 +5950,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     updateDate: "14/08/2026",
     updateTime: "11:11",
     category: "Neurociência",
-    img: "/plcg2_sinapses_alzheimer_2026.jpg",
+    img: "/plcg2_sinapses_alzheimer_2026.webp",
     imageAlt: "Ilustração de um neurônio com ramificações e estruturas moleculares associadas à comunicação sináptica",
     imageCaption: "Ilustração editorial mostra um neurônio e estruturas moleculares associadas à comunicação entre sinapses; o estudo investigou o papel do gene PLCG2 em modelos celulares.",
     imageCredit: "Ilustração original produzida para o EuvouserDoutor.",
