@@ -85,7 +85,7 @@ export const Header = ({ setView, currentView, telegram }) => {
                 className="flex items-center group shrink-0 focus:outline-none transition-transform hover:scale-[1.02]"
                 aria-label="Ir para a página inicial"
               >
-                <img src="/logo-euvouserdoutor.png" alt="Logo" className="h-10 md:h-14 w-auto object-contain transition-opacity group-hover:opacity-90" />
+                <img src="/logo-euvouserdoutor.webp" alt="Logo EuvouserDoutor" width="600" height="250" fetchpriority="high" decoding="async" className="h-10 md:h-14 w-auto object-contain transition-opacity group-hover:opacity-90" />
               </button>
             
               <nav className="hidden lg:flex items-center gap-1 text-[11px] font-black uppercase tracking-[0.15em] text-[#98A2B3]" aria-label="Navegação principal">
@@ -101,7 +101,7 @@ export const Header = ({ setView, currentView, telegram }) => {
                     key={view}
                     type="button"
                     onClick={() => setView(view)}
-                    className={`px-4 py-2 rounded-xl transition-all relative group focus:outline-none ${
+                    className={`px-4 py-3 rounded-xl transition-all relative group focus:outline-none ${
                       currentView === view
                         ? 'text-white'
                         : 'hover:text-white'
@@ -126,7 +126,7 @@ export const Header = ({ setView, currentView, telegram }) => {
                   setActiveSearchIndex(0);
                   setIsSearchOpen(true);
                 }}
-                className="bg-white/[0.03] text-[#98A2B3] hover:text-white px-4 py-2 rounded-2xl border border-white/[0.08] hover:bg-white/[0.06] transition-all flex items-center gap-3 text-[11px] font-bold group"
+                className="bg-white/[0.03] text-[#98A2B3] hover:text-white px-4 py-3 rounded-2xl border border-white/[0.08] hover:bg-white/[0.06] transition-all flex items-center gap-3 text-[11px] font-bold group"
                 aria-label="Pesquisar no site"
               >
                 <Search size={14} className="text-[#4F8CFF] group-hover:scale-110 transition-transform" />

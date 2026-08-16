@@ -27,7 +27,7 @@ export default function App({ initialPath }) {
   const initialView = resolveView(currentPath);
   const [view, setView] = useState(initialView);
   const telegram = institutional.telegram;
-  const profileImg = "/jeff-queiroz-perfil.jpg";
+  const profileImg = "/jeff-queiroz-perfil.webp";
 
   const navigate = (nextView) => {
     if (typeof nextView !== 'string' || !routeMeta[nextView]) {
@@ -72,7 +72,7 @@ export default function App({ initialPath }) {
     setMeta('meta[name="twitter:description"]', 'content', meta.description);
     setMeta('link[rel="canonical"]', 'href', canonicalUrl);
 
-    const imageUrl = `${institutional.site}${meta.image || '/logo-euvouserdoutor.png'}`;
+    const imageUrl = `${institutional.site}${meta.image || '/logo-euvouserdoutor.webp'}`;
     const isArticle = typeof view === 'string' && view.startsWith('post_');
     const jsonLd = {
       '@context': 'https://schema.org',
@@ -82,7 +82,7 @@ export default function App({ initialPath }) {
           '@id': `${institutional.site}/#organization`,
           name: 'EuvouserDoutor',
           url: institutional.site,
-          logo: `${institutional.site}/logo-euvouserdoutor.png`,
+          logo: `${institutional.site}/logo-euvouserdoutor.webp`,
           founder: { '@id': `${institutional.site}/autor/jeff-queiroz#person` },
         },
         {
@@ -90,7 +90,7 @@ export default function App({ initialPath }) {
           '@id': `${institutional.site}/autor/jeff-queiroz#person`,
           name: 'Jeff Queiroz',
           url: `${institutional.site}/autor/jeff-queiroz`,
-          image: `${institutional.site}/jeff-queiroz-perfil.jpg`,
+          image: `${institutional.site}/jeff-queiroz-perfil.webp`,
           worksFor: { '@id': `${institutional.site}/#organization` },
         },
         {
