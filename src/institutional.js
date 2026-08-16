@@ -203,8 +203,8 @@ export const routeMeta = {
     path: "/noticias/ozempic-vicio-septo-lateral-2026",
   },
   post_ucla_blood_test_2026: {
-    title: "Teste de Sangue UCLA: Rastreamento de Múltiplos Cânceres | EuvouserDoutor",
-    description: "Conheça o MethylScan, o novo teste de sangue de baixo custo da UCLA que detecta câncer e doenças orgânicas precocemente.",
+    title: "Teste de sangue da UCLA identifica sinais de quatro tipos de câncer | EuvouserDoutor",
+    description: "Estudo da UCLA avalia o MethylScan, método que analisa DNA livre no sangue e identifica sinais de quatro tipos de câncer em amostras humanas.",
     path: "/noticias/teste-sangue-ucla-rastreamento-cancer-2026",
   },
   post_parkinson_brain_rhythm_dbs_2026: {

@@ -6095,6 +6095,8 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
       document.head.appendChild(script);
     }
     const dateMap = {
+      '16/08/2026': '2026-08-16',
+      '16 Ago 2026': '2026-08-16',
       '15/08/2026': '2026-08-15',
       '14/08/2026': '2026-08-14',
       '14 Ago 2026': '2026-08-14',
