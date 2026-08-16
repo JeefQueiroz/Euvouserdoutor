@@ -24,7 +24,7 @@ export const autoPosts = [
     readTime: '8 min',
     time: '8 min',
     author: 'EuvouserDoutor - Jeff Queiroz',
-    img: 'https://www.pnas.org/cms/10.1073/pnas.2518347123/asset/fcee0be9-e3d1-42c7-a96e-bbbe4de13328/assets/images/large/pnas.2518347123fig01.jpg',
+    img: '/editorial/methylscan_pnas_2026.jpg',
     imgCaption: 'Esquema do MethylScan, método que enriquece fragmentos de DNA livre de células com padrões de metilação associados a tecidos doentes.',
     imgCredit: 'Imagem: Zeng et al., PNAS (2026), licença CC BY-NC-ND 4.0.',
     target: 'post_ucla_blood_test_2026',
