@@ -160,7 +160,7 @@ export default function App({ initialPath }) {
           {view === 'intellectualProperty' && <IntellectualProperty />}
           {view === 'cookies' && <CookiePolicy />}
           {view === 'admin' && <NotFound setView={navigate} />}
-          {typeof view === 'string' && view.startsWith('post_') && <BlogPost setView={navigate} postId={view.replace('post_', '')} profileImg={profileImg} telegram={telegram} />}
+          {typeof view === 'string' && view.startsWith('post_') && <BlogPost setView={navigate} postId={view} profileImg={profileImg} telegram={telegram} />}
           {view === 'notfound' && <NotFound setView={navigate} />}
         </Suspense>
       </main>
