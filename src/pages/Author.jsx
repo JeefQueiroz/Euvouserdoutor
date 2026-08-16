@@ -62,7 +62,7 @@ export const Author = ({ setView }) => {
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
       {/* Header - Restored to Clean Layout with Card */}
-      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-8 pb-14 px-6 relative overflow-visible mb-20">
+      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-6 pb-10 px-6 relative overflow-visible mb-12">
         {/* Simple Radial Gradient - Removed Grid Dots for Cleanliness */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_40%)]" />
         
@@ -70,14 +70,14 @@ export const Author = ({ setView }) => {
           <button
             type="button"
             onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-8"
+            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-6"
           >
             <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
           </button>
 
-          <div className="relative max-w-6xl min-h-[280px] flex flex-col md:flex-row items-center md:items-center gap-8">
+          <div className="relative max-w-6xl min-h-[230px] flex flex-col md:flex-row items-center md:items-center gap-6">
             {/* Profile Card - COLORFUL & KEPT */}
-            <div className="w-[220px] md:w-[250px] relative group md:absolute md:right-2 md:bottom-[-108px] z-20 shrink-0">
+            <div className="w-[190px] md:w-[215px] relative group md:absolute md:right-4 md:bottom-[-70px] z-20 shrink-0">
               <div className="glass-premium rounded-[24px] p-1 border border-white/[0.08] shadow-[0_28px_70px_rgba(0,0,0,0.55)] overflow-hidden">
                 <div className="bg-[#11141A] rounded-[23px] overflow-hidden">
                   <div className="aspect-[4/5] w-full overflow-hidden relative">
@@ -102,7 +102,7 @@ export const Author = ({ setView }) => {
               </div>
             </div>
             
-            <div className="text-left space-y-5 md:pr-[300px] max-w-3xl">
+            <div className="text-left space-y-4 md:pr-[270px] max-w-[620px]">
               <div className="flex flex-wrap justify-start gap-2">
                 <span className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
                   Fundador & Criador
@@ -112,11 +112,11 @@ export const Author = ({ setView }) => {
                 </span>
               </div>
               
-              <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-[1.05] text-[#F8FAFC]">
+              <h1 className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-[1.02] text-[#F8FAFC]">
                 Sobre o Projeto & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Jeff Queiroz</span>
               </h1>
               
-              <div className="flex flex-wrap justify-start gap-4 text-xs text-[#98A2B3] font-bold">
+              <div className="flex flex-wrap justify-start gap-3 text-[11px] text-[#98A2B3] font-bold">
                 <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG</span>
                 <span className="flex items-center gap-1.5"><Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital</span>
                 <span className="flex items-center gap-1.5"><Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação</span>
@@ -127,11 +127,11 @@ export const Author = ({ setView }) => {
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 pt-8">
         <div className="lg:col-span-8 space-y-12">
           
           {/* Biografia Section */}
-          <section className="bg-[#11141A] border border-white/[0.05] rounded-[32px] p-8 md:p-12 shadow-2xl space-y-8 premium-border relative overflow-hidden">
+          <section className="bg-[#11141A] border border-white/[0.05] rounded-[28px] p-7 md:p-10 shadow-2xl space-y-7 premium-border relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#4F8CFF]/5 rounded-full blur-3xl -mr-32 -mt-32" />
             
             <div className="space-y-6 relative z-10">
