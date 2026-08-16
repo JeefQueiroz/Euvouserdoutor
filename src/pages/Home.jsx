@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 
 export const Home = ({ setView }) => {
-  const profileImg = '/jeff-queiroz-perfil.jpg';
+  const profileImg = '/jeff-queiroz-perfil.webp';
 
   const featuredNews = {
     category: 'Ciência & Tecnologia',

@@ -27,7 +27,7 @@ export const Footer = ({ setView, telegram }) => (
               className="flex items-center focus:outline-none group"
               aria-label="Início"
             >
-              <img src="/logo-euvouserdoutor.png" alt="Logo" loading="lazy" className="h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
+              <img src="/logo-euvouserdoutor.webp" alt="Logo" width="600" height="250" loading="lazy" decoding="async" className="h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
             </button>
             <p className="text-[#98A2B3] text-sm leading-relaxed max-w-md font-medium">
               {institutional.description}
@@ -35,7 +35,7 @@ export const Footer = ({ setView, telegram }) => (
           </div>
 
           <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] premium-border max-w-sm">
-            <img src="/jeff-queiroz-perfil.jpg" alt="Jeff Queiroz" className="w-12 h-12 rounded-full object-cover border border-[#4F8CFF]/30" />
+            <img src="/jeff-queiroz-perfil.webp" alt="Jeff Queiroz" width="48" height="48" loading="lazy" decoding="async" className="w-12 h-12 rounded-full object-cover border border-[#4F8CFF]/30" />
             <div>
               <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#4F8CFF] mb-0.5">Fundador & Editor</p>
               <p className="text-white text-sm font-black tracking-tight">Jeff Queiroz</p>

@@ -42,7 +42,7 @@ export function SafeImage({
       width={width}
       height={height}
       loading={priority ? 'eager' : 'lazy'}
-      fetchPriority={priority ? 'high' : 'auto'}
+      fetchpriority={priority ? 'high' : 'auto'}
       decoding="async"
       referrerPolicy="no-referrer"
       onError={handleError}

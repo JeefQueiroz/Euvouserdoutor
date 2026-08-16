@@ -2,7 +2,7 @@ import React from 'react';
 import { BookOpen, CheckCircle, Layers, MessageCircle, Sparkles, TrendingUp, ArrowRight } from 'lucide-react';
 
 export const Sidebar = ({ setView }) => {
-  const brandImg = "/jeff-queiroz-perfil.jpg";
+  const brandImg = "/jeff-queiroz-perfil.webp";
   return (
     <aside className="lg:sticky lg:top-24 space-y-6 text-left">
       {/* Premium Author Card */}
@@ -11,7 +11,7 @@ export const Sidebar = ({ setView }) => {
           <div className="flex items-center gap-4">
             <div className="relative group">
               <div className="w-14 h-14 rounded-2xl bg-[#4F8CFF]/10 p-0.5 border border-[#4F8CFF]/20 overflow-hidden">
-                 <img src={brandImg} alt="Jefferson Queiroz" loading="lazy" className="w-full h-full rounded-[14px] object-cover transition-transform group-hover:scale-110" />
+                 <img src={brandImg} alt="Jefferson Queiroz" width="56" height="56" loading="lazy" decoding="async" className="w-full h-full rounded-[14px] object-cover transition-transform group-hover:scale-110" />
               </div>
               <div className="absolute -bottom-1 -right-1 bg-emerald-500 w-4 h-4 rounded-full border-4 border-[#11141A] shadow-lg"></div>
             </div>

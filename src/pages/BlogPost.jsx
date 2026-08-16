@@ -6126,7 +6126,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
         "name": "EuvouserDoutor",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.euvouserdoutor.com/logo-euvouserdoutor.png"
+          "url": "https://www.euvouserdoutor.com/logo-euvouserdoutor.webp"
         }
       },
       "mainEntityOfPage": {
@@ -6233,7 +6233,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
 
                     <div className="md:w-2/5 relative flex justify-center">
                       <div className="w-48 h-48 md:w-64 md:h-64 rounded-[40px] bg-[#080A0F] rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-2xl flex items-center justify-center p-8">
-                        <img src="/logo-euvouserdoutor.png" alt="Logo" className="w-full h-auto brightness-0 invert opacity-20" />
+                        <img src="/logo-euvouserdoutor.webp" alt="Logo" className="w-full h-auto brightness-0 invert opacity-20" />
                         <GraduationCap size={80} className="absolute text-white/10" />
                       </div>
                     </div>

@@ -9,7 +9,7 @@ const PinterestIcon = ({ size = 18, className = "" }) => (
 );
 
 export const Author = ({ setView }) => {
-  const profileImg = '/jeff-queiroz-perfil.jpg';
+  const profileImg = '/jeff-queiroz-perfil.webp';
 
   const publications = [
     {
