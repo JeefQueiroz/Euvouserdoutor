@@ -1,0 +1,52 @@
+name: Monitoramento editorial EuvouserDoutor
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: editorial-monitor
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  monitor-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout do site existente
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Executar monitor editorial
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+        run: node scripts/editorial-monitor.mjs
+
+      - name: Validar build do site
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+          pnpm run build
+
+      - name: Publicar automaticamente no repositório
+        run: |
+          if git diff --quiet -- src/autoPosts.jsx; then
+            echo 'Nenhuma pauta nova elegível.'
+            exit 0
+          fi
+          git config user.name 'EuvouserDoutor Editorial Bot'
+          git config user.email 'editorial-bot@euvouserdoutor.com'
+          git add src/autoPosts.jsx
+          git commit -m "feat(editorial): publicar nova pauta verificada"
+          git push origin HEAD:main

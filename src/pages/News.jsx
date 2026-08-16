@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, Clock, Sparkles, TrendingUp, Filter } from 'lucide-react';
 import { Sidebar } from '../components/Sidebar';
 import { SafeImage } from '../components/SafeImage';
+import { autoPosts } from '../autoPosts';
 
 export const News = ({ setView }) => {
   const [selectedCategory, setSelectedCategory] = useState('Todas');
 
   const categories = ['Todas', 'Saúde Pública', 'Saúde & Ciência', 'Tecnologia Médica', 'Técnicas de estudo', 'Neurologia', 'Rotina', 'Revisão'];
 
-  const posts = [
+  const posts = [...autoPosts,
     {
       id: "post_tilapia_factory_ceara_2026",
       title: "Ceará terá fábrica de curativos feitos com pele de tilápia em escala industrial",
