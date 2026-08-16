@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Share2, Calendar, User, BookOpen, Clock, Tag, Ch
 import { Sidebar } from '../components/Sidebar';
 import { SafeImage } from '../components/SafeImage';
 import { institutional } from '../institutional';
+import { autoPosts, AutoPostContent } from '../autoPosts';
 
 export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
 
@@ -6078,7 +6079,9 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   };
 
   const normalizedPostId = typeof postId === 'string' && postId.startsWith('post_') ? postId.slice(5) : postId;
-  const post = postsData[postId] || postsData[normalizedPostId] || postsData[`post_${normalizedPostId}`] || postsData.ebola_oxford_2026;
+  const autoPostData = Object.fromEntries(autoPosts.map(autoPost => [autoPost.id, { ...autoPost, content: <AutoPostContent markdown={autoPost.body} /> }]));
+  const mergedPostsData = { ...postsData, ...autoPostData };
+  const post = mergedPostsData[postId] || mergedPostsData[normalizedPostId] || mergedPostsData[`post_${normalizedPostId}`] || mergedPostsData.ebola_oxford_2026;
   const postTags = postId.includes('pfas') ? ['Medicina', 'Meio Ambiente', 'Inovação', 'Saúde'] : postId.includes('microbiota') ? ['Microbiota', 'Psicologia', 'Cérebro', 'Saúde'] : postId.includes('chip_eny') ? ['Biotecnologia', 'UnB', '3D', 'Saúde'] : postId.includes('ozempic') ? ['Ozempic', 'Neurociência', 'Vício', 'Saúde'] : postId.includes('ucla') ? ['Câncer', 'UCLA', 'Check-up', 'Inovação'] : postId.includes('parkinson') ? ['Parkinson', 'Neurologia', 'DBS', 'Cérebro'] : postId.includes('omega3') ? ['Omega-3', 'Câncer', 'Imunoterapia', 'NK Cells'] : postId.includes('alzheimer') ? ['Alzheimer', 'Neurociência', 'Cirurgia', 'Saúde'] : postId.includes('car_t') ? ['CAR-T', 'mRNA', 'Nanopartículas', 'Imunoterapia'] : postId.includes('measles') ? ['Sarampo', 'Vacinação', 'Saúde Pública', 'Epidemiologia'] : ['Medicina', 'Pesquisa', 'Oxford', 'Futuro'];
 
   useEffect(() => {
