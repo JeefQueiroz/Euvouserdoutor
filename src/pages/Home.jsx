@@ -65,40 +65,37 @@ export const Home = ({ setView, profileImg = '/jeff-queiroz-perfil.webp' }) => {
 
   return (
     <div className="min-h-screen bg-[#071018] pb-24 text-[#F7FAFC]">
-      <section className="relative overflow-hidden border-b border-white/[0.07]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_8%,rgba(85,136,255,0.20),transparent_38%),radial-gradient(circle_at_8%_60%,rgba(35,93,154,0.16),transparent_35%)]" />
-        <div className="absolute inset-0 opacity-[0.035]" style={{ backgroundImage: 'linear-gradient(rgba(142,179,255,.7) 1px, transparent 1px), linear-gradient(90deg, rgba(142,179,255,.7) 1px, transparent 1px)', backgroundSize: '56px 56px' }} />
-        <div className="container relative z-10 py-16 md:py-24 lg:py-28">
-          <div className="grid items-center gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-20">
-            <div className="max-w-2xl">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#6B9BFF]/25 bg-[#6B9BFF]/10 px-4 py-2 text-[10px] font-black uppercase tracking-[0.22em] text-[#9AB8FF]">
-                <Sparkles size={13} /> Portal editorial de medicina e ciência
+      <section className="relative isolate min-h-[690px] overflow-hidden border-b border-white/[0.08] md:min-h-[760px]">
+        <div className="absolute inset-0">
+          <SafeImage src={featuredPost.img} alt="" width={1600} height={1000} priority className="h-full w-full object-cover opacity-35 grayscale-[20%]" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#071018_0%,#071018e8_38%,#0710188c_67%,#071018d9_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(0deg,#071018_0%,transparent_42%,#07101880_100%)]" />
+        </div>
+        <div className="absolute -right-32 top-24 h-[480px] w-[480px] rounded-full border border-[#B8FF4A]/20 bg-[#B8FF4A]/10 blur-3xl" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#B8FF4A] to-transparent opacity-70" />
+        <div className="container relative z-10 flex min-h-[690px] items-end py-14 md:min-h-[760px] md:py-20">
+          <div className="grid w-full items-end gap-12 lg:grid-cols-[1fr_0.72fr] lg:gap-24">
+            <div className="max-w-4xl">
+              <div className="mb-8 flex flex-wrap items-center gap-3">
+                <span className="inline-flex items-center gap-2 rounded-full bg-[#B8FF4A] px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-[#071018]"><span className="h-2 w-2 animate-pulse rounded-full bg-[#071018]" /> Descoberta em foco</span>
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">Saúde & Ciência · 16 Ago 2026</span>
               </div>
-              <h1 className="max-w-3xl text-5xl font-black leading-[0.94] tracking-[-0.055em] text-balance md:text-7xl lg:text-[5.6rem]">
-                Ciência que ajuda você a <span className="text-[#9AB8FF]">entender o futuro.</span>
+              <p className="mb-5 text-sm font-black uppercase tracking-[0.3em] text-[#B8FF4A]">MethylScan · PNAS</p>
+              <h1 className="max-w-5xl text-5xl font-black leading-[0.88] tracking-[-0.065em] text-white md:text-7xl lg:text-[7.25rem]">
+                Um exame.<br /><span className="text-[#B8FF4A]">Quatro cânceres.</span><br />O que muda?
               </h1>
-              <p className="mt-7 max-w-xl text-base leading-relaxed text-[#A8B4C4] md:text-lg">
-                Reportagens originais, pesquisas verificadas e estratégias para quem quer estudar, cuidar e pensar a medicina com mais clareza.
+              <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/75 md:text-xl">
+                A UCLA testou um método que procura sinais moleculares no sangue. A descoberta é promissora — mas a ciência ainda está medindo o que ela realmente pode fazer.
               </p>
-              <div className="mt-9 flex flex-wrap gap-3">
-                <button type="button" onClick={() => setView('news')} className="inline-flex items-center gap-3 rounded-2xl bg-[#78A3FF] px-6 py-4 text-[11px] font-black uppercase tracking-[0.16em] text-[#071018] shadow-[0_16px_35px_rgba(91,137,255,.22)] transition hover:-translate-y-0.5 hover:bg-[#A8C2FF]">
-                  Explorar notícias <ArrowRight size={16} />
-                </button>
-                <button type="button" onClick={() => setView('materials')} className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-6 py-4 text-[11px] font-black uppercase tracking-[0.16em] text-white transition hover:-translate-y-0.5 hover:bg-white/[0.08]">
-                  Estudar melhor <BookOpen size={16} className="text-[#9AB8FF]" />
-                </button>
-              </div>
-              <div className="mt-12 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-5">
-                <div><ShieldCheck size={17} className="mb-2 text-[#8EB3FF]" /><p className="text-[10px] font-black uppercase tracking-[0.14em] text-white">Evidência</p><p className="mt-1 text-xs text-[#8290A5]">Fontes verificadas</p></div>
-                <div><FlaskConical size={17} className="mb-2 text-[#8EB3FF]" /><p className="text-[10px] font-black uppercase tracking-[0.14em] text-white">Pesquisa</p><p className="mt-1 text-xs text-[#8290A5]">Ciência traduzida</p></div>
-                <div><GraduationCap size={17} className="mb-2 text-[#8EB3FF]" /><p className="text-[10px] font-black uppercase tracking-[0.14em] text-white">Formação</p><p className="mt-1 text-xs text-[#8290A5]">Estudo estratégico</p></div>
+              <div className="mt-9 flex flex-wrap items-center gap-3">
+                <button type="button" onClick={() => setView(featuredPost.id)} className="group inline-flex items-center gap-3 rounded-2xl bg-[#B8FF4A] px-6 py-4 text-[11px] font-black uppercase tracking-[0.17em] text-[#071018] shadow-[0_15px_45px_rgba(184,255,74,.2)] transition hover:-translate-y-1 hover:bg-white">Ler a análise <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" /></button>
+                <button type="button" onClick={() => setView('news')} className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-white/[0.06] px-6 py-4 text-[11px] font-black uppercase tracking-[0.17em] text-white backdrop-blur-md transition hover:-translate-y-1 hover:bg-white/10">Ver todas as notícias</button>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute -inset-5 rounded-[38px] bg-[#6B9BFF]/10 blur-3xl" />
-              <div className="relative rounded-[34px] border border-white/10 bg-white/[0.045] p-2 shadow-2xl backdrop-blur-xl">
-                <ArticleCard post={featuredPost} onOpen={setView} featured />
-              </div>
+            <div className="hidden space-y-4 lg:block">
+              <div className="border-l-2 border-[#B8FF4A] pl-5"><p className="text-4xl font-black tracking-tight text-white">1.061</p><p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/55">amostras analisadas</p></div>
+              <div className="border-l-2 border-white/25 pl-5"><p className="text-4xl font-black tracking-tight text-white">55,3%</p><p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/55">sensibilidade em tumores iniciais</p></div>
+              <div className="border-l-2 border-white/25 pl-5"><p className="text-sm font-bold leading-relaxed text-white/70">Um resultado promissor não é o mesmo que um exame pronto para uso clínico.</p></div>
             </div>
           </div>
         </div>
