@@ -62,7 +62,7 @@ export const Author = ({ setView }) => {
   return (
     <div className="animate-in text-left bg-[#080A0F] text-[#F8FAFC] min-h-screen pb-24">
       {/* Header - Restored to Clean Layout with Card */}
-      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-12 pb-24 px-6 relative overflow-hidden">
+      <div className="bg-[#0A192F] border-b border-white/[0.05] pt-8 pb-14 px-6 relative overflow-visible mb-20">
         {/* Simple Radial Gradient - Removed Grid Dots for Cleanliness */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(79,140,255,0.15),transparent_40%)]" />
         
@@ -70,16 +70,16 @@ export const Author = ({ setView }) => {
           <button
             type="button"
             onClick={() => setView('home')}
-            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-12"
+            className="inline-flex items-center gap-2 text-[9px] font-black text-[#4F8CFF] uppercase bg-white/[0.03] border border-white/[0.08] px-3 py-1.5 rounded-lg hover:bg-white/[0.06] transition-all mb-8"
           >
             <ArrowLeft size={12} strokeWidth={3} /> Voltar ao Início
           </button>
 
-          <div className="max-w-6xl flex flex-col md:flex-row items-center md:items-end gap-12">
+          <div className="relative max-w-6xl min-h-[280px] flex flex-col md:flex-row items-center md:items-center gap-8">
             {/* Profile Card - COLORFUL & KEPT */}
-            <div className="min-w-[280px] md:min-w-[320px] relative group">
-              <div className="glass-premium rounded-[32px] p-1.5 border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.6)] overflow-hidden">
-                <div className="bg-[#11141A] rounded-[30px] overflow-hidden">
+            <div className="w-[220px] md:w-[250px] relative group md:absolute md:right-2 md:bottom-[-108px] z-20 shrink-0">
+              <div className="glass-premium rounded-[24px] p-1 border border-white/[0.08] shadow-[0_28px_70px_rgba(0,0,0,0.55)] overflow-hidden">
+                <div className="bg-[#11141A] rounded-[23px] overflow-hidden">
                   <div className="aspect-[4/5] w-full overflow-hidden relative">
                     {/* COLOR IMAGE - NO GRAYSCALE */}
                     <img src={profileImg} alt="Jeff Queiroz" width="320" height="400" decoding="async" className="w-full h-full object-cover transition-all duration-700" />
@@ -89,7 +89,7 @@ export const Author = ({ setView }) => {
                       <h3 className="text-lg font-black text-white tracking-tight">Jeff Queiroz</h3>
                     </div>
                   </div>
-                  <div className="p-5 space-y-3">
+                  <div className="p-3.5 space-y-2">
                     <div className="flex items-center justify-between text-[8px] font-black uppercase tracking-widest text-[#98A2B3]">
                       <span>Autoridade Acadêmica</span>
                       <span className="text-[#4F8CFF]">Verificado</span>
@@ -102,8 +102,8 @@ export const Author = ({ setView }) => {
               </div>
             </div>
             
-            <div className="text-center md:text-left space-y-6">
-              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+            <div className="text-left space-y-5 md:pr-[300px] max-w-3xl">
+              <div className="flex flex-wrap justify-start gap-2">
                 <span className="bg-[#4F8CFF]/10 border border-[#4F8CFF]/20 text-[#4F8CFF] px-3 py-1 rounded-md text-[9px] font-black uppercase tracking-[0.25em]">
                   Fundador & Criador
                 </span>
@@ -112,11 +112,11 @@ export const Author = ({ setView }) => {
                 </span>
               </div>
               
-              <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-[1.1] text-[#F8FAFC] whitespace-nowrap">
+              <h1 className="text-3xl md:text-5xl font-black tracking-tighter leading-[1.05] text-[#F8FAFC]">
                 Sobre o Projeto & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8CFF] via-white to-white/40">Jeff Queiroz</span>
               </h1>
               
-              <div className="flex flex-wrap justify-center md:justify-start gap-5 text-xs text-[#98A2B3] font-bold">
+              <div className="flex flex-wrap justify-start gap-4 text-xs text-[#98A2B3] font-bold">
                 <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#4F8CFF]" /> Belo Horizonte, MG</span>
                 <span className="flex items-center gap-1.5"><Briefcase size={14} className="text-[#4F8CFF]" /> Empreendedor Digital</span>
                 <span className="flex items-center gap-1.5"><Code size={14} className="text-[#4F8CFF]" /> Tech & Inovação</span>
