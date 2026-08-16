@@ -53,7 +53,7 @@ export const Home = ({ setView }) => {
 
   return (
     <div className="animate-in min-h-screen overflow-hidden bg-[#080A0F] text-[#F8FAFC]">
-      <section className="relative isolate min-h-[720px] overflow-hidden border-b border-white/[0.08]">
+      <section className="relative isolate min-h-[620px] overflow-hidden border-b border-white/[0.08]">
         <img
           src={featured.image}
           alt="Ilustração editorial de tecnologia médica"
@@ -67,19 +67,19 @@ export const Home = ({ setView }) => {
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,#080A0F_0%,transparent_38%,rgba(8,10,15,.2)_100%)]" />
         <div className="pointer-events-none absolute -right-32 top-20 -z-10 h-80 w-80 rounded-full bg-[#4F8CFF]/20 blur-3xl" />
 
-        <div className="mx-auto grid min-h-[720px] max-w-7xl items-end gap-12 px-6 pb-16 pt-20 lg:grid-cols-[1fr_360px] lg:items-center lg:pb-20">
-          <div className="max-w-3xl">
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#4F8CFF]/30 bg-[#080A0F]/50 px-4 py-2 text-[10px] font-black uppercase tracking-[0.28em] text-[#9BB9FF] backdrop-blur-md">
+        <div className="mx-auto grid min-h-[620px] max-w-7xl items-center gap-10 px-6 pb-12 pt-16 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-16 lg:pb-14">
+          <div className="max-w-2xl">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#4F8CFF]/30 bg-[#080A0F]/50 px-4 py-2 text-[10px] font-black uppercase tracking-[0.28em] text-[#9BB9FF] backdrop-blur-md">
               <Sparkles size={13} aria-hidden="true" />
               Portal editorial de ciência e futuro
             </div>
-            <h1 className="max-w-3xl text-5xl font-black leading-[0.92] tracking-[-0.06em] text-white sm:text-7xl lg:text-[7.2rem]">
+            <h1 className="max-w-2xl text-4xl font-black leading-[0.96] tracking-[-0.055em] text-white sm:text-6xl lg:text-[5.25rem] xl:text-[5.8rem]">
               Ciência que ajuda você a entender o que vem depois.
             </h1>
-            <p className="mt-8 max-w-xl text-base font-medium leading-relaxed text-white/70 sm:text-lg">
+            <p className="mt-6 max-w-lg text-base font-medium leading-relaxed text-white/70 sm:text-lg">
               Reportagens, pesquisas e ideias que conectam saúde, medicina, tecnologia, educação e inovação — com contexto e responsabilidade.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-wrap gap-3">
               <button
                 type="button"
                 onClick={() => setView('news')}
@@ -97,7 +97,7 @@ export const Home = ({ setView }) => {
                 <MoveUpRight size={15} />
               </button>
             </div>
-            <div className="mt-12 grid max-w-xl grid-cols-3 border-t border-white/20 pt-5">
+            <div className="mt-8 grid max-w-lg grid-cols-3 border-t border-white/20 pt-5">
               <div>
                 <p className="text-2xl font-black tracking-tight text-white">01</p>
                 <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-white/45">Olhar científico</p>
@@ -118,7 +118,7 @@ export const Home = ({ setView }) => {
             onClick={() => setView(featured.id)}
             className="group relative overflow-hidden rounded-[28px] border border-white/20 bg-[#0D111A]/80 p-2 text-left shadow-2xl backdrop-blur-xl transition-transform hover:-translate-y-2 focus:outline-none focus:ring-2 focus:ring-[#9BB9FF]"
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[22px]">
+            <div className="relative aspect-[4/4.7] overflow-hidden rounded-[22px]">
               <img src={featured.image} alt={featured.title} width="700" height="875" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#080A0F] via-transparent to-transparent" />
               <div className="absolute left-5 top-5 rounded-full bg-[#080A0F]/70 px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-[#9BB9FF] backdrop-blur-md">{featured.category}</div>
@@ -159,23 +159,39 @@ export const Home = ({ setView }) => {
             </div>
             <button type="button" onClick={() => setView('news')} className="flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-white/60 transition-colors hover:text-white">Ver todas as notícias <ArrowRight size={15} /></button>
           </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            {stories.map((story, index) => (
-              <article key={story.id} className={`group ${index === 0 ? 'md:col-span-2 md:grid md:grid-cols-[1.1fr_.9fr] md:gap-6' : ''}`}>
-                <button type="button" onClick={() => setView(story.id)} className="block w-full text-left focus:outline-none focus:ring-2 focus:ring-[#4F8CFF] focus:ring-offset-4 focus:ring-offset-[#0B0F17]">
-                  <div className={`relative overflow-hidden rounded-[24px] border border-white/[0.1] ${index === 0 ? 'aspect-[16/10] md:aspect-auto md:h-full' : 'aspect-[16/10]'}`}>
-                    <img src={story.image} alt={story.title} width="1000" height="625" loading={index === 0 ? 'eager' : 'lazy'} decoding="async" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#080A0F]/80 via-transparent to-transparent" />
-                    <span className="absolute left-4 top-4 rounded-lg bg-[#080A0F]/75 px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-[#9BB9FF] backdrop-blur-md">{story.category}</span>
-                  </div>
-                  <div className="mt-5">
-                    <p className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#98A2B3]"><Clock3 size={12} className="text-[#4F8CFF]" /> {story.time}</p>
-                    <h3 className={`${index === 0 ? 'text-3xl sm:text-4xl' : 'text-xl'} font-black leading-tight tracking-[-0.03em] text-white transition-colors group-hover:text-[#9BB9FF]`}>{story.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-[#98A2B3]">{story.excerpt}</p>
-                  </div>
-                </button>
-              </article>
-            ))}
+          <div className="grid gap-8 md:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] md:items-start">
+            <article className="group">
+              <button type="button" onClick={() => setView(stories[0].id)} className="block w-full text-left focus:outline-none focus:ring-2 focus:ring-[#4F8CFF] focus:ring-offset-4 focus:ring-offset-[#0B0F17]">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-[24px] border border-white/[0.1]">
+                  <img src={stories[0].image} alt={stories[0].title} width="1000" height="625" loading="eager" decoding="async" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080A0F]/85 via-transparent to-transparent" />
+                  <span className="absolute left-4 top-4 rounded-lg bg-[#080A0F]/75 px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-[#9BB9FF] backdrop-blur-md">{stories[0].category}</span>
+                </div>
+                <div className="mt-5">
+                  <p className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#98A2B3]"><Clock3 size={12} className="text-[#4F8CFF]" /> {stories[0].time}</p>
+                  <h3 className="text-2xl font-black leading-tight tracking-[-0.03em] text-white transition-colors group-hover:text-[#9BB9FF] sm:text-3xl">{stories[0].title}</h3>
+                  <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#98A2B3]">{stories[0].excerpt}</p>
+                </div>
+              </button>
+            </article>
+            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-1">
+              {stories.slice(1).map((story) => (
+                <article key={story.id} className="group">
+                  <button type="button" onClick={() => setView(story.id)} className="block w-full text-left focus:outline-none focus:ring-2 focus:ring-[#4F8CFF] focus:ring-offset-4 focus:ring-offset-[#0B0F17]">
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] border border-white/[0.1]">
+                      <img src={story.image} alt={story.title} width="1000" height="563" loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#080A0F]/80 via-transparent to-transparent" />
+                      <span className="absolute left-4 top-4 rounded-lg bg-[#080A0F]/75 px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-[#9BB9FF] backdrop-blur-md">{story.category}</span>
+                    </div>
+                    <div className="mt-4">
+                      <p className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#98A2B3]"><Clock3 size={12} className="text-[#4F8CFF]" /> {story.time}</p>
+                      <h3 className="text-xl font-black leading-tight tracking-[-0.03em] text-white transition-colors group-hover:text-[#9BB9FF]">{story.title}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-[#98A2B3]">{story.excerpt}</p>
+                    </div>
+                  </button>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
