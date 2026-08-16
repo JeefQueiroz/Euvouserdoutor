@@ -193,12 +193,12 @@ export const routeMeta = {
     path: "/noticias/microbiota-psicopatia-estudo-2026",
   },
   post_chip_eny_unb_2026: {
-    title: "Tecnologia Brasileira de 'Órgão em Chip' Promete Fim dos Testes em Animais | EuvouserDoutor",
+    title: "Órgão em chip: plataforma brasileira é estudada como alternativa em pesquisa | EuvouserDoutor",
     description: "Conheça o Chip-Eny, a plataforma da UnB que cultiva células em 3D para simular o organismo humano e acelerar a descoberta de medicamentos.",
     path: "/noticias/chip-eny-orgao-em-chip-unb-2026",
   },
   post_ozempic_brain_addiction_2026: {
-    title: "Além do Peso: Ozempic 'Desliga' o Centro de Vício no Cérebro | EuvouserDoutor",
+    title: "Ozempic e compulsão: estudo investiga agonistas de GLP-1 no cérebro | EuvouserDoutor",
     description: "Pesquisadores identificam o septo lateral como o ponto de controle onde medicamentos para emagrecer atuam para reduzir o desejo por álcool e drogas.",
     path: "/noticias/ozempic-vicio-septo-lateral-2026",
   },
