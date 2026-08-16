@@ -6077,7 +6077,8 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
   },
   };
 
-  const post = postsData[postId] || postsData.ebola_oxford_2026;
+  const normalizedPostId = typeof postId === 'string' && postId.startsWith('post_') ? postId.slice(5) : postId;
+  const post = postsData[postId] || postsData[normalizedPostId] || postsData[`post_${normalizedPostId}`] || postsData.ebola_oxford_2026;
   const postTags = postId.includes('pfas') ? ['Medicina', 'Meio Ambiente', 'Inovação', 'Saúde'] : postId.includes('microbiota') ? ['Microbiota', 'Psicologia', 'Cérebro', 'Saúde'] : postId.includes('chip_eny') ? ['Biotecnologia', 'UnB', '3D', 'Saúde'] : postId.includes('ozempic') ? ['Ozempic', 'Neurociência', 'Vício', 'Saúde'] : postId.includes('ucla') ? ['Câncer', 'UCLA', 'Check-up', 'Inovação'] : postId.includes('parkinson') ? ['Parkinson', 'Neurologia', 'DBS', 'Cérebro'] : postId.includes('omega3') ? ['Omega-3', 'Câncer', 'Imunoterapia', 'NK Cells'] : postId.includes('alzheimer') ? ['Alzheimer', 'Neurociência', 'Cirurgia', 'Saúde'] : postId.includes('car_t') ? ['CAR-T', 'mRNA', 'Nanopartículas', 'Imunoterapia'] : postId.includes('measles') ? ['Sarampo', 'Vacinação', 'Saúde Pública', 'Epidemiologia'] : ['Medicina', 'Pesquisa', 'Oxford', 'Futuro'];
 
   useEffect(() => {
