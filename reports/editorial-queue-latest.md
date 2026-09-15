@@ -1,26 +1,27 @@
 # Fila editorial automática
 
-Atualizada em 2026-08-19T17:54:26.414Z pelo GitHub Actions.
+Atualizada em 2026-09-15T23:05:24.451Z pelo GitHub Actions.
 
 A rotina coleta pautas recentes de fontes de descoberta e não publica textos automaticamente. Cada item deve passar por apuração primária antes de virar notícia.
 
 ## Novas pautas
 
-1. **Menino brasileiro de 3 anos ganha prêmio internacional de inteligência; entrou para a Mensa aos 2** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/19/menino-brasileiro-premio-internacional-inteligencia) — Pendente de apuração primária
-2. **Professor ensina ‘Alecrim Dourado’ em português e anima alunos nos EUA; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/19/professor-ensina-alecrim-dourado-criancas-eua) — Pendente de apuração primária
-3. **Veja como será a 1ª Universidade Federal do Esporte, no DF; aulas devem começar em 2027** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/universidade-federal-esporte-brasilia-2027) — Pendente de apuração primária
-4. **Idoso com Down de SP faz 80 anos e ganha título de “o mais longevo do Brasil”, vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/idoso-down-80-anos-mais-longevo-brasil) — Pendente de apuração primária
-5. **Bitelo, ex-servente de pedreiro brasileiro, levanta 420 kg e é aplaudido por astro de Game of Thrones; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/bitelo-levanta-420-kg-game-of-thrones) — Pendente de apuração primária
-6. **Veja como está a árvore de pequi preservada no meio de uma avenida de Tocantins, 6 anos depois** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/arvore-pequi-preservada-avenida-tocantins) — Pendente de apuração primária
-7. **Glória Menezes parte aos 91, cinco anos depois do grande amor Tarcísio Meira; juntos para sempre** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/gloria-menezes-tarcisio-meira-amor) — Pendente de apuração primária
-8. **Laura Cardoso: relembre grandes personagens que ficaram na memória dos brasileiros** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/laura-cardoso-personagens-novelas-marcantes) — Pendente de apuração primária
-9. **Idoso com Down de SP faz 80 anos e ganha título de “o mais longevo do Brasil”, vídeo** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/idoso-down-80-anos-mais-longevo-brasil) — Pendente de apuração primária
-10. **Bitelo, ex-servente de pedreiro brasileiro, levanta 420 kg e é aplaudido por astro de Game of Thrones; vídeo** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/bitelo-levanta-420-kg-game-of-thrones) — Pendente de apuração primária
-11. **Veja como está a árvore de pequi preservada no meio de uma avenida de Tocantins, 6 anos depois** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/arvore-pequi-preservada-avenida-tocantins) — Pendente de apuração primária
-12. **Glória Menezes parte aos 91, cinco anos depois do grande amor Tarcísio Meira; juntos para sempre** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/gloria-menezes-tarcisio-meira-amor) — Pendente de apuração primária
-13. **Laura Cardoso: relembre grandes personagens que ficaram na memória dos brasileiros** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/laura-cardoso-personagens-novelas-marcantes) — Pendente de apuração primária
-14. **Veja como será a 1ª Universidade Federal do Esporte, no DF; aulas devem começar em 2027** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/18/universidade-federal-esporte-brasilia-2027) — Pendente de apuração primária
-15. **Vestibular Fuvest 2027 abre inscrições para mais de 8 mil vagas na USP** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/08/17/vestibular-fuvest-2027-inscricoes-usp) — Pendente de apuração primária
+1. **Chuva de meteoros será visível no Brasil informa a NASA: até 20 por hora** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/chuva-meteoros-orionideas-brasil-2026) — Pendente de apuração primária
+2. **Doador de medula aparece de surpresa no casamento da jovem que salvou há 14 anos; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/doador-medula-surpreende-noiva-casamento-aliancas) — Pendente de apuração primária
+3. **Família atravessa 700 km e faz surpresa para tia conhecer a sobrinha caçula; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/familia-surpresa-tia-conhecere-sobrinha) — Pendente de apuração primária
+4. **Placa: “Se chamar por Theodoro, aparecerá um anjo”; e golden surge na varanda; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/chamar-theodoro-golden-aparece-varanda-placa) — Pendente de apuração primária
+5. **1ª fábrica de carro voador do Brasil avança em SP para produzir 480 aeronaves por ano** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/fabrica-carro-voador-brasil-taubate) — Pendente de apuração primária
+6. **Homem compra todas as pipocas de ambulante em jogo de futebol e distribui para torcida; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/homem-compra-todas-pipocas-ambulante-distribui-torcida) — Pendente de apuração primária
+7. **1ª fábrica de carro voador do Brasil avança em SP para produzir 480 aeronaves por ano** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/fabrica-carro-voador-brasil-taubate) — Pendente de apuração primária
+8. **Chuva de meteoros será visível no Brasil informa a NASA: até 20 por hora** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/chuva-meteoros-orionideas-brasil-2026) — Pendente de apuração primária
+9. **Doador de medula aparece de surpresa no casamento da jovem que salvou há 14 anos; vídeo** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/doador-medula-surpreende-noiva-casamento-aliancas) — Pendente de apuração primária
+10. **Família atravessa 700 km e faz surpresa para tia conhecer a sobrinha caçula; vídeo** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/familia-surpresa-tia-conhecere-sobrinha) — Pendente de apuração primária
+11. **Placa: “Se chamar por Theodoro, aparecerá um anjo”; e golden surge na varanda; vídeo** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/chamar-theodoro-golden-aparece-varanda-placa) — Pendente de apuração primária
+12. **Homem compra todas as pipocas de ambulante em jogo de futebol e distribui para torcida; vídeo** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/14/homem-compra-todas-pipocas-ambulante-distribui-torcida) — Pendente de apuração primária
+13. **Brasil registra a menor taxa de analfabetismo da história: menos de 5%** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/11/analfabetismo-brasil-menor-taxa) — Pendente de apuração primária
+14. **Aluna da EJA tira 10 na prova e comemora: “Posso mandar para o meu neto?”; vídeo** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/10/aluna-eja-nota-10-prova-neto) — Pendente de apuração primária
+15. **Mãe de três filhos da Cidade de Deus se forma na UERJ aos 45 anos e conta história em livro** — Só Notícia Boa Educação — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/09/mae-forma-uerj-45-anos) — Pendente de apuração primária
+16. **Apple lança iPhone Duo, o primeiro dobrável da história: aberto parece um iPad** — Só Notícia Boa Tecnologia — [fonte de descoberta](https://www.sonoticiaboa.com.br/2026/09/09/iphone-dobravel-iphone-duo-iphone-18-pro) — Pendente de apuração primária
 
 ## Critérios obrigatórios
 
