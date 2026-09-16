@@ -418,3 +418,9 @@ export const pathToView = {
   ),
   '/autor/jeff-queiroz': 'author', // Redirect legacy path to unified view
 };
+
+export const normalizeRoutePath = (pathname) => {
+  const path = typeof pathname === 'string' ? pathname.split(/[?#]/, 1)[0] : '/';
+  if (!path || path === '/') return '/';
+  return path.replace(/\/+$/, '') || '/';
+};

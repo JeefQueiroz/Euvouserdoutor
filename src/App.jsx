@@ -3,7 +3,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { GoogleAnalytics } from './components/analytics/GoogleAnalytics';
 import { CookieConsent } from './components/CookieConsent';
-import { institutional, pathToView, routeMeta } from './institutional';
+import { institutional, normalizeRoutePath, pathToView, routeMeta } from './institutional';
 import { BlogPost } from './pages/BlogPost';
 import { Home } from './pages/Home';
 import { News } from './pages/News';
@@ -22,7 +22,7 @@ import { Author } from './pages/Author';
 import { NotFound } from './pages/NotFound';
 
 export default function App({ initialPath }) {
-  const resolveView = (pathname) => pathToView[pathname] ?? 'notfound';
+  const resolveView = (pathname) => pathToView[normalizeRoutePath(pathname)] ?? 'notfound';
   const currentPath = initialPath || (typeof window !== 'undefined' ? window.location.pathname : '/');
   const initialView = resolveView(currentPath);
   const [view, setView] = useState(initialView);

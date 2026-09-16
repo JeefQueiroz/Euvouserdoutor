@@ -10,6 +10,7 @@ import {
   selectUniqueCandidates,
   validateCandidate,
 } from './editorial-queue-lib.mjs';
+import { normalizeRoutePath, pathToView } from '../src/institutional.js';
 
 const now = new Date('2026-09-15T12:00:00.000Z');
 
@@ -90,4 +91,10 @@ test('referência da home e conteúdo React permanecem renderizáveis', async ()
   assert.match(blog, /\bplcg2_alzheimer_synapses_2026:\s*{/);
   assert.doesNotMatch(home, /post_plcg2_alzheimer_2026['"]/);
   assert.doesNotMatch(blog, /content:\s*\(\)\s*=>/);
+});
+
+test('normaliza barra final e parâmetros antes de resolver matérias', () => {
+  const canonicalPath = '/noticias/plcg2-sinapses-alzheimer-culturas-neuronais-2026';
+  assert.equal(normalizeRoutePath(`${canonicalPath}/?utm_source=preview#conteudo`), canonicalPath);
+  assert.equal(pathToView[normalizeRoutePath(`${canonicalPath}/`)], 'post_plcg2_alzheimer_synapses_2026');
 });
