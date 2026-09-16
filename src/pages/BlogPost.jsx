@@ -5954,7 +5954,7 @@ export const BlogPost = ({ setView, postId, profileImg, telegram }) => {
     imageAlt: "Ilustração de um neurônio com ramificações e estruturas moleculares associadas à comunicação sináptica",
     imageCaption: "Ilustração editorial mostra um neurônio e estruturas moleculares associadas à comunicação entre sinapses; o estudo investigou o papel do gene PLCG2 em modelos celulares.",
     imageCredit: "Ilustração original produzida para o EuvouserDoutor.",
-    content: () => (
+    content: (
       <>
         <p>Uma pesquisa publicada nesta sexta-feira (14) na revista <strong>Nature Genetics</strong> identificou uma ligação entre a redução da atividade do gene <strong>PLCG2</strong> e alterações na comunicação entre neurônios. Em culturas de células humanas, a diminuição da proteína foi acompanhada por mudanças em sinapses e pelo aumento de marcadores associados à doença de Alzheimer, como beta-amiloide e Tau fosforilada [1].</p>
         <p>O achado ajuda a explicar como uma variante genética rara pode aumentar a vulnerabilidade ao Alzheimer, mas ainda está distante de uma aplicação clínica. Os experimentos foram realizados em culturas neuronais e em análises genéticas; não houve teste de medicamento, acompanhamento de pacientes para avaliar sintomas nem ensaio clínico.</p>

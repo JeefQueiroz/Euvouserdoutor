@@ -40,7 +40,7 @@ const latestStories = [
     date: 'Ciência',
   },
   {
-    id: 'post_plcg2_alzheimer_2026',
+    id: 'post_plcg2_alzheimer_synapses_2026',
     category: 'Neurociência',
     title: 'Pesquisa investiga como o gene PLCG2 influencia as sinapses no Alzheimer',
     excerpt: 'O estudo amplia a compreensão de mecanismos celulares ligados à memória e à neurodegeneração.',

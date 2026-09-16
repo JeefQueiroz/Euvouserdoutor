@@ -14,45 +14,72 @@ permissions:
   pull-requests: write
 
 jobs:
-  monitor-and-publish:
+  monitor-and-review:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout do site existente
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Preparar branch editorial
+        shell: bash
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin bot/editorial-review >/dev/null 2>&1; then
+            git fetch origin bot/editorial-review
+            git switch --force-create bot/editorial-review origin/bot/editorial-review
+            git rebase origin/main
+          else
+            git switch --create bot/editorial-review origin/main
+          fi
+
+      - name: Configurar pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
+
+      - name: Instalar dependências
+        run: pnpm install --frozen-lockfile
+
+      - name: Validar automação
+        run: pnpm test
 
       - name: Monitorar fila editorial
-        run: node scripts/editorial-queue.mjs
+        id: monitor
+        shell: bash
+        run: |
+          node scripts/editorial-queue.mjs
+          if git diff --quiet -- src/editorialQueue.json reports/editorial-queue-latest.md; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Validar build do site
-        run: |
-          corepack enable
-          pnpm install --frozen-lockfile
-          pnpm run build
+        if: steps.monitor.outputs.changed == 'true'
+        run: pnpm build
 
       - name: Abrir ou atualizar PR da fila editorial
+        if: steps.monitor.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+        shell: bash
         run: |
-          if git diff --quiet -- src/editorialQueue.json reports/editorial-queue-latest.md; then
-            echo 'Nenhuma pauta nova encontrada.'
-            exit 0
-          fi
           git config user.name 'EuvouserDoutor Editorial Bot'
           git config user.email 'editorial-bot@euvouserdoutor.com'
-          git checkout -B bot/editorial-queue
           git add src/editorialQueue.json reports/editorial-queue-latest.md
           git commit -m 'chore(editorial): atualizar fila de pautas'
-          git push --force origin bot/editorial-queue
-          PR_URL=$(gh pr list --head bot/editorial-queue --base main --json url --jq '.[0].url')
+          git push origin HEAD:bot/editorial-review
+          PR_URL=$(gh pr list --head bot/editorial-review --base main --state open --json url --jq '.[0].url')
           if [ -z "$PR_URL" ]; then
-            PR_URL=$(gh pr create --base main --head bot/editorial-queue --title 'Fila editorial automática' --body 'Fila de pautas descobertas automaticamente. Cada item permanece pendente de apuração primária e não é publicado como notícia sem verificação editorial.')
+            gh pr create --base main --head bot/editorial-review --title 'Fila editorial automática' --body 'Fila de pautas descobertas automaticamente. Cada item permanece pendente de apuração primária e exige revisão humana antes do merge.'
           fi
-          gh pr merge "$PR_URL" --auto --squash --delete-branch=false || echo 'Auto-merge aguardando checks obrigatórios.'
